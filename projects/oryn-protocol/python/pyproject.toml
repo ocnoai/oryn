@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+license = "MIT"
+name = "oryn-protocol"
+version = "0.1.0"
+description = "Python bindings and schema validation for the Oryn protocol"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.25,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oryn_protocol"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

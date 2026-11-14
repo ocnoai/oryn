@@ -1,0 +1,38 @@
+{
+  "kind": "task-profile",
+  "schemaVersion": 1,
+  "profileId": "zero-shot-classification-v1.b8caa8211d60d16f5e179b55",
+  "contract": {
+    "id": "zero-shot-classification-v1",
+    "revision": 1
+  },
+  "task": "zero-shot-classification",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "structured"
+  ],
+  "inputSchemaRef": "taskInput.zero-shot-classification-v1",
+  "resultSchemaRef": "taskResult.zero-shot-classification-v1",
+  "features": {},
+  "parameters": {
+    "multiLabel": {
+      "inputPointer": "/multiLabel",
+      "valueSchema": {
+        "type": "boolean"
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ]
+    }
+  },
+  "limits": {
+    "candidateLabels": 26
+  },
+  "streamingChannels": [],
+  "extensions": {},
+  "provenance": "adapter-derived"
+}

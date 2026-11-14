@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "platform": "macos-14-arm64",
+  "python": "3.12.16",
+  "engine": "0.2.0",
+  "protocol": "0.1.0",
+  "torch": "2.15.0",
+  "torchvision": "0.29.2",
+  "timm": "1.0.30",
+  "chronosForecasting": "2.3.2",
+  "pillow": "12.3.0",
+  "transformers": "5.22.1",
+  "runtimeFoundations": {
+    "oryn.runtime.mlx": {
+      "version": "1.3.0",
+      "python": "3.12.16",
+      "dependencyClosure": "oryn-mlx0.32.4-py312",
+      "mlx": "0.32.4"
+    }
+  },
+  "runtimePacks": {
+    "oryn.ace-step-mlx": {
+      "version": "0.1.0",
+      "python": "3.12.16",
+      "dependencyClosure": "ace-step-v1.5.0-dce621408bee-py312",
+      "sourceRevision": "dce621408bee8c31b4fcf4811682eb9359e1bc94",
+      "aceStep": "1.5.0",
+      "torch": "2.11.0",
+      "transformers": "4.57.6",
+      "mlx": "0.32.4",
+      "mlxLm": "0.29.1"
+    },
+    "oryn.mflux-mlx": {
+      "version": "0.7.0",
+      "python": "3.12.16",
+      "dependencyClosure": "mflux0.24-8a7fd0a4-provider7-mlx0.32-py312",
+      "foundationId": "oryn.runtime.mlx",
+      "foundationVersion": "1.3.0",
+      "mflux": "0.24.0",
+      "torch": "2.15.0",
+      "transformers": "5.22.1",
+      "sourceRevision": "8a7fd0a486635f670ef90e02efe1c051ed3f133c",
+      "wheel": {
+        "file": "mflux-0.24.0-py3-none-any.whl",
+        "sha256": "05d5bb59b9294ed23500ba94bf7dd7e2cc5659de700736444d5bd01a2d3a42ff"
+      },
+      "inheritBaseRuntime": true,
+      "providerWheel": {
+        "file": "oryn_mflux_provider-0.6.0-py3-none-any.whl",
+        "sha256": "00221b654afb8b3b2b2ccf953dd63b27668207e95fd83d8c29586fd9c1ef348d"
+      },
+      "pillow": "13.0.0"
+    },
+    "oryn.kokoro-onnx": {
+      "version": "0.3.0",
+      "python": "3.12.16",
+      "dependencyClosure": "kokoro-onnx-ort1.31.1-espeak3.3.2-cpu3-py312",
+      "onnxruntime": "1.31.1",
+      "phonemizerFork": "3.3.2",
+      "espeakngLoader": "0.2.4"
+    },
+    "oryn.diffusers-pytorch": {
+      "version": "0.10.0",
+      "python": "3.12.16",
+      "dependencyClosure": "diffusers0.42.1-2a143391-multiref1-music31-h31-transformers5.22-torch2.15-py312",
+      "inheritBaseRuntime": true,
+      "diffusers": "0.42.1",
+      "accelerate": "1.15.0",
+      "bitsandbytes": "0.50.1",
+      "imageio": "2.37.2",
+      "imageioFfmpeg": "0.6.0",
+      "torch": "2.15.0",
+      "sourceRevision": "2a1433913c7044f34fa4767dd84b28bba0bb0ecf",
+      "wheel": {
+        "file": "diffusers-0.42.1-py3-none-any.whl",
+        "sha256": "7dc37b15eece402a10f4e60de3723f09c33709ab0d4f0a436a0e99c6c6696e1d"
+      }
+    },
+    "oryn.llama-cpp": {
+      "version": "0.4.0",
+      "python": "3.12.16",
+      "dependencyClosure": "llama.cpp-v0.8.0-b11960-8642541b-mtmd2-translation1-pillow12.3-abi1",
+      "build": "11960",
+      "sourceRevision": "8642541b255bfb5dc39cd351a178be09013a55d6",
+      "libraryVersion": "0.8.0",
+      "ggmlVersion": "0.28.0",
+      "nativeBackend": "metal",
+      "asset": {
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11960/llama-b11960-bin-macos-arm64.tar.gz",
+        "file": "llama-b11960-bin-macos-arm64.tar.gz",
+        "sha256": "58e5a5e1d7c2bf66cedd9c29e0323f3e570660a70a1e2156d32eed08f4cc1e3c"
+      }
+    },
+    "oryn.mlx-lm": {
+      "version": "0.10.0",
+      "python": "3.12.16",
+      "dependencyClosure": "mlx-lm0.32.2-vlm0.7.11-gemma4mm1-prism1-boldingmtp1-kolibri1-shared-mlx0.32.4-py312",
+      "foundationId": "oryn.runtime.mlx",
+      "foundationVersion": "1.3.0",
+      "inheritBaseRuntime": true,
+      "mlxLm": "0.32.2",
+      "mlxVlm": "0.7.11"
+    },
+    "oryn.transformers-pytorch": {
+      "version": "0.32.0",
+      "dependencyClosure": "oryn-engine-tf5.22.1-torch2.15-native32-numericarchive5-wide-retrieval-librosa0.11-ct2-4.8.4-py312",
+      "inheritBaseRuntime": true
+    },
+    "oryn.onnx-runtime": {
+      "version": "0.5.0",
+      "dependencyClosure": "oryn-onnxruntime1.31.1-encoders2-q4-tdt1-classifier1-opencv4.13-py312",
+      "inheritBaseRuntime": true
+    },
+    "oryn.qwen-tts-pytorch": {
+      "version": "0.1.0",
+      "python": "3.12.16",
+      "dependencyClosure": "qwen-tts0.1.1-transformers4.57.3-torch2.11-py312",
+      "qwenTts": "0.1.1",
+      "torch": "2.11.0",
+      "torchaudio": "2.11.0",
+      "transformers": "4.57.3",
+      "accelerate": "1.12.0",
+      "inheritBaseRuntime": false
+    }
+  },
+  "scipy": "1.18.1",
+  "sentencepiece": "0.2.2",
+  "protobuf": "7.35.1",
+  "av": "16.1.0",
+  "pandas": "2.3.3",
+  "onnxruntime": "1.31.1",
+  "tabpfn": "9.2.0",
+  "autogluonTabular": "1.6.3",
+  "h5py": "3.16.0",
+  "sacremoses": "0.2.0",
+  "timesfm": "3.0.2",
+  "tiktoken": "0.14.0",
+  "orynDepthNative": "0.1.0",
+  "opencvPythonHeadless": "4.13.0.92",
+  "addict": "2.4.0",
+  "omegaconf": "2.4.0",
+  "depthNativeWheel": {
+    "file": "oryn_depth_native-0.1.0-py3-none-any.whl",
+    "sha256": "3ce7a1db1ebcb8cb83b0b1812054f512b53f4aaf4711766a344c81b6ce0a7ed4"
+  },
+  "openClip": "3.3.0",
+  "ftfy": "6.3.1",
+  "librosa": "0.11.0",
+  "ctranslate2": "4.8.4"
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "task-profile",
+  "schemaVersion": 1,
+  "profileId": "audio-classification-v1.433f4764e1121aeeccd3ac57",
+  "contract": {
+    "id": "audio-classification-v1",
+    "revision": 1
+  },
+  "task": "audio-classification",
+  "inputModalities": [
+    "audio"
+  ],
+  "outputModalities": [
+    "structured"
+  ],
+  "inputSchemaRef": "taskInput.audio-classification-v1",
+  "resultSchemaRef": "taskResult.audio-classification-v1",
+  "features": {},
+  "parameters": {
+    "topK": {
+      "inputPointer": "/topK",
+      "valueSchema": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 20
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 5
+    }
+  },
+  "limits": {
+    "audioDurationSeconds": 12
+  },
+  "streamingChannels": [],
+  "extensions": {},
+  "provenance": "adapter-derived"
+}

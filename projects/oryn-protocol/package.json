@@ -1,0 +1,22 @@
+{
+  "name": "@ocno/oryn-protocol-workspace",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "pnpm sync:schema && pnpm --dir typescript build && uv build --project python",
+    "sync:schema": "node scripts/sync-sprint61-types.mjs && node scripts/sync-task-contracts.mjs && node scripts/sync-python-schema.mjs",
+    "test": "pnpm test:ts && pnpm test:python",
+    "test:ts": "pnpm --dir typescript test",
+    "test:python": "pnpm sync:schema && uv run --project python --extra dev pytest",
+    "typecheck": "pnpm --dir typescript typecheck",
+    "validate": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

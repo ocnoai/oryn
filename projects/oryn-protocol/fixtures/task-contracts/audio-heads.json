@@ -1,0 +1,105 @@
+{
+  "legacy": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "audio-classification-v1.e1e2869b8ddc81cf00ec97f2",
+    "contract": {
+      "id": "audio-classification-v1",
+      "revision": 1
+    },
+    "task": "audio-classification",
+    "inputModalities": [
+      "audio"
+    ],
+    "outputModalities": [
+      "structured"
+    ],
+    "inputSchemaRef": "taskInput.audio-classification-v1",
+    "resultSchemaRef": "taskResult.audio-classification-v1",
+    "features": {},
+    "parameters": {
+      "topK": {
+        "inputPointer": "/topK",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": 5
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  },
+  "multihead": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "audio-classification-v1.dc916b763137618d5b305e0f",
+    "contract": {
+      "id": "audio-classification-v1",
+      "revision": 1
+    },
+    "task": "audio-classification",
+    "inputModalities": [
+      "audio"
+    ],
+    "outputModalities": [
+      "structured"
+    ],
+    "inputSchemaRef": "taskInput.audio-classification-v1",
+    "resultSchemaRef": "taskResult.audio-classification-v1",
+    "features": {},
+    "parameters": {
+      "topK": {
+        "inputPointer": "/topK",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": 5
+      },
+      "classificationHead": {
+        "inputPointer": "/classificationHead",
+        "valueSchema": {
+          "allOf": [
+            {
+              "enum": [
+                "language",
+                "gender"
+              ]
+            },
+            {
+              "enum": [
+                "language",
+                "gender"
+              ]
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": "language"
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  }
+}

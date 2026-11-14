@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oryn Transcription Example</title>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">Oryn Local AI example</p>
+      <h1>Private transcription, on your computer</h1>
+      <p class="intro">
+        Turn an MP3 or WAV recording into text, including long interviews and meetings.
+        Your audio is decoded and transcribed locally on your computer.
+      </p>
+      <form id="transcription-form" class="card">
+        <label for="language">1. Recording language</label>
+        <select id="language" required disabled aria-describedby="language-hint">
+          <option value="">Choose a language…</option>
+        </select>
+        <p id="language-hint" class="hint">Choose the spoken language to see its transcription models.</p>
+        <div id="model-fields" class="form-step" hidden>
+          <label for="model">2. Transcription model</label>
+          <select id="model" required disabled aria-describedby="model-description"></select>
+          <p id="model-description" class="hint"></p>
+          <a id="model-source" class="model-source" target="_blank" rel="noopener noreferrer"></a>
+          <p class="hint">Oryn will request this model when you start transcription. It may need to download it first.</p>
+        </div>
+        <div id="recording-fields" class="form-step" hidden>
+          <label for="audio-file">3. MP3 or WAV recording</label>
+          <input id="audio-file" type="file" accept="audio/mpeg,audio/mp3,audio/wav,audio/x-wav,.mp3,.wav" required disabled />
+          <p class="hint">Supports recordings up to 4 hours and 1 GB, including a 1 hour 27 minute MP3.
+            Keep this tab open while transcription runs.</p>
+        </div>
+        <div class="actions">
+          <button id="transcribe" type="submit" disabled>Transcribe locally</button>
+          <button id="cancel" class="secondary" type="button" hidden>Cancel</button>
+        </div>
+      </form>
+      <section class="status-card" aria-live="polite">
+        <p id="status">Checking Oryn runtime…</p>
+        <progress id="progress" aria-label="Recording transcribed" hidden></progress>
+        <p id="details" class="details"></p>
+        <p id="elapsed" class="details" hidden></p>
+      </section>
+      <section class="result" aria-labelledby="result-title">
+        <div class="result-heading">
+          <h2 id="result-title">Transcript</h2>
+          <button id="download" class="secondary" type="button" disabled>Download text</button>
+        </div>
+        <p class="hint">Text appears as each section finishes. You can download completed text even if you cancel.</p>
+        <p id="transcript" class="transcript">Your transcript will appear here.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

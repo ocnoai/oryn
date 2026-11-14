@@ -1,0 +1,25 @@
+"""TF 4.46.3 complete synthetic BERT classifier; no original checkpoint."""
+import json
+from pathlib import Path
+import numpy as np
+import tensorflow as tf
+from transformers import BertConfig, TFBertForSequenceClassification
+root=Path(__file__).resolve().parent/'tiny';root.mkdir(exist_ok=True)
+config=BertConfig(vocab_size=32,hidden_size=32,intermediate_size=64,num_hidden_layers=2,
+ num_attention_heads=4,max_position_embeddings=128,type_vocab_size=2,
+ hidden_dropout_prob=0.0,attention_probs_dropout_prob=0.0,
+ id2label={0:'Neutral',1:'Positive',2:'Negative'},label2id={'Neutral':0,'Positive':1,'Negative':2})
+model=TFBertForSequenceClassification(config)
+inputs=dict(input_ids=np.array([[2,5,6,3],[2,7,3,0]],np.int32),
+ attention_mask=np.array([[1,1,1,1],[1,1,1,0]],np.int32),token_type_ids=np.zeros((2,4),np.int32))
+values={k:tf.constant(v) for k,v in inputs.items()};model(**values,training=False)
+rng=np.random.default_rng(6183)
+for variable in model.weights:
+ v=rng.normal(0,0.03,variable.shape).astype(np.float32)
+ if variable.name.endswith('gamma:0'):v+=1
+ variable.assign(v)
+result=model(**values,training=False)
+model.save_pretrained(root,safe_serialization=False)
+np.savez(root/'reference.npz',**inputs,logits=result.logits.numpy())
+(root/'weights.json').write_text(json.dumps([{'name':w.name,'shape':list(w.shape)} for w in model.weights],indent=2)+'\n')
+print(len(model.weights),'complete classifier arrays')

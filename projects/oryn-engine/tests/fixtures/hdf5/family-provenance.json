@@ -1,0 +1,23 @@
+{
+  "generator": "generate_family_reference.py.txt",
+  "originalWeightsDownloaded": 0,
+  "referenceEnvironment": {
+    "tensorflow": "2.20.0",
+    "transformers": "4.46.3",
+    "tf-keras": "2.20.0"
+  },
+  "sha256": {
+    "clip/config.json": "5d15f6e7a1e88e51aa23347da63290383d34d45f98e78099cd405b9a259f0ccb",
+    "clip/reference.npz": "f1d365a656ee21382bd1616f4a16d7d9741646d89b4b8888532fdb3d6573928a",
+    "clip/weights.json": "2a0373e730ddf9a09c46720493c40727b58bc9d6678d0182c59ea0b1c1eb7031",
+    "clip/tf_model.h5": "ca3905e62fc401d6d79bc80dea0c5af207ecd4e79d736fcb3f7c98a9070d3382",
+    "vit/config.json": "7425bcd2e00ec9e40cfe714119c8fc004602c61118b5bc6f88d3371e1639da7b",
+    "vit/reference.npz": "25f6f276d474adaf6476c34f7fc1d4f5185f9c7d40e74e9d44aad02b763863e7",
+    "vit/weights.json": "81c57caaebac9db9ca69bc0e62ca861fbd10786c90e644defd2129b4e3253a8e",
+    "vit/tf_model.h5": "df651ea21b09e98a26e86d94ffb4251dd56663720406d0095ba6c21333eea543",
+    "roberta/config.json": "2077483c4a448d9976a335098c70f52215f5344566be9df417fdac5514ec336e",
+    "roberta/reference.npz": "63c3740284aec011c7d56708e24783d444ec0227180206e6a5c43e3e3e27e094",
+    "roberta/weights.json": "165cc831ec193d5aac7e763dd7ebc3372397e8bf2aebbd1e90608c722b88c9f1",
+    "roberta/tf_model.h5": "73ce496ec0ec85d726ca037e7d0a1084b61a077fdfd5efc6ec4fcc684d3d154b"
+  }
+}

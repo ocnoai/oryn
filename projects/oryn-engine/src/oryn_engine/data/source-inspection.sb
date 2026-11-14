@@ -1,0 +1,18 @@
+(version 1)
+(deny default)
+; Fixed data-only parser, no model paths, writes, sockets, Mach services or GPU.
+(allow process-exec (literal (param "PYTHON")))
+(allow process-fork)
+(allow process-info* (target self))
+(allow file-map-executable (subpath (param "PYTHON_ROOT")) (subpath "/System/Library")
+  (subpath "/System/Volumes/Preboot/Cryptexes/OS/System/Library") (subpath "/usr/lib"))
+(allow sysctl-read)
+(allow file-read-metadata)
+; dyld's cache finder opens the root directory; this grants no descendant data.
+(allow file-read-data (literal "/"))
+(allow file-read* (subpath (param "PYTHON_ROOT")))
+(allow file-read* (literal (param "WORKER")))
+(allow file-read* (subpath "/System/Library")
+  (subpath "/System/Volumes/Preboot/Cryptexes/OS/System/Library")
+  (subpath "/usr/lib") (subpath "/private/var/db/dyld"))
+(allow file-read* (literal "/dev/null") (literal "/dev/urandom") (literal "/dev/random"))

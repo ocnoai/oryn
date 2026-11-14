@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_remove_1",
+  "method": "model.remove",
+  "params": {
+    "operationId": "remove_fixture_1",
+    "installationId": "install_fixture_1",
+    "mode": "fail-if-busy"
+  }
+}

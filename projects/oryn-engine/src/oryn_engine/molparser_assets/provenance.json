@@ -1,0 +1,91 @@
+{
+  "repository": "UniParser/MolParser-Mobile-V2",
+  "revision": "11d114da4b66d1a98843f94dd4e9b208ea10645d",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/README.md",
+      "bytes": 6284,
+      "sha256": "f12d8323289a4c78a25f83a892d2ddf20aca7ee59728988bcb37a40e3408489d"
+    },
+    {
+      "file": "config.json",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/config.json",
+      "bytes": 2724,
+      "sha256": "bb4b58b3b5e4e0db94af12569171b98737b0866c17aae2aad76ffe5f83e38e84"
+    },
+    {
+      "file": "generation_config.json",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/generation_config.json",
+      "bytes": 1011,
+      "sha256": "9d51ec7c3bde6ce383fe05dcf346aa047db11a8c37133f96a86ad80e0e8b582c"
+    },
+    {
+      "file": "image_processing_molparser_mobile.py",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/image_processing_molparser_mobile.py",
+      "bytes": 3572,
+      "sha256": "c64cbdc618c41f16a5c69d037697c112e8a44e969d3ad92f5605562069950b38"
+    },
+    {
+      "file": "modeling_molparser_mobile.py",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/modeling_molparser_mobile.py",
+      "bytes": 7801,
+      "sha256": "b95eb024613114b26968769964b37f2517277e4250d9e7e5fd61fdcf9b0bd065"
+    },
+    {
+      "file": "preprocessor_config.json",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/preprocessor_config.json",
+      "bytes": 377,
+      "sha256": "2a70bd084b5e8bcd8fe9e58f08e96ae53740b78c9b5d2af6881ee7a8b15e0db9"
+    },
+    {
+      "file": "processing_molparser_mobile.py",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/processing_molparser_mobile.py",
+      "bytes": 2767,
+      "sha256": "0109cde7457c78e8401c3b10f4670e7f71eb781d2f0202408cb1e4c111954d3d"
+    },
+    {
+      "file": "processor_config.json",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/processor_config.json",
+      "bytes": 176,
+      "sha256": "df03c932442eb3917cc486162895eb5fd789d9c93d933fce92301eb40fb876d3"
+    },
+    {
+      "file": "tokenization_molparser_mobile.py",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/tokenization_molparser_mobile.py",
+      "bytes": 7664,
+      "sha256": "ea33f3484caf2d8da6f67b959a324e71b78050d8a6b07d935b9ea7ab22bac6f3"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/tokenizer_config.json",
+      "bytes": 4602,
+      "sha256": "889fcbf784f1ea9eaef57f32758c972a4bebcaeab3bb2b57c2226e58c161ff83"
+    },
+    {
+      "file": "vocab.txt",
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/resolve/11d114da4b66d1a98843f94dd4e9b208ea10645d/vocab.txt",
+      "bytes": 1287,
+      "sha256": "891652d9889d68eaaa8b27d490c0a966108e9da5689e67a9473cf5304b3e88fb"
+    }
+  ],
+  "tensors": 311,
+  "headerBytes": 36792,
+  "headerRanges": [
+    {
+      "start": 0,
+      "end": 7,
+      "bytes": 8,
+      "sha256": "3646fdeccb81fee332519f48986def59f6c0296dd49d043e9be0d408bbecfb88"
+    },
+    {
+      "start": 8,
+      "end": 36791,
+      "bytes": 36784,
+      "sha256": "836ee111d88f39041d1c556362039b872d44a4f70e30fcfe0fd16b2cbdb9189a"
+    }
+  ],
+  "originalLearnedPayloadBytes": 0,
+  "purpose": "Closed metadata and vocabulary for owned native timm/BART binding. No repository code imported or copied.",
+  "declaredModelLicense": "cc-by-nc-sa-4.0"
+}

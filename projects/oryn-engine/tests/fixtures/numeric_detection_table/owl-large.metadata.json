@@ -1,0 +1,8982 @@
+{
+  "format": "torch-numeric-zip-v1",
+  "byteOrder": "little",
+  "tensors": {
+    "owlvit.logit_scale": {
+      "dtype": "F32",
+      "shape": [],
+      "storage": "0",
+      "offset": 0,
+      "stride": []
+    },
+    "owlvit.text_model.embeddings.position_ids": {
+      "dtype": "I64",
+      "shape": [
+        1,
+        16
+      ],
+      "storage": "1",
+      "offset": 0,
+      "stride": [
+        16,
+        1
+      ]
+    },
+    "owlvit.text_model.embeddings.token_embedding.weight": {
+      "dtype": "F32",
+      "shape": [
+        49408,
+        768
+      ],
+      "storage": "2",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.embeddings.position_embedding.weight": {
+      "dtype": "F32",
+      "shape": [
+        16,
+        768
+      ],
+      "storage": "3",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "4",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "5",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "4",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "5",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "4",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "5",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "6",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "7",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "8",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "9",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "10",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "11",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "12",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "13",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "14",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.0.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "15",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "16",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "17",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "16",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "17",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "16",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "17",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "18",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "19",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "20",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "21",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "22",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "23",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "24",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "25",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "26",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.1.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "27",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "28",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "29",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "28",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "29",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "28",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "29",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "30",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "31",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "32",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "33",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "34",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "35",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "36",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "37",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "38",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.2.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "39",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "40",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "41",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "40",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "41",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "40",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "41",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "42",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "43",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "44",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "45",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "46",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "47",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "48",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "49",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "50",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.3.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "51",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "52",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "53",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "52",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "53",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "52",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "53",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "54",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "55",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "56",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "57",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "58",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "59",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "60",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "61",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "62",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.4.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "63",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "64",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "65",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "64",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "65",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "64",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "65",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "66",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "67",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "68",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "69",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "70",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "71",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "72",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "73",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "74",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.5.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "75",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "76",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "77",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "76",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "77",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "76",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "77",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "78",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "79",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "80",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "81",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "82",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "83",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "84",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "85",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "86",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.6.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "87",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "88",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "89",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "88",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "89",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "88",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "89",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "90",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "91",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "92",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "93",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "94",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "95",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "96",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "97",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "98",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.7.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "99",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "100",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "101",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "100",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "101",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "100",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "101",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "102",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "103",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "104",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "105",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "106",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "107",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "108",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "109",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "110",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.8.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "111",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "112",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "113",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "112",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "113",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "112",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "113",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "114",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "115",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "116",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "117",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "118",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "119",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "120",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "121",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "122",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.9.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "123",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "124",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "125",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "124",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "125",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "124",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "125",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "126",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "127",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "128",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "129",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "130",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "131",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "132",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "133",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "134",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.10.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "135",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "136",
+      "offset": 589824,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "137",
+      "offset": 768,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "136",
+      "offset": 1179648,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "137",
+      "offset": 1536,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "136",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "137",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "138",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "139",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "140",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "141",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        3072,
+        768
+      ],
+      "storage": "142",
+      "offset": 0,
+      "stride": [
+        768,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        3072
+      ],
+      "storage": "143",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        3072
+      ],
+      "storage": "144",
+      "offset": 0,
+      "stride": [
+        3072,
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "145",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "146",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.encoder.layers.11.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "147",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.final_layer_norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "148",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.text_model.final_layer_norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "149",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.embeddings.class_embedding": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "150",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.embeddings.position_ids": {
+      "dtype": "I64",
+      "shape": [
+        1,
+        3601
+      ],
+      "storage": "151",
+      "offset": 0,
+      "stride": [
+        3601,
+        1
+      ]
+    },
+    "owlvit.vision_model.embeddings.patch_embedding.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        3,
+        14,
+        14
+      ],
+      "storage": "152",
+      "offset": 0,
+      "stride": [
+        588,
+        196,
+        14,
+        1
+      ]
+    },
+    "owlvit.vision_model.embeddings.position_embedding.weight": {
+      "dtype": "F32",
+      "shape": [
+        3601,
+        1024
+      ],
+      "storage": "153",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.pre_layernorm.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "154",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.pre_layernorm.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "155",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "156",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "157",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "156",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "157",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "156",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "157",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "158",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "159",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "160",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "161",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "162",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "163",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "164",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "165",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "166",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.0.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "167",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "168",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "169",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "168",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "169",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "168",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "169",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "170",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "171",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "172",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "173",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "174",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "175",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "176",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "177",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "178",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.1.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "179",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "180",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "181",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "180",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "181",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "180",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "181",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "182",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "183",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "184",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "185",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "186",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "187",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "188",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "189",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "190",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.2.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "191",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "192",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "193",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "192",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "193",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "192",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "193",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "194",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "195",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "196",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "197",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "198",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "199",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "200",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "201",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "202",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.3.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "203",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "204",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "205",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "204",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "205",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "204",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "205",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "206",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "207",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "208",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "209",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "210",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "211",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "212",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "213",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "214",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.4.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "215",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "216",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "217",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "216",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "217",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "216",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "217",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "218",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "219",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "220",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "221",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "222",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "223",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "224",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "225",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "226",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.5.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "227",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "228",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "229",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "228",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "229",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "228",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "229",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "230",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "231",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "232",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "233",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "234",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "235",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "236",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "237",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "238",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.6.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "239",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "240",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "241",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "240",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "241",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "240",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "241",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "242",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "243",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "244",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "245",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "246",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "247",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "248",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "249",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "250",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.7.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "251",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "252",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "253",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "252",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "253",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "252",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "253",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "254",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "255",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "256",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "257",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "258",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "259",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "260",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "261",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "262",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.8.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "263",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "264",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "265",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "264",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "265",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "264",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "265",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "266",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "267",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "268",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "269",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "270",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "271",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "272",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "273",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "274",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.9.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "275",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "276",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "277",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "276",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "277",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "276",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "277",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "278",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "279",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "280",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "281",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "282",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "283",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "284",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "285",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "286",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.10.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "287",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "288",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "289",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "288",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "289",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "288",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "289",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "290",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "291",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "292",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "293",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "294",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "295",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "296",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "297",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "298",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.11.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "299",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "300",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "301",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "300",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "301",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "300",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "301",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "302",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "303",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "304",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "305",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "306",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "307",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "308",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "309",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "310",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.12.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "311",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "312",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "313",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "312",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "313",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "312",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "313",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "314",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "315",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "316",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "317",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "318",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "319",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "320",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "321",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "322",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.13.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "323",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "324",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "325",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "324",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "325",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "324",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "325",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "326",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "327",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "328",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "329",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "330",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "331",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "332",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "333",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "334",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.14.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "335",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "336",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "337",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "336",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "337",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "336",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "337",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "338",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "339",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "340",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "341",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "342",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "343",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "344",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "345",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "346",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.15.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "347",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "348",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "349",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "348",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "349",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "348",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "349",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "350",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "351",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "352",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "353",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "354",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "355",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "356",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "357",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "358",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.16.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "359",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "360",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "361",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "360",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "361",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "360",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "361",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "362",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "363",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "364",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "365",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "366",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "367",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "368",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "369",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "370",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.17.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "371",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "372",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "373",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "372",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "373",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "372",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "373",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "374",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "375",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "376",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "377",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "378",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "379",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "380",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "381",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "382",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.18.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "383",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "384",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "385",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "384",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "385",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "384",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "385",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "386",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "387",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "388",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "389",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "390",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "391",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "392",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "393",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "394",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.19.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "395",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "396",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "397",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "396",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "397",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "396",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "397",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "398",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "399",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "400",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "401",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "402",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "403",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "404",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "405",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "406",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.20.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "407",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "408",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "409",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "408",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "409",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "408",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "409",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "410",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "411",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "412",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "413",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "414",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "415",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "416",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "417",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "418",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.21.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "419",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "420",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "421",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "420",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "421",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "420",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "421",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "422",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "423",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "424",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "425",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "426",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "427",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "428",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "429",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "430",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.22.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "431",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.k_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "432",
+      "offset": 1048576,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.k_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "433",
+      "offset": 1024,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.v_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "432",
+      "offset": 2097152,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.v_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "433",
+      "offset": 2048,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.q_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "432",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.q_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "433",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.out_proj.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "434",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.self_attn.out_proj.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "435",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.layer_norm1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "436",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.layer_norm1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "437",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.mlp.fc1.weight": {
+      "dtype": "F32",
+      "shape": [
+        4096,
+        1024
+      ],
+      "storage": "438",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.mlp.fc1.bias": {
+      "dtype": "F32",
+      "shape": [
+        4096
+      ],
+      "storage": "439",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.mlp.fc2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        4096
+      ],
+      "storage": "440",
+      "offset": 0,
+      "stride": [
+        4096,
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.mlp.fc2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "441",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.layer_norm2.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "442",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.encoder.layers.23.layer_norm2.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "443",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.post_layernorm.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "444",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.vision_model.post_layernorm.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "445",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "owlvit.visual_projection.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        1024
+      ],
+      "storage": "446",
+      "offset": 0,
+      "stride": [
+        1,
+        768
+      ]
+    },
+    "owlvit.text_projection.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        768
+      ],
+      "storage": "447",
+      "offset": 0,
+      "stride": [
+        1,
+        768
+      ]
+    },
+    "class_head.dense0.weight": {
+      "dtype": "F32",
+      "shape": [
+        768,
+        1024
+      ],
+      "storage": "448",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "class_head.dense0.bias": {
+      "dtype": "F32",
+      "shape": [
+        768
+      ],
+      "storage": "449",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "class_head.logit_shift.weight": {
+      "dtype": "F32",
+      "shape": [
+        1,
+        1024
+      ],
+      "storage": "450",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "class_head.logit_shift.bias": {
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "storage": "451",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "class_head.logit_scale.weight": {
+      "dtype": "F32",
+      "shape": [
+        1,
+        1024
+      ],
+      "storage": "452",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "class_head.logit_scale.bias": {
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "storage": "453",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "box_head.dense0.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "454",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "box_head.dense0.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "455",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "box_head.dense1.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024,
+        1024
+      ],
+      "storage": "456",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "box_head.dense1.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "457",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "box_head.dense2.weight": {
+      "dtype": "F32",
+      "shape": [
+        4,
+        1024
+      ],
+      "storage": "458",
+      "offset": 0,
+      "stride": [
+        1024,
+        1
+      ]
+    },
+    "box_head.dense2.bias": {
+      "dtype": "F32",
+      "shape": [
+        4
+      ],
+      "storage": "459",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "layer_norm.weight": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "460",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    },
+    "layer_norm.bias": {
+      "dtype": "F32",
+      "shape": [
+        1024
+      ],
+      "storage": "461",
+      "offset": 0,
+      "stride": [
+        1
+      ]
+    }
+  },
+  "storages": {
+    "0": {
+      "sizeBytes": 4,
+      "crc32": 1679178686
+    },
+    "1": {
+      "sizeBytes": 128,
+      "crc32": 2537420579
+    },
+    "10": {
+      "sizeBytes": 9437184,
+      "crc32": 126845649
+    },
+    "100": {
+      "sizeBytes": 7077888,
+      "crc32": 1476754672
+    },
+    "101": {
+      "sizeBytes": 9216,
+      "crc32": 2930804694
+    },
+    "102": {
+      "sizeBytes": 2359296,
+      "crc32": 3024698463
+    },
+    "103": {
+      "sizeBytes": 3072,
+      "crc32": 1096947953
+    },
+    "104": {
+      "sizeBytes": 3072,
+      "crc32": 3542315000
+    },
+    "105": {
+      "sizeBytes": 3072,
+      "crc32": 508663561
+    },
+    "106": {
+      "sizeBytes": 9437184,
+      "crc32": 2011441528
+    },
+    "107": {
+      "sizeBytes": 12288,
+      "crc32": 4271042040
+    },
+    "108": {
+      "sizeBytes": 9437184,
+      "crc32": 982186047
+    },
+    "109": {
+      "sizeBytes": 3072,
+      "crc32": 1307873820
+    },
+    "11": {
+      "sizeBytes": 12288,
+      "crc32": 2184824002
+    },
+    "110": {
+      "sizeBytes": 3072,
+      "crc32": 3160512995
+    },
+    "111": {
+      "sizeBytes": 3072,
+      "crc32": 3778703702
+    },
+    "112": {
+      "sizeBytes": 7077888,
+      "crc32": 759525681
+    },
+    "113": {
+      "sizeBytes": 9216,
+      "crc32": 424162388
+    },
+    "114": {
+      "sizeBytes": 2359296,
+      "crc32": 3144059292
+    },
+    "115": {
+      "sizeBytes": 3072,
+      "crc32": 2283115619
+    },
+    "116": {
+      "sizeBytes": 3072,
+      "crc32": 4028580946
+    },
+    "117": {
+      "sizeBytes": 3072,
+      "crc32": 3237094771
+    },
+    "118": {
+      "sizeBytes": 9437184,
+      "crc32": 1697801897
+    },
+    "119": {
+      "sizeBytes": 12288,
+      "crc32": 3923039020
+    },
+    "12": {
+      "sizeBytes": 9437184,
+      "crc32": 3771043106
+    },
+    "120": {
+      "sizeBytes": 9437184,
+      "crc32": 2534460240
+    },
+    "121": {
+      "sizeBytes": 3072,
+      "crc32": 1597433755
+    },
+    "122": {
+      "sizeBytes": 3072,
+      "crc32": 3505333802
+    },
+    "123": {
+      "sizeBytes": 3072,
+      "crc32": 4116726326
+    },
+    "124": {
+      "sizeBytes": 7077888,
+      "crc32": 850190792
+    },
+    "125": {
+      "sizeBytes": 9216,
+      "crc32": 46628502
+    },
+    "126": {
+      "sizeBytes": 2359296,
+      "crc32": 2299429803
+    },
+    "127": {
+      "sizeBytes": 3072,
+      "crc32": 1751543524
+    },
+    "128": {
+      "sizeBytes": 3072,
+      "crc32": 484016680
+    },
+    "129": {
+      "sizeBytes": 3072,
+      "crc32": 120628391
+    },
+    "13": {
+      "sizeBytes": 3072,
+      "crc32": 1131205040
+    },
+    "130": {
+      "sizeBytes": 9437184,
+      "crc32": 548100935
+    },
+    "131": {
+      "sizeBytes": 12288,
+      "crc32": 2419046815
+    },
+    "132": {
+      "sizeBytes": 9437184,
+      "crc32": 2606624666
+    },
+    "133": {
+      "sizeBytes": 3072,
+      "crc32": 274957316
+    },
+    "134": {
+      "sizeBytes": 3072,
+      "crc32": 2139942676
+    },
+    "135": {
+      "sizeBytes": 3072,
+      "crc32": 3956973546
+    },
+    "136": {
+      "sizeBytes": 7077888,
+      "crc32": 2986219350
+    },
+    "137": {
+      "sizeBytes": 9216,
+      "crc32": 4130645363
+    },
+    "138": {
+      "sizeBytes": 2359296,
+      "crc32": 2557336141
+    },
+    "139": {
+      "sizeBytes": 3072,
+      "crc32": 1915438414
+    },
+    "14": {
+      "sizeBytes": 3072,
+      "crc32": 2119757877
+    },
+    "140": {
+      "sizeBytes": 3072,
+      "crc32": 3685706548
+    },
+    "141": {
+      "sizeBytes": 3072,
+      "crc32": 3700115110
+    },
+    "142": {
+      "sizeBytes": 9437184,
+      "crc32": 949047024
+    },
+    "143": {
+      "sizeBytes": 12288,
+      "crc32": 1175843324
+    },
+    "144": {
+      "sizeBytes": 9437184,
+      "crc32": 1595165524
+    },
+    "145": {
+      "sizeBytes": 3072,
+      "crc32": 202971645
+    },
+    "146": {
+      "sizeBytes": 3072,
+      "crc32": 2516316883
+    },
+    "147": {
+      "sizeBytes": 3072,
+      "crc32": 2525292980
+    },
+    "148": {
+      "sizeBytes": 3072,
+      "crc32": 2268723730
+    },
+    "149": {
+      "sizeBytes": 3072,
+      "crc32": 1121203119
+    },
+    "15": {
+      "sizeBytes": 3072,
+      "crc32": 1273674458
+    },
+    "150": {
+      "sizeBytes": 4096,
+      "crc32": 3782382994
+    },
+    "151": {
+      "sizeBytes": 28808,
+      "crc32": 1999788673
+    },
+    "152": {
+      "sizeBytes": 2408448,
+      "crc32": 2414915857
+    },
+    "153": {
+      "sizeBytes": 14749696,
+      "crc32": 662764491
+    },
+    "154": {
+      "sizeBytes": 4096,
+      "crc32": 2251925047
+    },
+    "155": {
+      "sizeBytes": 4096,
+      "crc32": 3399038048
+    },
+    "156": {
+      "sizeBytes": 12582912,
+      "crc32": 3152665256
+    },
+    "157": {
+      "sizeBytes": 12288,
+      "crc32": 1910368279
+    },
+    "158": {
+      "sizeBytes": 4194304,
+      "crc32": 4036061967
+    },
+    "159": {
+      "sizeBytes": 4096,
+      "crc32": 3038617379
+    },
+    "16": {
+      "sizeBytes": 7077888,
+      "crc32": 3689954763
+    },
+    "160": {
+      "sizeBytes": 4096,
+      "crc32": 1880194713
+    },
+    "161": {
+      "sizeBytes": 4096,
+      "crc32": 2334217650
+    },
+    "162": {
+      "sizeBytes": 16777216,
+      "crc32": 1486282158
+    },
+    "163": {
+      "sizeBytes": 16384,
+      "crc32": 1663575226
+    },
+    "164": {
+      "sizeBytes": 16777216,
+      "crc32": 3084883731
+    },
+    "165": {
+      "sizeBytes": 4096,
+      "crc32": 1084621424
+    },
+    "166": {
+      "sizeBytes": 4096,
+      "crc32": 1343357042
+    },
+    "167": {
+      "sizeBytes": 4096,
+      "crc32": 3714123102
+    },
+    "168": {
+      "sizeBytes": 12582912,
+      "crc32": 2745362422
+    },
+    "169": {
+      "sizeBytes": 12288,
+      "crc32": 2437583882
+    },
+    "17": {
+      "sizeBytes": 9216,
+      "crc32": 674992000
+    },
+    "170": {
+      "sizeBytes": 4194304,
+      "crc32": 1353403834
+    },
+    "171": {
+      "sizeBytes": 4096,
+      "crc32": 2048581122
+    },
+    "172": {
+      "sizeBytes": 4096,
+      "crc32": 470478020
+    },
+    "173": {
+      "sizeBytes": 4096,
+      "crc32": 1664452095
+    },
+    "174": {
+      "sizeBytes": 16777216,
+      "crc32": 3799461387
+    },
+    "175": {
+      "sizeBytes": 16384,
+      "crc32": 3571700878
+    },
+    "176": {
+      "sizeBytes": 16777216,
+      "crc32": 4202263828
+    },
+    "177": {
+      "sizeBytes": 4096,
+      "crc32": 4053161189
+    },
+    "178": {
+      "sizeBytes": 4096,
+      "crc32": 459558580
+    },
+    "179": {
+      "sizeBytes": 4096,
+      "crc32": 1269994867
+    },
+    "18": {
+      "sizeBytes": 2359296,
+      "crc32": 3941495741
+    },
+    "180": {
+      "sizeBytes": 12582912,
+      "crc32": 2040529910
+    },
+    "181": {
+      "sizeBytes": 12288,
+      "crc32": 3246597406
+    },
+    "182": {
+      "sizeBytes": 4194304,
+      "crc32": 2721772107
+    },
+    "183": {
+      "sizeBytes": 4096,
+      "crc32": 3075571791
+    },
+    "184": {
+      "sizeBytes": 4096,
+      "crc32": 3827585894
+    },
+    "185": {
+      "sizeBytes": 4096,
+      "crc32": 1303831924
+    },
+    "186": {
+      "sizeBytes": 16777216,
+      "crc32": 3757563500
+    },
+    "187": {
+      "sizeBytes": 16384,
+      "crc32": 1946977671
+    },
+    "188": {
+      "sizeBytes": 16777216,
+      "crc32": 1545102220
+    },
+    "189": {
+      "sizeBytes": 4096,
+      "crc32": 2795863205
+    },
+    "19": {
+      "sizeBytes": 3072,
+      "crc32": 3863207795
+    },
+    "190": {
+      "sizeBytes": 4096,
+      "crc32": 845772319
+    },
+    "191": {
+      "sizeBytes": 4096,
+      "crc32": 1775253974
+    },
+    "192": {
+      "sizeBytes": 12582912,
+      "crc32": 2159429180
+    },
+    "193": {
+      "sizeBytes": 12288,
+      "crc32": 3608568584
+    },
+    "194": {
+      "sizeBytes": 4194304,
+      "crc32": 4027999054
+    },
+    "195": {
+      "sizeBytes": 4096,
+      "crc32": 3590137362
+    },
+    "196": {
+      "sizeBytes": 4096,
+      "crc32": 4162913264
+    },
+    "197": {
+      "sizeBytes": 4096,
+      "crc32": 2108407111
+    },
+    "198": {
+      "sizeBytes": 16777216,
+      "crc32": 3860822860
+    },
+    "199": {
+      "sizeBytes": 16384,
+      "crc32": 2134683661
+    },
+    "2": {
+      "sizeBytes": 151781376,
+      "crc32": 1063940114
+    },
+    "20": {
+      "sizeBytes": 3072,
+      "crc32": 4203594636
+    },
+    "200": {
+      "sizeBytes": 16777216,
+      "crc32": 1821287565
+    },
+    "201": {
+      "sizeBytes": 4096,
+      "crc32": 1118729593
+    },
+    "202": {
+      "sizeBytes": 4096,
+      "crc32": 2593305339
+    },
+    "203": {
+      "sizeBytes": 4096,
+      "crc32": 1636870421
+    },
+    "204": {
+      "sizeBytes": 12582912,
+      "crc32": 2923968372
+    },
+    "205": {
+      "sizeBytes": 12288,
+      "crc32": 3536158179
+    },
+    "206": {
+      "sizeBytes": 4194304,
+      "crc32": 2142695255
+    },
+    "207": {
+      "sizeBytes": 4096,
+      "crc32": 541302616
+    },
+    "208": {
+      "sizeBytes": 4096,
+      "crc32": 479407064
+    },
+    "209": {
+      "sizeBytes": 4096,
+      "crc32": 3501100274
+    },
+    "21": {
+      "sizeBytes": 3072,
+      "crc32": 502159085
+    },
+    "210": {
+      "sizeBytes": 16777216,
+      "crc32": 187194447
+    },
+    "211": {
+      "sizeBytes": 16384,
+      "crc32": 2988865495
+    },
+    "212": {
+      "sizeBytes": 16777216,
+      "crc32": 3497528446
+    },
+    "213": {
+      "sizeBytes": 4096,
+      "crc32": 864550064
+    },
+    "214": {
+      "sizeBytes": 4096,
+      "crc32": 4123315528
+    },
+    "215": {
+      "sizeBytes": 4096,
+      "crc32": 2019021019
+    },
+    "216": {
+      "sizeBytes": 12582912,
+      "crc32": 826939470
+    },
+    "217": {
+      "sizeBytes": 12288,
+      "crc32": 475398063
+    },
+    "218": {
+      "sizeBytes": 4194304,
+      "crc32": 2518415655
+    },
+    "219": {
+      "sizeBytes": 4096,
+      "crc32": 2453411534
+    },
+    "22": {
+      "sizeBytes": 9437184,
+      "crc32": 1891604080
+    },
+    "220": {
+      "sizeBytes": 4096,
+      "crc32": 2180356392
+    },
+    "221": {
+      "sizeBytes": 4096,
+      "crc32": 3670022192
+    },
+    "222": {
+      "sizeBytes": 16777216,
+      "crc32": 82090208
+    },
+    "223": {
+      "sizeBytes": 16384,
+      "crc32": 3319360533
+    },
+    "224": {
+      "sizeBytes": 16777216,
+      "crc32": 2358821419
+    },
+    "225": {
+      "sizeBytes": 4096,
+      "crc32": 2091546442
+    },
+    "226": {
+      "sizeBytes": 4096,
+      "crc32": 266387307
+    },
+    "227": {
+      "sizeBytes": 4096,
+      "crc32": 1533523834
+    },
+    "228": {
+      "sizeBytes": 12582912,
+      "crc32": 3782696071
+    },
+    "229": {
+      "sizeBytes": 12288,
+      "crc32": 3607884700
+    },
+    "23": {
+      "sizeBytes": 12288,
+      "crc32": 2388520758
+    },
+    "230": {
+      "sizeBytes": 4194304,
+      "crc32": 2422964529
+    },
+    "231": {
+      "sizeBytes": 4096,
+      "crc32": 924386322
+    },
+    "232": {
+      "sizeBytes": 4096,
+      "crc32": 393219708
+    },
+    "233": {
+      "sizeBytes": 4096,
+      "crc32": 1892270989
+    },
+    "234": {
+      "sizeBytes": 16777216,
+      "crc32": 3281230447
+    },
+    "235": {
+      "sizeBytes": 16384,
+      "crc32": 2915573640
+    },
+    "236": {
+      "sizeBytes": 16777216,
+      "crc32": 2313947509
+    },
+    "237": {
+      "sizeBytes": 4096,
+      "crc32": 844087118
+    },
+    "238": {
+      "sizeBytes": 4096,
+      "crc32": 2705072026
+    },
+    "239": {
+      "sizeBytes": 4096,
+      "crc32": 4018798803
+    },
+    "24": {
+      "sizeBytes": 9437184,
+      "crc32": 1801972380
+    },
+    "240": {
+      "sizeBytes": 12582912,
+      "crc32": 1863380757
+    },
+    "241": {
+      "sizeBytes": 12288,
+      "crc32": 3791238701
+    },
+    "242": {
+      "sizeBytes": 4194304,
+      "crc32": 2763058185
+    },
+    "243": {
+      "sizeBytes": 4096,
+      "crc32": 3424802255
+    },
+    "244": {
+      "sizeBytes": 4096,
+      "crc32": 3380015196
+    },
+    "245": {
+      "sizeBytes": 4096,
+      "crc32": 2044101258
+    },
+    "246": {
+      "sizeBytes": 16777216,
+      "crc32": 1271298942
+    },
+    "247": {
+      "sizeBytes": 16384,
+      "crc32": 2014285318
+    },
+    "248": {
+      "sizeBytes": 16777216,
+      "crc32": 241677121
+    },
+    "249": {
+      "sizeBytes": 4096,
+      "crc32": 2266366393
+    },
+    "25": {
+      "sizeBytes": 3072,
+      "crc32": 843879493
+    },
+    "250": {
+      "sizeBytes": 4096,
+      "crc32": 1434017713
+    },
+    "251": {
+      "sizeBytes": 4096,
+      "crc32": 1579120638
+    },
+    "252": {
+      "sizeBytes": 12582912,
+      "crc32": 4181160518
+    },
+    "253": {
+      "sizeBytes": 12288,
+      "crc32": 173318288
+    },
+    "254": {
+      "sizeBytes": 4194304,
+      "crc32": 2274574214
+    },
+    "255": {
+      "sizeBytes": 4096,
+      "crc32": 1263620529
+    },
+    "256": {
+      "sizeBytes": 4096,
+      "crc32": 1555066746
+    },
+    "257": {
+      "sizeBytes": 4096,
+      "crc32": 3171455987
+    },
+    "258": {
+      "sizeBytes": 16777216,
+      "crc32": 3262771490
+    },
+    "259": {
+      "sizeBytes": 16384,
+      "crc32": 2643128300
+    },
+    "26": {
+      "sizeBytes": 3072,
+      "crc32": 1858639862
+    },
+    "260": {
+      "sizeBytes": 16777216,
+      "crc32": 2127216438
+    },
+    "261": {
+      "sizeBytes": 4096,
+      "crc32": 3752962948
+    },
+    "262": {
+      "sizeBytes": 4096,
+      "crc32": 1185617170
+    },
+    "263": {
+      "sizeBytes": 4096,
+      "crc32": 2840642728
+    },
+    "264": {
+      "sizeBytes": 12582912,
+      "crc32": 519830232
+    },
+    "265": {
+      "sizeBytes": 12288,
+      "crc32": 3352413877
+    },
+    "266": {
+      "sizeBytes": 4194304,
+      "crc32": 1494256795
+    },
+    "267": {
+      "sizeBytes": 4096,
+      "crc32": 99133582
+    },
+    "268": {
+      "sizeBytes": 4096,
+      "crc32": 3854602584
+    },
+    "269": {
+      "sizeBytes": 4096,
+      "crc32": 863317162
+    },
+    "27": {
+      "sizeBytes": 3072,
+      "crc32": 2086837712
+    },
+    "270": {
+      "sizeBytes": 16777216,
+      "crc32": 3185134876
+    },
+    "271": {
+      "sizeBytes": 16384,
+      "crc32": 3229071214
+    },
+    "272": {
+      "sizeBytes": 16777216,
+      "crc32": 2414946663
+    },
+    "273": {
+      "sizeBytes": 4096,
+      "crc32": 739407015
+    },
+    "274": {
+      "sizeBytes": 4096,
+      "crc32": 3251325474
+    },
+    "275": {
+      "sizeBytes": 4096,
+      "crc32": 235074775
+    },
+    "276": {
+      "sizeBytes": 12582912,
+      "crc32": 3833435740
+    },
+    "277": {
+      "sizeBytes": 12288,
+      "crc32": 2655204920
+    },
+    "278": {
+      "sizeBytes": 4194304,
+      "crc32": 3392566148
+    },
+    "279": {
+      "sizeBytes": 4096,
+      "crc32": 890352113
+    },
+    "28": {
+      "sizeBytes": 7077888,
+      "crc32": 914865437
+    },
+    "280": {
+      "sizeBytes": 4096,
+      "crc32": 3195733014
+    },
+    "281": {
+      "sizeBytes": 4096,
+      "crc32": 4101182846
+    },
+    "282": {
+      "sizeBytes": 16777216,
+      "crc32": 4242307534
+    },
+    "283": {
+      "sizeBytes": 16384,
+      "crc32": 457719317
+    },
+    "284": {
+      "sizeBytes": 16777216,
+      "crc32": 1715561919
+    },
+    "285": {
+      "sizeBytes": 4096,
+      "crc32": 2266247542
+    },
+    "286": {
+      "sizeBytes": 4096,
+      "crc32": 375118439
+    },
+    "287": {
+      "sizeBytes": 4096,
+      "crc32": 2272162397
+    },
+    "288": {
+      "sizeBytes": 12582912,
+      "crc32": 4101731990
+    },
+    "289": {
+      "sizeBytes": 12288,
+      "crc32": 3790138861
+    },
+    "29": {
+      "sizeBytes": 9216,
+      "crc32": 4281118929
+    },
+    "290": {
+      "sizeBytes": 4194304,
+      "crc32": 3673779610
+    },
+    "291": {
+      "sizeBytes": 4096,
+      "crc32": 3868106499
+    },
+    "292": {
+      "sizeBytes": 4096,
+      "crc32": 1046744022
+    },
+    "293": {
+      "sizeBytes": 4096,
+      "crc32": 3783371407
+    },
+    "294": {
+      "sizeBytes": 16777216,
+      "crc32": 3097243392
+    },
+    "295": {
+      "sizeBytes": 16384,
+      "crc32": 3833270896
+    },
+    "296": {
+      "sizeBytes": 16777216,
+      "crc32": 101682644
+    },
+    "297": {
+      "sizeBytes": 4096,
+      "crc32": 541261913
+    },
+    "298": {
+      "sizeBytes": 4096,
+      "crc32": 1725909724
+    },
+    "299": {
+      "sizeBytes": 4096,
+      "crc32": 1180519999
+    },
+    "3": {
+      "sizeBytes": 49152,
+      "crc32": 1545834360
+    },
+    "30": {
+      "sizeBytes": 2359296,
+      "crc32": 236408417
+    },
+    "300": {
+      "sizeBytes": 12582912,
+      "crc32": 1660964922
+    },
+    "301": {
+      "sizeBytes": 12288,
+      "crc32": 2624089147
+    },
+    "302": {
+      "sizeBytes": 4194304,
+      "crc32": 2887583909
+    },
+    "303": {
+      "sizeBytes": 4096,
+      "crc32": 1558167217
+    },
+    "304": {
+      "sizeBytes": 4096,
+      "crc32": 1596108447
+    },
+    "305": {
+      "sizeBytes": 4096,
+      "crc32": 3865065104
+    },
+    "306": {
+      "sizeBytes": 16777216,
+      "crc32": 1620069591
+    },
+    "307": {
+      "sizeBytes": 16384,
+      "crc32": 1491991440
+    },
+    "308": {
+      "sizeBytes": 16777216,
+      "crc32": 4092784325
+    },
+    "309": {
+      "sizeBytes": 4096,
+      "crc32": 897498758
+    },
+    "31": {
+      "sizeBytes": 3072,
+      "crc32": 3125570729
+    },
+    "310": {
+      "sizeBytes": 4096,
+      "crc32": 3840584667
+    },
+    "311": {
+      "sizeBytes": 4096,
+      "crc32": 3089746684
+    },
+    "312": {
+      "sizeBytes": 12582912,
+      "crc32": 2138339226
+    },
+    "313": {
+      "sizeBytes": 12288,
+      "crc32": 3195699381
+    },
+    "314": {
+      "sizeBytes": 4194304,
+      "crc32": 932518290
+    },
+    "315": {
+      "sizeBytes": 4096,
+      "crc32": 1504384298
+    },
+    "316": {
+      "sizeBytes": 4096,
+      "crc32": 3630989794
+    },
+    "317": {
+      "sizeBytes": 4096,
+      "crc32": 1742259463
+    },
+    "318": {
+      "sizeBytes": 16777216,
+      "crc32": 634522427
+    },
+    "319": {
+      "sizeBytes": 16384,
+      "crc32": 2814524093
+    },
+    "32": {
+      "sizeBytes": 3072,
+      "crc32": 4071787333
+    },
+    "320": {
+      "sizeBytes": 16777216,
+      "crc32": 643123237
+    },
+    "321": {
+      "sizeBytes": 4096,
+      "crc32": 3326802598
+    },
+    "322": {
+      "sizeBytes": 4096,
+      "crc32": 392085059
+    },
+    "323": {
+      "sizeBytes": 4096,
+      "crc32": 2072109168
+    },
+    "324": {
+      "sizeBytes": 12582912,
+      "crc32": 1145697317
+    },
+    "325": {
+      "sizeBytes": 12288,
+      "crc32": 1812549123
+    },
+    "326": {
+      "sizeBytes": 4194304,
+      "crc32": 2964149506
+    },
+    "327": {
+      "sizeBytes": 4096,
+      "crc32": 1786355478
+    },
+    "328": {
+      "sizeBytes": 4096,
+      "crc32": 322165836
+    },
+    "329": {
+      "sizeBytes": 4096,
+      "crc32": 2155564857
+    },
+    "33": {
+      "sizeBytes": 3072,
+      "crc32": 502486839
+    },
+    "330": {
+      "sizeBytes": 16777216,
+      "crc32": 726487843
+    },
+    "331": {
+      "sizeBytes": 16384,
+      "crc32": 3961504681
+    },
+    "332": {
+      "sizeBytes": 16777216,
+      "crc32": 949902574
+    },
+    "333": {
+      "sizeBytes": 4096,
+      "crc32": 3563260035
+    },
+    "334": {
+      "sizeBytes": 4096,
+      "crc32": 3824061771
+    },
+    "335": {
+      "sizeBytes": 4096,
+      "crc32": 3816857347
+    },
+    "336": {
+      "sizeBytes": 12582912,
+      "crc32": 450588865
+    },
+    "337": {
+      "sizeBytes": 12288,
+      "crc32": 246940552
+    },
+    "338": {
+      "sizeBytes": 4194304,
+      "crc32": 2006506962
+    },
+    "339": {
+      "sizeBytes": 4096,
+      "crc32": 3011827639
+    },
+    "34": {
+      "sizeBytes": 9437184,
+      "crc32": 3493756717
+    },
+    "340": {
+      "sizeBytes": 4096,
+      "crc32": 600734863
+    },
+    "341": {
+      "sizeBytes": 4096,
+      "crc32": 3748676906
+    },
+    "342": {
+      "sizeBytes": 16777216,
+      "crc32": 1249901156
+    },
+    "343": {
+      "sizeBytes": 16384,
+      "crc32": 3253132707
+    },
+    "344": {
+      "sizeBytes": 16777216,
+      "crc32": 3191159838
+    },
+    "345": {
+      "sizeBytes": 4096,
+      "crc32": 3654928601
+    },
+    "346": {
+      "sizeBytes": 4096,
+      "crc32": 982611465
+    },
+    "347": {
+      "sizeBytes": 4096,
+      "crc32": 3618226038
+    },
+    "348": {
+      "sizeBytes": 12582912,
+      "crc32": 2293015556
+    },
+    "349": {
+      "sizeBytes": 12288,
+      "crc32": 1249280976
+    },
+    "35": {
+      "sizeBytes": 12288,
+      "crc32": 3021585500
+    },
+    "350": {
+      "sizeBytes": 4194304,
+      "crc32": 4220532494
+    },
+    "351": {
+      "sizeBytes": 4096,
+      "crc32": 589544470
+    },
+    "352": {
+      "sizeBytes": 4096,
+      "crc32": 2917272377
+    },
+    "353": {
+      "sizeBytes": 4096,
+      "crc32": 119098801
+    },
+    "354": {
+      "sizeBytes": 16777216,
+      "crc32": 2104691809
+    },
+    "355": {
+      "sizeBytes": 16384,
+      "crc32": 2467390630
+    },
+    "356": {
+      "sizeBytes": 16777216,
+      "crc32": 4189120522
+    },
+    "357": {
+      "sizeBytes": 4096,
+      "crc32": 3657123067
+    },
+    "358": {
+      "sizeBytes": 4096,
+      "crc32": 1709108155
+    },
+    "359": {
+      "sizeBytes": 4096,
+      "crc32": 1982261526
+    },
+    "36": {
+      "sizeBytes": 9437184,
+      "crc32": 1114279833
+    },
+    "360": {
+      "sizeBytes": 12582912,
+      "crc32": 337613758
+    },
+    "361": {
+      "sizeBytes": 12288,
+      "crc32": 698308055
+    },
+    "362": {
+      "sizeBytes": 4194304,
+      "crc32": 1909632385
+    },
+    "363": {
+      "sizeBytes": 4096,
+      "crc32": 2763237862
+    },
+    "364": {
+      "sizeBytes": 4096,
+      "crc32": 2921773156
+    },
+    "365": {
+      "sizeBytes": 4096,
+      "crc32": 4025164562
+    },
+    "366": {
+      "sizeBytes": 16777216,
+      "crc32": 3827591957
+    },
+    "367": {
+      "sizeBytes": 16384,
+      "crc32": 2343663926
+    },
+    "368": {
+      "sizeBytes": 16777216,
+      "crc32": 1887609918
+    },
+    "369": {
+      "sizeBytes": 4096,
+      "crc32": 2935684585
+    },
+    "37": {
+      "sizeBytes": 3072,
+      "crc32": 3595414840
+    },
+    "370": {
+      "sizeBytes": 4096,
+      "crc32": 3162831133
+    },
+    "371": {
+      "sizeBytes": 4096,
+      "crc32": 228321192
+    },
+    "372": {
+      "sizeBytes": 12582912,
+      "crc32": 3997042057
+    },
+    "373": {
+      "sizeBytes": 12288,
+      "crc32": 3039140063
+    },
+    "374": {
+      "sizeBytes": 4194304,
+      "crc32": 3486526891
+    },
+    "375": {
+      "sizeBytes": 4096,
+      "crc32": 219661862
+    },
+    "376": {
+      "sizeBytes": 4096,
+      "crc32": 4119374402
+    },
+    "377": {
+      "sizeBytes": 4096,
+      "crc32": 2562012867
+    },
+    "378": {
+      "sizeBytes": 16777216,
+      "crc32": 576562641
+    },
+    "379": {
+      "sizeBytes": 16384,
+      "crc32": 3033296351
+    },
+    "38": {
+      "sizeBytes": 3072,
+      "crc32": 1634045055
+    },
+    "380": {
+      "sizeBytes": 16777216,
+      "crc32": 4013827586
+    },
+    "381": {
+      "sizeBytes": 4096,
+      "crc32": 1102368961
+    },
+    "382": {
+      "sizeBytes": 4096,
+      "crc32": 208816235
+    },
+    "383": {
+      "sizeBytes": 4096,
+      "crc32": 2747295135
+    },
+    "384": {
+      "sizeBytes": 12582912,
+      "crc32": 3413551782
+    },
+    "385": {
+      "sizeBytes": 12288,
+      "crc32": 2584674728
+    },
+    "386": {
+      "sizeBytes": 4194304,
+      "crc32": 1808429304
+    },
+    "387": {
+      "sizeBytes": 4096,
+      "crc32": 2064335576
+    },
+    "388": {
+      "sizeBytes": 4096,
+      "crc32": 2608845875
+    },
+    "389": {
+      "sizeBytes": 4096,
+      "crc32": 936185054
+    },
+    "39": {
+      "sizeBytes": 3072,
+      "crc32": 47695354
+    },
+    "390": {
+      "sizeBytes": 16777216,
+      "crc32": 1979413312
+    },
+    "391": {
+      "sizeBytes": 16384,
+      "crc32": 3880659780
+    },
+    "392": {
+      "sizeBytes": 16777216,
+      "crc32": 2910242297
+    },
+    "393": {
+      "sizeBytes": 4096,
+      "crc32": 1504077945
+    },
+    "394": {
+      "sizeBytes": 4096,
+      "crc32": 1506959191
+    },
+    "395": {
+      "sizeBytes": 4096,
+      "crc32": 2708180882
+    },
+    "396": {
+      "sizeBytes": 12582912,
+      "crc32": 468479315
+    },
+    "397": {
+      "sizeBytes": 12288,
+      "crc32": 3926788632
+    },
+    "398": {
+      "sizeBytes": 4194304,
+      "crc32": 4213207522
+    },
+    "399": {
+      "sizeBytes": 4096,
+      "crc32": 871917311
+    },
+    "4": {
+      "sizeBytes": 7077888,
+      "crc32": 1807788804
+    },
+    "40": {
+      "sizeBytes": 7077888,
+      "crc32": 3374900361
+    },
+    "400": {
+      "sizeBytes": 4096,
+      "crc32": 2554213785
+    },
+    "401": {
+      "sizeBytes": 4096,
+      "crc32": 1822550304
+    },
+    "402": {
+      "sizeBytes": 16777216,
+      "crc32": 3692451235
+    },
+    "403": {
+      "sizeBytes": 16384,
+      "crc32": 348942436
+    },
+    "404": {
+      "sizeBytes": 16777216,
+      "crc32": 1052002832
+    },
+    "405": {
+      "sizeBytes": 4096,
+      "crc32": 1979309319
+    },
+    "406": {
+      "sizeBytes": 4096,
+      "crc32": 626400147
+    },
+    "407": {
+      "sizeBytes": 4096,
+      "crc32": 220214815
+    },
+    "408": {
+      "sizeBytes": 12582912,
+      "crc32": 3091663275
+    },
+    "409": {
+      "sizeBytes": 12288,
+      "crc32": 3895618523
+    },
+    "41": {
+      "sizeBytes": 9216,
+      "crc32": 1347738431
+    },
+    "410": {
+      "sizeBytes": 4194304,
+      "crc32": 591678766
+    },
+    "411": {
+      "sizeBytes": 4096,
+      "crc32": 4233756989
+    },
+    "412": {
+      "sizeBytes": 4096,
+      "crc32": 1012116762
+    },
+    "413": {
+      "sizeBytes": 4096,
+      "crc32": 240624708
+    },
+    "414": {
+      "sizeBytes": 16777216,
+      "crc32": 1711371330
+    },
+    "415": {
+      "sizeBytes": 16384,
+      "crc32": 1065874981
+    },
+    "416": {
+      "sizeBytes": 16777216,
+      "crc32": 4003850438
+    },
+    "417": {
+      "sizeBytes": 4096,
+      "crc32": 1738802235
+    },
+    "418": {
+      "sizeBytes": 4096,
+      "crc32": 2560704224
+    },
+    "419": {
+      "sizeBytes": 4096,
+      "crc32": 737351105
+    },
+    "42": {
+      "sizeBytes": 2359296,
+      "crc32": 3978661745
+    },
+    "420": {
+      "sizeBytes": 12582912,
+      "crc32": 1928755634
+    },
+    "421": {
+      "sizeBytes": 12288,
+      "crc32": 1164280503
+    },
+    "422": {
+      "sizeBytes": 4194304,
+      "crc32": 3025856156
+    },
+    "423": {
+      "sizeBytes": 4096,
+      "crc32": 4268373879
+    },
+    "424": {
+      "sizeBytes": 4096,
+      "crc32": 1559255579
+    },
+    "425": {
+      "sizeBytes": 4096,
+      "crc32": 100362398
+    },
+    "426": {
+      "sizeBytes": 16777216,
+      "crc32": 1972652186
+    },
+    "427": {
+      "sizeBytes": 16384,
+      "crc32": 1833773036
+    },
+    "428": {
+      "sizeBytes": 16777216,
+      "crc32": 1845139342
+    },
+    "429": {
+      "sizeBytes": 4096,
+      "crc32": 3023464993
+    },
+    "43": {
+      "sizeBytes": 3072,
+      "crc32": 3592306196
+    },
+    "430": {
+      "sizeBytes": 4096,
+      "crc32": 438038921
+    },
+    "431": {
+      "sizeBytes": 4096,
+      "crc32": 2689424865
+    },
+    "432": {
+      "sizeBytes": 12582912,
+      "crc32": 2164577349
+    },
+    "433": {
+      "sizeBytes": 12288,
+      "crc32": 953943818
+    },
+    "434": {
+      "sizeBytes": 4194304,
+      "crc32": 1931446998
+    },
+    "435": {
+      "sizeBytes": 4096,
+      "crc32": 3115714426
+    },
+    "436": {
+      "sizeBytes": 4096,
+      "crc32": 1463173766
+    },
+    "437": {
+      "sizeBytes": 4096,
+      "crc32": 778748255
+    },
+    "438": {
+      "sizeBytes": 16777216,
+      "crc32": 1047316694
+    },
+    "439": {
+      "sizeBytes": 16384,
+      "crc32": 2334411584
+    },
+    "44": {
+      "sizeBytes": 3072,
+      "crc32": 1318472587
+    },
+    "440": {
+      "sizeBytes": 16777216,
+      "crc32": 638124556
+    },
+    "441": {
+      "sizeBytes": 4096,
+      "crc32": 1772232115
+    },
+    "442": {
+      "sizeBytes": 4096,
+      "crc32": 413276308
+    },
+    "443": {
+      "sizeBytes": 4096,
+      "crc32": 2299346531
+    },
+    "444": {
+      "sizeBytes": 4096,
+      "crc32": 31778855
+    },
+    "445": {
+      "sizeBytes": 4096,
+      "crc32": 3649269859
+    },
+    "446": {
+      "sizeBytes": 3145728,
+      "crc32": 3431327776
+    },
+    "447": {
+      "sizeBytes": 2359296,
+      "crc32": 4226354911
+    },
+    "448": {
+      "sizeBytes": 3145728,
+      "crc32": 2627996549
+    },
+    "449": {
+      "sizeBytes": 3072,
+      "crc32": 249070681
+    },
+    "45": {
+      "sizeBytes": 3072,
+      "crc32": 2593869486
+    },
+    "450": {
+      "sizeBytes": 4096,
+      "crc32": 64668864
+    },
+    "451": {
+      "sizeBytes": 4,
+      "crc32": 3417810770
+    },
+    "452": {
+      "sizeBytes": 4096,
+      "crc32": 3952456231
+    },
+    "453": {
+      "sizeBytes": 4,
+      "crc32": 3941248625
+    },
+    "454": {
+      "sizeBytes": 4194304,
+      "crc32": 3647167395
+    },
+    "455": {
+      "sizeBytes": 4096,
+      "crc32": 1116174099
+    },
+    "456": {
+      "sizeBytes": 4194304,
+      "crc32": 955324124
+    },
+    "457": {
+      "sizeBytes": 4096,
+      "crc32": 1057705386
+    },
+    "458": {
+      "sizeBytes": 16384,
+      "crc32": 2618029540
+    },
+    "459": {
+      "sizeBytes": 16,
+      "crc32": 2885703452
+    },
+    "46": {
+      "sizeBytes": 9437184,
+      "crc32": 606349025
+    },
+    "460": {
+      "sizeBytes": 4096,
+      "crc32": 4293935067
+    },
+    "461": {
+      "sizeBytes": 4096,
+      "crc32": 3924937941
+    },
+    "47": {
+      "sizeBytes": 12288,
+      "crc32": 974011272
+    },
+    "48": {
+      "sizeBytes": 9437184,
+      "crc32": 3915716899
+    },
+    "49": {
+      "sizeBytes": 3072,
+      "crc32": 3477791124
+    },
+    "5": {
+      "sizeBytes": 9216,
+      "crc32": 2009982672
+    },
+    "50": {
+      "sizeBytes": 3072,
+      "crc32": 2211556977
+    },
+    "51": {
+      "sizeBytes": 3072,
+      "crc32": 1027272955
+    },
+    "52": {
+      "sizeBytes": 7077888,
+      "crc32": 2668130456
+    },
+    "53": {
+      "sizeBytes": 9216,
+      "crc32": 3923534812
+    },
+    "54": {
+      "sizeBytes": 2359296,
+      "crc32": 1970187316
+    },
+    "55": {
+      "sizeBytes": 3072,
+      "crc32": 1055850224
+    },
+    "56": {
+      "sizeBytes": 3072,
+      "crc32": 2418957129
+    },
+    "57": {
+      "sizeBytes": 3072,
+      "crc32": 443168778
+    },
+    "58": {
+      "sizeBytes": 9437184,
+      "crc32": 2353179713
+    },
+    "59": {
+      "sizeBytes": 12288,
+      "crc32": 410489552
+    },
+    "6": {
+      "sizeBytes": 2359296,
+      "crc32": 2789926456
+    },
+    "60": {
+      "sizeBytes": 9437184,
+      "crc32": 1140127202
+    },
+    "61": {
+      "sizeBytes": 3072,
+      "crc32": 2287543967
+    },
+    "62": {
+      "sizeBytes": 3072,
+      "crc32": 3957216078
+    },
+    "63": {
+      "sizeBytes": 3072,
+      "crc32": 1748397885
+    },
+    "64": {
+      "sizeBytes": 7077888,
+      "crc32": 3046803358
+    },
+    "65": {
+      "sizeBytes": 9216,
+      "crc32": 4021324979
+    },
+    "66": {
+      "sizeBytes": 2359296,
+      "crc32": 1560098840
+    },
+    "67": {
+      "sizeBytes": 3072,
+      "crc32": 1064795707
+    },
+    "68": {
+      "sizeBytes": 3072,
+      "crc32": 3315525632
+    },
+    "69": {
+      "sizeBytes": 3072,
+      "crc32": 731693812
+    },
+    "7": {
+      "sizeBytes": 3072,
+      "crc32": 3794866900
+    },
+    "70": {
+      "sizeBytes": 9437184,
+      "crc32": 2231199531
+    },
+    "71": {
+      "sizeBytes": 12288,
+      "crc32": 2746216272
+    },
+    "72": {
+      "sizeBytes": 9437184,
+      "crc32": 2409594140
+    },
+    "73": {
+      "sizeBytes": 3072,
+      "crc32": 104433639
+    },
+    "74": {
+      "sizeBytes": 3072,
+      "crc32": 348654955
+    },
+    "75": {
+      "sizeBytes": 3072,
+      "crc32": 2909914634
+    },
+    "76": {
+      "sizeBytes": 7077888,
+      "crc32": 2317987272
+    },
+    "77": {
+      "sizeBytes": 9216,
+      "crc32": 587045020
+    },
+    "78": {
+      "sizeBytes": 2359296,
+      "crc32": 4002794756
+    },
+    "79": {
+      "sizeBytes": 3072,
+      "crc32": 2907946776
+    },
+    "8": {
+      "sizeBytes": 3072,
+      "crc32": 3703666183
+    },
+    "80": {
+      "sizeBytes": 3072,
+      "crc32": 3875602763
+    },
+    "81": {
+      "sizeBytes": 3072,
+      "crc32": 3839658224
+    },
+    "82": {
+      "sizeBytes": 9437184,
+      "crc32": 761974590
+    },
+    "83": {
+      "sizeBytes": 12288,
+      "crc32": 1608388043
+    },
+    "84": {
+      "sizeBytes": 9437184,
+      "crc32": 597584039
+    },
+    "85": {
+      "sizeBytes": 3072,
+      "crc32": 1566540903
+    },
+    "86": {
+      "sizeBytes": 3072,
+      "crc32": 229779875
+    },
+    "87": {
+      "sizeBytes": 3072,
+      "crc32": 2555453890
+    },
+    "88": {
+      "sizeBytes": 7077888,
+      "crc32": 2364006796
+    },
+    "89": {
+      "sizeBytes": 9216,
+      "crc32": 1302688111
+    },
+    "9": {
+      "sizeBytes": 3072,
+      "crc32": 1076049257
+    },
+    "90": {
+      "sizeBytes": 2359296,
+      "crc32": 50697353
+    },
+    "91": {
+      "sizeBytes": 3072,
+      "crc32": 415703895
+    },
+    "92": {
+      "sizeBytes": 3072,
+      "crc32": 1610029700
+    },
+    "93": {
+      "sizeBytes": 3072,
+      "crc32": 2727992048
+    },
+    "94": {
+      "sizeBytes": 9437184,
+      "crc32": 4285525330
+    },
+    "95": {
+      "sizeBytes": 12288,
+      "crc32": 1307778939
+    },
+    "96": {
+      "sizeBytes": 9437184,
+      "crc32": 1716354418
+    },
+    "97": {
+      "sizeBytes": 3072,
+      "crc32": 1435611574
+    },
+    "98": {
+      "sizeBytes": 3072,
+      "crc32": 3199395772
+    },
+    "99": {
+      "sizeBytes": 3072,
+      "crc32": 878200864
+    }
+  }
+}

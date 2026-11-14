@@ -1,0 +1,265 @@
+[
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/attention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._0/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/attention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/encoder/layer_._1/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/embeddings/word_embeddings/weight:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/embeddings/token_type_embeddings/embeddings:0",
+    "shape": [
+      1,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/embeddings/position_embeddings/embeddings:0",
+    "shape": [
+      34,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/embeddings/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/roberta/embeddings/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/classifier/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/classifier/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/classifier/out_proj/kernel:0",
+    "shape": [
+      32,
+      3
+    ]
+  },
+  {
+    "name": "tf_roberta_for_sequence_classification/classifier/out_proj/bias:0",
+    "shape": [
+      3
+    ]
+  }
+]

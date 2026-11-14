@@ -1,0 +1,344 @@
+{
+  "repository": "Qwen/Qwen-Image-2.1-Turbo",
+  "revision": "fc13ba1986fcb905854dc8de2f52eee395f49b5b",
+  "modelIndex": {
+    "_class_name": "QwenImage21Pipeline",
+    "_diffusers_version": "0.41.0.dev0",
+    "processor": [
+      "transformers",
+      "Qwen3VLProcessor"
+    ],
+    "scheduler": [
+      "diffusers",
+      "FlowMatchEulerDiscreteScheduler"
+    ],
+    "text_encoder": [
+      "transformers",
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "transformer": [
+      "diffusers",
+      "QwenImage21Transformer2DModel"
+    ],
+    "vae": [
+      "diffusers",
+      "AutoencoderKLQwenImage21"
+    ],
+    "sample_sigmas": [
+      1.0,
+      0.978453,
+      0.95418,
+      0.926626,
+      0.89508,
+      0.845148,
+      0.704534,
+      0.414568
+    ]
+  },
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 2463
+    },
+    {
+      "name": "LICENSE",
+      "size": 7831
+    },
+    {
+      "name": "README.md",
+      "size": 15116
+    },
+    {
+      "name": "assets/edit-preview.png",
+      "size": 867046
+    },
+    {
+      "name": "assets/t2i-preview.png",
+      "size": 850319
+    },
+    {
+      "name": "assets/turbo-ballet.png",
+      "size": 4509235
+    },
+    {
+      "name": "assets/turbo-boat-input.png",
+      "size": 1878998
+    },
+    {
+      "name": "assets/turbo-composition-input-grid.png",
+      "size": 726912
+    },
+    {
+      "name": "assets/turbo-composition.png",
+      "size": 4153287
+    },
+    {
+      "name": "assets/turbo-figure-input-1.png",
+      "size": 550642
+    },
+    {
+      "name": "assets/turbo-figure.png",
+      "size": 4477801
+    },
+    {
+      "name": "assets/turbo-interior-input-grid.png",
+      "size": 847488
+    },
+    {
+      "name": "assets/turbo-interior.png",
+      "size": 4486660
+    },
+    {
+      "name": "assets/turbo-portrait.png",
+      "size": 6273797
+    },
+    {
+      "name": "assets/turbo-poster.png",
+      "size": 5771548
+    },
+    {
+      "name": "assets/turbo-rgba.png",
+      "size": 2615160
+    },
+    {
+      "name": "assets/turbo-ui.png",
+      "size": 3693778
+    },
+    {
+      "name": "model_index.json",
+      "size": 578
+    },
+    {
+      "name": "processor/chat_template.jinja",
+      "size": 5292
+    },
+    {
+      "name": "processor/processor_config.json",
+      "size": 1300
+    },
+    {
+      "name": "processor/tokenizer.json",
+      "size": 11422650
+    },
+    {
+      "name": "processor/tokenizer_config.json",
+      "size": 705
+    },
+    {
+      "name": "scheduler/scheduler_config.json",
+      "size": 486
+    },
+    {
+      "name": "text_encoder/config.json",
+      "size": 1542
+    },
+    {
+      "name": "text_encoder/generation_config.json",
+      "size": 241
+    },
+    {
+      "name": "text_encoder/model.safetensors",
+      "size": 17534340584
+    },
+    {
+      "name": "transformer/config.json",
+      "size": 370
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "size": 9968332504
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "size": 4261951904
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "size": 30283
+    },
+    {
+      "name": "vae/config.json",
+      "size": 2172
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.safetensors",
+      "size": 675508656
+    }
+  ],
+  "processor": {
+    "image_processor": {
+      "data_format": "channels_first",
+      "do_convert_rgb": true,
+      "do_normalize": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessorFast",
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "merge_size": 2,
+      "patch_size": 16,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "longest_edge": 16777216,
+        "shortest_edge": 65536
+      },
+      "temporal_patch_size": 2
+    },
+    "processor_class": "Qwen3VLProcessor",
+    "video_processor": {
+      "data_format": "channels_first",
+      "default_to_square": true,
+      "do_convert_rgb": true,
+      "do_normalize": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "do_sample_frames": true,
+      "fps": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "max_frames": 768,
+      "merge_size": 2,
+      "min_frames": 4,
+      "patch_size": 16,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "return_metadata": false,
+      "size": {
+        "longest_edge": 25165824,
+        "shortest_edge": 4096
+      },
+      "temporal_patch_size": 2,
+      "video_processor_type": "Qwen3VLVideoProcessor"
+    }
+  },
+  "scheduler": {
+    "_class_name": "FlowMatchEulerDiscreteScheduler",
+    "_diffusers_version": "0.41.0.dev0",
+    "base_image_seq_len": 256,
+    "base_shift": 0.5,
+    "invert_sigmas": false,
+    "max_image_seq_len": 8192,
+    "max_shift": 0.9,
+    "num_train_timesteps": 1000,
+    "shift": 1.0,
+    "shift_terminal": null,
+    "stochastic_sampling": false,
+    "time_shift_type": "exponential",
+    "use_beta_sigmas": false,
+    "use_dynamic_shifting": false,
+    "use_exponential_sigmas": false,
+    "use_karras_sigmas": false
+  },
+  "textEncoder": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "dtype": "bfloat16",
+    "image_token_id": 151655,
+    "model_type": "qwen3_vl",
+    "text_config": {
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "dtype": "bfloat16",
+      "eos_token_id": 151645,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "hidden_size": 4096,
+      "initializer_range": 0.02,
+      "intermediate_size": 12288,
+      "max_position_embeddings": 262144,
+      "model_type": "qwen3_vl_text",
+      "num_attention_heads": 32,
+      "num_hidden_layers": 36,
+      "num_key_value_heads": 8,
+      "pad_token_id": null,
+      "rms_norm_eps": 1e-06,
+      "use_cache": true,
+      "vocab_size": 151936,
+      "rope_theta": 5000000,
+      "rope_scaling": {
+        "mrope_interleaved": true,
+        "mrope_section": [
+          24,
+          20,
+          20
+        ],
+        "rope_type": "default"
+      }
+    },
+    "tie_word_embeddings": false,
+    "transformers_version": "5.3.0",
+    "video_token_id": 151656,
+    "vision_config": {
+      "deepstack_visual_indexes": [
+        8,
+        16,
+        24
+      ],
+      "depth": 27,
+      "dtype": "bfloat16",
+      "hidden_act": "gelu_pytorch_tanh",
+      "hidden_size": 1152,
+      "in_channels": 3,
+      "initializer_range": 0.02,
+      "intermediate_size": 4304,
+      "model_type": "qwen3_vl",
+      "num_heads": 16,
+      "num_position_embeddings": 2304,
+      "out_hidden_size": 4096,
+      "patch_size": 16,
+      "spatial_merge_size": 2,
+      "temporal_patch_size": 2
+    },
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652
+  },
+  "tokenizer": {
+    "add_prefix_space": false,
+    "backend": "tokenizers",
+    "bos_token": null,
+    "clean_up_tokenization_spaces": false,
+    "eos_token": "<|im_end|>",
+    "errors": "replace",
+    "extra_special_tokens": [
+      "<|im_start|>",
+      "<|im_end|>",
+      "<|object_ref_start|>",
+      "<|object_ref_end|>",
+      "<|box_start|>",
+      "<|box_end|>",
+      "<|quad_start|>",
+      "<|quad_end|>",
+      "<|vision_start|>",
+      "<|vision_end|>",
+      "<|vision_pad|>",
+      "<|image_pad|>",
+      "<|video_pad|>"
+    ],
+    "is_local": true,
+    "model_max_length": 262144,
+    "pad_token": "<|endoftext|>",
+    "processor_class": "Qwen3VLProcessor",
+    "split_special_tokens": false,
+    "tokenizer_class": "Qwen2Tokenizer",
+    "unk_token": null
+  }
+}

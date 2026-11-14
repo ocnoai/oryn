@@ -1,0 +1,586 @@
+/*
+ * Oryn by OCNO
+ * Oryn Browser — Theme Tokens
+ *
+ * RULES
+ * 1. Browser-owned components consume these semantic tokens.
+ * 2. Components must not hard-code literal colors, spacing, radii, shadows,
+ *    motion durations, or control heights.
+ * 3. Brand colors and semantic status colors are intentionally separate.
+ * 4. A complete future theme should be swappable without changing component logic.
+ */
+
+/* ========================================================================== */
+/* 1. Global design primitives                                                */
+/* ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-family-ui:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --font-size-2xs: 0.6875rem; /* 11px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.8125rem; /* 13px */
+  --font-size-md: 0.875rem; /* 14px */
+  --font-size-lg: 1rem; /* 16px */
+  --font-size-xl: 1.125rem; /* 18px */
+  --font-size-2xl: 1.25rem; /* 20px */
+  --font-size-3xl: 1.5rem; /* 24px */
+  --font-size-4xl: 1.875rem; /* 30px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-compact: 1.2;
+  --line-height-normal: 1.45;
+  --line-height-relaxed: 1.65;
+
+  /* Spacing scale */
+  --space-0: 0;
+  --space-0-5: 0.125rem; /* 2px */
+  --space-1: 0.25rem; /* 4px */
+  --space-1-5: 0.375rem; /* 6px */
+  --space-2: 0.5rem; /* 8px */
+  --space-2-5: 0.625rem; /* 10px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+
+  /* Radius */
+  --radius-none: 0;
+  --radius-xs: 0.25rem; /* 4px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.625rem; /* 10px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-full: 9999px;
+
+  /* Motion */
+  --motion-duration-instant: 80ms;
+  --motion-duration-fast: 120ms;
+  --motion-duration-normal: 180ms;
+  --motion-duration-slow: 240ms;
+  --motion-duration-emphasis: 320ms;
+
+  --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --motion-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Control geometry */
+  --control-height-xs: 1.5rem; /* 24px */
+  --control-height-sm: 1.75rem; /* 28px */
+  --control-height-md: 2rem; /* 32px */
+  --control-height-lg: 2.25rem; /* 36px */
+  --control-height-xl: 2.5rem; /* 40px */
+
+  --icon-size-xs: 0.75rem;
+  --icon-size-sm: 1rem;
+  --icon-size-md: 1.125rem;
+  --icon-size-lg: 1.25rem;
+  --icon-size-xl: 1.5rem;
+
+  /* Browser geometry */
+  --browser-tab-height: 2.25rem;
+  --browser-toolbar-height: 2.75rem;
+  --browser-bookmarks-height: 2rem;
+  --browser-panel-height: 24.25rem;
+  --browser-sheet-width: 27rem;
+  --browser-sheet-width-wide: 34rem;
+  --local-ai-panel-width: 26rem;
+  --local-ai-panel-min-width: 20rem;
+  --local-ai-panel-max-width: 34rem;
+  --dialog-width-sm: 24rem;
+  --dialog-width-md: 30rem;
+  --dialog-width-lg: 38rem;
+
+  /* Layering */
+  --z-page: 0;
+  --z-browser-chrome: 100;
+  --z-popover: 400;
+  --z-dialog: 600;
+  --z-tooltip: 800;
+  --z-critical: 1000;
+}
+
+/* ========================================================================== */
+/* 2. Shared brand primitives                                                 */
+/* ========================================================================== */
+
+:root {
+  /* Primary brand: indigo */
+  --brand-primary-50: #f2f2ff;
+  --brand-primary-100: #e8e8ff;
+  --brand-primary-200: #d3d3ff;
+  --brand-primary-300: #b5b6ff;
+  --brand-primary-400: #9193f8;
+  --brand-primary-500: #7375eb;
+  --brand-primary-600: #5b5ce2;
+  --brand-primary-700: #4c4dd0;
+  --brand-primary-800: #4142b8;
+  --brand-primary-900: #38399a;
+
+  /* Secondary brand: graphite */
+  --brand-secondary-50: #f8fafc;
+  --brand-secondary-100: #f1f5f9;
+  --brand-secondary-200: #e2e8f0;
+  --brand-secondary-300: #cbd5e1;
+  --brand-secondary-400: #94a3b8;
+  --brand-secondary-500: #64748b;
+  --brand-secondary-600: #475569;
+  --brand-secondary-700: #334155;
+  --brand-secondary-800: #1e293b;
+  --brand-secondary-900: #0f172a;
+
+  /* New-tab demo artwork: decorative category accents, not status colors. */
+  --color-new-tab-music: light-dark(#94502e, #e4a580);
+  --color-new-tab-transcription: light-dark(#237770, #6bc7b9);
+  --color-new-tab-image: light-dark(#376db4, #8fb1f5);
+  --color-new-tab-subtitles: light-dark(#92597d, #dca6cb);
+  /* Fixed backdrops match the captured app interfaces in either browser theme. */
+  --color-new-tab-preview-canvas: #15161c;
+  --color-new-tab-chat-preview-canvas: #f5f6fb;
+}
+
+/* ========================================================================== */
+/* 3. Light theme                                                             */
+/* ========================================================================== */
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  /* Backgrounds / surfaces */
+  --color-background-canvas: #f7f8fa;
+  --color-background-browser-chrome: #f4f5f7;
+  --color-background-subtle: #f2f4f7;
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #fafafa;
+  --color-surface-elevated: #ffffff;
+  --color-surface-inverse: #111318;
+  --color-surface-scrim: rgb(17 19 24 / 36%);
+  --color-surface-scrim-soft: rgb(17 19 24 / 16%);
+
+  /* Text */
+  --color-text-primary: #111318;
+  --color-text-secondary: #475467;
+  --color-text-muted: #667085;
+  --color-text-subtle: #98a2b3;
+  --color-text-disabled: #b4bbc6;
+  --color-text-inverse: #ffffff;
+  --color-text-link: var(--brand-primary-700);
+  --color-text-link-hover: var(--brand-primary-800);
+
+  /* Borders / separators */
+  --color-border-subtle: #eef0f3;
+  --color-border-default: #e4e7ec;
+  --color-border-strong: #d0d5dd;
+  --color-border-emphasis: #b9c0cb;
+
+  /* Brand semantics */
+  --color-brand-primary: var(--brand-primary-600);
+  --color-brand-primary-hover: var(--brand-primary-700);
+  --color-brand-primary-active: var(--brand-primary-800);
+  --color-brand-primary-subtle: var(--brand-primary-50);
+  --color-brand-primary-soft: var(--brand-primary-100);
+  --color-brand-primary-on: #ffffff;
+
+  --color-brand-secondary: var(--brand-secondary-500);
+  --color-brand-secondary-hover: var(--brand-secondary-600);
+  --color-brand-secondary-active: var(--brand-secondary-700);
+  --color-brand-secondary-subtle: var(--brand-secondary-50);
+  --color-brand-secondary-soft: var(--brand-secondary-100);
+  --color-brand-secondary-on: #ffffff;
+
+  /* Semantic status colors — separate from brand identity */
+  --color-success: #22a06b;
+  --color-success-hover: #1a895a;
+  --color-success-subtle: #ecfdf3;
+  --color-success-border: #abefc6;
+  --color-success-on: #ffffff;
+
+  --color-warning: #d97706;
+  --color-warning-hover: #b95f05;
+  --color-warning-subtle: #fffaeb;
+  --color-warning-border: #fedf89;
+  --color-warning-on: #3d2600;
+
+  --color-danger: #d92d20;
+  --color-danger-hover: #b42318;
+  --color-danger-active: #912018;
+  --color-danger-subtle: #fef3f2;
+  --color-danger-border: #fecdca;
+  --color-danger-on: #ffffff;
+
+  --color-info: #2e90fa;
+  --color-info-hover: #1570ef;
+  --color-info-subtle: #eff8ff;
+  --color-info-border: #b2ddff;
+  --color-info-on: #ffffff;
+
+  /* Interaction states */
+  --color-state-hover: rgb(17 19 24 / 5%);
+  --color-state-pressed: rgb(17 19 24 / 9%);
+  --color-state-selected: var(--brand-primary-50);
+  --color-state-selected-strong: var(--brand-primary-100);
+  --color-state-disabled: #f2f4f7;
+  --color-focus-ring: rgb(91 92 226 / 38%);
+  --color-selection: rgb(91 92 226 / 20%);
+
+  /* AI activity visualization */
+  --color-ai-running: var(--color-brand-primary);
+  --color-ai-progress: var(--color-brand-secondary);
+  --color-ai-idle: var(--color-text-subtle);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgb(16 24 40 / 5%);
+  --shadow-sm: 0 1px 3px rgb(16 24 40 / 8%), 0 1px 2px rgb(16 24 40 / 5%);
+  --shadow-md: 0 4px 10px rgb(16 24 40 / 10%), 0 2px 4px rgb(16 24 40 / 5%);
+  --shadow-lg: 0 10px 24px rgb(16 24 40 / 14%), 0 4px 8px rgb(16 24 40 / 6%);
+  --shadow-xl: 0 20px 44px rgb(16 24 40 / 18%), 0 8px 16px rgb(16 24 40 / 8%);
+  --shadow-panel: -8px 12px 40px rgb(16 24 40 / 18%), 0 2px 8px rgb(16 24 40 / 7%);
+  --shadow-brand-sm: 0 2px 7px rgb(76 77 208 / 24%);
+  --shadow-brand-md: 0 4px 13px rgb(76 77 208 / 30%);
+
+  /* Browser chrome semantics */
+  --color-browser-tab-active: var(--color-surface-primary);
+  --color-browser-tab-inactive: transparent;
+  --color-browser-tab-hover: var(--color-state-hover);
+  --color-browser-omnibox: var(--color-surface-primary);
+  --color-browser-bookmarks-bar: var(--color-background-browser-chrome);
+}
+
+/* ========================================================================== */
+/* 4. Dark theme                                                              */
+/* ========================================================================== */
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-background-canvas: #111318;
+  --color-background-browser-chrome: #15181e;
+  --color-background-subtle: #171a20;
+  --color-surface-primary: #191c22;
+  --color-surface-secondary: #1d2027;
+  --color-surface-elevated: #22262e;
+  --color-surface-inverse: #f5f7fa;
+  --color-surface-scrim: rgb(0 0 0 / 56%);
+  --color-surface-scrim-soft: rgb(0 0 0 / 28%);
+
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #c8ced8;
+  --color-text-muted: #a7afbd;
+  --color-text-subtle: #7d8796;
+  --color-text-disabled: #626b78;
+  --color-text-inverse: #111318;
+  --color-text-link: #a8afff;
+  --color-text-link-hover: #c2c6ff;
+
+  --color-border-subtle: #282d35;
+  --color-border-default: #303641;
+  --color-border-strong: #414956;
+  --color-border-emphasis: #56606f;
+
+  --color-brand-primary: #818cf8;
+  --color-brand-primary-hover: #9aa2ff;
+  --color-brand-primary-active: #b0b6ff;
+  --color-brand-primary-subtle: #25264a;
+  --color-brand-primary-soft: #303263;
+  --color-brand-primary-on: #0f1124;
+
+  --color-brand-secondary: var(--brand-secondary-400);
+  --color-brand-secondary-hover: var(--brand-secondary-300);
+  --color-brand-secondary-active: var(--brand-secondary-200);
+  --color-brand-secondary-subtle: var(--brand-secondary-800);
+  --color-brand-secondary-soft: var(--brand-secondary-700);
+  --color-brand-secondary-on: var(--brand-secondary-900);
+
+  --color-success: #47d18c;
+  --color-success-hover: #6bdfa4;
+  --color-success-subtle: #123326;
+  --color-success-border: #236847;
+  --color-success-on: #071a12;
+
+  --color-warning: #f4bf5f;
+  --color-warning-hover: #f7cc7e;
+  --color-warning-subtle: #3a2a0f;
+  --color-warning-border: #77551b;
+  --color-warning-on: #231600;
+
+  --color-danger: #f97066;
+  --color-danger-hover: #fda29b;
+  --color-danger-active: #fecdc9;
+  --color-danger-subtle: #3a1718;
+  --color-danger-border: #7a2927;
+  --color-danger-on: #2b0a08;
+
+  --color-info: #53b1fd;
+  --color-info-hover: #84caff;
+  --color-info-subtle: #102a42;
+  --color-info-border: #205c8e;
+  --color-info-on: #061727;
+
+  --color-state-hover: rgb(255 255 255 / 6%);
+  --color-state-pressed: rgb(255 255 255 / 10%);
+  --color-state-selected: #25264a;
+  --color-state-selected-strong: #303263;
+  --color-state-disabled: #20242b;
+  --color-focus-ring: rgb(129 140 248 / 50%);
+  --color-selection: rgb(129 140 248 / 28%);
+
+  --color-ai-running: var(--color-brand-primary);
+  --color-ai-progress: var(--color-brand-secondary);
+  --color-ai-idle: var(--color-text-subtle);
+
+  --shadow-xs: 0 1px 2px rgb(0 0 0 / 24%);
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 20%);
+  --shadow-md: 0 4px 10px rgb(0 0 0 / 34%), 0 2px 4px rgb(0 0 0 / 22%);
+  --shadow-lg: 0 10px 24px rgb(0 0 0 / 42%), 0 4px 8px rgb(0 0 0 / 26%);
+  --shadow-xl: 0 20px 44px rgb(0 0 0 / 52%), 0 8px 16px rgb(0 0 0 / 30%);
+  --shadow-panel: -8px 12px 44px rgb(0 0 0 / 54%), 0 2px 10px rgb(0 0 0 / 28%);
+  --shadow-brand-sm: 0 2px 8px rgb(0 0 0 / 32%);
+  --shadow-brand-md: 0 5px 15px rgb(0 0 0 / 40%);
+
+  --color-browser-tab-active: var(--color-surface-primary);
+  --color-browser-tab-inactive: transparent;
+  --color-browser-tab-hover: var(--color-state-hover);
+  --color-browser-omnibox: #20242b;
+  --color-browser-bookmarks-bar: var(--color-background-browser-chrome);
+}
+
+/* ========================================================================== */
+/* 5. System theme                                                            */
+/* ========================================================================== */
+
+/*
+ * Set data-theme="system" on the root application element to follow OS
+ * appearance. Light is the default mapping; this block replaces only the
+ * theme-dependent semantic tokens when the OS is dark.
+ */
+[data-theme='system'] {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme='system'] {
+    --color-background-canvas: #111318;
+    --color-background-browser-chrome: #15181e;
+    --color-background-subtle: #171a20;
+    --color-surface-primary: #191c22;
+    --color-surface-secondary: #1d2027;
+    --color-surface-elevated: #22262e;
+    --color-surface-inverse: #f5f7fa;
+    --color-surface-scrim: rgb(0 0 0 / 56%);
+    --color-surface-scrim-soft: rgb(0 0 0 / 28%);
+
+    --color-text-primary: #f5f7fa;
+    --color-text-secondary: #c8ced8;
+    --color-text-muted: #a7afbd;
+    --color-text-subtle: #7d8796;
+    --color-text-disabled: #626b78;
+    --color-text-inverse: #111318;
+    --color-text-link: #a8afff;
+    --color-text-link-hover: #c2c6ff;
+
+    --color-border-subtle: #282d35;
+    --color-border-default: #303641;
+    --color-border-strong: #414956;
+    --color-border-emphasis: #56606f;
+
+    --color-brand-primary: #818cf8;
+    --color-brand-primary-hover: #9aa2ff;
+    --color-brand-primary-active: #b0b6ff;
+    --color-brand-primary-subtle: #25264a;
+    --color-brand-primary-soft: #303263;
+    --color-brand-primary-on: #0f1124;
+
+    --color-brand-secondary: var(--brand-secondary-400);
+    --color-brand-secondary-hover: var(--brand-secondary-300);
+    --color-brand-secondary-active: var(--brand-secondary-200);
+    --color-brand-secondary-subtle: var(--brand-secondary-800);
+    --color-brand-secondary-soft: var(--brand-secondary-700);
+    --color-brand-secondary-on: var(--brand-secondary-900);
+
+    --color-success: #47d18c;
+    --color-success-hover: #6bdfa4;
+    --color-success-subtle: #123326;
+    --color-success-border: #236847;
+    --color-success-on: #071a12;
+
+    --color-warning: #f4bf5f;
+    --color-warning-hover: #f7cc7e;
+    --color-warning-subtle: #3a2a0f;
+    --color-warning-border: #77551b;
+    --color-warning-on: #231600;
+
+    --color-danger: #f97066;
+    --color-danger-hover: #fda29b;
+    --color-danger-active: #fecdc9;
+    --color-danger-subtle: #3a1718;
+    --color-danger-border: #7a2927;
+    --color-danger-on: #2b0a08;
+
+    --color-info: #53b1fd;
+    --color-info-hover: #84caff;
+    --color-info-subtle: #102a42;
+    --color-info-border: #205c8e;
+    --color-info-on: #061727;
+
+    --color-state-hover: rgb(255 255 255 / 6%);
+    --color-state-pressed: rgb(255 255 255 / 10%);
+    --color-state-selected: #25264a;
+    --color-state-selected-strong: #303263;
+    --color-state-disabled: #20242b;
+    --color-focus-ring: rgb(129 140 248 / 50%);
+    --color-selection: rgb(129 140 248 / 28%);
+
+    --color-ai-running: var(--color-brand-primary);
+    --color-ai-progress: var(--color-brand-secondary);
+    --color-ai-idle: var(--color-text-subtle);
+
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 24%);
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 30%), 0 1px 2px rgb(0 0 0 / 20%);
+    --shadow-md: 0 4px 10px rgb(0 0 0 / 34%), 0 2px 4px rgb(0 0 0 / 22%);
+    --shadow-lg: 0 10px 24px rgb(0 0 0 / 42%), 0 4px 8px rgb(0 0 0 / 26%);
+    --shadow-xl: 0 20px 44px rgb(0 0 0 / 52%), 0 8px 16px rgb(0 0 0 / 30%);
+    --shadow-panel: -8px 12px 44px rgb(0 0 0 / 54%), 0 2px 10px rgb(0 0 0 / 28%);
+    --shadow-brand-sm: 0 2px 8px rgb(0 0 0 / 32%);
+    --shadow-brand-md: 0 5px 15px rgb(0 0 0 / 40%);
+
+    --color-browser-tab-active: var(--color-surface-primary);
+    --color-browser-tab-inactive: transparent;
+    --color-browser-tab-hover: var(--color-state-hover);
+    --color-browser-omnibox: #20242b;
+    --color-browser-bookmarks-bar: var(--color-background-browser-chrome);
+  }
+}
+
+/* ========================================================================== */
+/* 6. Semantic component aliases                                              */
+/* ========================================================================== */
+
+:root {
+  /* Buttons */
+  --button-primary-bg: var(--color-brand-primary);
+  --button-primary-bg-hover: var(--color-brand-primary-hover);
+  --button-primary-bg-active: var(--color-brand-primary-active);
+  --button-primary-fg: var(--color-brand-primary-on);
+
+  --button-secondary-bg: var(--color-surface-primary);
+  --button-secondary-bg-hover: var(--color-state-hover);
+  --button-secondary-fg: var(--color-text-primary);
+  --button-secondary-border: var(--color-border-default);
+
+  --button-danger-bg: var(--color-danger);
+  --button-danger-bg-hover: var(--color-danger-hover);
+  --button-danger-fg: var(--color-danger-on);
+
+  /* Inputs */
+  --input-bg: var(--color-surface-primary);
+  --input-fg: var(--color-text-primary);
+  --input-placeholder: var(--color-text-subtle);
+  --input-border: var(--color-border-default);
+  --input-border-hover: var(--color-border-strong);
+  --input-border-focus: var(--color-brand-primary);
+
+  /* Cards */
+  --card-bg: var(--color-surface-primary);
+  --card-border: var(--color-border-default);
+  --card-radius: var(--radius-xl);
+  --card-shadow: var(--shadow-xs);
+
+  /* Popovers / dialogs */
+  --popover-bg: var(--color-surface-elevated);
+  --popover-border: var(--color-border-default);
+  --popover-radius: var(--radius-xl);
+  --popover-shadow: var(--shadow-lg);
+
+  --dialog-bg: var(--color-surface-elevated);
+  --dialog-border: var(--color-border-default);
+  --dialog-radius: var(--radius-2xl);
+  --dialog-shadow: var(--shadow-xl);
+
+  /* Local AI */
+  --local-ai-accent: var(--color-brand-primary);
+  --local-ai-accent-secondary: var(--color-brand-secondary);
+  --local-ai-selected-bg: var(--color-brand-primary-subtle);
+  --local-ai-panel-bg: var(--color-surface-primary);
+  --local-ai-panel-border: var(--color-border-default);
+}
+
+/* ========================================================================== */
+/* 7. Focus and accessibility                                                 */
+/* ========================================================================== */
+
+:where(button, a, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-selection);
+  color: var(--color-text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration-fast: 0ms;
+    --motion-duration-normal: 0ms;
+    --motion-duration-slow: 0ms;
+    --motion-duration-emphasis: 0ms;
+  }
+}
+
+/* ========================================================================== */
+/* 8. Optional density overrides                                              */
+/* ========================================================================== */
+
+[data-density='compact'] {
+  --control-height-sm: 1.625rem;
+  --control-height-md: 1.875rem;
+  --control-height-lg: 2.125rem;
+  --browser-tab-height: 2rem;
+  --browser-toolbar-height: 2.5rem;
+}
+
+[data-density='comfortable'] {
+  --control-height-sm: 1.875rem;
+  --control-height-md: 2.125rem;
+  --control-height-lg: 2.5rem;
+  --browser-tab-height: 2.5rem;
+  --browser-toolbar-height: 3rem;
+}
+
+/* ========================================================================== */
+/* 9. Usage example (documentation only)                                      */
+/* ========================================================================== */
+
+/*
+.local-ai-primary-action {
+  min-height: var(--control-height-md);
+  padding-inline: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  font: var(--font-weight-medium) var(--font-size-md) / var(--line-height-normal)
+    var(--font-family-ui);
+  transition:
+    background-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.local-ai-primary-action:hover {
+  background: var(--button-primary-bg-hover);
+}
+*/

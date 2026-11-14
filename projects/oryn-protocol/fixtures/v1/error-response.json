@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_unknown_1",
+  "ok": false,
+  "error": {
+    "code": "PROTOCOL_UNKNOWN_METHOD",
+    "category": "protocol",
+    "message": "The requested protocol method is not supported.",
+    "retryable": false,
+    "diagnosticId": "diag_fixture_1"
+  }
+}

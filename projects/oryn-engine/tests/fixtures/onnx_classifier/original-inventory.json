@@ -1,0 +1,24 @@
+{
+  "repository": "inference4j/efficientnet-lite4",
+  "revision": "d74f2707fa0796bfeaa22a020474661bb40f857c",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 1519,
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "lfsSha": null
+    },
+    {
+      "name": "README.md",
+      "size": 1504,
+      "blobId": "2e9f1a6d6da5516ede4009c7486b468d59563fed",
+      "lfsSha": null
+    },
+    {
+      "name": "model.onnx",
+      "size": 51946641,
+      "blobId": "c7595b25f9d27b32835d247a93e8be8f413e9ae7",
+      "lfsSha": "d111689907c06eea7c82e4833ddef758da6453b9d4cf60b7e99ca05c7cbd9c12"
+    }
+  ]
+}

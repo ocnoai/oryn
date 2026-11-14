@@ -1,0 +1,72 @@
+{
+  "models": [
+    {
+      "repository": "impira/layoutlm-document-qa",
+      "revision": "beed3c4d02d86017ebca5bd0fdf210046b907aa6",
+      "files": [
+        {
+          "file": "config.json",
+          "url": "https://huggingface.co/impira/layoutlm-document-qa/resolve/beed3c4d02d86017ebca5bd0fdf210046b907aa6/config.json",
+          "bytes": 789,
+          "sha256": "6d0fc068193109d0d053fa4de00963778beffbde05067c3e9f3454235044380f"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "url": "https://huggingface.co/impira/layoutlm-document-qa/resolve/beed3c4d02d86017ebca5bd0fdf210046b907aa6/tokenizer_config.json",
+          "bytes": 315,
+          "sha256": "ea11996be5d083d63c72700810b18a6cfdf78c55131b754a75ae94e66b0ad6ab"
+        },
+        {
+          "file": "special_tokens_map.json",
+          "url": "https://huggingface.co/impira/layoutlm-document-qa/resolve/beed3c4d02d86017ebca5bd0fdf210046b907aa6/special_tokens_map.json",
+          "bytes": 239,
+          "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d"
+        },
+        {
+          "file": "README.md",
+          "url": "https://huggingface.co/impira/layoutlm-document-qa/resolve/beed3c4d02d86017ebca5bd0fdf210046b907aa6/README.md",
+          "bytes": 2326,
+          "sha256": "40fd65fc734cc7eb73cc815465b8073bc4e5b7484406e537c7b8d763f88493f7"
+        }
+      ],
+      "headerBytes": 24924,
+      "tensors": 206,
+      "originalLearnedPayloadBytes": 0
+    },
+    {
+      "repository": "impira/layoutlm-invoices",
+      "revision": "fdf56765f8bdf236b2bd45d23347066475aa730a",
+      "files": [
+        {
+          "file": "config.json",
+          "url": "https://huggingface.co/impira/layoutlm-invoices/resolve/fdf56765f8bdf236b2bd45d23347066475aa730a/config.json",
+          "bytes": 893,
+          "sha256": "8af31f9adaeeb12fc4ee56c223354d49df356180e18c57656bc3cad98b74d6f5"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "url": "https://huggingface.co/impira/layoutlm-invoices/resolve/fdf56765f8bdf236b2bd45d23347066475aa730a/tokenizer_config.json",
+          "bytes": 315,
+          "sha256": "ea11996be5d083d63c72700810b18a6cfdf78c55131b754a75ae94e66b0ad6ab"
+        },
+        {
+          "file": "special_tokens_map.json",
+          "url": "https://huggingface.co/impira/layoutlm-invoices/resolve/fdf56765f8bdf236b2bd45d23347066475aa730a/special_tokens_map.json",
+          "bytes": 239,
+          "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d"
+        },
+        {
+          "file": "README.md",
+          "url": "https://huggingface.co/impira/layoutlm-invoices/resolve/fdf56765f8bdf236b2bd45d23347066475aa730a/README.md",
+          "bytes": 1559,
+          "sha256": "1688f667c6767fd9894ed846c67512069007cb0848ccd311f9064eae20f851e2"
+        }
+      ],
+      "headerBytes": 25112,
+      "tensors": 208,
+      "originalLearnedPayloadBytes": 0
+    }
+  ],
+  "referenceSource": "https://github.com/impira/docquery/tree/3744f08a22609c0df5a72f463911b47689eaa819",
+  "implementation": "Owned native LayoutLM with complete QA and optional token-selection heads; original Python is never loaded by the runtime."
+}

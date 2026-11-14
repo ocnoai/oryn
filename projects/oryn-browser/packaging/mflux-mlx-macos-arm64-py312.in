@@ -1,0 +1,6 @@
+# Provider dependency closure; native MLX is shared.
+mflux==0.24.0
+torch==2.15.0
+transformers==5.22.1
+mlx==0.32.4
+pillow==13.0.0

@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_model_load_1",
+  "method": "model.load",
+  "params": {
+    "operationId": "op_model_load_1",
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  }
+}

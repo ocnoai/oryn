@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "c303866e9f54ad6a0e780ff1645bddfa494c7b82b17102343b565c26a995bd07",
+  "sourceRevision": "7d40c1b85b86ab4f607b2caf26b1b50c99db743e",
+  "cases": [
+    {
+      "mode": "RGB",
+      "width": 37,
+      "height": 19,
+      "sha256": "969c1e008f8d5ec50bb91c0b0abe6eb0527b1762d15d5723683efcb4d2fbd980",
+      "sum": 1410.9814453125
+    },
+    {
+      "mode": "RGB",
+      "width": 17,
+      "height": 31,
+      "sha256": "8a37c64f1655b90b9bff2f21d6d4d15052cb8f9020a2858935abbecf09491400",
+      "sum": 1535.507568359375
+    },
+    {
+      "mode": "L",
+      "width": 23,
+      "height": 17,
+      "sha256": "95c7c4d0b94dcb372f14d3ea5d5d7461bb4211577860779e2a5e1501d207c1ff",
+      "sum": 2028.2197265625
+    },
+    {
+      "mode": "RGBA",
+      "width": 19,
+      "height": 27,
+      "sha256": "d7fcd8c979ed534fa476956ce8bccdbf7afed98dbd183eda5f3bbcb65bcb8e45",
+      "sum": 1996.6494140625
+    }
+  ]
+}

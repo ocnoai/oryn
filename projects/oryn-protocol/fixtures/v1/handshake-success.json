@@ -1,0 +1,11 @@
+{
+  "type": "response",
+  "id": "req_handshake_fixture",
+  "ok": true,
+  "result": {
+    "selectedVersion": 1,
+    "engineVersion": "0.1.0",
+    "engineInstanceId": "engine_fixture_01",
+    "maxMessageBytes": 16777216
+  }
+}

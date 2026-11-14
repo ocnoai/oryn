@@ -1,0 +1,27 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_inventory_1",
+  "ok": true,
+  "result": {
+    "models": [
+      {
+        "installationId": "install_fixture_1",
+        "model": {
+          "provider": "huggingface",
+          "repository": "openai/whisper-small",
+          "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "installationState": "installed",
+        "residencyState": "unloaded",
+        "logicalSizeBytes": 100,
+        "reclaimableSizeBytes": 100,
+        "estimatedResidentBytes": 125,
+        "activeSessions": 0,
+        "runningJobs": 0,
+        "queuedJobs": 0,
+        "installedAt": 1787000001000
+      }
+    ]
+  }
+}

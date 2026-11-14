@@ -1,0 +1,807 @@
+[
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.0/proj/kernel:0",
+    "shape": [
+      7,
+      7,
+      3,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.0/proj/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.0/layer_norm/gamma:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.0/layer_norm/beta:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.1/proj/kernel:0",
+    "shape": [
+      3,
+      3,
+      8,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.1/proj/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.1/layer_norm/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.1/layer_norm/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.2/proj/kernel:0",
+    "shape": [
+      3,
+      3,
+      16,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.2/proj/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.2/layer_norm/gamma:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.2/layer_norm/beta:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.3/proj/kernel:0",
+    "shape": [
+      3,
+      3,
+      24,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.3/proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.3/layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/patch_embeddings.3/layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/layer_norm_1/gamma:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/layer_norm_1/beta:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/query/kernel:0",
+    "shape": [
+      8,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/query/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/key/kernel:0",
+    "shape": [
+      8,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/key/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/value/kernel:0",
+    "shape": [
+      8,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/value/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/sr/kernel:0",
+    "shape": [
+      8,
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/sr/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/layer_norm/gamma:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/self/layer_norm/beta:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/output/dense/kernel:0",
+    "shape": [
+      8,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/attention/output/dense/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/layer_norm_2/gamma:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/layer_norm_2/beta:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dense1/kernel:0",
+    "shape": [
+      8,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dense1/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dwconv/dwconv/kernel:0",
+    "shape": [
+      3,
+      3,
+      1,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dwconv/dwconv/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dense2/kernel:0",
+    "shape": [
+      16,
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.0.0/mlp/dense2/bias:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/layer_norm_1/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/layer_norm_1/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/query/kernel:0",
+    "shape": [
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/query/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/key/kernel:0",
+    "shape": [
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/key/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/value/kernel:0",
+    "shape": [
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/value/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/sr/kernel:0",
+    "shape": [
+      4,
+      4,
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/sr/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/layer_norm/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/self/layer_norm/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/output/dense/kernel:0",
+    "shape": [
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/attention/output/dense/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/layer_norm_2/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/layer_norm_2/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dense1/kernel:0",
+    "shape": [
+      16,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dense1/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dwconv/dwconv/kernel:0",
+    "shape": [
+      3,
+      3,
+      1,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dwconv/dwconv/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dense2/kernel:0",
+    "shape": [
+      32,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.1.0/mlp/dense2/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/layer_norm_1/gamma:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/layer_norm_1/beta:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/query/kernel:0",
+    "shape": [
+      24,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/query/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/key/kernel:0",
+    "shape": [
+      24,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/key/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/value/kernel:0",
+    "shape": [
+      24,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/value/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/sr/kernel:0",
+    "shape": [
+      2,
+      2,
+      24,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/sr/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/layer_norm/gamma:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/self/layer_norm/beta:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/output/dense/kernel:0",
+    "shape": [
+      24,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/attention/output/dense/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/layer_norm_2/gamma:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/layer_norm_2/beta:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dense1/kernel:0",
+    "shape": [
+      24,
+      48
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dense1/bias:0",
+    "shape": [
+      48
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dwconv/dwconv/kernel:0",
+    "shape": [
+      3,
+      3,
+      1,
+      48
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dwconv/dwconv/bias:0",
+    "shape": [
+      48
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dense2/kernel:0",
+    "shape": [
+      48,
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.2.0/mlp/dense2/bias:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/layer_norm_1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/layer_norm_1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/layer_norm_2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/layer_norm_2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dense1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dense1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dwconv/dwconv/kernel:0",
+    "shape": [
+      3,
+      3,
+      1,
+      64
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dwconv/dwconv/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dense2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/block.3.0/mlp/dense2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.0/gamma:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.0/beta:0",
+    "shape": [
+      8
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.1/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.1/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.2/gamma:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.2/beta:0",
+    "shape": [
+      24
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.3/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/segformer/encoder/layer_norm.3/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.0/proj/kernel:0",
+    "shape": [
+      8,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.0/proj/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.1/proj/kernel:0",
+    "shape": [
+      16,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.1/proj/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.2/proj/kernel:0",
+    "shape": [
+      24,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.2/proj/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.3/proj/kernel:0",
+    "shape": [
+      32,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_c.3/proj/bias:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/linear_fuse/kernel:0",
+    "shape": [
+      1,
+      1,
+      64,
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/batch_norm/gamma:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/batch_norm/beta:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/batch_norm/moving_mean:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/batch_norm/moving_variance:0",
+    "shape": [
+      16
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/classifier/kernel:0",
+    "shape": [
+      1,
+      1,
+      16,
+      3
+    ]
+  },
+  {
+    "name": "tf_segformer_for_semantic_segmentation/decode_head/classifier/bias:0",
+    "shape": [
+      3
+    ]
+  }
+]

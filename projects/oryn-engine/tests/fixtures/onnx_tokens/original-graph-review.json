@@ -1,0 +1,6768 @@
+{
+  "repository": "nationaldesignstudio/rampart",
+  "revision": "b1993e4e68b082835b80ffc65acc03325ea2e501",
+  "file": "onnx/model_q4.onnx",
+  "originalFileBytes": 14693379,
+  "opsets": {
+    "": 18,
+    "com.microsoft": 1
+  },
+  "inputs": [
+    {
+      "name": "input_ids",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "attention_mask",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "token_type_ids",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "logits",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        "sequence_length",
+        35
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Slice_110"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/embeddings/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/embeddings/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/embeddings/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/embeddings/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_174"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_183"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_192"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_232"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_234"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_270"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_279"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_288"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_327"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_329"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_365"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_374"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_383"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_422"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_424"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_460"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_469"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_478"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_517"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_519"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_555"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_564"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_573"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_612"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_614"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_650"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_3_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_4_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_659"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_5_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_6_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_7_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_668"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_8_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_9_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_10_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_11_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_12_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_13_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_707"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "onnx::Unsqueeze_709"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_14_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ]
+    },
+    {
+      "op": "Constant",
+      "domain": "",
+      "inputs": [],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "attention_mask"
+      ],
+      "outputs": [
+        "/bert/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "attention_mask"
+      ],
+      "outputs": [
+        "/bert/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "input_ids"
+      ],
+      "outputs": [
+        "/bert/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "bert.embeddings.word_embeddings.weight_quantized",
+        "input_ids"
+      ],
+      "outputs": [
+        "/bert/embeddings/word_embeddings/Gather_output_0_quantized"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "bert.embeddings.token_type_embeddings.weight_quantized",
+        "token_type_ids"
+      ],
+      "outputs": [
+        "/bert/embeddings/token_type_embeddings/Gather_output_0_quantized"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "attention_mask",
+        "/bert/Constant_3_output_0"
+      ],
+      "outputs": [
+        "/bert/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/Shape_1_output_0",
+        "/bert/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/Shape_2_output_0",
+        "/bert/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/Gather_2_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/Shape_output_0",
+        "/bert/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/Gather_output_0"
+      ]
+    },
+    {
+      "op": "DequantizeLinear",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/word_embeddings/Gather_output_0_quantized",
+        "bert.embeddings.word_embeddings.weight_scale",
+        "bert.embeddings.word_embeddings.weight_zero_point"
+      ],
+      "outputs": [
+        "/bert/embeddings/word_embeddings/Gather_output_0"
+      ]
+    },
+    {
+      "op": "DequantizeLinear",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/token_type_embeddings/Gather_output_0_quantized",
+        "bert.embeddings.token_type_embeddings.weight_scale",
+        "bert.embeddings.token_type_embeddings.weight_zero_point"
+      ],
+      "outputs": [
+        "/bert/embeddings/token_type_embeddings/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/Unsqueeze_output_0",
+        "/bert/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/Gather_1_output_0",
+        "/bert/Constant_5_output_0"
+      ],
+      "outputs": [
+        "/bert/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/Gather_2_output_0",
+        "/bert/Constant_8_output_0"
+      ],
+      "outputs": [
+        "/bert/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/Gather_output_0",
+        "/bert/embeddings/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/embeddings/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/Gather_output_0",
+        "/bert/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/word_embeddings/Gather_output_0",
+        "/bert/embeddings/token_type_embeddings/Gather_output_0"
+      ],
+      "outputs": [
+        "/bert/embeddings/Add_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "onnx::Slice_110",
+        "/bert/embeddings/Constant_1_output_0",
+        "/bert/embeddings/Unsqueeze_output_0",
+        "/bert/embeddings/Constant_output_0",
+        "/bert/embeddings/Constant_3_output_0"
+      ],
+      "outputs": [
+        "/bert/embeddings/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/Unsqueeze_2_output_0",
+        "/bert/Constant_6_output_0",
+        "/bert/Unsqueeze_3_output_0",
+        "/bert/Unsqueeze_4_output_0"
+      ],
+      "outputs": [
+        "/bert/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "bert.embeddings.position_embeddings.weight_quantized",
+        "/bert/embeddings/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/embeddings/position_embeddings/Gather_output_0_quantized"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/Concat_output_0",
+        "/bert/Constant_9_output_0"
+      ],
+      "outputs": [
+        "/bert/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "DequantizeLinear",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/position_embeddings/Gather_output_0_quantized",
+        "bert.embeddings.position_embeddings.weight_scale",
+        "bert.embeddings.position_embeddings.weight_zero_point"
+      ],
+      "outputs": [
+        "/bert/embeddings/position_embeddings/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/Shape_3_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/Add_output_0",
+        "/bert/embeddings/position_embeddings/Gather_output_0"
+      ],
+      "outputs": [
+        "/bert/embeddings/Add_1_output_0"
+      ]
+    },
+    {
+      "op": "ConstantOfShape",
+      "domain": "",
+      "inputs": [
+        "/bert/Shape_3_output_0"
+      ],
+      "outputs": [
+        "/bert/ConstantOfShape_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/Add_1_output_0",
+        "bert.embeddings.LayerNorm.weight",
+        "bert.embeddings.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/ConstantOfShape_output_0",
+        "/bert/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_743_Q4",
+        "onnx::MatMul_743_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_753_Q4",
+        "onnx::MatMul_753_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_754_Q4",
+        "onnx::MatMul_754_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Equal",
+      "domain": "",
+      "inputs": [
+        "/bert/Reshape_output_0",
+        "/bert/Mul_output_0"
+      ],
+      "outputs": [
+        "/bert/Equal_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.attention.self.query.bias",
+        "/bert/encoder/layer.0/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.attention.self.key.bias",
+        "/bert/encoder/layer.0/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.attention.self.value.bias",
+        "/bert/encoder/layer.0/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Where",
+      "domain": "",
+      "inputs": [
+        "/bert/Equal_output_0",
+        "/bert/ConstantOfShape_output_0",
+        "/bert/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/Where_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_174"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_183"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_192"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_232"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_234"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Expand",
+      "domain": "",
+      "inputs": [
+        "/bert/Unsqueeze_1_output_0",
+        "/bert/Where_output_0"
+      ],
+      "outputs": [
+        "/bert/Expand_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.0/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/Expand_output_0"
+      ],
+      "outputs": [
+        "/bert/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.0/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.0/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.0/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Sub",
+      "domain": "",
+      "inputs": [
+        "/bert/Constant_11_output_0",
+        "/bert/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/Sub_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/Sub_output_0"
+      ],
+      "outputs": [
+        "/bert/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/Cast_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.0/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Where",
+      "domain": "",
+      "inputs": [
+        "/bert/Cast_2_output_0",
+        "/bert/Constant_12_output_0",
+        "/bert/Sub_output_0"
+      ],
+      "outputs": [
+        "/bert/Where_1_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.0/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.0/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.0/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Mul_output_0",
+        "/bert/encoder/layer.0/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.0/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.0/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_756_Q4",
+        "onnx::MatMul_756_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.attention.output.dense.bias",
+        "/bert/encoder/layer.0/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/output/dense/Add_output_0",
+        "/bert/embeddings/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/output/Add_output_0",
+        "bert.encoder.layer.0.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.0.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_757_Q4",
+        "onnx::MatMul_757_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.intermediate.dense.bias",
+        "/bert/encoder/layer.0/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_758_Q4",
+        "onnx::MatMul_758_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.0.output.dense.bias",
+        "/bert/encoder/layer.0/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/output/dense/Add_output_0",
+        "/bert/encoder/layer.0/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/output/Add_output_0",
+        "bert.encoder.layer.0.output.LayerNorm.weight",
+        "bert.encoder.layer.0.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_759_Q4",
+        "onnx::MatMul_759_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_769_Q4",
+        "onnx::MatMul_769_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_770_Q4",
+        "onnx::MatMul_770_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.attention.self.query.bias",
+        "/bert/encoder/layer.1/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.attention.self.key.bias",
+        "/bert/encoder/layer.1/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.attention.self.value.bias",
+        "/bert/encoder/layer.1/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_270"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_279"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_288"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_327"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_329"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.1/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.1/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.1/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.1/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.1/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.1/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.1/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.1/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Mul_output_0",
+        "/bert/encoder/layer.1/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.1/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.1/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_772_Q4",
+        "onnx::MatMul_772_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.attention.output.dense.bias",
+        "/bert/encoder/layer.1/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/output/dense/Add_output_0",
+        "/bert/encoder/layer.0/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/output/Add_output_0",
+        "bert.encoder.layer.1.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.1.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_773_Q4",
+        "onnx::MatMul_773_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.intermediate.dense.bias",
+        "/bert/encoder/layer.1/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_774_Q4",
+        "onnx::MatMul_774_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.1.output.dense.bias",
+        "/bert/encoder/layer.1/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/output/dense/Add_output_0",
+        "/bert/encoder/layer.1/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/output/Add_output_0",
+        "bert.encoder.layer.1.output.LayerNorm.weight",
+        "bert.encoder.layer.1.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_775_Q4",
+        "onnx::MatMul_775_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_785_Q4",
+        "onnx::MatMul_785_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_786_Q4",
+        "onnx::MatMul_786_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.attention.self.query.bias",
+        "/bert/encoder/layer.2/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.attention.self.key.bias",
+        "/bert/encoder/layer.2/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.attention.self.value.bias",
+        "/bert/encoder/layer.2/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_365"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_374"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_383"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_422"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_424"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.2/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.2/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.2/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.2/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.2/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.2/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.2/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.2/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Mul_output_0",
+        "/bert/encoder/layer.2/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.2/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.2/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_788_Q4",
+        "onnx::MatMul_788_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.attention.output.dense.bias",
+        "/bert/encoder/layer.2/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/output/dense/Add_output_0",
+        "/bert/encoder/layer.1/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/output/Add_output_0",
+        "bert.encoder.layer.2.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.2.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_789_Q4",
+        "onnx::MatMul_789_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.intermediate.dense.bias",
+        "/bert/encoder/layer.2/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_790_Q4",
+        "onnx::MatMul_790_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.2.output.dense.bias",
+        "/bert/encoder/layer.2/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/output/dense/Add_output_0",
+        "/bert/encoder/layer.2/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/output/Add_output_0",
+        "bert.encoder.layer.2.output.LayerNorm.weight",
+        "bert.encoder.layer.2.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_791_Q4",
+        "onnx::MatMul_791_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_801_Q4",
+        "onnx::MatMul_801_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_802_Q4",
+        "onnx::MatMul_802_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.attention.self.query.bias",
+        "/bert/encoder/layer.3/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.attention.self.key.bias",
+        "/bert/encoder/layer.3/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.attention.self.value.bias",
+        "/bert/encoder/layer.3/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_460"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_469"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_478"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_517"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_519"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.3/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.3/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.3/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.3/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.3/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.3/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.3/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.3/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Mul_output_0",
+        "/bert/encoder/layer.3/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.3/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.3/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_804_Q4",
+        "onnx::MatMul_804_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.attention.output.dense.bias",
+        "/bert/encoder/layer.3/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/output/dense/Add_output_0",
+        "/bert/encoder/layer.2/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/output/Add_output_0",
+        "bert.encoder.layer.3.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.3.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_805_Q4",
+        "onnx::MatMul_805_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.intermediate.dense.bias",
+        "/bert/encoder/layer.3/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_806_Q4",
+        "onnx::MatMul_806_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.3.output.dense.bias",
+        "/bert/encoder/layer.3/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/output/dense/Add_output_0",
+        "/bert/encoder/layer.3/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/output/Add_output_0",
+        "bert.encoder.layer.3.output.LayerNorm.weight",
+        "bert.encoder.layer.3.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_807_Q4",
+        "onnx::MatMul_807_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_817_Q4",
+        "onnx::MatMul_817_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_818_Q4",
+        "onnx::MatMul_818_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.attention.self.query.bias",
+        "/bert/encoder/layer.4/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.attention.self.key.bias",
+        "/bert/encoder/layer.4/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.attention.self.value.bias",
+        "/bert/encoder/layer.4/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_555"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_564"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_573"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_612"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_614"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.4/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.4/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.4/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.4/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.4/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.4/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.4/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.4/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Mul_output_0",
+        "/bert/encoder/layer.4/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.4/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.4/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_820_Q4",
+        "onnx::MatMul_820_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.attention.output.dense.bias",
+        "/bert/encoder/layer.4/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/output/dense/Add_output_0",
+        "/bert/encoder/layer.3/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/output/Add_output_0",
+        "bert.encoder.layer.4.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.4.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_821_Q4",
+        "onnx::MatMul_821_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.intermediate.dense.bias",
+        "/bert/encoder/layer.4/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_822_Q4",
+        "onnx::MatMul_822_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.4.output.dense.bias",
+        "/bert/encoder/layer.4/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/output/dense/Add_output_0",
+        "/bert/encoder/layer.4/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/output/Add_output_0",
+        "bert.encoder.layer.4.output.LayerNorm.weight",
+        "bert.encoder.layer.4.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_823_Q4",
+        "onnx::MatMul_823_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/query/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_833_Q4",
+        "onnx::MatMul_833_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/key/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_834_Q4",
+        "onnx::MatMul_834_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/value/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_output_0"
+      ]
+    },
+    {
+      "op": "Gather",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_1_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_1_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.attention.self.query.bias",
+        "/bert/encoder/layer.5/attention/self/query/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/query/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.attention.self.key.bias",
+        "/bert/encoder/layer.5/attention/self/key/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/key/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.attention.self.value.bias",
+        "/bert/encoder/layer.5/attention/self/value/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/value/Add_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_650"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_659"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_1_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_668"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_2_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_output_0",
+        "onnx::Unsqueeze_707"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_3_output_0"
+      ]
+    },
+    {
+      "op": "Unsqueeze",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Gather_1_output_0",
+        "onnx::Unsqueeze_709"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_4_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_2_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_3_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_4_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Concat_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_1_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_5_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_6_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_7_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Concat_1_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_2_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_8_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_9_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_10_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Concat_2_output_0"
+      ]
+    },
+    {
+      "op": "Concat",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_3_output_0",
+        "/bert/encoder/layer.5/attention/self/Unsqueeze_4_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_14_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Concat_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/query/Add_output_0",
+        "/bert/encoder/layer.5/attention/self/Concat_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/key/Add_output_0",
+        "/bert/encoder/layer.5/attention/self/Concat_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_1_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/value/Add_output_0",
+        "/bert/encoder/layer.5/attention/self/Concat_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_2_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_1_output_0"
+      ]
+    },
+    {
+      "op": "Shape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_2_output_0"
+      ]
+    },
+    {
+      "op": "Slice",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Shape_2_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_11_output_0",
+        "/bert/encoder/layer.5/attention/self/Constant_12_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Slice_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Slice_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Cast_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Cast_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Sqrt_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Constant_13_output_0",
+        "/bert/encoder/layer.5/attention/self/Sqrt_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Div_output_0"
+      ]
+    },
+    {
+      "op": "Cast",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Cast_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Sqrt_1_output_0"
+      ]
+    },
+    {
+      "op": "Sqrt",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Cast_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Sqrt_2_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_output_0",
+        "/bert/encoder/layer.5/attention/self/Sqrt_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_2_output_0",
+        "/bert/encoder/layer.5/attention/self/Sqrt_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Mul_output_0",
+        "/bert/encoder/layer.5/attention/self/Mul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/MatMul_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/MatMul_output_0",
+        "/bert/Where_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Add_output_0"
+      ]
+    },
+    {
+      "op": "Softmax",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Softmax_output_0"
+      ]
+    },
+    {
+      "op": "MatMul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Softmax_output_0",
+        "/bert/encoder/layer.5/attention/self/Transpose_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/MatMul_1_output_0"
+      ]
+    },
+    {
+      "op": "Transpose",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/MatMul_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_3_output_0"
+      ]
+    },
+    {
+      "op": "Reshape",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Transpose_3_output_0",
+        "/bert/encoder/layer.5/attention/self/Concat_3_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_3_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/self/Reshape_3_output_0",
+        "onnx::MatMul_836_Q4",
+        "onnx::MatMul_836_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.attention.output.dense.bias",
+        "/bert/encoder/layer.5/attention/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/output/dense/Add_output_0",
+        "/bert/encoder/layer.4/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/output/Add_output_0",
+        "bert.encoder.layer.5.attention.output.LayerNorm.weight",
+        "bert.encoder.layer.5.attention.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/attention/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.5/attention/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_837_Q4",
+        "onnx::MatMul_837_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 1536,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.intermediate.dense.bias",
+        "/bert/encoder/layer.5/intermediate/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Div",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Div_output_0"
+      ]
+    },
+    {
+      "op": "Erf",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Div_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Erf_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Erf_output_0",
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Add_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/dense/Add_output_0",
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Add_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Mul_output_0"
+      ]
+    },
+    {
+      "op": "Mul",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Mul_output_0",
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Constant_2_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Mul_1_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.5/intermediate/intermediate_act_fn/Mul_1_output_0",
+        "onnx::MatMul_838_Q4",
+        "onnx::MatMul_838_scales"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/output/dense/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 1536,
+        "N": 384,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "bert.encoder.layer.5.output.dense.bias",
+        "/bert/encoder/layer.5/output/dense/MatMul_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/output/dense/Add_output_0"
+      ]
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/output/dense/Add_output_0",
+        "/bert/encoder/layer.5/attention/output/LayerNorm/LayerNormalization_output_0"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/output/Add_output_0"
+      ]
+    },
+    {
+      "op": "LayerNormalization",
+      "domain": "",
+      "inputs": [
+        "/bert/encoder/layer.5/output/Add_output_0",
+        "bert.encoder.layer.5.output.LayerNorm.weight",
+        "bert.encoder.layer.5.output.LayerNorm.bias"
+      ],
+      "outputs": [
+        "/bert/encoder/layer.5/output/LayerNorm/LayerNormalization_output_0"
+      ]
+    },
+    {
+      "op": "MatMulNBits",
+      "domain": "com.microsoft",
+      "inputs": [
+        "/bert/encoder/layer.5/output/LayerNorm/LayerNormalization_output_0",
+        "onnx::MatMul_839_Q4",
+        "onnx::MatMul_839_scales"
+      ],
+      "outputs": [
+        "/classifier/MatMul_output_0"
+      ],
+      "attributes": {
+        "K": 384,
+        "N": 35,
+        "bits": 4,
+        "block_size": 32
+      }
+    },
+    {
+      "op": "Add",
+      "domain": "",
+      "inputs": [
+        "classifier.bias",
+        "/classifier/MatMul_output_0"
+      ],
+      "outputs": [
+        "logits"
+      ]
+    }
+  ],
+  "initializers": [
+    {
+      "name": "bert.embeddings.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.embeddings.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.0.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.1.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.2.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.3.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.4.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.self.query.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.self.key.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.self.value.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.attention.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.intermediate.dense.bias",
+      "dtype": 1,
+      "shape": [
+        1536
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.output.dense.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.output.LayerNorm.weight",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "bert.encoder.layer.5.output.LayerNorm.bias",
+      "dtype": 1,
+      "shape": [
+        384
+      ]
+    },
+    {
+      "name": "classifier.bias",
+      "dtype": 1,
+      "shape": [
+        35
+      ]
+    },
+    {
+      "name": "onnx::MatMul_743_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_743_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_753_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_753_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_754_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_754_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_756_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_756_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_757_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_757_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_758_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_758_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_759_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_759_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_769_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_769_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_770_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_770_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_772_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_772_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_773_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_773_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_774_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_774_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_775_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_775_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_785_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_785_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_786_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_786_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_788_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_788_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_789_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_789_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_790_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_790_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_791_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_791_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_801_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_801_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_802_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_802_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_804_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_804_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_805_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_805_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_806_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_806_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_807_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_807_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_817_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_817_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_818_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_818_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_820_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_820_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_821_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_821_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_822_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_822_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_823_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_823_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_833_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_833_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_834_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_834_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_836_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_836_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_837_Q4",
+      "dtype": 2,
+      "shape": [
+        1536,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_837_scales",
+      "dtype": 1,
+      "shape": [
+        1536,
+        12
+      ]
+    },
+    {
+      "name": "onnx::MatMul_838_Q4",
+      "dtype": 2,
+      "shape": [
+        384,
+        48,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_838_scales",
+      "dtype": 1,
+      "shape": [
+        384,
+        48
+      ]
+    },
+    {
+      "name": "onnx::MatMul_839_Q4",
+      "dtype": 2,
+      "shape": [
+        35,
+        12,
+        16
+      ]
+    },
+    {
+      "name": "onnx::MatMul_839_scales",
+      "dtype": 1,
+      "shape": [
+        35,
+        12
+      ]
+    },
+    {
+      "name": "bert.embeddings.word_embeddings.weight_scale",
+      "dtype": 1,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.word_embeddings.weight_zero_point",
+      "dtype": 2,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.word_embeddings.weight_quantized",
+      "dtype": 2,
+      "shape": [
+        19730,
+        384
+      ]
+    },
+    {
+      "name": "bert.embeddings.token_type_embeddings.weight_scale",
+      "dtype": 1,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.token_type_embeddings.weight_zero_point",
+      "dtype": 2,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.token_type_embeddings.weight_quantized",
+      "dtype": 2,
+      "shape": [
+        2,
+        384
+      ]
+    },
+    {
+      "name": "bert.embeddings.position_embeddings.weight_scale",
+      "dtype": 1,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.position_embeddings.weight_zero_point",
+      "dtype": 2,
+      "shape": []
+    },
+    {
+      "name": "bert.embeddings.position_embeddings.weight_quantized",
+      "dtype": 2,
+      "shape": [
+        512,
+        384
+      ]
+    }
+  ],
+  "networkBytesRead": 2372611,
+  "checkpointRetained": false,
+  "inferenceExecuted": false,
+  "note": "32 KiB metadata cache blocks can include incidental adjacent initializer bytes; no complete checkpoint is downloaded or retained."
+}

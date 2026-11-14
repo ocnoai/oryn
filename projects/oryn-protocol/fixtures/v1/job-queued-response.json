@@ -1,0 +1,17 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_job_create",
+  "ok": true,
+  "result": {
+    "jobId": "job_example",
+    "sessionId": "session_example",
+    "state": "queued",
+    "queue": {
+      "lane": "generation",
+      "position": 1,
+      "jobsAhead": 0,
+      "reason": "generation-slot"
+    }
+  }
+}

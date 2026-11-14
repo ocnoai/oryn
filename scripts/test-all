@@ -1,0 +1,15 @@
+#!/bin/zsh
+set -euo pipefail
+WORKSPACE_DIR=${0:A:h:h}
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol" validate
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-sdk" typecheck
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-sdk" test
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-sdk" build
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" security:verify
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" typecheck
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" test
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" build
+uv run --project "$WORKSPACE_DIR/projects/oryn-engine" --directory "$WORKSPACE_DIR/projects/oryn-engine" pytest
+uv build --project "$WORKSPACE_DIR/projects/oryn-engine"
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-examples" test
+node "$WORKSPACE_DIR/scripts/check-public-docs.mjs" --all

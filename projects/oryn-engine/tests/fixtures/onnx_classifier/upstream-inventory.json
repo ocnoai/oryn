@@ -1,0 +1,18 @@
+{
+  "repository": "onnx/EfficientNet-Lite4",
+  "revision": "69e036d205618d72e83b24b23cb9e0f7db05e720",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 1175,
+      "blobId": "6d34772f5ca361021038b404fb913ec8dc0b1a5a",
+      "lfsSha": null
+    },
+    {
+      "name": "efficientnet-lite4-11.onnx",
+      "size": 51946641,
+      "blobId": "c7595b25f9d27b32835d247a93e8be8f413e9ae7",
+      "lfsSha": "d111689907c06eea7c82e4833ddef758da6453b9d4cf60b7e99ca05c7cbd9c12"
+    }
+  ]
+}

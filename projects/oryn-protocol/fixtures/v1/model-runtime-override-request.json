@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_runtime_override_1",
+  "method": "model.runtime.override",
+  "params": {
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "candidateId": "candidate-aaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+}

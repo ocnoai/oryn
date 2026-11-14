@@ -1,0 +1,60 @@
+{
+  "config": {
+    "__object__": {
+      "args": "as_params",
+      "name": "DepthAnything3Net",
+      "path": "depth_anything_3.model.da3"
+    },
+    "cam_dec": {
+      "__object__": {
+        "args": "as_params",
+        "name": "CameraDec",
+        "path": "depth_anything_3.model.cam_dec"
+      },
+      "dim_in": 768
+    },
+    "cam_enc": {
+      "__object__": {
+        "args": "as_params",
+        "name": "CameraEnc",
+        "path": "depth_anything_3.model.cam_enc"
+      },
+      "dim_out": 384
+    },
+    "head": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DualDPT",
+        "path": "depth_anything_3.model.dualdpt"
+      },
+      "dim_in": 768,
+      "features": 64,
+      "out_channels": [
+        48,
+        96,
+        192,
+        384
+      ],
+      "output_dim": 2
+    },
+    "net": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DinoV2",
+        "path": "depth_anything_3.model.dinov2.dinov2"
+      },
+      "alt_start": 4,
+      "cat_token": true,
+      "name": "vits",
+      "out_layers": [
+        5,
+        7,
+        9,
+        11
+      ],
+      "qknorm_start": 4,
+      "rope_start": 4
+    }
+  },
+  "model_name": "da3-small"
+}

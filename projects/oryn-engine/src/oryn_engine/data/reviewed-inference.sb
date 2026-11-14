@@ -1,0 +1,22 @@
+(version 1)
+(deny default)
+; The reviewed eager CPU adapter has no GPU, Mach-service, credential, network,
+; compiler-cache or artifact-directory capability. Source inspection is separate.
+(allow process-exec (literal (param "PYTHON")))
+(allow process-fork)
+(allow process-info* (target self))
+(allow signal (target self))
+(allow sysctl-read)
+(allow file-read-metadata)
+(allow file-read-data (literal "/"))
+(allow file-read* file-map-executable
+  (subpath "/System/Library")
+  (subpath "/System/Volumes/Preboot/Cryptexes/OS/System/Library")
+  (subpath "/usr/lib")
+  (subpath (param "PYTHON_ROOT"))
+  (subpath (param "ENGINE_ROOT"))
+  (subpath (param "PACK_RUNTIME_ROOT"))
+  (subpath (param "FOUNDATION_ROOT")))
+(allow file-read* (subpath (param "MODEL_ROOT")) (subpath (param "SCRATCH_ROOT")))
+(allow file-write* (subpath (param "SCRATCH_ROOT")) (literal "/dev/null"))
+(allow file-read* (literal "/dev/null") (literal "/dev/urandom") (literal "/dev/random"))

@@ -1,0 +1,10 @@
+{
+  "revision": "8a7fd0a486635f670ef90e02efe1c051ed3f133c",
+  "archiveSha256": "7795ea2c023289b4ccd428f358040887af599a94cf78d646c5a604bf1a65cd2f",
+  "sourceDateEpoch": 315532800,
+  "version": "0.24.0",
+  "wheel": {
+    "file": "mflux-0.24.0-py3-none-any.whl",
+    "sha256": "05d5bb59b9294ed23500ba94bf7dd7e2cc5659de700736444d5bd01a2d3a42ff"
+  }
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "name": "tf_vi_t_model/vit/embeddings/cls_token:0",
+    "shape": [
+      1,
+      1,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/embeddings/position_embeddings:0",
+    "shape": [
+      1,
+      17,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/embeddings/patch_embeddings/projection/kernel:0",
+    "shape": [
+      4,
+      4,
+      3,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/embeddings/patch_embeddings/projection/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/attention/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/layernorm_before/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/layernorm_before/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/layernorm_after/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._0/layernorm_after/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/attention/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/layernorm_before/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/layernorm_before/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/layernorm_after/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/encoder/layer_._1/layernorm_after/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/layernorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/layernorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/pooler/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_vi_t_model/vit/pooler/dense/bias:0",
+    "shape": [
+      32
+    ]
+  }
+]

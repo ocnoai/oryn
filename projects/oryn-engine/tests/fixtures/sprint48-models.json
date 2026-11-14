@@ -1,0 +1,104 @@
+[
+  {
+    "group": "expansion",
+    "repository": "cross-encoder/nli-deberta-v3-xsmall",
+    "revision": "a150876415327c80daeff35ca6f68f5ed8cf5c24",
+    "task": "zero-shot-classification"
+  },
+  {
+    "group": "expansion",
+    "repository": "facebook/dinov2-small",
+    "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "task": "image-feature-extraction"
+  },
+  {
+    "group": "expansion",
+    "repository": "facebook/dinov2-base",
+    "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+    "task": "image-feature-extraction"
+  },
+  {
+    "group": "expansion",
+    "repository": "nvidia/segformer-b0-finetuned-ade-512-512",
+    "revision": "489d5cd81a0b59fab9b7ea758d3548ebe99677da",
+    "task": "image-segmentation"
+  },
+  {
+    "group": "expansion",
+    "repository": "facebook/sam-vit-base",
+    "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+    "task": "mask-generation"
+  },
+  {
+    "group": "expansion",
+    "repository": "google/owlvit-base-patch32",
+    "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+    "task": "zero-shot-object-detection"
+  },
+  {
+    "group": "expansion",
+    "repository": "Salesforce/blip-vqa-base",
+    "revision": "787b3d35d57e49572baabd22884b3d5a05acf072",
+    "task": "visual-question-answering"
+  },
+  {
+    "group": "expansion",
+    "repository": "LiquidAI/LFM2.5-230M-GGUF",
+    "revision": "cdf97bd8205908758f44aec508d68ac1aef98f5c",
+    "task": "chat"
+  },
+  {
+    "group": "expansion",
+    "repository": "LiquidAI/LFM2-350M-GGUF",
+    "revision": "8fdc9d526b7ed346b19257551b05816c7912ecc2",
+    "task": "chat"
+  },
+  {
+    "group": "expansion",
+    "repository": "cross-encoder/nli-deberta-v3-small",
+    "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "task": "zero-shot-classification"
+  },
+  {
+    "group": "expansion",
+    "repository": "typeform/distilbert-base-uncased-mnli",
+    "revision": "cfa538a0fddbbd978fefe8966c1aeff7ad409c90",
+    "task": "zero-shot-classification"
+  },
+  {
+    "group": "expansion",
+    "repository": "jonathandinu/face-parsing",
+    "revision": "758b82e15a0178c9db39c1ff666a8b56e3a550c8",
+    "task": "image-segmentation"
+  },
+  {
+    "group": "expansion",
+    "repository": "Salesforce/blip-image-captioning-large",
+    "revision": "353689b859fcf0523410b1806dace5fb46ecdf41",
+    "task": "image-to-text"
+  },
+  {
+    "group": "expansion",
+    "repository": "syscv-community/sam-hq-vit-base",
+    "revision": "f906a2e3f60fda2f12eb717cef18614f66c43124",
+    "task": "mask-generation"
+  },
+  {
+    "group": "expansion",
+    "repository": "google/owlv2-base-patch16",
+    "revision": "2a1560802f8cf3c408fec9b809d705f56a2f7146",
+    "task": "zero-shot-object-detection"
+  },
+  {
+    "group": "expansion",
+    "repository": "mlx-community/Qwen3-0.6B-6bit",
+    "revision": "45d962b21b1e813c3e9a7f3505391e72e8daba1e",
+    "task": "chat"
+  },
+  {
+    "group": "expansion",
+    "repository": "OpenMed/Qwen3.5-2B-MedVL",
+    "revision": "9bfe30c4a41211d382b37249d283972547283ea2",
+    "task": "visual-question-answering"
+  }
+]

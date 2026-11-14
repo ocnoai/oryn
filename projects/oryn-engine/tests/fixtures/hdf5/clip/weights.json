@@ -1,0 +1,502 @@
+[
+  {
+    "name": "tfclip_model/clip/logit_scale:0",
+    "shape": [
+      1
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/embeddings/token_embedding/weight:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/embeddings/position_embedding/embeddings:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._0/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/encoder/layers_._1/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/final_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_model/final_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/embeddings/class_embedding:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/embeddings/position_embedding/embeddings:0",
+    "shape": [
+      17,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/embeddings/patch_embedding/kernel:0",
+    "shape": [
+      4,
+      4,
+      3,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/pre_layrnorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/pre_layrnorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._0/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/encoder/layers_._1/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/post_layernorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/vision_model/post_layernorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/visual_projection/kernel:0",
+    "shape": [
+      32,
+      16
+    ]
+  },
+  {
+    "name": "tfclip_model/clip/text_projection/kernel:0",
+    "shape": [
+      32,
+      16
+    ]
+  }
+]

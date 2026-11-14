@@ -1,0 +1,77 @@
+<!doctype html><html><body><canvas id="output"></canvas><script type="module">
+import {renderCaptionedVideo} from '../src/video-renderer.ts';
+import {Input, BlobSource, ALL_FORMATS, CanvasSink, EncodedPacketSink} from 'mediabunny';
+const mode=new URLSearchParams(location.search).get('mode');
+const check=(value,message)=>{if(!value)throw new Error(message);};
+const visible=()=>document.hidden?new Promise(resolve=>{
+  const change=()=>{if(!document.hidden){document.removeEventListener('visibilitychange',change);resolve();}};
+  document.addEventListener('visibilitychange',change);change();
+}):Promise.resolve();
+const hidden=()=>document.hidden?Promise.resolve():new Promise(resolve=>{
+  const change=()=>{if(document.hidden){document.removeEventListener('visibilitychange',change);resolve();}};
+  document.addEventListener('visibilitychange',change);change();
+});
+window.runBackgroundRender=async()=>{
+  try {
+    if(mode==='webm') {
+      const supported=AudioEncoder.isConfigSupported.bind(AudioEncoder);
+      AudioEncoder.isConfigSupported=config=>config.codec.startsWith('mp4a')?Promise.resolve({supported:false,config}):supported(config);
+    }
+    if(mode==='hidden-start'||mode==='webm')await hidden();
+    const fixture=async name=>new File([await fetch('/tests/'+name).then(r=>r.blob())],name,{type:'video/mp4'});
+    const file=await fixture('fixture.mp4');
+    const animation={kind:'animation',title:'Background export complete',subtitle:'',color:'#00ff66',duration:1.5,transition:'crossfade',transitionSeconds:0.6};
+    const ending=mode==='video'?{kind:'video',file:await fixture('ending-fixture.mp4'),includeAudio:true,transition:'slide',transitionSeconds:0.6}
+      :['animation','hidden-start','webm'].includes(mode)?animation:undefined;
+    const controller=new AbortController();
+    let requested=false,hiddenProgress=0,latest=0,cancelled=false,blob;
+    const cues=[{text:'Hello world',startMs:100,endMs:1400,spans:[{text:'Hello',startMs:100,endMs:700},{text:'world',startMs:700,endMs:1400}]}];
+    const options={file,cues,ending,canvas:document.querySelector('canvas'),style:'highlight',design:{size:8},signal:controller.signal,onProgress:p=>{
+      check(p>=latest,'Progress moved backwards');latest=p;
+      if(document.hidden)hiddenProgress++;
+      const threshold=['video','animation'].includes(mode)?0.65:0.05;
+      if(!requested&&p>=threshold&&!['hidden-start','webm'].includes(mode)){requested=true;console.log('SMOKE_HIDE_RENDER_TAB');}
+      if(mode==='cancel'&&document.hidden&&p>0.55)controller.abort();
+    }};
+    try {blob=await renderCaptionedVideo(options);}catch(error){if(mode==='cancel'&&error.name==='AbortError')cancelled=true;else throw error;}
+    check(document.hidden,'Render did not finish with its tab hidden');
+    check(hiddenProgress>1,'No rendering progress while hidden');
+    console.log('SMOKE_RENDER_FINISHED');
+    await visible();
+    if(mode==='cancel') {
+      check(cancelled&&!blob,'Cancellation kept a partial video');
+      const retry=await renderCaptionedVideo({...options,signal:new AbortController().signal,onProgress(){}});
+      check(retry.size>1000,'Retry after background cancellation failed');
+      return {ok:true,mode,hiddenProgress,cancelled,retry:true};
+    }
+    check(latest===1&&blob.size>1000,'Render did not complete');
+    check(blob.type===(mode==='webm'?'video/webm':'video/mp4'),'Wrong format: '+blob.type);
+    const input=new Input({source:new BlobSource(blob),formats:ALL_FORMATS});
+    try {
+      const track=await input.getPrimaryVideoTrack();
+      let count=0;for await(const packet of new EncodedPacketSink(track).packets())count++;
+      check(count===(ending?105:60),'Missing frames in background export: '+count);
+      const duration=await track.computeDuration();
+      check(Math.abs(duration-(ending?3.5:2))<0.002,'Video duration changed: '+duration);
+      const sink=new CanvasSink(track,{width:320,height:180,fit:'contain'});
+      const centroid=async time=>{
+        const image=await sink.getCanvas(time),data=image.canvas.getContext('2d').getImageData(0,0,320,180).data;
+        let sum=0,count=0;for(let i=0;i<data.length;i+=4)if(data[i]>170&&data[i+1]>140&&data[i+2]<110){sum+=(i/4)%320;count++;}
+        check(count>10,'Caption pixels missing at '+time);return sum/count;
+      };
+      check(await centroid(0.95)-await centroid(0.4)>15,'Word highlight froze during tab switch');
+      if(ending) {
+        const end=await sink.getCanvas(3.1),data=end.canvas.getContext('2d').getImageData(0,0,320,180).data;
+        if(mode==='video')check(data[(90*320+160)*4+1]>140,'Ending clip missing');
+        else {let white=0;for(let i=0;i<data.length;i+=4)if(data[i]>190&&data[i+1]>190&&data[i+2]>190)white++;check(white>30,'Animated ending missing');}
+      }
+      const context=new AudioContext();
+      const audio=await context.decodeAudioData(await blob.arrayBuffer());await context.close();
+      const values=audio.getChannelData(0);const rms=(start,end)=>{const samples=values.slice(Math.round(start*audio.sampleRate),Math.round(end*audio.sampleRate));return Math.sqrt(samples.reduce((s,v)=>s+v*v,0)/samples.length);};
+      check(rms(.3,1.8)>.03,'Source audio missing');
+      if(ending)check(mode==='video'?rms(2.9,3.3)>.03:rms(2.9,3.3)<.005,'Ending audio changed');
+      return {ok:true,mode,hiddenProgress,frames:count,duration,mimeType:blob.type,bytes:blob.size,wordHighlight:true,audio:true};
+    }finally{input.dispose();}
+  }catch(error){console.log('SMOKE_RENDER_FINISHED');return {ok:false,mode,error:String(error),stack:error.stack};}
+};
+</script></body></html>

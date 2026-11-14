@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oryn Video Subtitles</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">Oryn SDK reference workload</p>
+        <h1>Create and style captions for your videos.</h1>
+        <p class="intro">
+          Your video, audio, transcript, and subtitle file stay on this
+          computer. Review automatic captions before using them.
+        </p>
+      </header>
+      <section class="workspace">
+        <form id="workflow" class="panel">
+          <label class="drop" for="video-file">
+            <strong>Choose a video, or several</strong>
+            <span
+              >MP4, WebM, MOV, or M4V · one default audio track · up to 4
+              hours</span
+            >
+            <input
+              id="video-file"
+              type="file"
+              accept="video/mp4,video/webm,video/quicktime,.m4v"
+              multiple
+            />
+          </label>
+          <video id="preview" controls hidden></video>
+          <label class="subtitle-import">Already have subtitles? Import an SRT or Oryn timing JSON after choosing your video.
+            <input id="subtitle-file" type="file" accept=".srt,.json,application/x-subrip,application/json" />
+          </label>
+          <div class="row">
+            <label
+              >Source language<select id="language">
+                <option value="auto">Auto detect</option>
+                <option value="en">English</option>
+                <option value="de">German</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="sk">Slovak</option>
+                <option value="cs">Czech</option>
+                <option value="zh">Chinese</option>
+              </select></label
+            >
+            <label
+              >Timing profile<select id="quality">
+                <option value="quality">
+                  Native timed captions · quality first
+                </option>
+                <option value="faster">
+                  Lower overhead · estimated timing if needed
+                </option>
+              </select></label
+            >
+          </div>
+          <div class="actions">
+            <button id="start" type="submit" disabled>
+              Create subtitles locally</button
+            ><button id="cancel" type="button" class="secondary" hidden>
+              Cancel
+            </button>
+          </div>
+          <p id="disclosure" class="disclosure"></p>
+          <label id="add-video-control" class="add-videos" hidden>Add more videos to this project<input id="add-videos" type="file" accept="video/mp4,video/webm,video/quicktime,.m4v" multiple></label>
+        </form>
+        <aside class="panel stages" aria-live="polite">
+          <h2>Progress</h2>
+          <ol id="stages"></ol>
+          <p id="status">Checking Oryn runtime…</p>
+        </aside>
+      </section>
+      <section id="batch" class="panel batch" aria-labelledby="batch-title" hidden>
+        <div class="editor-head">
+          <div><p class="eyebrow">Your video queue</p><h2 id="batch-title">Review each. Render together.</h2></div>
+        </div>
+        <p class="hint">1. Create subtitles for the queue. 2. Open each video, check its captions, and mark it reviewed. 3. Render all and download one ZIP.</p>
+        <p class="hint">Caption design, animation, and the optional ending apply to every video. Your edits and rendered videos stay here while you switch between them. Keep this page open.</p>
+        <ol id="video-queue" class="video-queue" aria-label="Videos"></ol>
+        <div class="actions">
+          <button id="render-all" type="button" disabled>Render all videos</button>
+          <button id="download-all" type="button" class="secondary" disabled>Download all (.zip)</button>
+          <button id="cancel-batch" type="button" class="secondary" hidden>Stop queue</button>
+        </div>
+        <p id="batch-status" role="status"></p>
+      </section>
+      <section id="editor" class="panel editor" hidden>
+        <div class="editor-head">
+          <div>
+            <p class="eyebrow">Generated result</p>
+            <h2>Edit timed cues</h2>
+          </div>
+          <button id="reset" class="secondary" type="button">
+            Reset to generated
+          </button>
+        </div>
+        <div id="summary" class="summary"></div>
+        <div id="review-bar" class="review-bar" hidden><span id="review-label"></span><button id="review-video" type="button">Mark reviewed &amp; next</button></div>
+        <details class="caption-transcript">
+          <summary>Edit caption text and timing / save subtitles</summary>
+        <div id="cues"></div>
+        <h3>SubRip preview</h3>
+        <pre id="srt"></pre>
+        <div class="actions">
+          <button id="save" type="button">Save subtitles (.srt)</button>
+          <button id="save-timing" type="button" class="secondary">Save captions with word timings (.json)</button>
+        </div>
+        <p class="hint">
+          In CapCut Desktop or Web, open Captions and import the saved SRT.
+          Direct subtitle-file import on CapCut Mobile is not claimed.
+        </p>
+        </details>
+        <section class="video-export" aria-labelledby="render-title">
+          <h3 id="render-title">Render video with captions</h3>
+          <p class="hint">Create a new video with captions permanently drawn over the picture and the original audio included. Everything stays local. You can import the result into CapCut; captions will be part of the image, not editable text.</p>
+          <div id="caption-studio" class="caption-studio">
+            <div class="studio-head"><div><p class="eyebrow">Caption studio</p><h3>Make it yours.</h3></div><button id="design-reset" type="button" class="secondary">Reset design</button></div>
+            <div id="design-presets" class="preset-grid" aria-label="Caption style presets"></div>
+            <div class="studio-workspace">
+              <div class="design-stage">
+                <canvas id="design-preview" width="960" height="540" tabindex="0" aria-label="Caption preview. Drag to move captions, or use arrow keys; Shift moves faster."></canvas>
+                <div class="preview-controls"><button id="design-play" type="button" class="secondary">Play</button><button id="design-first" type="button" class="secondary">First caption</button><span id="design-time">0:00 / 0:00</span><label class="check"><input id="design-muted" type="checkbox">Mute preview</label></div>
+                <input id="design-seek" type="range" min="0" max="0" step="0.01" value="0" aria-label="Scrub video preview">
+                <p id="design-notice" class="hint" role="status">Drag the preview to reposition captions, or use the position controls.</p>
+              </div>
+              <div class="design-controls">
+                <label>Animation<select id="caption-style">
+                  <option value="highlight">Spoken-word highlight</option><option value="word-box">Moving word box</option><option value="word-reveal">Word-by-word reveal</option><option value="word-pop">Spoken-word bounce</option><option value="plain">No animation</option><option value="fade">Fade in / out</option><option value="pop">Pop in</option>
+                </select></label>
+                <div class="design-pair"><label>Typeface<select data-design="font" id="design-font"><option value="sans">Modern sans</option><option value="serif">Editorial serif</option><option value="mono">Monospace</option></select></label><label>Alignment<select data-design="align" id="design-align"><option value="center">Center</option><option value="left">Left</option><option value="right">Right</option></select></label></div>
+                <label>Text size <output data-value="size"></output><input data-design="size" id="design-size" type="range" min="2" max="12" step="0.1"></label>
+                <div class="design-pair"><label class="check"><input data-design="bold" type="checkbox">Bold</label><label class="check"><input data-design="uppercase" type="checkbox">ALL CAPS</label></div>
+                <div class="color-controls"><label>Text<input data-design="color" id="design-color" type="color"></label><label>Active word<input data-design="highlight" id="design-highlight" type="color"></label><label>Background<input data-design="background" id="design-background" type="color"></label></div>
+                <label>Background opacity <output data-value="opacity"></output><input data-design="opacity" id="design-opacity" type="range" min="0" max="1" step="0.01"></label>
+                <label>Black outline <output data-value="outline"></output><input data-design="outline" id="design-outline" type="range" min="0" max="6" step="0.5"></label>
+                <label class="check"><input data-design="shadow" type="checkbox">Text shadow</label>
+                <div class="position-presets" aria-label="Caption position"><button type="button" class="secondary" data-position="50,18">Top</button><button type="button" class="secondary" data-position="50,50">Center</button><button type="button" class="secondary" data-position="50,82">Bottom</button></div>
+                <label>Horizontal position <output data-value="x"></output><input data-design="x" id="design-x" type="range" min="0" max="100" step="0.5"></label>
+                <label>Vertical position <output data-value="y"></output><input data-design="y" id="design-y" type="range" min="0" max="100" step="0.5"></label>
+                <label>Caption width <output data-value="width"></output><input data-design="width" id="design-width" type="range" min="25" max="96" step="1"></label>
+                <p class="hint">Design applies to all captions. Size scales with the video. Settings stay in this browser; Reset design restores the default.</p>
+              </div>
+            </div>
+          </div>
+          <section id="ending-studio" class="ending-studio" aria-labelledby="ending-title">
+            <div class="studio-head"><div><p class="eyebrow">Finishing touch</p><h3 id="ending-title">Add an ending</h3></div><span class="ending-optional">Optional</span></div>
+            <p class="hint">Finish with your own video or an animated end card.</p>
+            <label>Ending<select id="ending-kind"><option value="none">No ending</option><option value="video">Upload ending video</option><option value="animation">Animated end card</option></select></label>
+            <div id="ending-options" hidden>
+              <div class="ending-workspace">
+                <div class="ending-controls">
+                  <div id="ending-video-fields" hidden>
+                    <label>Ending video<input id="ending-file" type="file" accept="video/mp4,video/webm,video/quicktime,.mov,.m4v"></label>
+                    <label class="check"><input id="ending-audio" type="checkbox" checked>Include ending video's audio</label>
+                    <p class="hint">The full clip is appended and fitted inside your source video's frame.</p>
+                  </div>
+                  <div id="ending-animation-fields" hidden>
+                    <label>Title<input id="ending-text" type="text" maxlength="100" value="Thanks for watching"></label>
+                    <label>Subtitle <span class="hint">Optional</span><input id="ending-subtitle" type="text" maxlength="160" value="See you in the next one."></label>
+                    <div class="design-pair"><label>Duration (seconds)<input id="ending-duration" type="number" min="1" max="15" step="0.5" value="3"></label><label>Accent color<input id="ending-color" type="color" value="#929bff"></label></div>
+                  </div>
+                  <div class="design-pair"><label>Transition<select id="ending-transition"><option value="crossfade">Crossfade</option><option value="fade-black">Fade through black</option><option value="slide">Slide left</option><option value="none">Cut</option></select></label><label>Transition (seconds)<input id="ending-transition-duration" type="number" min="0.1" max="2" step="0.1" value="0.6"></label></div>
+                  <p class="hint">The transition blends the final source frame into the start of the ending. Your source plays in full. Short clips use a shorter transition.</p>
+                </div>
+                <div class="ending-stage"><canvas id="ending-preview" width="640" height="360" aria-label="Ending and transition preview"></canvas><button id="ending-play" type="button" class="secondary">Preview ending &amp; transition</button></div>
+              </div>
+            </div>
+            <p id="ending-status" class="hint" role="status"></p>
+          </section>
+          <p class="hint">Word highlighting requires individual word timings for every caption. SRT has only whole-caption times. Generate subtitles here and render directly, or save/reopen the timing JSON to keep word timings. You can switch tabs while rendering; keep this page open until it finishes. Up to 30 minutes total, 1920 × 1080 at 30 fps (aspect ratio preserved), and 256 MB output. MP4 when supported; otherwise WebM.</p>
+          <div class="actions">
+            <button id="render-video" type="button">Render captioned video</button>
+            <button id="cancel-render" type="button" class="secondary" hidden>Cancel render</button>
+            <button id="save-video" type="button" disabled>Save rendered video</button>
+          </div>
+          <p id="timing-status" class="hint" role="status"></p>
+          <progress id="render-progress" max="1" value="0" hidden aria-label="Video rendering progress"></progress>
+          <p id="render-status" role="status"></p>
+          <canvas id="render-canvas" hidden aria-label="Caption rendering preview"></canvas>
+          <video id="rendered-preview" controls hidden aria-label="Rendered captioned video"></video>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+(version 1)
+(deny default)
+
+; Runtime packs are inference-only. Intentionally no network permission.
+(allow process*)
+(allow process-info* (target self))
+(allow signal (target self))
+(allow sysctl*)
+(allow mach-lookup)
+(allow mach-per-user-lookup)
+(allow ipc-posix-shm)
+(allow file-fsctl)
+(allow file-ioctl)
+(allow system-sched)
+
+; Apple Silicon Metal compute. Keep device access scoped to GPU user clients.
+(allow iokit-open
+  (iokit-user-client-class "AGXDeviceUserClient" "IOSurfaceRootUserClient"))
+
+(allow file-read-metadata)
+(allow file-read*)
+(deny file-read*
+  (require-all
+    (regex #"^/(Users|Volumes|Network|home|opt|private/(tmp|var/(folders|tmp)))(/|$)")
+    (require-not (subpath (param "ENGINE_ROOT")))
+    (require-not (subpath (param "PACK_RUNTIME_ROOT")))
+    (require-not (subpath (param "FOUNDATION_ROOT")))
+    (require-not (subpath (param "MODEL_ROOT")))
+    (require-not (subpath (param "ARTIFACT_INPUT_ROOT")))
+    (require-not (subpath (param "ARTIFACT_OUTPUT_ROOT")))
+    (require-not (subpath (param "METAL_COMPILER_CACHE")))
+    (require-not (subpath (param "SCRATCH_ROOT")))))
+(allow file-read*
+  (literal "/dev/null")
+  (literal "/dev/random")
+  (literal "/dev/urandom")
+  (subpath "/System")
+  (subpath "/bin")
+  (subpath "/sbin")
+  (subpath "/usr")
+  (subpath "/Library/Apple")
+  (subpath "/private/etc")
+  (subpath (param "ENGINE_ROOT"))
+  (subpath (param "PACK_RUNTIME_ROOT"))
+  (subpath (param "FOUNDATION_ROOT"))
+  (subpath (param "MODEL_ROOT"))
+  (subpath (param "ARTIFACT_INPUT_ROOT"))
+  (subpath (param "ARTIFACT_OUTPUT_ROOT"))
+  (subpath (param "SCRATCH_ROOT")))
+
+(allow file-write*
+  (literal "/dev/null")
+  (subpath (param "ARTIFACT_OUTPUT_ROOT"))
+  (subpath (param "SCRATCH_ROOT")))
+
+; Metal compiles native kernels in a separate system helper. Its fixed module
+; cache is supplied by the launcher, never by a model or a task payload.
+(allow file-read* file-write* (subpath (param "METAL_COMPILER_CACHE")))
+(allow file-issue-extension
+  (require-all
+    (extension-class "com.apple.app-sandbox.read-write")
+    (subpath (param "METAL_COMPILER_CACHE"))))

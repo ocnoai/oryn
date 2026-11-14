@@ -1,0 +1,92 @@
+#!/bin/zsh
+
+set -euo pipefail
+
+WORKSPACE_DIR=${0:A:h:h}
+MODE=${1:-local}
+PROTOCOL_DIR="$WORKSPACE_DIR/projects/oryn-protocol"
+ENGINE_DIR="$WORKSPACE_DIR/projects/oryn-engine"
+BROWSER_DIR="$WORKSPACE_DIR/projects/oryn-browser"
+EXAMPLES_DIR="$WORKSPACE_DIR/projects/oryn-examples"
+
+if [[ "$MODE" != "local" && "$MODE" != "release" ]]; then
+  print -u2 "Usage: $0 [local|release]"
+  exit 2
+fi
+
+pnpm --dir "$PROTOCOL_DIR" build
+uv build --project "$ENGINE_DIR"
+pnpm --dir "$EXAMPLES_DIR" build
+
+ENGINE_VERSION="$(node -p 'require(process.argv[1]).engine' "$BROWSER_DIR/packaging/runtime-spec.json")"
+PROTOCOL_VERSION="$(node -p 'require(process.argv[1]).protocol' "$BROWSER_DIR/packaging/runtime-spec.json")"
+export ORYN_ENGINE_WHEEL="$ENGINE_DIR/dist/oryn_engine-${ENGINE_VERSION}-py3-none-any.whl"
+export ORYN_PROTOCOL_WHEEL="$PROTOCOL_DIR/python/dist/oryn_protocol-${PROTOCOL_VERSION}-py3-none-any.whl"
+export ORYN_ENGINE_REVISION="$(git -C "$ENGINE_DIR" rev-parse HEAD)"
+pnpm --dir "$BROWSER_DIR" runtime:assemble
+
+if [[ "$MODE" == "release" ]]; then
+  BROWSER_VERSION="$(node -p 'require(process.argv[1]).version' "$BROWSER_DIR/apps/browser/package.json")"
+  export ORYN_RELEASE_OUTPUT="${ORYN_RELEASE_OUTPUT:-$BROWSER_DIR/apps/browser/release-candidates/$BROWSER_VERSION}"
+  export ORYN_RELEASE_OUTPUT="${ORYN_RELEASE_OUTPUT:A}"
+  pnpm --dir "$BROWSER_DIR" package:mac:release
+else
+  pnpm --dir "$BROWSER_DIR" package:mac:local
+fi
+
+if [[ "$MODE" == "release" ]]; then
+  APP_PATH="$ORYN_RELEASE_OUTPUT/mac-arm64/Oryn Browser.app"
+else
+  APP_PATH="$BROWSER_DIR/apps/browser/release/mac-arm64/Oryn Browser.app"
+fi
+if [[ "$MODE" == "local" && ! -d "$APP_PATH" ]]; then
+  APP_PATH="$BROWSER_DIR/apps/browser/release/mac/Oryn Browser.app"
+fi
+if [[ ! -d "$APP_PATH" ]]; then
+  print -u2 "Packaged Oryn Browser.app was not created."
+  exit 1
+fi
+
+export ORYN_PACKAGED_APP="$APP_PATH"
+node "$BROWSER_DIR/scripts/verify-packaged-runtime.mjs" "$APP_PATH"
+
+PROFILE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/oryn-packaged-smoke.XXXXXX")"
+cleanup() {
+  if [[ -n "${PROFILE_DIR:-}" && -d "$PROFILE_DIR" ]]; then
+    rm -rf -- "$PROFILE_DIR"
+  fi
+}
+trap cleanup EXIT INT TERM
+export ORYN_SMOKE_PROFILE_ROOT="$PROFILE_DIR"
+export ORYN_SMOKE_SECOND_SITE_ROOT="${ORYN_SMOKE_SECOND_SITE_ROOT:-$EXAMPLES_DIR/chat/dist}"
+export ORYN_SMOKE_THIRD_SITE_ROOT="${ORYN_SMOKE_THIRD_SITE_ROOT:-$EXAMPLES_DIR/image-generation/dist}"
+
+export ORYN_SMOKE_SITE_ROOT="$EXAMPLES_DIR/transcription/dist"
+export ORYN_TRANSCRIPTION_SMOKE=1
+unset ORYN_CHAT_SMOKE
+pnpm --dir "$BROWSER_DIR" test:packaged
+
+export ORYN_SMOKE_SITE_ROOT="$EXAMPLES_DIR/chat/dist"
+export ORYN_CHAT_SMOKE=1
+export ORYN_SHARED_TASK_SMOKE=1
+export ORYN_EXPECT_PERSISTED_MODEL="Xenova/tiny-random-WhisperForConditionalGeneration"
+unset ORYN_TRANSCRIPTION_SMOKE
+pnpm --dir "$BROWSER_DIR" test:packaged
+
+export ORYN_MODEL_WORKSPACE_SMOKE=1
+export ORYN_EXPECT_PERSISTED_MODEL="trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+unset ORYN_CHAT_SMOKE ORYN_SHARED_TASK_SMOKE
+pnpm --dir "$BROWSER_DIR" test:packaged
+
+export ORYN_SMOKE_SITE_ROOT="$EXAMPLES_DIR/song-generation/dist"
+export ORYN_SONG_SMOKE=1
+export ORYN_EXPECT_PERSISTED_MODEL="trl-internal-testing/tiny-Qwen2ForCausalLM-2.5"
+unset ORYN_MODEL_WORKSPACE_SMOKE
+pnpm --dir "$BROWSER_DIR" test:packaged
+node "$BROWSER_DIR/scripts/verify-packaged-runtime.mjs" "$APP_PATH"
+
+if [[ "$MODE" == "release" ]]; then
+  node "$BROWSER_DIR/scripts/verify-macos-release.mjs" "$APP_PATH" "$ORYN_RELEASE_OUTPUT/Oryn-Browser-$BROWSER_VERSION-arm64.zip"
+fi
+
+print "PACKAGED_ALPHA_RESULT {\"passed\":true,\"mode\":\"$MODE\",\"app\":\"$APP_PATH\"}"

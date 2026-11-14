@@ -1,0 +1,137 @@
+{
+  "config": {
+    "__object__": {
+      "args": "as_params",
+      "name": "NestedDepthAnything3Net",
+      "path": "depth_anything_3.model.da3"
+    },
+    "anyview": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DepthAnything3Net",
+        "path": "depth_anything_3.model.da3"
+      },
+      "cam_dec": {
+        "__object__": {
+          "args": "as_params",
+          "name": "CameraDec",
+          "path": "depth_anything_3.model.cam_dec"
+        },
+        "dim_in": 3072
+      },
+      "cam_enc": {
+        "__object__": {
+          "args": "as_params",
+          "name": "CameraEnc",
+          "path": "depth_anything_3.model.cam_enc"
+        },
+        "dim_out": 1536
+      },
+      "gs_adapter": {
+        "__object__": {
+          "args": "as_params",
+          "name": "GaussianAdapter",
+          "path": "depth_anything_3.model.gs_adapter"
+        },
+        "gaussian_scale_max": 30.0,
+        "gaussian_scale_min": 1e-05,
+        "pred_color": false,
+        "pred_offset_depth": true,
+        "pred_offset_xy": true,
+        "sh_degree": 2
+      },
+      "gs_head": {
+        "__object__": {
+          "args": "as_params",
+          "name": "GSDPT",
+          "path": "depth_anything_3.model.gsdpt"
+        },
+        "dim_in": 3072,
+        "features": 256,
+        "out_channels": [
+          256,
+          512,
+          1024,
+          1024
+        ],
+        "output_dim": 38
+      },
+      "head": {
+        "__object__": {
+          "args": "as_params",
+          "name": "DualDPT",
+          "path": "depth_anything_3.model.dualdpt"
+        },
+        "dim_in": 3072,
+        "features": 256,
+        "out_channels": [
+          256,
+          512,
+          1024,
+          1024
+        ],
+        "output_dim": 2
+      },
+      "net": {
+        "__object__": {
+          "args": "as_params",
+          "name": "DinoV2",
+          "path": "depth_anything_3.model.dinov2.dinov2"
+        },
+        "alt_start": 13,
+        "cat_token": true,
+        "name": "vitg",
+        "out_layers": [
+          19,
+          27,
+          33,
+          39
+        ],
+        "qknorm_start": 13,
+        "rope_start": 13
+      }
+    },
+    "metric": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DepthAnything3Net",
+        "path": "depth_anything_3.model.da3"
+      },
+      "head": {
+        "__object__": {
+          "args": "as_params",
+          "name": "DPT",
+          "path": "depth_anything_3.model.dpt"
+        },
+        "dim_in": 1024,
+        "features": 256,
+        "out_channels": [
+          256,
+          512,
+          1024,
+          1024
+        ],
+        "output_dim": 1
+      },
+      "net": {
+        "__object__": {
+          "args": "as_params",
+          "name": "DinoV2",
+          "path": "depth_anything_3.model.dinov2.dinov2"
+        },
+        "alt_start": -1,
+        "cat_token": false,
+        "name": "vitl",
+        "out_layers": [
+          4,
+          11,
+          17,
+          23
+        ],
+        "qknorm_start": -1,
+        "rope_start": -1
+      }
+    }
+  },
+  "model_name": "da3nested-giant-large"
+}

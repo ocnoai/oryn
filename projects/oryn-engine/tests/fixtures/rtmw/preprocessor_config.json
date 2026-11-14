@@ -1,0 +1,39 @@
+{
+  "_valid_processor_keys": [
+    "images",
+    "do_resize",
+    "size",
+    "keep_aspect_ratio",
+    "ensure_multiple_of",
+    "resample",
+    "do_rescale",
+    "rescale_factor",
+    "do_normalize",
+    "image_mean",
+    "image_std",
+    "do_pad",
+    "size_divisor",
+    "return_tensors",
+    "data_format",
+    "input_data_format"
+  ],
+  "do_normalize": true,
+  "do_rescale": false,
+  "do_resize": true,
+  "image_mean": [
+    123.675,
+    116.28,
+    103.53
+  ],
+  "image_processor_type": "DPTImageProcessor",
+  "image_std": [
+    58.395,
+    57.12,
+    57.375
+  ],
+  "size": {
+    "height": 256,
+    "width": 192
+  }
+}
+

@@ -1,0 +1,3 @@
+# Shared signed MLX runtime foundation used by MLX chat, ACE-Step and MFlux adapters.
+# Compile with MACOSX_DEPLOYMENT_TARGET=14.0 to match the application and wheel baseline.
+mlx==0.32.4

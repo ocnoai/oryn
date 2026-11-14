@@ -1,0 +1,55 @@
+name: Public source CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  HF_HUB_OFFLINE: '1'
+  TRANSFORMERS_OFFLINE: '1'
+  HF_HUB_DISABLE_TELEMETRY: '1'
+  AWS_EC2_METADATA_DISABLED: 'true'
+
+concurrency:
+  group: public-source-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require Apple Silicon
+        run: test "$(uname -m)" = arm64
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: |
+            projects/oryn-protocol/pnpm-lock.yaml
+            projects/oryn-sdk/pnpm-lock.yaml
+            projects/oryn-browser/pnpm-lock.yaml
+            projects/oryn-examples/pnpm-lock.yaml
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: |
+            projects/oryn-protocol/python/uv.lock
+            projects/oryn-engine/uv.lock
+      - name: Bootstrap from the public checkout
+        run: ./scripts/bootstrap
+      - name: Verify public sources and bundled dependencies
+        run: pnpm vendor:verify && pnpm docs:check
+      - name: Build and test all public components
+        run: pnpm test

@@ -1,0 +1,18 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "model.install.progress",
+  "seq": 10,
+  "timestamp": 1787000001000,
+  "data": {
+    "operationId": "op_install_1",
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "stage": "downloading",
+    "downloadedBytes": 50,
+    "totalBytes": 100
+  }
+}

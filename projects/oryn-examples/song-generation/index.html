@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Oryn Song Generation Example</title>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">Oryn SDK reference workload</p>
+      <h1>Generate an audio track locally.</h1>
+      <p class="intro">
+        This ordinary website requests a text-to-music capability. Oryn chooses and runs a
+        compatible local model while owning permission, queueing, runtime visibility,
+        cancellation, and artifact publication.
+      </p>
+      <p class="model-note">
+        The demo identifies the model that actually ran. You can also exercise the exact-model
+        compatibility flow for
+        <a href="https://huggingface.co/MiniMaxAI/MiniMax-Music3">MiniMax Music 3</a>.
+      </p>
+
+      <form id="song-form" class="card">
+        <label for="prompt">Describe the track</label>
+        <textarea id="prompt" rows="4" maxlength="2000">Dark atmospheric techno with a slow pulse</textarea>
+        <label for="duration">Duration</label>
+        <select id="duration">
+          <option value="10" selected>10 seconds</option>
+          <option value="15">15 seconds</option>
+          <option value="30">30 seconds</option>
+          <option value="60">60 seconds</option>
+        </select>
+        <label class="model-note" for="exact-model">
+          <input id="exact-model" type="checkbox" />
+          Test the pinned MiniMax Music 3 request and its compatible substitutes
+        </label>
+        <div class="actions">
+          <button id="generate" type="submit">Generate locally</button>
+          <button id="cancel" class="secondary" type="button" hidden>Cancel</button>
+        </div>
+      </form>
+
+      <section class="status-card" aria-live="polite">
+        <p id="status">Checking Oryn runtime…</p>
+        <progress id="progress" max="1" value="0" hidden></progress>
+        <p id="details" class="details"></p>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <h2>Generated audio artifact</h2>
+        <audio id="audio" controls preload="metadata"></audio>
+        <div class="actions">
+          <button id="save" type="button">Save As…</button>
+        </div>
+        <div class="upload">
+          <label for="upload-url">Optional HTTPS upload destination</label>
+          <input id="upload-url" type="url" inputmode="url" placeholder="https://example.test/api/upload" />
+          <button id="upload" class="secondary" type="button">Upload explicitly</button>
+          <p class="details">Oryn never uploads automatically. This action first reads your authorized artifact as a Blob.</p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

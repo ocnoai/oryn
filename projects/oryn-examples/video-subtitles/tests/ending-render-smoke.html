@@ -1,0 +1,77 @@
+<!doctype html><html><body><canvas id="output"></canvas><script type="module">
+import {renderCaptionedVideo} from '../src/video-renderer.ts';
+import {drawVideoEnding} from '../src/video-ending.ts';
+const check = (value,message) => {if(!value) throw new Error(message);};
+const fixture = async name => new File([await fetch('/tests/'+name).then(response=>response.blob())],name,{type:'video/mp4'});
+try {
+  const source = await fixture('fixture.mp4'), clip = await fixture('ending-fixture.mp4');
+  const canvas = document.querySelector('canvas');
+  const animation = {kind:'animation',title:'See you soon',subtitle:'A local animated ending',color:'#00ff66',duration:1.5,transition:'crossfade',transitionSeconds:0.6};
+  const videoEnding = {kind:'video',file:clip,includeAudio:true,transition:'slide',transitionSeconds:0.6};
+  const options = {file:source,cues:[{text:'Source caption',startMs:100,endMs:1900}],canvas,style:'plain',signal:new AbortController().signal,onProgress() {}};
+  async function inspect(blob) {
+    const audio = new AudioContext();
+    const samples = await audio.decodeAudioData(await blob.arrayBuffer());
+    const values = samples.getChannelData(0);
+    const rms = (start,end) => {const slice=values.slice(Math.floor(start*samples.sampleRate),Math.floor(end*samples.sampleRate));return Math.sqrt(slice.reduce((s,v)=>s+v*v,0)/slice.length);};
+    const video = document.createElement('video'); video.muted=true;
+    const url=URL.createObjectURL(blob);video.src=url;
+    await new Promise((resolve,reject)=>{video.onloadeddata=resolve;video.onerror=reject;});
+    const capture=document.createElement('canvas');capture.width=320;capture.height=180;
+    const context=capture.getContext('2d');
+    const pixels = async time => {video.currentTime=time;await new Promise(resolve=>video.onseeked=resolve);context.drawImage(video,0,0,320,180);return context.getImageData(0,0,320,180).data;};
+    return {duration:samples.duration,rms,pixels,capture,cleanup:async()=>{video.removeAttribute('src');video.load();URL.revokeObjectURL(url);await audio.close();}};
+  }
+  const results=[];
+  for(const ending of [animation,videoEnding,{...videoEnding,includeAudio:false,transition:'fade-black'}]) {
+    const progress=[];
+    const blob=await renderCaptionedVideo({...options,ending,onProgress:value=>progress.push(value)});
+    const output=await inspect(blob);
+    check(output.duration>3.2&&output.duration<3.9,'Ending missing or wrong total duration: '+output.duration);
+    check(output.rms(0.4,1.8)>0.03,'Source audio lost');
+    const tailRms=output.rms(2.9,3.3);
+    check(ending.kind==='video'&&ending.includeAudio?tailRms>0.03:tailRms<0.005,'Ending audio setting ignored: '+tailRms);
+    check(progress.every((p,i)=>p>=0&&p<=1&&(!i||p>=progress[i-1]))&&progress.at(-1)===1,'Progress regressed or finished early');
+    const pixels=await output.pixels(3.1);
+    const at=(x,y)=>Array.from(pixels.slice((y*320+x)*4,(y*320+x)*4+3));
+    if(ending.kind==='video') {
+      check(at(160,90)[1]>140&&at(160,90)[2]<100,'Ending clip frame missing');
+      check(at(10,90).every(value=>value<20),'Portrait ending stretched instead of fitted');
+    } else {
+      let white=0;for(let i=0;i<pixels.length;i+=4)if(pixels[i]>190&&pixels[i+1]>190&&pixels[i+2]>190)white++;
+      check(white>30,'Animated ending title missing');
+    }
+    window.smokeFrame=output.capture.toDataURL();
+    results.push({kind:ending.kind,transition:ending.transition,includeAudio:ending.includeAudio,duration:output.duration,tailRms,bytes:blob.size});
+    await output.cleanup();
+  }
+  // Verify the actual transition painter at its endpoints and midpoint.
+  const endVideo=document.createElement('video');endVideo.muted=true;const endURL=URL.createObjectURL(clip);endVideo.src=endURL;
+  await new Promise((resolve,reject)=>{endVideo.onloadeddata=resolve;endVideo.onerror=reject;});
+  endVideo.currentTime=0.2;await new Promise(resolve=>endVideo.onseeked=resolve);
+  const outgoing=document.createElement('canvas');outgoing.width=320;outgoing.height=180;outgoing.getContext('2d').fillStyle='#0000ff';outgoing.getContext('2d').fillRect(0,0,320,180);
+  canvas.width=320;canvas.height=180;const context=canvas.getContext('2d');
+  for(const transition of ['crossfade','fade-black','slide','none']) {
+    const ending={...videoEnding,transition};
+    drawVideoEnding(context,outgoing,ending,0,1.5,320,180,endVideo);
+    let center=context.getImageData(160,90,1,1).data;
+    check(transition==='none'?center[1]>140:center[2]>240,'Transition start wrong: '+transition);
+    drawVideoEnding(context,outgoing,ending,0.3,1.5,320,180,endVideo);
+    center=context.getImageData(160,90,1,1).data;
+    if(transition==='fade-black')check(center[0]+center[1]+center[2]<10,'Fade midpoint not black');
+    if(transition==='crossfade')check(center[1]>70&&center[2]>70,'Crossfade midpoint did not blend: '+Array.from(center));
+    drawVideoEnding(context,outgoing,ending,0.6,1.5,320,180,endVideo);
+    check(context.getImageData(160,90,1,1).data[1]>140,'Transition did not complete: '+transition);
+  }
+  endVideo.removeAttribute('src');endVideo.load();URL.revokeObjectURL(endURL);
+  const abort=new AbortController();let cancelled=false;
+  try {await renderCaptionedVideo({...options,ending:videoEnding,signal:abort.signal,onProgress:p=>{if(p>0.75)abort.abort();}});}catch(error){cancelled=error.name==='AbortError';}
+  check(cancelled,'Cancellation during the ending returned partial video');
+  const retry=await renderCaptionedVideo({...options,ending:animation});
+  check(retry.size>1000,'Retry after ending cancellation failed');
+  let invalid=false;
+  try {await renderCaptionedVideo({...options,ending:{...videoEnding,file:new File(['bad video'],'bad.mp4',{type:'video/mp4'})}});}catch(error){invalid=String(error).includes('ending video cannot be decoded');}
+  check(invalid,'Invalid ending did not produce a useful error');
+  window.smokeResult={ok:true,results,transitions:4,cancelDuringEnding:true,retry:true,invalidClip:true};
+}catch(error){window.smokeResult={ok:false,error:String(error),stack:error.stack};}
+</script></body></html>

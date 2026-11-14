@@ -1,0 +1,593 @@
+[
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/embeddings/class_embedding:0",
+    "shape": [
+      1,
+      1,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/embeddings/position_embedding:0",
+    "shape": [
+      1,
+      17,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/embeddings/patch_embedding/kernel:0",
+    "shape": [
+      4,
+      4,
+      3,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/embeddings/patch_embedding/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/self_attn/qkv/kernel:0",
+    "shape": [
+      32,
+      96
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/self_attn/qkv/bias:0",
+    "shape": [
+      96
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/self_attn/projection/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/self_attn/projection/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._0/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/self_attn/qkv/kernel:0",
+    "shape": [
+      32,
+      96
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/self_attn/qkv/bias:0",
+    "shape": [
+      96
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/self_attn/projection/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/self_attn/projection/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/layer_norm1/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/layer_norm1/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/mlp/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/mlp/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/mlp/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/mlp/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/layer_norm2/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/encoder/layers_._1/layer_norm2/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/post_layernorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/vision_model/post_layernorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/embeddings/word_embeddings/embeddings:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/embeddings/position_embeddings/embeddings:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/embeddings/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/embeddings/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/attention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/crossattention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._0/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/attention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/query/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/query/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/key/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/key/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/value/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/self/value/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/output/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/crossattention/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/intermediate/dense/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/intermediate/dense/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/output/dense/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/output/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/output/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/bert/encoder/layer_._1/output/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/transform/dense/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/transform/dense/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/transform/LayerNorm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/transform/LayerNorm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_blip_for_conditional_generation/text_decoder/cls/predictions/decoder/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  }
+]

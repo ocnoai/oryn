@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo/resolve/6c4aa6bba196ea3c8ee8e3e8b5dabe7a715fac92/model.safetensors",
+    "headerBytes": 35440,
+    "tensors": 316,
+    "sha256": "7182b33d31fd31afe4929d1aa524111082c43224d44d99c0b62201a61c45f936",
+    "learnedPayloadBytes": 0
+  },
+  {
+    "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo/resolve/6c4aa6bba196ea3c8ee8e3e8b5dabe7a715fac92/semantic_encoder.safetensors",
+    "headerBytes": 9920,
+    "tensors": 103,
+    "sha256": "4370ec419248d1e64eb1ba4809e949c0e13b2b8de2f55a4cdb4e4d0121c87715",
+    "learnedPayloadBytes": 0
+  },
+  {
+    "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo/resolve/6c4aa6bba196ea3c8ee8e3e8b5dabe7a715fac92/speaker_encoder.safetensors",
+    "headerBytes": 18624,
+    "tensors": 206,
+    "sha256": "8d157fb25d6034f77f04d60a80e1b394237f89b50ac88138a6e16822d3d16430",
+    "learnedPayloadBytes": 0
+  },
+  {
+    "url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo/resolve/6c4aa6bba196ea3c8ee8e3e8b5dabe7a715fac92/vocoder.safetensors",
+    "headerBytes": 8248,
+    "tensors": 83,
+    "sha256": "abfb4a6a3bd06c8e225a072f21b8a08840cc0e3fa4800a95bb7d7324a020d3d6",
+    "learnedPayloadBytes": 0
+  }
+]

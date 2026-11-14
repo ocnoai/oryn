@@ -1,0 +1,12 @@
+{
+  "backend": "tokenizers",
+  "bos_token": null,
+  "do_lower_case": true,
+  "eos_token": null,
+  "model_max_length": 64,
+  "pad_token": "<pad>",
+  "processor_class": "Tipsv2Processor",
+  "token_type_ids_pattern": "all_zeros",
+  "tokenizer_class": "Tipsv2Tokenizer",
+  "unk_token": "<unk>"
+}

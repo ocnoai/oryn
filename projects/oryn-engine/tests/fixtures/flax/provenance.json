@@ -1,0 +1,24 @@
+{
+  "purpose": "Synthetic native graph parity fixtures, not original-model qualification",
+  "generator": "Offline synthetic fixture generator; versions, seed and output hashes recorded below.",
+  "versions": {
+    "transformers": "4.46.3",
+    "flax": "0.10.2",
+    "jax": "0.4.35"
+  },
+  "seed": 61,
+  "files": {
+    "bart/config.json": "b959123db121b0a250033331beae907c0df5581e7a0af34b9d3fc6883ab3d36e",
+    "bart/flax_model.msgpack": "c2ce4b441f8da8a0f359c898564c2400297bfc3522313d1897d41cdb80bd8f6a",
+    "bart/forward.json": "c00defc978b1a8053088a556816c670d24263a98500021a04c78f8cbe2f29aaf",
+    "bart/generation_config.json": "1fbea7e5e9756e90e981e4bf24a2f6632569875a2b78d61dac79e26fcda63ce0",
+    "mt5/config.json": "148bdc1198ee46f6db296610df2486f8787d61efd95666b829b8c4e49bdea11b",
+    "mt5/flax_model.msgpack": "f3914a7294da2f7616df9469090a9807f68f575e87b054dbe2d139a9763ea9fd",
+    "mt5/forward.json": "018e1473ec4c42ca893995942e60b1a7bec818bca8252d3870bd44bbad94c459",
+    "mt5/generation_config.json": "8654c9f16c7d2ab8bb50074114ebf62bc1b0fbd50eaf7a93807c511799ddc3d1",
+    "t5/config.json": "caf21951266c0aa70aa8905598c363f9953d1099a51171f450cf533526012880",
+    "t5/flax_model.msgpack": "8e694cffce556e125026faf895cdcafee6e19e07dad1d332931ca482337b5c41",
+    "t5/forward.json": "eb6137af38821c39d68900f2b5eebe6ae6429a1610f23ea054bcba6d6833d2ea",
+    "t5/generation_config.json": "8654c9f16c7d2ab8bb50074114ebf62bc1b0fbd50eaf7a93807c511799ddc3d1"
+  }
+}

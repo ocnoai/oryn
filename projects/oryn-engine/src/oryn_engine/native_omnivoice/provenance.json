@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "path": "omnivoice-0.2.1/omnivoice/utils/duration.py",
+      "sha256": "3a0b468e89eb2a109a270fe4386ce1afe57305c08375a524a1af08399dfaf772"
+    },
+    {
+      "path": "omnivoice-0.2.1/omnivoice/utils/lang_map.py",
+      "sha256": "e7924def0990d215aa94356f2ab17512a7b77e9cd43bc9bded093f757dfc1cd9"
+    },
+    {
+      "path": "omnivoice-0.2.1/omnivoice/utils/audio.py",
+      "sha256": "6e2154cb8936138ee6c417c253dc9b222500ed322e6fbb2c0377a0b6850b8b48"
+    },
+    {
+      "path": "omnivoice-0.2.1/omnivoice/models/omnivoice.py",
+      "sha256": "631050ba94775b9c8a72ec3b2d84777c38317e2e502b1998d3128fedf88846ff"
+    },
+    {
+      "path": "transformers-5.17.0/transformers/models/higgs_audio_v2_tokenizer/modeling_higgs_audio_v2_tokenizer.py",
+      "sha256": "afd5d6e4dc55f32c9207513a43064d5c56d80de23e809dc47fb48d1e577bcb2d"
+    },
+    {
+      "path": "huggingface/k2-fsa/OmniVoice/tokenizer_config.json",
+      "sha256": "49f78845596a82bf15c83673794bdf9f76f812b11f60ab6a2239d9be65b00676"
+    },
+    {
+      "path": "huggingface/k2-fsa/OmniVoice/config.json",
+      "sha256": "5e359117e13b420c5e0c925d4aba650d624767131f1d1746928f8b850d5dc372"
+    },
+    {
+      "path": "huggingface/k2-fsa/OmniVoice/audio_tokenizer/config.json",
+      "sha256": "eefb20806f7104e77c9a5277c9df0f9bb8826b08eb1d4e8ab2b9829b6ef9fac1"
+    },
+    {
+      "path": "huggingface/k2-fsa/OmniVoice/audio_tokenizer/preprocessor_config.json",
+      "sha256": "ae61eea88558608ee2fa86d2aec9fce8d99a5ff75d09cb7651ccce21ae1d9084"
+    }
+  ],
+  "omnivoiceDistribution": {
+    "version": "0.2.1",
+    "url": "https://files.pythonhosted.org/packages/63/68/862ac66ab83a28e43400c8bf608ac5f1d6d16a0b583540d8bd9d4297b663/omnivoice-0.2.1-py3-none-any.whl",
+    "sha256": "23f113ef51116a16308b55c4c2ac9c08efca7dfb594802f5c8adfb7523313ccc",
+    "bytes": 168460,
+    "installed": false
+  },
+  "transformersVersion": "5.17.0",
+  "changes": [
+    "OmniVoice 0.2.1 Qwen3 complete main graph, native iterative bidirectional CFG decoding, duration rules, language IDs and text/nonverbal tokenization. Removed training, CLI, hub, ASR, reference cloning and chunking surfaces.",
+    "Owned explicit Qwen3 constructor; strict complete original tensor loading occurs outside this module. Eager testing translates boolean attention masks to additive masks; production SDPA uses native boolean masks.",
+    "Higgs complete native graph with explicit DacModel and HubertModel; omit optional torchaudio availability/doc decorators, replace its only pure tensor resampling call with reviewed in-tree sinc math. No binary shim or incompatible dependency.",
+    "Engine selects upstream supported postprocess_output=False: retain waveform timing, native automatic-voice peak normalization, native fades and 100ms padding. No pydub or ffmpeg needed.",
+    "Only configuration and metadata copied from original repository; no learned values."
+  ]
+}

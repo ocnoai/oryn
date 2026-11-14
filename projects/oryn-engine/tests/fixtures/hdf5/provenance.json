@@ -1,0 +1,28 @@
+{
+  "source": "Synthetic models produced by native TFTapasForQuestionAnswering; no original weights.",
+  "transformers": "4.46.3",
+  "tensorflow": "2.20.0",
+  "tfKeras": "2.20.0",
+  "tensorflowProbability": "0.25.0",
+  "seed": "6104 + aggregation count",
+  "artifacts": {
+    "original-tiny-datasets.json": "839a7b0bbcc46a8ff64262ad8cd454ab7e9715d975ccbc9800c8788e4a682043",
+    "generate_reference.py.txt": "fa230fd895d372af4f9dd548b0531d514e400d563630ec6c6601671c5d376fd4",
+    "original-tiny-config.json": "1f05d506f4f48cd027072c9d6efd49d7c17cff7a6ee1f8ad75846a95643df5ab",
+    "tapas-0/config.json": "f7ef0b0f8e7531570fafb9053b9332a58a6c28f9b16278eafc7d76aa8c08f90b",
+    "tapas-0/reference.npz": "db5b0fa82f012383406242effdbce539002dc8b6643b7b3f13ed01770973e4ee",
+    "tapas-0/tf_model.h5": "9d08acd8c5c431044c48c743bb72c3aa95938ed4ace99c6d9fb0639b181e298d",
+    "tapas-4/config.json": "d48a847043eab74638d5fb2470add82d19d515402730f74acc103d97e29e8370",
+    "tapas-4/reference.npz": "ea6278d0da25e9e5aebfbcca74f4608b3a53f683a30d6d54f699a138b2a69c13",
+    "tapas-4/tf_model.h5": "b1266b77ef86d860455b3981b21cc3d4441a624b416b1391ff97ab374e6a3fcb"
+  },
+  "originalMetadata": {
+    "repository": "google/tapas-tiny-finetuned-sqa",
+    "revision": "9e62729ba223d47b8812e264d621e719d7fdaaf5",
+    "files": [
+      "original-tiny-config.json",
+      "original-tiny-datasets.json"
+    ],
+    "note": "Configuration and numeric dataset descriptors only; original checkpoint removed."
+  }
+}

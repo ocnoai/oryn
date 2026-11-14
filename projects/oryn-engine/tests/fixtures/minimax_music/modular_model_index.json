@@ -1,0 +1,103 @@
+{
+  "_blocks_class_name": "MiniMaxMusic3Blocks",
+  "_class_name": "MiniMaxMusic3ModularPipeline",
+  "_diffusers_version": "0.40.0.dev0",
+  "condition_encoder": [
+    "diffusers",
+    "MiniMaxMusic3ConditionEncoder",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "condition_encoder",
+      "type_hint": [
+        "diffusers",
+        "MiniMaxMusic3ConditionEncoder"
+      ],
+      "variant": null
+    }
+  ],
+  "language_model": [
+    "transformers",
+    "Qwen3ForCausalLM",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "language_model",
+      "type_hint": [
+        "transformers",
+        "Qwen3ForCausalLM"
+      ],
+      "variant": null
+    }
+  ],
+  "rvq_depth_decoder": [
+    "diffusers",
+    "MiniMaxMusic3RVQDepthDecoder",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "rvq_depth_decoder",
+      "type_hint": [
+        "diffusers",
+        "MiniMaxMusic3RVQDepthDecoder"
+      ],
+      "variant": null
+    }
+  ],
+  "scheduler": [
+    "diffusers",
+    "FlowMatchEulerDiscreteScheduler",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "scheduler",
+      "type_hint": [
+        "diffusers",
+        "FlowMatchEulerDiscreteScheduler"
+      ],
+      "variant": null
+    }
+  ],
+  "tokenizer": [
+    "transformers",
+    "Qwen2Tokenizer",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "tokenizer",
+      "type_hint": [
+        "transformers",
+        "Qwen2Tokenizer"
+      ],
+      "variant": null
+    }
+  ],
+  "transformer": [
+    "diffusers",
+    "MiniMaxMusic3Transformer1DModel",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "transformer",
+      "type_hint": [
+        "diffusers",
+        "MiniMaxMusic3Transformer1DModel"
+      ],
+      "variant": null
+    }
+  ],
+  "vocoder": [
+    "diffusers",
+    "MiniMaxMusic3Vocoder",
+    {
+      "pretrained_model_name_or_path": "MiniMaxAI/MiniMax-Music3",
+      "revision": null,
+      "subfolder": "vocoder",
+      "type_hint": [
+        "diffusers",
+        "MiniMaxMusic3Vocoder"
+      ],
+      "variant": null
+    }
+  ]
+}

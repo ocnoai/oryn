@@ -1,0 +1,2203 @@
+{
+  "frontend.mel.mel_scale.fb": {
+    "dtype": "F32",
+    "shape": [
+      513,
+      80
+    ],
+    "data_offsets": [
+      0,
+      164160
+    ]
+  },
+  "frontend.mel.spectrogram.window": {
+    "dtype": "F32",
+    "shape": [
+      400
+    ],
+    "data_offsets": [
+      164160,
+      165760
+    ]
+  },
+  "fuse.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      165760,
+      166656
+    ]
+  },
+  "fuse.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      576,
+      1
+    ],
+    "data_offsets": [
+      166656,
+      682752
+    ]
+  },
+  "fuse.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      682752,
+      683648
+    ]
+  },
+  "fuse.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      683648,
+      684544
+    ]
+  },
+  "id_head.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      256
+    ],
+    "data_offsets": [
+      684544,
+      685568
+    ]
+  },
+  "id_head.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      256,
+      448
+    ],
+    "data_offsets": [
+      685568,
+      1144320
+    ]
+  },
+  "id_head.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1144320,
+      1145088
+    ]
+  },
+  "id_head.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      256
+    ],
+    "data_offsets": [
+      1145088,
+      1341696
+    ]
+  },
+  "id_pool.attn.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      128
+    ],
+    "data_offsets": [
+      1341696,
+      1342208
+    ]
+  },
+  "id_pool.attn.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      128,
+      224,
+      1
+    ],
+    "data_offsets": [
+      1342208,
+      1456896
+    ]
+  },
+  "id_pool.attn.2.bias": {
+    "dtype": "F32",
+    "shape": [
+      1
+    ],
+    "data_offsets": [
+      1456896,
+      1456900
+    ]
+  },
+  "id_pool.attn.2.weight": {
+    "dtype": "F32",
+    "shape": [
+      1,
+      128,
+      1
+    ],
+    "data_offsets": [
+      1456900,
+      1457412
+    ]
+  },
+  "stages.0.0.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1457412,
+      1458052
+    ]
+  },
+  "stages.0.0.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      1,
+      5
+    ],
+    "data_offsets": [
+      1458052,
+      1461252
+    ]
+  },
+  "stages.0.0.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1461252,
+      1461892
+    ]
+  },
+  "stages.0.0.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1461892,
+      1462532
+    ]
+  },
+  "stages.0.0.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1462532,
+      1463172
+    ]
+  },
+  "stages.0.0.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1463172,
+      1463812
+    ]
+  },
+  "stages.0.0.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      320
+    ],
+    "data_offsets": [
+      1463812,
+      1465092
+    ]
+  },
+  "stages.0.0.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      320,
+      160,
+      1
+    ],
+    "data_offsets": [
+      1465092,
+      1669892
+    ]
+  },
+  "stages.0.0.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1669892,
+      1670532
+    ]
+  },
+  "stages.0.0.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      160,
+      1
+    ],
+    "data_offsets": [
+      1670532,
+      1772932
+    ]
+  },
+  "stages.0.0.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      20
+    ],
+    "data_offsets": [
+      1772932,
+      1773012
+    ]
+  },
+  "stages.0.0.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      20,
+      160,
+      1
+    ],
+    "data_offsets": [
+      1773012,
+      1785812
+    ]
+  },
+  "stages.0.0.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1785812,
+      1786452
+    ]
+  },
+  "stages.0.0.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      20,
+      1
+    ],
+    "data_offsets": [
+      1786452,
+      1799252
+    ]
+  },
+  "stages.0.1.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1799252,
+      1799892
+    ]
+  },
+  "stages.0.1.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      1,
+      5
+    ],
+    "data_offsets": [
+      1799892,
+      1803092
+    ]
+  },
+  "stages.0.1.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1803092,
+      1803732
+    ]
+  },
+  "stages.0.1.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1803732,
+      1804372
+    ]
+  },
+  "stages.0.1.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1804372,
+      1805012
+    ]
+  },
+  "stages.0.1.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      1805012,
+      1805652
+    ]
+  },
+  "stages.0.1.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      320
+    ],
+    "data_offsets": [
+      1805652,
+      1806932
+    ]
+  },
+  "stages.0.1.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      320,
+      160,
+      1
+    ],
+    "data_offsets": [
+      1806932,
+      2011732
+    ]
+  },
+  "stages.0.1.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2011732,
+      2012372
+    ]
+  },
+  "stages.0.1.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2012372,
+      2114772
+    ]
+  },
+  "stages.0.1.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      20
+    ],
+    "data_offsets": [
+      2114772,
+      2114852
+    ]
+  },
+  "stages.0.1.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      20,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2114852,
+      2127652
+    ]
+  },
+  "stages.0.1.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2127652,
+      2128292
+    ]
+  },
+  "stages.0.1.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      20,
+      1
+    ],
+    "data_offsets": [
+      2128292,
+      2141092
+    ]
+  },
+  "stages.0.2.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2141092,
+      2141732
+    ]
+  },
+  "stages.0.2.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      1,
+      5
+    ],
+    "data_offsets": [
+      2141732,
+      2144932
+    ]
+  },
+  "stages.0.2.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2144932,
+      2145572
+    ]
+  },
+  "stages.0.2.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2145572,
+      2146212
+    ]
+  },
+  "stages.0.2.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2146212,
+      2146852
+    ]
+  },
+  "stages.0.2.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2146852,
+      2147492
+    ]
+  },
+  "stages.0.2.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      320
+    ],
+    "data_offsets": [
+      2147492,
+      2148772
+    ]
+  },
+  "stages.0.2.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      320,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2148772,
+      2353572
+    ]
+  },
+  "stages.0.2.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2353572,
+      2354212
+    ]
+  },
+  "stages.0.2.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2354212,
+      2456612
+    ]
+  },
+  "stages.0.2.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      20
+    ],
+    "data_offsets": [
+      2456612,
+      2456692
+    ]
+  },
+  "stages.0.2.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      20,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2456692,
+      2469492
+    ]
+  },
+  "stages.0.2.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2469492,
+      2470132
+    ]
+  },
+  "stages.0.2.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      20,
+      1
+    ],
+    "data_offsets": [
+      2470132,
+      2482932
+    ]
+  },
+  "stages.0.3.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2482932,
+      2483572
+    ]
+  },
+  "stages.0.3.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      1,
+      5
+    ],
+    "data_offsets": [
+      2483572,
+      2486772
+    ]
+  },
+  "stages.0.3.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2486772,
+      2487412
+    ]
+  },
+  "stages.0.3.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2487412,
+      2488052
+    ]
+  },
+  "stages.0.3.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2488052,
+      2488692
+    ]
+  },
+  "stages.0.3.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2488692,
+      2489332
+    ]
+  },
+  "stages.0.3.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      320
+    ],
+    "data_offsets": [
+      2489332,
+      2490612
+    ]
+  },
+  "stages.0.3.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      320,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2490612,
+      2695412
+    ]
+  },
+  "stages.0.3.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2695412,
+      2696052
+    ]
+  },
+  "stages.0.3.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2696052,
+      2798452
+    ]
+  },
+  "stages.0.3.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      20
+    ],
+    "data_offsets": [
+      2798452,
+      2798532
+    ]
+  },
+  "stages.0.3.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      20,
+      160,
+      1
+    ],
+    "data_offsets": [
+      2798532,
+      2811332
+    ]
+  },
+  "stages.0.3.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      2811332,
+      2811972
+    ]
+  },
+  "stages.0.3.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      20,
+      1
+    ],
+    "data_offsets": [
+      2811972,
+      2824772
+    ]
+  },
+  "stages.1.0.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2824772,
+      2825540
+    ]
+  },
+  "stages.1.0.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      1,
+      5
+    ],
+    "data_offsets": [
+      2825540,
+      2829380
+    ]
+  },
+  "stages.1.0.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2829380,
+      2830148
+    ]
+  },
+  "stages.1.0.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2830148,
+      2830916
+    ]
+  },
+  "stages.1.0.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2830916,
+      2831684
+    ]
+  },
+  "stages.1.0.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2831684,
+      2832452
+    ]
+  },
+  "stages.1.0.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      384
+    ],
+    "data_offsets": [
+      2832452,
+      2833988
+    ]
+  },
+  "stages.1.0.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      384,
+      192,
+      1
+    ],
+    "data_offsets": [
+      2833988,
+      3128900
+    ]
+  },
+  "stages.1.0.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3128900,
+      3129668
+    ]
+  },
+  "stages.1.0.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3129668,
+      3277124
+    ]
+  },
+  "stages.1.0.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      24
+    ],
+    "data_offsets": [
+      3277124,
+      3277220
+    ]
+  },
+  "stages.1.0.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      24,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3277220,
+      3295652
+    ]
+  },
+  "stages.1.0.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3295652,
+      3296420
+    ]
+  },
+  "stages.1.0.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      24,
+      1
+    ],
+    "data_offsets": [
+      3296420,
+      3314852
+    ]
+  },
+  "stages.1.1.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3314852,
+      3315620
+    ]
+  },
+  "stages.1.1.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      1,
+      5
+    ],
+    "data_offsets": [
+      3315620,
+      3319460
+    ]
+  },
+  "stages.1.1.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3319460,
+      3320228
+    ]
+  },
+  "stages.1.1.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3320228,
+      3320996
+    ]
+  },
+  "stages.1.1.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3320996,
+      3321764
+    ]
+  },
+  "stages.1.1.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3321764,
+      3322532
+    ]
+  },
+  "stages.1.1.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      384
+    ],
+    "data_offsets": [
+      3322532,
+      3324068
+    ]
+  },
+  "stages.1.1.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      384,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3324068,
+      3618980
+    ]
+  },
+  "stages.1.1.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3618980,
+      3619748
+    ]
+  },
+  "stages.1.1.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3619748,
+      3767204
+    ]
+  },
+  "stages.1.1.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      24
+    ],
+    "data_offsets": [
+      3767204,
+      3767300
+    ]
+  },
+  "stages.1.1.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      24,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3767300,
+      3785732
+    ]
+  },
+  "stages.1.1.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3785732,
+      3786500
+    ]
+  },
+  "stages.1.1.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      24,
+      1
+    ],
+    "data_offsets": [
+      3786500,
+      3804932
+    ]
+  },
+  "stages.1.2.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3804932,
+      3805700
+    ]
+  },
+  "stages.1.2.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      1,
+      5
+    ],
+    "data_offsets": [
+      3805700,
+      3809540
+    ]
+  },
+  "stages.1.2.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3809540,
+      3810308
+    ]
+  },
+  "stages.1.2.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3810308,
+      3811076
+    ]
+  },
+  "stages.1.2.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3811076,
+      3811844
+    ]
+  },
+  "stages.1.2.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3811844,
+      3812612
+    ]
+  },
+  "stages.1.2.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      384
+    ],
+    "data_offsets": [
+      3812612,
+      3814148
+    ]
+  },
+  "stages.1.2.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      384,
+      192,
+      1
+    ],
+    "data_offsets": [
+      3814148,
+      4109060
+    ]
+  },
+  "stages.1.2.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4109060,
+      4109828
+    ]
+  },
+  "stages.1.2.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "data_offsets": [
+      4109828,
+      4257284
+    ]
+  },
+  "stages.1.2.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      24
+    ],
+    "data_offsets": [
+      4257284,
+      4257380
+    ]
+  },
+  "stages.1.2.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      24,
+      192,
+      1
+    ],
+    "data_offsets": [
+      4257380,
+      4275812
+    ]
+  },
+  "stages.1.2.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4275812,
+      4276580
+    ]
+  },
+  "stages.1.2.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      24,
+      1
+    ],
+    "data_offsets": [
+      4276580,
+      4295012
+    ]
+  },
+  "stages.1.3.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4295012,
+      4295780
+    ]
+  },
+  "stages.1.3.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      1,
+      5
+    ],
+    "data_offsets": [
+      4295780,
+      4299620
+    ]
+  },
+  "stages.1.3.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4299620,
+      4300388
+    ]
+  },
+  "stages.1.3.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4300388,
+      4301156
+    ]
+  },
+  "stages.1.3.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4301156,
+      4301924
+    ]
+  },
+  "stages.1.3.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4301924,
+      4302692
+    ]
+  },
+  "stages.1.3.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      384
+    ],
+    "data_offsets": [
+      4302692,
+      4304228
+    ]
+  },
+  "stages.1.3.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      384,
+      192,
+      1
+    ],
+    "data_offsets": [
+      4304228,
+      4599140
+    ]
+  },
+  "stages.1.3.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4599140,
+      4599908
+    ]
+  },
+  "stages.1.3.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      192,
+      1
+    ],
+    "data_offsets": [
+      4599908,
+      4747364
+    ]
+  },
+  "stages.1.3.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      24
+    ],
+    "data_offsets": [
+      4747364,
+      4747460
+    ]
+  },
+  "stages.1.3.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      24,
+      192,
+      1
+    ],
+    "data_offsets": [
+      4747460,
+      4765892
+    ]
+  },
+  "stages.1.3.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4765892,
+      4766660
+    ]
+  },
+  "stages.1.3.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      24,
+      1
+    ],
+    "data_offsets": [
+      4766660,
+      4785092
+    ]
+  },
+  "stages.2.0.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      4785092,
+      4785988
+    ]
+  },
+  "stages.2.0.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      1,
+      5
+    ],
+    "data_offsets": [
+      4785988,
+      4790468
+    ]
+  },
+  "stages.2.0.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      4790468,
+      4791364
+    ]
+  },
+  "stages.2.0.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      4791364,
+      4792260
+    ]
+  },
+  "stages.2.0.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      4792260,
+      4793156
+    ]
+  },
+  "stages.2.0.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      4793156,
+      4794052
+    ]
+  },
+  "stages.2.0.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      448
+    ],
+    "data_offsets": [
+      4794052,
+      4795844
+    ]
+  },
+  "stages.2.0.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      448,
+      224,
+      1
+    ],
+    "data_offsets": [
+      4795844,
+      5197252
+    ]
+  },
+  "stages.2.0.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5197252,
+      5198148
+    ]
+  },
+  "stages.2.0.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      224,
+      1
+    ],
+    "data_offsets": [
+      5198148,
+      5398852
+    ]
+  },
+  "stages.2.0.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      28
+    ],
+    "data_offsets": [
+      5398852,
+      5398964
+    ]
+  },
+  "stages.2.0.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      28,
+      224,
+      1
+    ],
+    "data_offsets": [
+      5398964,
+      5424052
+    ]
+  },
+  "stages.2.0.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5424052,
+      5424948
+    ]
+  },
+  "stages.2.0.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      28,
+      1
+    ],
+    "data_offsets": [
+      5424948,
+      5450036
+    ]
+  },
+  "stages.2.1.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5450036,
+      5450932
+    ]
+  },
+  "stages.2.1.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      1,
+      5
+    ],
+    "data_offsets": [
+      5450932,
+      5455412
+    ]
+  },
+  "stages.2.1.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5455412,
+      5456308
+    ]
+  },
+  "stages.2.1.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5456308,
+      5457204
+    ]
+  },
+  "stages.2.1.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5457204,
+      5458100
+    ]
+  },
+  "stages.2.1.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5458100,
+      5458996
+    ]
+  },
+  "stages.2.1.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      448
+    ],
+    "data_offsets": [
+      5458996,
+      5460788
+    ]
+  },
+  "stages.2.1.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      448,
+      224,
+      1
+    ],
+    "data_offsets": [
+      5460788,
+      5862196
+    ]
+  },
+  "stages.2.1.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      5862196,
+      5863092
+    ]
+  },
+  "stages.2.1.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      224,
+      1
+    ],
+    "data_offsets": [
+      5863092,
+      6063796
+    ]
+  },
+  "stages.2.1.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      28
+    ],
+    "data_offsets": [
+      6063796,
+      6063908
+    ]
+  },
+  "stages.2.1.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      28,
+      224,
+      1
+    ],
+    "data_offsets": [
+      6063908,
+      6088996
+    ]
+  },
+  "stages.2.1.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6088996,
+      6089892
+    ]
+  },
+  "stages.2.1.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      28,
+      1
+    ],
+    "data_offsets": [
+      6089892,
+      6114980
+    ]
+  },
+  "stages.2.2.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6114980,
+      6115876
+    ]
+  },
+  "stages.2.2.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      1,
+      5
+    ],
+    "data_offsets": [
+      6115876,
+      6120356
+    ]
+  },
+  "stages.2.2.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6120356,
+      6121252
+    ]
+  },
+  "stages.2.2.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6121252,
+      6122148
+    ]
+  },
+  "stages.2.2.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6122148,
+      6123044
+    ]
+  },
+  "stages.2.2.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6123044,
+      6123940
+    ]
+  },
+  "stages.2.2.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      448
+    ],
+    "data_offsets": [
+      6123940,
+      6125732
+    ]
+  },
+  "stages.2.2.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      448,
+      224,
+      1
+    ],
+    "data_offsets": [
+      6125732,
+      6527140
+    ]
+  },
+  "stages.2.2.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6527140,
+      6528036
+    ]
+  },
+  "stages.2.2.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      224,
+      1
+    ],
+    "data_offsets": [
+      6528036,
+      6728740
+    ]
+  },
+  "stages.2.2.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      28
+    ],
+    "data_offsets": [
+      6728740,
+      6728852
+    ]
+  },
+  "stages.2.2.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      28,
+      224,
+      1
+    ],
+    "data_offsets": [
+      6728852,
+      6753940
+    ]
+  },
+  "stages.2.2.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6753940,
+      6754836
+    ]
+  },
+  "stages.2.2.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      28,
+      1
+    ],
+    "data_offsets": [
+      6754836,
+      6779924
+    ]
+  },
+  "stages.2.3.dw.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6779924,
+      6780820
+    ]
+  },
+  "stages.2.3.dw.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      1,
+      5
+    ],
+    "data_offsets": [
+      6780820,
+      6785300
+    ]
+  },
+  "stages.2.3.norm1.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6785300,
+      6786196
+    ]
+  },
+  "stages.2.3.norm1.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6786196,
+      6787092
+    ]
+  },
+  "stages.2.3.norm2.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6787092,
+      6787988
+    ]
+  },
+  "stages.2.3.norm2.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      6787988,
+      6788884
+    ]
+  },
+  "stages.2.3.pw_in.bias": {
+    "dtype": "F32",
+    "shape": [
+      448
+    ],
+    "data_offsets": [
+      6788884,
+      6790676
+    ]
+  },
+  "stages.2.3.pw_in.weight": {
+    "dtype": "F32",
+    "shape": [
+      448,
+      224,
+      1
+    ],
+    "data_offsets": [
+      6790676,
+      7192084
+    ]
+  },
+  "stages.2.3.pw_out.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      7192084,
+      7192980
+    ]
+  },
+  "stages.2.3.pw_out.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      224,
+      1
+    ],
+    "data_offsets": [
+      7192980,
+      7393684
+    ]
+  },
+  "stages.2.3.se.net.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      28
+    ],
+    "data_offsets": [
+      7393684,
+      7393796
+    ]
+  },
+  "stages.2.3.se.net.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      28,
+      224,
+      1
+    ],
+    "data_offsets": [
+      7393796,
+      7418884
+    ]
+  },
+  "stages.2.3.se.net.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      7418884,
+      7419780
+    ]
+  },
+  "stages.2.3.se.net.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      28,
+      1
+    ],
+    "data_offsets": [
+      7419780,
+      7444868
+    ]
+  },
+  "stem.0.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      128
+    ],
+    "data_offsets": [
+      7444868,
+      7445380
+    ]
+  },
+  "stem.0.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      128,
+      80,
+      5
+    ],
+    "data_offsets": [
+      7445380,
+      7650180
+    ]
+  },
+  "stem.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      128
+    ],
+    "data_offsets": [
+      7650180,
+      7650692
+    ]
+  },
+  "stem.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      128
+    ],
+    "data_offsets": [
+      7650692,
+      7651204
+    ]
+  },
+  "style_ctrl_head.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      256
+    ],
+    "data_offsets": [
+      7651204,
+      7652228
+    ]
+  },
+  "style_ctrl_head.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      256,
+      896
+    ],
+    "data_offsets": [
+      7652228,
+      8569732
+    ]
+  },
+  "style_ctrl_head.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      8
+    ],
+    "data_offsets": [
+      8569732,
+      8569764
+    ]
+  },
+  "style_ctrl_head.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      8,
+      256
+    ],
+    "data_offsets": [
+      8569764,
+      8577956
+    ]
+  },
+  "style_head.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      256
+    ],
+    "data_offsets": [
+      8577956,
+      8578980
+    ]
+  },
+  "style_head.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      256,
+      896
+    ],
+    "data_offsets": [
+      8578980,
+      9496484
+    ]
+  },
+  "style_head.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      128
+    ],
+    "data_offsets": [
+      9496484,
+      9496996
+    ]
+  },
+  "style_head.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      128,
+      256
+    ],
+    "data_offsets": [
+      9496996,
+      9628068
+    ]
+  },
+  "transitions.0.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      9628068,
+      9628708
+    ]
+  },
+  "transitions.0.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      160,
+      128,
+      3
+    ],
+    "data_offsets": [
+      9628708,
+      9874468
+    ]
+  },
+  "transitions.0.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      9874468,
+      9875108
+    ]
+  },
+  "transitions.0.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      160
+    ],
+    "data_offsets": [
+      9875108,
+      9875748
+    ]
+  },
+  "transitions.1.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9875748,
+      9876516
+    ]
+  },
+  "transitions.1.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      192,
+      160,
+      3
+    ],
+    "data_offsets": [
+      9876516,
+      10245156
+    ]
+  },
+  "transitions.1.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10245156,
+      10245924
+    ]
+  },
+  "transitions.1.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10245924,
+      10246692
+    ]
+  },
+  "transitions.2.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      10246692,
+      10247588
+    ]
+  },
+  "transitions.2.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      224,
+      192,
+      3
+    ],
+    "data_offsets": [
+      10247588,
+      10763684
+    ]
+  },
+  "transitions.2.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      10763684,
+      10764580
+    ]
+  },
+  "transitions.2.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      224
+    ],
+    "data_offsets": [
+      10764580,
+      10765476
+    ]
+  }
+}

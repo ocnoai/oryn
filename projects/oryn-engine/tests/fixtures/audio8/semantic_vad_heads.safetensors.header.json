@@ -1,0 +1,89 @@
+{
+  "__metadata__": {
+    "format": "pt"
+  },
+  "semantic_vad_heads.0.bias": {
+    "dtype": "BF16",
+    "shape": [
+      8
+    ],
+    "data_offsets": [
+      0,
+      16
+    ]
+  },
+  "semantic_vad_heads.0.weight": {
+    "dtype": "BF16",
+    "shape": [
+      8,
+      2048
+    ],
+    "data_offsets": [
+      16,
+      32784
+    ]
+  },
+  "semantic_vad_heads.1.bias": {
+    "dtype": "BF16",
+    "shape": [
+      8
+    ],
+    "data_offsets": [
+      32784,
+      32800
+    ]
+  },
+  "semantic_vad_heads.1.weight": {
+    "dtype": "BF16",
+    "shape": [
+      8,
+      2048
+    ],
+    "data_offsets": [
+      32800,
+      65568
+    ]
+  },
+  "semantic_vad_heads.2.bias": {
+    "dtype": "BF16",
+    "shape": [
+      8
+    ],
+    "data_offsets": [
+      65568,
+      65584
+    ]
+  },
+  "semantic_vad_heads.2.weight": {
+    "dtype": "BF16",
+    "shape": [
+      8,
+      2048
+    ],
+    "data_offsets": [
+      65584,
+      98352
+    ]
+  },
+  "semantic_vad_heads.3.bias": {
+    "dtype": "BF16",
+    "shape": [
+      8
+    ],
+    "data_offsets": [
+      98352,
+      98368
+    ]
+  },
+  "semantic_vad_heads.3.weight": {
+    "dtype": "BF16",
+    "shape": [
+      8,
+      2048
+    ],
+    "data_offsets": [
+      98368,
+      131136
+    ]
+  }
+}

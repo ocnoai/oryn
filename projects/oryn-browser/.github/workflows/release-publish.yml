@@ -1,0 +1,74 @@
+name: Publish qualified application update
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_run_id:
+        description: Successful signed-candidate workflow run ID
+        required: true
+      channel:
+        type: choice
+        options: [beta, stable]
+        required: true
+      qualification_path:
+        description: Reviewed docs/release-qualification/*.json bound to this candidate
+        required: true
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: oryn-feed-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, macOS, ARM64, oryn-release]
+    environment: oryn-publish-${{ inputs.channel }}
+    timeout-minutes: 120
+    env:
+      ORYN_RELEASE_PUBLISH_DIR: ${{ vars.ORYN_RELEASE_PUBLISH_DIR }}
+      ORYN_UPDATE_BASE_URL: ${{ vars.ORYN_UPDATE_BASE_URL }}
+      RELEASE_CHANNEL: ${{ inputs.channel }}
+      QUALIFICATION_PATH: ${{ inputs.qualification_path }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify candidate provenance
+        uses: actions/github-script@v7
+        env:
+          CANDIDATE_RUN_ID: ${{ inputs.candidate_run_id }}
+        with:
+          script: |
+            const raw = process.env.CANDIDATE_RUN_ID;
+            if (!/^[0-9]+$/.test(raw)) throw new Error('Invalid candidate run ID');
+            const { data: run } = await github.rest.actions.getWorkflowRun({ ...context.repo, run_id: Number(raw) });
+            if (run.path !== '.github/workflows/release-candidate.yml' || run.conclusion !== 'success' ||
+                run.head_branch !== 'main' || run.event !== 'workflow_dispatch') {
+              throw new Error('Only successful main-branch signed-candidate runs may be published');
+            }
+      - uses: actions/download-artifact@v4
+        with:
+          name: macos-candidate
+          path: publication-candidate
+          run-id: ${{ inputs.candidate_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: pnpm install --frozen-lockfile
+      - name: Validate reviewed evidence path
+        run: |
+          node - <<'NODE'
+          const p = process.env.QUALIFICATION_PATH;
+          if (!/^docs\/release-qualification\/[A-Za-z0-9._-]+\.json$/.test(p || ''))
+            throw new Error('Publication needs an artifact-bound qualification record under docs/release-qualification');
+          NODE
+      - name: Publish immutable objects, verify HTTPS, then replace only the chosen feed
+        run: node scripts/publish-app-update.mjs publication-candidate "$RELEASE_CHANNEL" "$QUALIFICATION_PATH"

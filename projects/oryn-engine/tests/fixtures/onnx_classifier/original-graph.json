@@ -1,0 +1,37 @@
+{
+  "externalFiles": [],
+  "operators": [
+    "Add",
+    "AveragePool",
+    "BatchNormalization",
+    "Clip",
+    "Conv",
+    "MatMul",
+    "Softmax",
+    "Squeeze",
+    "Transpose"
+  ],
+  "opset": 11,
+  "inputs": [
+    {
+      "name": "images:0",
+      "dtype": 1,
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Softmax:0",
+      "dtype": 1,
+      "shape": [
+        1,
+        1000
+      ]
+    }
+  ]
+}

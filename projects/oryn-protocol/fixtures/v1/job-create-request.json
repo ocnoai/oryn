@@ -1,0 +1,21 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_job_create",
+  "method": "job.create",
+  "params": {
+    "jobId": "job_example",
+    "sessionId": "session_example",
+    "input": { "audioArtifactId": "artifact_abcdefghijklmnopqrstuvwxyz" },
+    "inputArtifacts": [
+      {
+        "artifactId": "artifact_abcdefghijklmnopqrstuvwxyz",
+        "internalPath": "/controlled/artifacts/input/object",
+        "mimeType": "audio/wav",
+        "sizeBytes": 3,
+        "name": "sample.wav",
+        "access": "read"
+      }
+    ]
+  }
+}

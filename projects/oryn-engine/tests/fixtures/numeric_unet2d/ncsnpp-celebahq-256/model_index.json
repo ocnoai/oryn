@@ -1,0 +1,11 @@
+{
+  "_class_name": "ScoreSdeVePipeline",
+  "scheduler": [
+    "diffusers",
+    "ScoreSdeVeScheduler"
+  ],
+  "unet": [
+    "diffusers",
+    "UNet2DModel"
+  ]
+}

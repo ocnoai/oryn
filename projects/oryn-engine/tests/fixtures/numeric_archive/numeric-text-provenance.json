@@ -1,0 +1,49 @@
+{
+  "scope": "Original configuration and numeric tensor descriptors only; no learned weight payload. All execution tests use complete small generated graphs.",
+  "sources": [
+    {
+      "repository": "cnicu/t5-small-booksum",
+      "originalCheckpointDownloaded": false,
+      "originalInference": false,
+      "nativeClass": "T5ForConditionalGeneration",
+      "revision": "0169a67dc4873b529ca3612bdc9d79365632816a",
+      "archive": {
+        "blobId": "4181118b5a62f7322af9de079a331a753ce9d1b3276c68f19023e276d1e71365",
+        "name": "pytorch_model.bin",
+        "sizeBytes": 242085627
+      },
+      "tensors": 134,
+      "nativeTensors": 134,
+      "missing": [],
+      "extra": [],
+      "mismatched": {},
+      "fixtures": {
+        "t5.tensor-structure.json": "6a434c550fc1c8b0a79c30526536d1299b35c830869691a9b034b91be5ffa601",
+        "t5.config.json": "ee53c303fe588e03e53aa53d68989e937d65fb08fe798a65ea2dae3a018841e3"
+      }
+    },
+    {
+      "repository": "nlpie/clinical-mobilebert",
+      "originalCheckpointDownloaded": false,
+      "originalInference": false,
+      "nativeClass": "MobileBertForMaskedLM",
+      "revision": "bf59908928e4658d87988ff0dd3b4581bd3fd3c0",
+      "archive": {
+        "blobId": "edb3d004af0fe9c05d17ccdf6a94fa7a508e46892e7707595ce20509699693e4",
+        "name": "pytorch_model.bin",
+        "sizeBytes": 146758523
+      },
+      "tensors": 1120,
+      "nativeTensors": 1119,
+      "missing": [],
+      "extra": [
+        "mobilebert.embeddings.position_ids"
+      ],
+      "mismatched": {},
+      "fixtures": {
+        "mobilebert.config.json": "ffd6826e69979f4e77881bc41ed0528ef92d7264fc7580839669008c9ad82e77",
+        "mobilebert.tensor-structure.json": "dd52203906fd935951f480298979528e59dc7ffc34bdb90d03349941b2ddd92f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_session_attach_1",
+  "ok": true,
+  "result": {
+    "sessionId": "session_example_1",
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "runtime": {
+      "runner": "transformers",
+      "backend": "cpu",
+      "deviceClass": "cpu"
+    },
+    "technicalCapabilities": {
+      "task": "automatic-speech-recognition",
+      "inputModalities": ["audio"],
+      "outputModalities": ["text"]
+    },
+    "residencyState": "loaded"
+  }
+}

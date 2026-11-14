@@ -1,0 +1,725 @@
+[
+  {
+    "repository": "jhu-clsp/mmBERT-base",
+    "revision": "c5955035435e2bf121cde7f3c8863ef52ff35d82",
+    "task": "fill-mask",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 1231188142,
+      "sha256": "8ea64ec1ea4eb8fca0fc14b69a2ae571de6bfbc25fd214bb932dd4aba6a3a04e"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 15575,
+    "metadataSha256": "4bc45f8e9d4d16c576c7d6e5427de3b28b344f32309ffcab7bd764401d35b218",
+    "entries": 141,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 275,
+      "BINUNICODE": 277,
+      "GLOBAL": 3,
+      "BININT": 93,
+      "TUPLE": 274,
+      "BINPERSID": 137,
+      "BININT1": 274,
+      "TUPLE1": 94,
+      "NEWFALSE": 137,
+      "EMPTY_TUPLE": 137,
+      "REDUCE": 274,
+      "BINGET": 681,
+      "BININT2": 361,
+      "TUPLE2": 180,
+      "LONG_BINPUT": 847,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 25221,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 1231188120,
+        "bytes": 22
+      },
+      {
+        "offset": 1231188100,
+        "bytes": 20
+      },
+      {
+        "offset": 1231188044,
+        "bytes": 56
+      },
+      {
+        "offset": 1231178552,
+        "bytes": 9492
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 22
+      },
+      {
+        "offset": 64,
+        "bytes": 15575
+      }
+    ]
+  },
+  {
+    "repository": "kredor/punctuate-all",
+    "revision": "0fe37019de3f5e4fbd83289fd94e07fa588e47df",
+    "task": "token-classification",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 1109901745,
+      "sha256": "9aec7aa51b4f8622be527ec668505d748932cdfb177a774f3f7fd204e01dcbae"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 29168,
+    "metadataSha256": "f4e775f59871eba40d8727e374aff160634f3466b7286746241bcfcb8932f829",
+    "entries": 202,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch LongStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 401,
+      "BINUNICODE": 601,
+      "GLOBAL": 4,
+      "BININT2": 474,
+      "TUPLE": 400,
+      "BINPERSID": 200,
+      "BININT1": 405,
+      "TUPLE2": 154,
+      "NEWFALSE": 200,
+      "EMPTY_TUPLE": 200,
+      "REDUCE": 400,
+      "BINGET": 795,
+      "BININT": 75,
+      "TUPLE1": 246,
+      "LONG_BINPUT": 1550,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 41729,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 1109901723,
+        "bytes": 22
+      },
+      {
+        "offset": 1109901703,
+        "bytes": 20
+      },
+      {
+        "offset": 1109901647,
+        "bytes": 56
+      },
+      {
+        "offset": 1109889234,
+        "bytes": 12413
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 29168
+      }
+    ]
+  },
+  {
+    "repository": "medicalai/ClinicalBERT",
+    "revision": "f7c7f65227cb311f33a79c24858d875876d478ac",
+    "task": "fill-mask",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 541826656,
+      "sha256": "bc6feaee5a8d02973e470763b95b461a517a5e8143476edef734fe7cfa20763f"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 22183,
+    "metadataSha256": "f22e7f2abcc34ee9153d0559cd0a0fdd4f178f21ff6183e001765d0b4acbc8a2",
+    "entries": 107,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "GLOBAL": 3,
+      "BINPUT": 256,
+      "EMPTY_TUPLE": 108,
+      "REDUCE": 214,
+      "MARK": 214,
+      "BINUNICODE": 412,
+      "BININT": 44,
+      "TUPLE": 212,
+      "BINPERSID": 106,
+      "BININT1": 303,
+      "BININT2": 248,
+      "TUPLE2": 80,
+      "NEWFALSE": 106,
+      "BINGET": 422,
+      "TUPLE1": 132,
+      "LONG_BINPUT": 889,
+      "SETITEMS": 2,
+      "EMPTY_DICT": 92,
+      "SETITEM": 92,
+      "LONG_BINGET": 90,
+      "BUILD": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 30119,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 541826634,
+        "bytes": 22
+      },
+      {
+        "offset": 541826614,
+        "bytes": 20
+      },
+      {
+        "offset": 541826558,
+        "bytes": 56
+      },
+      {
+        "offset": 541818770,
+        "bytes": 7788
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 22183
+      }
+    ]
+  },
+  {
+    "repository": "microsoft/mdeberta-v3-base",
+    "revision": "a0484667b22365f84929a935b5e50a51f71f159d",
+    "task": "fill-mask",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 1332809049,
+      "sha256": "6f89419baf0f1aaad5cab7d53901e36a8c1af8f6b4ab58b15db9af32df656ead"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 28220,
+    "metadataSha256": "20cdd48d80b5b6563527341b0a389b4eab5505b9af1b3591bee63e69a5342e7a",
+    "entries": 214,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch HalfStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 425,
+      "BINUNICODE": 426,
+      "GLOBAL": 4,
+      "BININT": 83,
+      "TUPLE": 424,
+      "BINPERSID": 212,
+      "BININT1": 427,
+      "BININT2": 498,
+      "TUPLE2": 160,
+      "NEWFALSE": 212,
+      "EMPTY_TUPLE": 212,
+      "REDUCE": 424,
+      "BINGET": 1053,
+      "TUPLE1": 264,
+      "LONG_BINPUT": 1447,
+      "LONG_BINGET": 1,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 41525,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 1332809027,
+        "bytes": 22
+      },
+      {
+        "offset": 1332809007,
+        "bytes": 20
+      },
+      {
+        "offset": 1332808951,
+        "bytes": 56
+      },
+      {
+        "offset": 1332795794,
+        "bytes": 13157
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 28220
+      }
+    ]
+  },
+  {
+    "repository": "NchuNLP/Chinese-Question-Answering",
+    "revision": "a308b9302065f12930b2feeca931585f5049cdf0",
+    "task": "question-answering",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 406784817,
+      "sha256": "c4a08ad5e96d1c67cf6aadd7e08bc40ae39cb65146ba8650db067fafca30f19e"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 28572,
+    "metadataSha256": "6985b52123ca5d37d6ffdb38df1c54a1aedd043841f2d6ddd31f6c73ca63db90",
+    "entries": 202,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch LongStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 401,
+      "BINUNICODE": 601,
+      "GLOBAL": 4,
+      "BININT2": 475,
+      "TUPLE": 400,
+      "BINPERSID": 200,
+      "BININT1": 405,
+      "TUPLE2": 154,
+      "NEWFALSE": 200,
+      "EMPTY_TUPLE": 200,
+      "REDUCE": 400,
+      "BINGET": 795,
+      "BININT": 74,
+      "TUPLE1": 246,
+      "LONG_BINPUT": 1550,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 41133,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 406784795,
+        "bytes": 22
+      },
+      {
+        "offset": 406784775,
+        "bytes": 20
+      },
+      {
+        "offset": 406784719,
+        "bytes": 56
+      },
+      {
+        "offset": 406772306,
+        "bytes": 12413
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 28572
+      }
+    ]
+  },
+  {
+    "repository": "facebook/nllb-200-distilled-600M",
+    "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+    "task": "translation",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 2460457927,
+      "sha256": "c266c2cfd19758b6d09c1fc31ecdf1e485509035f6b51dfe84f1ada83eefcc42"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 66324,
+    "metadataSha256": "a9e542468225c71d7d095e3d50b8b9c14db2febe8eaed03b89ebc6d097cab1ef",
+    "entries": 511,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 1025,
+      "BINUNICODE": 1023,
+      "GLOBAL": 3,
+      "BININT": 200,
+      "TUPLE": 1024,
+      "BINPERSID": 512,
+      "BININT1": 1024,
+      "BININT2": 1216,
+      "TUPLE2": 392,
+      "NEWFALSE": 512,
+      "EMPTY_TUPLE": 512,
+      "REDUCE": 1024,
+      "BINGET": 2558,
+      "TUPLE1": 632,
+      "LONG_BINPUT": 3843,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 98043,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 2460457905,
+        "bytes": 22
+      },
+      {
+        "offset": 2460457885,
+        "bytes": 20
+      },
+      {
+        "offset": 2460457829,
+        "bytes": 56
+      },
+      {
+        "offset": 2460426258,
+        "bytes": 31571
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 66324
+      }
+    ]
+  },
+  {
+    "repository": "philschmid/bart-large-cnn-samsum",
+    "revision": "e49b3d60d923f12db22bdd363356f1a4c68532ad",
+    "task": "summarization",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 1625565295,
+      "sha256": "9f453aa6edef4dba1893723b7313b57b06b60214442d308a8acc3baa9583dd7b"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 99232,
+    "metadataSha256": "a830b45800b8e10e562782021658c916e9acbc8636a881f5c7913a7ee5d0e587",
+    "entries": 514,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "GLOBAL": 3,
+      "BINPUT": 256,
+      "EMPTY_TUPLE": 517,
+      "REDUCE": 1032,
+      "MARK": 1032,
+      "BINUNICODE": 1874,
+      "BININT2": 1229,
+      "TUPLE": 1030,
+      "BINPERSID": 515,
+      "BININT1": 1357,
+      "TUPLE2": 398,
+      "NEWFALSE": 515,
+      "BINGET": 2058,
+      "BININT": 198,
+      "TUPLE1": 632,
+      "LONG_BINPUT": 5040,
+      "SETITEMS": 2,
+      "EMPTY_DICT": 327,
+      "SETITEM": 327,
+      "LONG_BINGET": 325,
+      "BUILD": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 136879,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 1625565273,
+        "bytes": 22
+      },
+      {
+        "offset": 1625565253,
+        "bytes": 20
+      },
+      {
+        "offset": 1625565197,
+        "bytes": 56
+      },
+      {
+        "offset": 1625527698,
+        "bytes": 37499
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 99232
+      }
+    ]
+  },
+  {
+    "repository": "Intel/dpt-hybrid-midas",
+    "revision": "11eaf7a1cf4bd70740697dbc216f98980c0aeb03",
+    "task": "depth-estimation",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 489648389,
+      "sha256": "b6c4d44f9d96ca3fa76dd3bbb153989a60b4ad5526559f3c598562a368d687ec"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 58091,
+    "metadataSha256": "cd5db25d8e0a4d6269c84d260caa87b992a96f386aad8f69d000554ee0ccbd3f",
+    "entries": 416,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 995,
+      "BINUNICODE": 830,
+      "GLOBAL": 3,
+      "BININT2": 887,
+      "TUPLE": 994,
+      "BINPERSID": 414,
+      "BININT1": 1278,
+      "TUPLE3": 4,
+      "NEWFALSE": 414,
+      "EMPTY_TUPLE": 414,
+      "REDUCE": 828,
+      "BINGET": 2065,
+      "BININT": 145,
+      "TUPLE1": 510,
+      "LONG_BINPUT": 3062,
+      "TUPLE2": 148,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 83920,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 489648367,
+        "bytes": 22
+      },
+      {
+        "offset": 489648347,
+        "bytes": 20
+      },
+      {
+        "offset": 489648291,
+        "bytes": 56
+      },
+      {
+        "offset": 489622610,
+        "bytes": 25681
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 16
+      },
+      {
+        "offset": 64,
+        "bytes": 58091
+      }
+    ]
+  },
+  {
+    "repository": "facebook/musicgen-medium",
+    "revision": "d3bd7b00761b78ad7a8a05145ee31e7832e9916c",
+    "task": "text-to-audio",
+    "originalCheckpointDownloaded": false,
+    "executed": false,
+    "archive": {
+      "name": "pytorch_model.bin",
+      "size": 8042351585,
+      "sha256": "b51b0ec25096748bb9a86bf37e41b487024ab2b7077d26cc9e007525f47cd189"
+    },
+    "status": "metadata inspected without deserialization",
+    "metadataBytes": 142195,
+    "metadataSha256": "974ba54c54c62613f2d2d9b7cc4645da64aaa717022cfa19f09b949416913c93",
+    "entries": 998,
+    "globals": [
+      "collections OrderedDict",
+      "torch FloatStorage",
+      "torch._utils _rebuild_tensor_v2"
+    ],
+    "opcodes": {
+      "PROTO": 1,
+      "EMPTY_DICT": 1,
+      "BINPUT": 256,
+      "MARK": 1995,
+      "BINUNICODE": 1995,
+      "GLOBAL": 3,
+      "BININT": 596,
+      "TUPLE": 1994,
+      "BINPERSID": 997,
+      "BININT1": 2292,
+      "BININT2": 2486,
+      "TUPLE2": 1162,
+      "NEWFALSE": 997,
+      "EMPTY_TUPLE": 997,
+      "REDUCE": 1994,
+      "BINGET": 4981,
+      "TUPLE1": 720,
+      "LONG_BINPUT": 7725,
+      "TUPLE3": 112,
+      "SETITEMS": 1,
+      "STOP": 1
+    },
+    "rangeBytes": 215154,
+    "rangeCalls": 8,
+    "ranges": [
+      {
+        "offset": 0,
+        "bytes": 4
+      },
+      {
+        "offset": 8042351563,
+        "bytes": 22
+      },
+      {
+        "offset": 8042351543,
+        "bytes": 20
+      },
+      {
+        "offset": 8042351487,
+        "bytes": 56
+      },
+      {
+        "offset": 8042278682,
+        "bytes": 72805
+      },
+      {
+        "offset": 0,
+        "bytes": 30
+      },
+      {
+        "offset": 30,
+        "bytes": 22
+      },
+      {
+        "offset": 64,
+        "bytes": 142195
+      }
+    ]
+  }
+]

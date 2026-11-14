@@ -1,0 +1,65 @@
+{
+  "payload": {
+    "kind": "runtime-adapter",
+    "schemaVersion": 1,
+    "adapterId": "oryn.adapter.mlx-chat",
+    "version": "1.4.0",
+    "publisher": "oryn.first-party",
+    "foundation": {
+      "id": "oryn.runtime.mlx",
+      "abi": "1",
+      "minimumVersion": "1.2.0"
+    },
+    "architectures": [],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer"
+    ],
+    "taskContracts": [
+      "chat-v1",
+      "multimodal-generation-v1",
+      "voice-activity-detection-v1"
+    ],
+    "backends": [
+      "mlx"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [
+      "int4",
+      "int5",
+      "int6",
+      "int8"
+    ],
+    "requiredFiles": [
+      "config.json",
+      "*.safetensors"
+    ],
+    "forbiddenSuffixes": [
+      ".py",
+      ".pyc",
+      ".pkl",
+      ".pickle",
+      ".dylib",
+      ".so",
+      ".dll",
+      ".exe",
+      ".sh"
+    ],
+    "resourceEstimator": "mlx-chat-v1",
+    "equivalenceClass": "exact-model",
+    "legacyPackIds": [
+      "oryn.mlx-lm"
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "a45799742b848a973852fc04c4176fc7bf91f667d01a0941ae1d79e016e52238",
+    "signature": "tTgCAmNRgyW6YfRnsEuQpYFV1gpbWsjdZhNZliv2JkedSj4ajhu0tAFYdUWGYh4yuQhJtD0XkzgvV0pJxaC1/DfW8FFZIaKbd0higf3gDkyr/g65PRTxoGdtOMU+vwrvIb4nczzY/u2QV3nRwyi5UL2y9RQUrNkv9N6dByCFg5IOQu/f8beZSJ7Vml9XTe+S4pDZkEnF3LEfLQZL/p75ZjiBrVgemHp6X+aT9chdsEsxycp/HPvetE+trmvSefJf2dZIyT5EZZ4OZhntLxdYnntZVnsCOmQmR7kADF6gkdFea5P44UfnF0eweGZmcSBvsCfSNz78gUQgryeLY4GZ8DXYIcVU3Ui96zRy5B+N9cF33b+rLHyYo6+NisGnT9aLqoz1+2Zt1OHqETcOV2gM4I8g1LzRq+Sm4H5MudfuMICu49OOnflJLr4FwtlmdvTv1aXrGiKCdSJiTH6apYgQNJQIwoXGNaYqH4SYTJh/2cW+sQqjkuIv9UHseom917aJ"
+  }
+}

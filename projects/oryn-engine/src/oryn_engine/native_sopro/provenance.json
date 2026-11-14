@@ -1,0 +1,33 @@
+{
+  "sopro": {
+    "url": "https://files.pythonhosted.org/packages/60/43/96edd7e62353f2d332081ccb0cf37b7bbf77e9490f845fdda9a31654f473/sopro-2.2.0-py3-none-any.whl",
+    "sha256": "5b2eb0f8c3036b5bc6af7c8ac98d0f32033536cee802b86e20c38d9b3856ac13",
+    "bytes": 63552,
+    "version": "2.2.0",
+    "installed": false
+  },
+  "torchaudio": {
+    "url": "https://files.pythonhosted.org/packages/f1/b1/77658817acacd01a72b714440c62f419efc4d90170e704e8e7a2c0918988/torchaudio-2.11.0-cp312-cp312-macosx_11_0_arm64.whl",
+    "bytes": 684226,
+    "sha256": "a1cf1acc883bee9cb906a933572fed6a8a933f86ef34e9ea7d803f72317e8c1b",
+    "version": "2.11.0",
+    "installed": false
+  },
+  "sourcesSha256": {
+    "sopro/config.py": "700678bbe971eb12b32ff2e83c1e0ca3acc375222dcbba24668e351c3c60ab8a",
+    "sopro/sampling.py": "c05ebe98c28bc3db0f9986f2471ddc3967371a6e639dbaa125bfee1c6d325542",
+    "sopro/text.py": "d459fd8748f8420404370ee97c76fc795e812afc0eb2a9fb1532cb7cf85e74e1",
+    "sopro/audio.py": "c445a79862c2cea0334c2a60baa655d7d4bf8840144d3588303f2e58c62debaf",
+    "sopro/encoders/semantic.py": "31ab664da48da7d0666142f01c67892c5642b62bf10b334c7f26050248b244a6",
+    "sopro/encoders/speaker.py": "1c5c8cf30334d0825b82df4c7063592369912a6cc0655c28b98350f26776536d",
+    "sopro/nn/layers.py": "3aabce187377405181d8caddec344203717e9ee54fefd3a7cc4be5cb5073cc60",
+    "sopro/nn/ar.py": "15abfee047df479237fd6b870edcda35d837fbf3d1cd9ec9407e2d840a526b10",
+    "sopro/nn/acoustic.py": "a43ce54bcdac01a34996a0d2fefff444cbb3d3a6c840126eabf3936069c10653",
+    "sopro/nn/model.py": "7f02f822d628bd37773781e8bffb00bf26f8f6ad1bdf8287e4d0a6856fe4b341",
+    "sopro/nn/decode.py": "ac088ead76d04c2bf54468d58b497ee58c7ceef0169b61d415393617fd8578f1",
+    "sopro/vocoder.py": "c79776e0f4a552808b6d1e869ae01fe07b7a5784a8b0604fa7af6f4bf8c22d13",
+    "torchaudio/functional/functional.py": "dc462a67270b2250279c47725346b26bc6cdc9dce77dd08602d0fcce68f78711",
+    "torchaudio/transforms/_transforms.py": "d73705853d6e8d0f0f212c39e0e3a0256811bcf4ac1a6f5fa8e8c65c26115680"
+  },
+  "modifications": "Offline graph subset; package imports relocated; no IO, fetching, CUDA capture, streaming or generation loop. TorchAudio pure tensor operators extracted; meta-only warning suppressed."
+}

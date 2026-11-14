@@ -1,0 +1,196 @@
+[
+  {
+    "id": "oryn.lfm3.source-a.v1",
+    "version": 1,
+    "normalizer": "oryn.pyast.cpython3.12.16-grammar3.11.v1",
+    "adapter": "oryn.lfm3.torch.v1",
+    "state": "active",
+    "sourcePolicy": "bundled-only-no-upstream-kernels-v1",
+    "modules": {
+      "configuration": {
+        "raw": "176cced35657aedfea7d7002221360582d1c05fcaca882c21508bc3a73b282e5",
+        "structural": "3333835ec8d3233db31a251b021faed91fce5571983a23d452619e1f41495bad",
+        "exports": [
+          "Lfm3Config"
+        ]
+      },
+      "convolution": {
+        "raw": "80d4a985382a22774212759248a6b4c737bfbf9c2a47b3dd7f797dda748e4bb4",
+        "structural": "5a01b3fe21cdef00c3716e4b145647d506ae7f640b08534a6aef2102fa8449ba",
+        "exports": [
+          "can_use_lfm3_conv",
+          "lfm3_causal_conv1d",
+          "lfm3_causal_conv1d_update"
+        ]
+      },
+      "model": {
+        "raw": "e8cd5254ea99ce6bd731b57b10908c2e8b5010ce8315341f895a38484885eeab",
+        "structural": "65f6901ae2968e035d2100187436659f1c50970f1188a3bc1445e460b8f96b03",
+        "exports": [
+          "Lfm3Attention",
+          "Lfm3DecoderLayer",
+          "Lfm3ForCausalLM",
+          "Lfm3MLP",
+          "Lfm3Model",
+          "Lfm3PreTrainedModel",
+          "Lfm3RMSNorm",
+          "Lfm3RotaryEmbedding",
+          "Lfm3ShortConv",
+          "apply_mask_to_padding_states",
+          "apply_rotary_pos_emb",
+          "causal_conv1d_fn",
+          "causal_conv1d_update",
+          "create_masks_by_layer_type",
+          "eager_attention_forward",
+          "packed_under_padding",
+          "reject_packed_generation",
+          "repeat_kv",
+          "rotate_half"
+        ]
+      }
+    },
+    "bindings": {
+      "AutoConfig": [
+        "configuration",
+        "Lfm3Config"
+      ],
+      "AutoModel": [
+        "model",
+        "Lfm3Model"
+      ],
+      "AutoModelForCausalLM": [
+        "model",
+        "Lfm3ForCausalLM"
+      ]
+    },
+    "representations": [
+      "bf16-cpu"
+    ],
+    "references": [
+      {
+        "repository": "LiquidAI/LFM3-1.7B",
+        "revision": "875094441ea6517efc0f44a5685f05e381b72b14"
+      }
+    ]
+  },
+  {
+    "id": "oryn.lfm3.source-b.v1",
+    "version": 1,
+    "normalizer": "oryn.pyast.cpython3.12.16-grammar3.11.v1",
+    "adapter": "oryn.lfm3.torch.v1",
+    "state": "recognition-only",
+    "sourcePolicy": "bundled-only-no-upstream-kernels-v1",
+    "modules": {
+      "configuration": {
+        "raw": "3acd4108c6165aba0f1296a9b79ffa877972676e92a3eaf65e06f7369162db82",
+        "structural": "71122ba77bc35347045077d4b492308e2113a2537a40e16a789f5771ab8ca1ea",
+        "exports": [
+          "Lfm3Config"
+        ]
+      },
+      "model": {
+        "raw": "aaa0875a4c5c42b0210c9bbad3cf06885cdbd666764db5c82ffcb1201036c79f",
+        "structural": "bea311f609433af375203dec12b4915f87cf3c0740ab71990dec1f36f5b8fe22",
+        "exports": [
+          "Lfm3Attention",
+          "Lfm3DecoderLayer",
+          "Lfm3ForCausalLM",
+          "Lfm3MLP",
+          "Lfm3Model",
+          "Lfm3PreTrainedModel",
+          "Lfm3RMSNorm",
+          "Lfm3RotaryEmbedding",
+          "Lfm3ShortConv",
+          "apply_mask_to_padding_states",
+          "apply_rotary_pos_emb",
+          "eager_attention_forward",
+          "repeat_kv",
+          "rotate_half"
+        ]
+      }
+    },
+    "bindings": {
+      "AutoConfig": [
+        "configuration",
+        "Lfm3Config"
+      ],
+      "AutoModel": [
+        "model",
+        "Lfm3Model"
+      ],
+      "AutoModelForCausalLM": [
+        "model",
+        "Lfm3ForCausalLM"
+      ]
+    },
+    "representations": [
+      "fp8-unsupported"
+    ],
+    "references": [
+      {
+        "repository": "LiquidAI/LFM3-1.7B-FP8",
+        "revision": "7bcf0f64d4afbbe4a1afafe886de94bb6108b23c"
+      }
+    ]
+  },
+  {
+    "id": "oryn.lfm3.source-c.v1",
+    "version": 1,
+    "normalizer": "oryn.pyast.cpython3.12.16-grammar3.11.v1",
+    "adapter": "oryn.lfm3.torch.v1",
+    "state": "recognition-only",
+    "sourcePolicy": "bundled-only-no-upstream-kernels-v1",
+    "modules": {
+      "configuration": {
+        "raw": "3acd4108c6165aba0f1296a9b79ffa877972676e92a3eaf65e06f7369162db82",
+        "structural": "71122ba77bc35347045077d4b492308e2113a2537a40e16a789f5771ab8ca1ea",
+        "exports": [
+          "Lfm3Config"
+        ]
+      },
+      "model": {
+        "raw": "25239bba6323a7a8663c2c6b646be154c7b9882a33fcf8e6069dba8d452349f1",
+        "structural": "448611482f7f6a8739bf3b67d54cd6b36b451cc5ebfb8dec4b2d3fe0d1b2b655",
+        "exports": [
+          "Lfm3Attention",
+          "Lfm3DecoderLayer",
+          "Lfm3ForCausalLM",
+          "Lfm3MLP",
+          "Lfm3Model",
+          "Lfm3PreTrainedModel",
+          "Lfm3RMSNorm",
+          "Lfm3RotaryEmbedding",
+          "Lfm3ShortConv",
+          "apply_mask_to_padding_states",
+          "apply_rotary_pos_emb",
+          "eager_attention_forward",
+          "repeat_kv",
+          "rotate_half"
+        ]
+      }
+    },
+    "bindings": {
+      "AutoConfig": [
+        "configuration",
+        "Lfm3Config"
+      ],
+      "AutoModel": [
+        "model",
+        "Lfm3Model"
+      ],
+      "AutoModelForCausalLM": [
+        "model",
+        "Lfm3ForCausalLM"
+      ]
+    },
+    "representations": [
+      "nvfp4-unsupported"
+    ],
+    "references": [
+      {
+        "repository": "LiquidAI/LFM3-1.7B-NVFP4",
+        "revision": "bc0c77de0a043ffb361e03d240f1aeec35b127fd"
+      }
+    ]
+  }
+]

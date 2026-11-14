@@ -1,0 +1,42 @@
+{
+  "repository": "https://github.com/LGAI-Research/EXAONE-Forecast",
+  "revision": "5e6e5224f2a0205f146bc772082d7fa4f59bd7c5",
+  "files": [
+    {
+      "source": "src/exaone_forecast/demand/adapter.py",
+      "file": "adapter.py",
+      "sha256": "ef676d8a8beec5049a3b86f6923934320b69053ed4ec2ce2bb9a391322a6b8cf"
+    },
+    {
+      "source": "src/exaone_forecast/demand/config.py",
+      "file": "config.py",
+      "sha256": "3f88416b695c57acd02e54ce77e5169029d30f9c05dbbb249a229c901512d930"
+    },
+    {
+      "source": "src/exaone_forecast/demand/layers.py",
+      "file": "layers.py",
+      "sha256": "0f7a5bad1310759bccb89a1e00b291fc290a73c31927b20ef906afb07dd643c8"
+    },
+    {
+      "source": "src/exaone_forecast/demand/model.py",
+      "file": "model.py",
+      "sha256": "547b4819eac892ec526a6afe74be6193ed6e435e7dc7817dac2cc3e58da984dd"
+    },
+    {
+      "source": "LICENSE",
+      "file": "LICENSE",
+      "sha256": "af60390bf207b4e7461ef2cf53394ffa40f75415b3c96d601a2bed3e3204139e"
+    },
+    {
+      "source": "Notice.md",
+      "file": "NOTICE.md",
+      "sha256": "f6a2b0644843eecfb2117838cee3acde569c5a07230eb0cc8b172d114ba01d2a"
+    },
+    {
+      "source": "domains/demand/Notice.md",
+      "file": "DEMAND-NOTICE.md",
+      "sha256": "525aeab29cfd0bafc89b4dffe1984fa63dbf3bd1f7cf53cfe70e0363a720604e"
+    }
+  ],
+  "modifications": "Numerical source files unchanged. Package initializer is engine-owned; upstream API, hub and loading modules are excluded."
+}

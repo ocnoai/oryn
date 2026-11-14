@@ -1,0 +1,2355 @@
+[
+  {
+    "name": "compatible captions",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [],
+    "input": {
+      "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+      "timestamps": true,
+      "language": "sk"
+    },
+    "inputValid": true
+  },
+  {
+    "name": "pinned language cannot change",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [],
+    "input": {
+      "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+      "timestamps": true,
+      "language": "en"
+    },
+    "inputValid": false
+  },
+  {
+    "name": "requested timestamps cannot be omitted",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [],
+    "input": {
+      "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+      "language": "sk"
+    },
+    "inputValid": false
+  },
+  {
+    "name": "word timings unsupported",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "unsupported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [
+      "TASK_FEATURE_UNSUPPORTED:wordTimestamps"
+    ]
+  },
+  {
+    "name": "word timings unknown",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "unknown"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [
+      "TASK_FEATURE_UNSUPPORTED:wordTimestamps"
+    ]
+  },
+  {
+    "name": "word timings requires-input",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "requires-input"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [
+      "TASK_FEATURE_UNSUPPORTED:wordTimestamps"
+    ]
+  },
+  {
+    "name": "contradictory request",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "timestamps": false
+      }
+    },
+    "failures": [],
+    "requirementsInvalid": true
+  },
+  {
+    "name": "unknown contract",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "transcription-v9",
+        "revision": 1
+      }
+    },
+    "failures": [],
+    "requirementsInvalid": true
+  },
+  {
+    "name": "unknown feature",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "inventedFeature"
+      ],
+      "parameterValues": {
+        "timestamps": true,
+        "language": "sk"
+      }
+    },
+    "failures": [],
+    "requirementsInvalid": true
+  },
+  {
+    "name": "unknown required control",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {
+        "backend": "cuda"
+      }
+    },
+    "failures": [],
+    "requirementsInvalid": true
+  },
+  {
+    "name": "word feature needs matching invocation",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "transcription-v1.fde84fdacf378efac1bebde6",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "task": "automatic-speech-recognition",
+      "inputModalities": [
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.transcription-v1",
+      "resultSchemaRef": "taskResult.transcription-v1",
+      "features": {
+        "speechRecognition": "supported",
+        "languageDetection": "unknown",
+        "wordTimestamps": "supported"
+      },
+      "parameters": {
+        "language": {
+          "inputPointer": "/language",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "auto"
+        },
+        "timestamps": {
+          "inputPointer": "/timestamps",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": false
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "task": "automatic-speech-recognition",
+      "contract": {
+        "id": "transcription-v1",
+        "revision": 1
+      },
+      "requiredFeatures": [
+        "wordTimestamps"
+      ],
+      "parameterValues": {}
+    },
+    "failures": [],
+    "input": {
+      "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+      "timestamps": false,
+      "language": "sk"
+    },
+    "inputValid": false
+  },
+  {
+    "name": "chat-v1",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v1.024d968bd82934f78694d7a5",
+      "contract": {
+        "id": "chat-v1",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v1",
+      "resultSchemaRef": "taskResult.chat-v1",
+      "features": {
+        "chat": "unknown",
+        "streaming": "unknown",
+        "multimodalConversation": "unknown",
+        "toolCalling": "unknown",
+        "structuredOutput": "unknown"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 128
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "chat-v1",
+        "revision": 1
+      }
+    },
+    "failures": []
+  },
+  {
+    "name": "text-to-image-v1",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "text-to-image-v1.0c0578f3143a5969aa5ad3a5",
+      "contract": {
+        "id": "text-to-image-v1",
+        "revision": 1
+      },
+      "task": "text-to-image",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "image"
+      ],
+      "inputSchemaRef": "taskInput.text-to-image-v1",
+      "resultSchemaRef": "taskResult.text-to-image-v1",
+      "features": {
+        "deterministicSeed": "unknown",
+        "imageEditing": "unknown",
+        "negativePrompt": "unknown"
+      },
+      "parameters": {
+        "negativePrompt": {
+          "inputPointer": "/negativePrompt",
+          "valueSchema": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 4096
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": ""
+        },
+        "width": {
+          "inputPointer": "/width",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 2048,
+            "multipleOf": 8
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 512
+        },
+        "height": {
+          "inputPointer": "/height",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 2048,
+            "multipleOf": 8
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 512
+        },
+        "steps": {
+          "inputPointer": "/steps",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 20
+        },
+        "guidanceScale": {
+          "inputPointer": "/guidanceScale",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 30
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 7.5
+        },
+        "seed": {
+          "inputPointer": "/seed",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967295
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "text-to-image-v1",
+        "revision": 1
+      }
+    },
+    "failures": []
+  },
+  {
+    "name": "embeddings-v1",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "embeddings-v1.b0cfc56e434699d02761977a",
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      },
+      "task": "feature-extraction",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "embedding"
+      ],
+      "inputSchemaRef": "taskInput.embeddings-v1",
+      "resultSchemaRef": "taskResult.embeddings-v1",
+      "features": {
+        "embeddings": "unknown"
+      },
+      "parameters": {
+        "normalize": {
+          "inputPointer": "/normalize",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": true
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      }
+    },
+    "failures": []
+  },
+  {
+    "name": "tabular enforces narrowed trainingRows",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "tabular-classification-v1.aa1caaf0a85e9bbd3144c84c",
+      "contract": {
+        "id": "tabular-classification-v1",
+        "revision": 1
+      },
+      "task": "tabular-classification",
+      "inputModalities": [
+        "document"
+      ],
+      "outputModalities": [
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.tabular-classification-v1",
+      "resultSchemaRef": "taskResult.tabular-classification-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "trainingRows": 2
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "columns": [
+        {
+          "name": "x",
+          "type": "numeric"
+        },
+        {
+          "name": "category",
+          "type": "categorical"
+        }
+      ],
+      "trainingRows": [
+        [
+          1,
+          "a"
+        ],
+        [
+          2,
+          "b"
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "targets": [
+        "a",
+        "b",
+        "c"
+      ],
+      "queryRows": [
+        [
+          1.5,
+          "unknown"
+        ],
+        [
+          3,
+          null
+        ]
+      ]
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "tabular enforces narrowed queryRows",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "tabular-classification-v1.fec75213a9e0c73324b06485",
+      "contract": {
+        "id": "tabular-classification-v1",
+        "revision": 1
+      },
+      "task": "tabular-classification",
+      "inputModalities": [
+        "document"
+      ],
+      "outputModalities": [
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.tabular-classification-v1",
+      "resultSchemaRef": "taskResult.tabular-classification-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "queryRows": 1
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "columns": [
+        {
+          "name": "x",
+          "type": "numeric"
+        },
+        {
+          "name": "category",
+          "type": "categorical"
+        }
+      ],
+      "trainingRows": [
+        [
+          1,
+          "a"
+        ],
+        [
+          2,
+          "b"
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "targets": [
+        "a",
+        "b",
+        "c"
+      ],
+      "queryRows": [
+        [
+          1.5,
+          "unknown"
+        ],
+        [
+          3,
+          null
+        ]
+      ]
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "tabular enforces narrowed featureColumns",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "tabular-classification-v1.4e8b15c750bd4999ceafea22",
+      "contract": {
+        "id": "tabular-classification-v1",
+        "revision": 1
+      },
+      "task": "tabular-classification",
+      "inputModalities": [
+        "document"
+      ],
+      "outputModalities": [
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.tabular-classification-v1",
+      "resultSchemaRef": "taskResult.tabular-classification-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "featureColumns": 1
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "columns": [
+        {
+          "name": "x",
+          "type": "numeric"
+        },
+        {
+          "name": "category",
+          "type": "categorical"
+        }
+      ],
+      "trainingRows": [
+        [
+          1,
+          "a"
+        ],
+        [
+          2,
+          "b"
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "targets": [
+        "a",
+        "b",
+        "c"
+      ],
+      "queryRows": [
+        [
+          1.5,
+          "unknown"
+        ],
+        [
+          3,
+          null
+        ]
+      ]
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "tabular enforces narrowed classes",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "tabular-classification-v1.f91c3c4af707f163ce8e8748",
+      "contract": {
+        "id": "tabular-classification-v1",
+        "revision": 1
+      },
+      "task": "tabular-classification",
+      "inputModalities": [
+        "document"
+      ],
+      "outputModalities": [
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.tabular-classification-v1",
+      "resultSchemaRef": "taskResult.tabular-classification-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "classes": 2
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "columns": [
+        {
+          "name": "x",
+          "type": "numeric"
+        },
+        {
+          "name": "category",
+          "type": "categorical"
+        }
+      ],
+      "trainingRows": [
+        [
+          1,
+          "a"
+        ],
+        [
+          2,
+          "b"
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "targets": [
+        "a",
+        "b",
+        "c"
+      ],
+      "queryRows": [
+        [
+          1.5,
+          "unknown"
+        ],
+        [
+          3,
+          null
+        ]
+      ]
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "tabular accepts exact profile boundaries",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "tabular-classification-v1.f5bb90e4c202e24da517f84d",
+      "contract": {
+        "id": "tabular-classification-v1",
+        "revision": 1
+      },
+      "task": "tabular-classification",
+      "inputModalities": [
+        "document"
+      ],
+      "outputModalities": [
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.tabular-classification-v1",
+      "resultSchemaRef": "taskResult.tabular-classification-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "trainingRows": 3,
+        "queryRows": 2,
+        "featureColumns": 2,
+        "classes": 3
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "columns": [
+        {
+          "name": "x",
+          "type": "numeric"
+        },
+        {
+          "name": "category",
+          "type": "categorical"
+        }
+      ],
+      "trainingRows": [
+        [
+          1,
+          "a"
+        ],
+        [
+          2,
+          "b"
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "targets": [
+        "a",
+        "b",
+        "c"
+      ],
+      "queryRows": [
+        [
+          1.5,
+          "unknown"
+        ],
+        [
+          3,
+          null
+        ]
+      ]
+    },
+    "inputValid": true,
+    "failures": []
+  },
+  {
+    "name": "embedding declared batch bound",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "embeddings-v1.18980565cd7bb38789e59ccd",
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      },
+      "task": "feature-extraction",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "embedding"
+      ],
+      "inputSchemaRef": "taskInput.embeddings-v1",
+      "resultSchemaRef": "taskResult.embeddings-v1",
+      "features": {
+        "embeddings": "unknown"
+      },
+      "parameters": {
+        "normalize": {
+          "inputPointer": "/normalize",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": true
+        }
+      },
+      "limits": {
+        "batchItems": 4,
+        "textCharacters": 2,
+        "embeddingDimensions": 16
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "texts": [
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    },
+    "inputValid": true
+  },
+  {
+    "name": "embedding excess batch",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "embeddings-v1.18980565cd7bb38789e59ccd",
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      },
+      "task": "feature-extraction",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "embedding"
+      ],
+      "inputSchemaRef": "taskInput.embeddings-v1",
+      "resultSchemaRef": "taskResult.embeddings-v1",
+      "features": {
+        "embeddings": "unknown"
+      },
+      "parameters": {
+        "normalize": {
+          "inputPointer": "/normalize",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": true
+        }
+      },
+      "limits": {
+        "batchItems": 4,
+        "textCharacters": 2,
+        "embeddingDimensions": 16
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "texts": [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    },
+    "inputValid": false
+  },
+  {
+    "name": "embedding unicode codepoints",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "embeddings-v1.18980565cd7bb38789e59ccd",
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      },
+      "task": "feature-extraction",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "embedding"
+      ],
+      "inputSchemaRef": "taskInput.embeddings-v1",
+      "resultSchemaRef": "taskResult.embeddings-v1",
+      "features": {
+        "embeddings": "unknown"
+      },
+      "parameters": {
+        "normalize": {
+          "inputPointer": "/normalize",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": true
+        }
+      },
+      "limits": {
+        "batchItems": 4,
+        "textCharacters": 2,
+        "embeddingDimensions": 16
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "texts": [
+        "\ud83d\ude00\ud83d\ude00"
+      ]
+    },
+    "inputValid": true
+  },
+  {
+    "name": "embedding excess unicode codepoints",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "embeddings-v1.18980565cd7bb38789e59ccd",
+      "contract": {
+        "id": "embeddings-v1",
+        "revision": 1
+      },
+      "task": "feature-extraction",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "embedding"
+      ],
+      "inputSchemaRef": "taskInput.embeddings-v1",
+      "resultSchemaRef": "taskResult.embeddings-v1",
+      "features": {
+        "embeddings": "unknown"
+      },
+      "parameters": {
+        "normalize": {
+          "inputPointer": "/normalize",
+          "valueSchema": {
+            "type": "boolean"
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": true
+        }
+      },
+      "limits": {
+        "batchItems": 4,
+        "textCharacters": 2,
+        "embeddingDimensions": 16
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "texts": [
+        "\ud83d\ude00\ud83d\ude00\ud83d\ude00"
+      ]
+    },
+    "inputValid": false
+  },
+  {
+    "name": "table at native bounds",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "table-question-answering-v1.2e14be64085b8f436eaf139a",
+      "contract": {
+        "id": "table-question-answering-v1",
+        "revision": 1
+      },
+      "task": "table-question-answering",
+      "inputModalities": [
+        "text",
+        "document"
+      ],
+      "outputModalities": [
+        "text",
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.table-question-answering-v1",
+      "resultSchemaRef": "taskResult.table-question-answering-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "tableRows": 2,
+        "tableColumns": 2
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "question": "which value",
+      "columns": [
+        "a",
+        "b"
+      ],
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ]
+      ]
+    },
+    "inputValid": true
+  },
+  {
+    "name": "table beyond native rows",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "table-question-answering-v1.2e14be64085b8f436eaf139a",
+      "contract": {
+        "id": "table-question-answering-v1",
+        "revision": 1
+      },
+      "task": "table-question-answering",
+      "inputModalities": [
+        "text",
+        "document"
+      ],
+      "outputModalities": [
+        "text",
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.table-question-answering-v1",
+      "resultSchemaRef": "taskResult.table-question-answering-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "tableRows": 2,
+        "tableColumns": 2
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "question": "which value",
+      "columns": [
+        "a",
+        "b"
+      ],
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ]
+    },
+    "inputValid": false
+  },
+  {
+    "name": "table beyond native columns",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "table-question-answering-v1.2e14be64085b8f436eaf139a",
+      "contract": {
+        "id": "table-question-answering-v1",
+        "revision": 1
+      },
+      "task": "table-question-answering",
+      "inputModalities": [
+        "text",
+        "document"
+      ],
+      "outputModalities": [
+        "text",
+        "structured"
+      ],
+      "inputSchemaRef": "taskInput.table-question-answering-v1",
+      "resultSchemaRef": "taskResult.table-question-answering-v1",
+      "features": {},
+      "parameters": {},
+      "limits": {
+        "tableRows": 2,
+        "tableColumns": 2
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "failures": [],
+    "input": {
+      "question": "which value",
+      "columns": [
+        "a",
+        "b",
+        "c"
+      ],
+      "rows": [
+        [
+          "1",
+          "2",
+          "3"
+        ]
+      ]
+    },
+    "inputValid": false
+  },
+  {
+    "name": "translation target default is explicit",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.5b7aab439131f3a075f39337",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 128
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+                "minLength": 2,
+                "maxLength": 6
+              },
+              {
+                "enum": [
+                  "en",
+                  "ja",
+                  "zh"
+                ]
+              }
+            ]
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "en"
+        }
+      },
+      "limits": {
+        "contextTokens": 4096
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "parameterValues": {
+        "targetLanguage": "en"
+      }
+    },
+    "input": {
+      "text": "\u4f60\u597d"
+    },
+    "inputValid": true,
+    "failures": []
+  },
+  {
+    "name": "translation target choice honored",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.5b7aab439131f3a075f39337",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 128
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+                "minLength": 2,
+                "maxLength": 6
+              },
+              {
+                "enum": [
+                  "en",
+                  "ja",
+                  "zh"
+                ]
+              }
+            ]
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "en"
+        }
+      },
+      "limits": {
+        "contextTokens": 4096
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "parameterValues": {
+        "targetLanguage": "ja"
+      }
+    },
+    "input": {
+      "text": "\u4f60\u597d",
+      "targetLanguage": "ja"
+    },
+    "inputValid": true,
+    "failures": []
+  },
+  {
+    "name": "translation session language cannot silently change",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.5b7aab439131f3a075f39337",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 128
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+                "minLength": 2,
+                "maxLength": 6
+              },
+              {
+                "enum": [
+                  "en",
+                  "ja",
+                  "zh"
+                ]
+              }
+            ]
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "en"
+        }
+      },
+      "limits": {
+        "contextTokens": 4096
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "parameterValues": {
+        "targetLanguage": "ja"
+      }
+    },
+    "input": {
+      "text": "hello",
+      "targetLanguage": "zh"
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "translation rejects unadvertised language",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.5b7aab439131f3a075f39337",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 128
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "allOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+                "minLength": 2,
+                "maxLength": 6
+              },
+              {
+                "enum": [
+                  "en",
+                  "ja",
+                  "zh"
+                ]
+              }
+            ]
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": "en"
+        }
+      },
+      "limits": {
+        "contextTokens": 4096
+      },
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "parameterValues": {
+        "targetLanguage": "de"
+      }
+    },
+    "input": {
+      "text": "hello",
+      "targetLanguage": "de"
+    },
+    "inputValid": false,
+    "failures": [
+      "TASK_PARAMETER_UNSUPPORTED:targetLanguage"
+    ]
+  },
+  {
+    "name": "fixed translation rejects language override",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.abd0d37004c8560fd93dfed4",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 256
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+            "minLength": 2,
+            "maxLength": 6
+          },
+          "handling": "unsupported",
+          "editable": false,
+          "affects": [
+            "result"
+          ]
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "text": "hello",
+      "targetLanguage": "en"
+    },
+    "inputValid": false,
+    "failures": []
+  },
+  {
+    "name": "fixed translation remains usable without new parameter",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "translation-v1.abd0d37004c8560fd93dfed4",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 256
+        },
+        "targetLanguage": {
+          "inputPointer": "/targetLanguage",
+          "valueSchema": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$",
+            "minLength": 2,
+            "maxLength": 6
+          },
+          "handling": "unsupported",
+          "editable": false,
+          "affects": [
+            "result"
+          ]
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {},
+    "input": {
+      "text": "hello"
+    },
+    "inputValid": true,
+    "failures": []
+  },
+  {
+    "name": "legacy peer cannot satisfy language selection",
+    "profile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "legacy-fixed-translation",
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "task": "translation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.translation-v1",
+      "resultSchemaRef": "taskResult.translation-v1",
+      "features": {},
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 256
+        }
+      },
+      "limits": {},
+      "streamingChannels": [],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "requirements": {
+      "contract": {
+        "id": "translation-v1",
+        "revision": 1
+      },
+      "parameterValues": {
+        "targetLanguage": "en"
+      }
+    },
+    "input": {
+      "text": "hello"
+    },
+    "inputValid": false,
+    "failures": [
+      "TASK_PARAMETER_UNSUPPORTED:targetLanguage"
+    ]
+  }
+]

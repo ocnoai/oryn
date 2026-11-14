@@ -1,0 +1,181 @@
+{
+  "kind": "task-profile",
+  "schemaVersion": 1,
+  "profileId": "image-text-to-video-v1.7a2711eb4e0ee419342d2056",
+  "contract": {
+    "id": "image-text-to-video-v1",
+    "revision": 1
+  },
+  "task": "image-text-to-video",
+  "inputModalities": [
+    "image",
+    "text"
+  ],
+  "outputModalities": [
+    "video"
+  ],
+  "inputSchemaRef": "taskInput.image-text-to-video-v1",
+  "resultSchemaRef": "taskResult.image-text-to-video-v1",
+  "features": {},
+  "parameters": {
+    "width": {
+      "inputPointer": "/width",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 1024,
+            "multipleOf": 16
+          },
+          {
+            "maximum": 1024,
+            "multipleOf": 32
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 512
+    },
+    "height": {
+      "inputPointer": "/height",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 1024,
+            "multipleOf": 16
+          },
+          {
+            "maximum": 1024,
+            "multipleOf": 32
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 512
+    },
+    "frames": {
+      "inputPointer": "/frames",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 360
+          },
+          {
+            "enum": [
+              124,
+              141,
+              158,
+              175,
+              192,
+              209,
+              226,
+              243,
+              260,
+              277,
+              294,
+              311,
+              328,
+              345
+            ]
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 124
+    },
+    "fps": {
+      "inputPointer": "/fps",
+      "valueSchema": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 30,
+        "const": 24
+      },
+      "handling": "fixed",
+      "editable": false,
+      "affects": [
+        "result"
+      ],
+      "default": 24
+    },
+    "steps": {
+      "inputPointer": "/steps",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          {
+            "minimum": 1,
+            "maximum": 100
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 20
+    },
+    "guidanceScale": {
+      "inputPointer": "/guidanceScale",
+      "valueSchema": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 30,
+        "const": 1
+      },
+      "handling": "fixed",
+      "editable": false,
+      "affects": [
+        "result"
+      ],
+      "default": 1
+    },
+    "seed": {
+      "inputPointer": "/seed",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2147483647
+          },
+          {
+            "minimum": 0
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 0
+    }
+  },
+  "limits": {},
+  "streamingChannels": [],
+  "extensions": {},
+  "provenance": "adapter-derived"
+}

@@ -1,0 +1,868 @@
+{
+  "backbone.convnext.0.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      0,
+      2048
+    ]
+  },
+  "backbone.convnext.0.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      2048,
+      16384
+    ]
+  },
+  "backbone.convnext.0.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      16384,
+      18432
+    ]
+  },
+  "backbone.convnext.0.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      18432,
+      20480
+    ]
+  },
+  "backbone.convnext.0.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      20480,
+      22528
+    ]
+  },
+  "backbone.convnext.0.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      22528,
+      28672
+    ]
+  },
+  "backbone.convnext.0.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      28672,
+      3174400
+    ]
+  },
+  "backbone.convnext.0.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      3174400,
+      3176448
+    ]
+  },
+  "backbone.convnext.0.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      3176448,
+      6322176
+    ]
+  },
+  "backbone.convnext.1.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      6322176,
+      6324224
+    ]
+  },
+  "backbone.convnext.1.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      6324224,
+      6338560
+    ]
+  },
+  "backbone.convnext.1.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      6338560,
+      6340608
+    ]
+  },
+  "backbone.convnext.1.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      6340608,
+      6342656
+    ]
+  },
+  "backbone.convnext.1.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      6342656,
+      6344704
+    ]
+  },
+  "backbone.convnext.1.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      6344704,
+      6350848
+    ]
+  },
+  "backbone.convnext.1.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      6350848,
+      9496576
+    ]
+  },
+  "backbone.convnext.1.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      9496576,
+      9498624
+    ]
+  },
+  "backbone.convnext.1.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      9498624,
+      12644352
+    ]
+  },
+  "backbone.convnext.2.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      12644352,
+      12646400
+    ]
+  },
+  "backbone.convnext.2.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      12646400,
+      12660736
+    ]
+  },
+  "backbone.convnext.2.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      12660736,
+      12662784
+    ]
+  },
+  "backbone.convnext.2.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      12662784,
+      12664832
+    ]
+  },
+  "backbone.convnext.2.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      12664832,
+      12666880
+    ]
+  },
+  "backbone.convnext.2.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      12666880,
+      12673024
+    ]
+  },
+  "backbone.convnext.2.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      12673024,
+      15818752
+    ]
+  },
+  "backbone.convnext.2.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      15818752,
+      15820800
+    ]
+  },
+  "backbone.convnext.2.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      15820800,
+      18966528
+    ]
+  },
+  "backbone.convnext.3.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      18966528,
+      18968576
+    ]
+  },
+  "backbone.convnext.3.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      18968576,
+      18982912
+    ]
+  },
+  "backbone.convnext.3.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      18982912,
+      18984960
+    ]
+  },
+  "backbone.convnext.3.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      18984960,
+      18987008
+    ]
+  },
+  "backbone.convnext.3.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      18987008,
+      18989056
+    ]
+  },
+  "backbone.convnext.3.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      18989056,
+      18995200
+    ]
+  },
+  "backbone.convnext.3.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      18995200,
+      22140928
+    ]
+  },
+  "backbone.convnext.3.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      22140928,
+      22142976
+    ]
+  },
+  "backbone.convnext.3.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      22142976,
+      25288704
+    ]
+  },
+  "backbone.convnext.4.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      25288704,
+      25290752
+    ]
+  },
+  "backbone.convnext.4.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      25290752,
+      25305088
+    ]
+  },
+  "backbone.convnext.4.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      25305088,
+      25307136
+    ]
+  },
+  "backbone.convnext.4.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      25307136,
+      25309184
+    ]
+  },
+  "backbone.convnext.4.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      25309184,
+      25311232
+    ]
+  },
+  "backbone.convnext.4.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      25311232,
+      25317376
+    ]
+  },
+  "backbone.convnext.4.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      25317376,
+      28463104
+    ]
+  },
+  "backbone.convnext.4.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      28463104,
+      28465152
+    ]
+  },
+  "backbone.convnext.4.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      28465152,
+      31610880
+    ]
+  },
+  "backbone.convnext.5.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      31610880,
+      31612928
+    ]
+  },
+  "backbone.convnext.5.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      31612928,
+      31627264
+    ]
+  },
+  "backbone.convnext.5.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      31627264,
+      31629312
+    ]
+  },
+  "backbone.convnext.5.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      31629312,
+      31631360
+    ]
+  },
+  "backbone.convnext.5.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      31631360,
+      31633408
+    ]
+  },
+  "backbone.convnext.5.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      31633408,
+      31639552
+    ]
+  },
+  "backbone.convnext.5.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      31639552,
+      34785280
+    ]
+  },
+  "backbone.convnext.5.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      34785280,
+      34787328
+    ]
+  },
+  "backbone.convnext.5.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      34787328,
+      37933056
+    ]
+  },
+  "backbone.convnext.6.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      37933056,
+      37935104
+    ]
+  },
+  "backbone.convnext.6.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      37935104,
+      37949440
+    ]
+  },
+  "backbone.convnext.6.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      37949440,
+      37951488
+    ]
+  },
+  "backbone.convnext.6.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      37951488,
+      37953536
+    ]
+  },
+  "backbone.convnext.6.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      37953536,
+      37955584
+    ]
+  },
+  "backbone.convnext.6.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      37955584,
+      37961728
+    ]
+  },
+  "backbone.convnext.6.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      37961728,
+      41107456
+    ]
+  },
+  "backbone.convnext.6.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      41107456,
+      41109504
+    ]
+  },
+  "backbone.convnext.6.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      41109504,
+      44255232
+    ]
+  },
+  "backbone.convnext.7.dwconv.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      44255232,
+      44257280
+    ]
+  },
+  "backbone.convnext.7.dwconv.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1,
+      7
+    ],
+    "data_offsets": [
+      44257280,
+      44271616
+    ]
+  },
+  "backbone.convnext.7.gamma": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      44271616,
+      44273664
+    ]
+  },
+  "backbone.convnext.7.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      44273664,
+      44275712
+    ]
+  },
+  "backbone.convnext.7.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      44275712,
+      44277760
+    ]
+  },
+  "backbone.convnext.7.pwconv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1536
+    ],
+    "data_offsets": [
+      44277760,
+      44283904
+    ]
+  },
+  "backbone.convnext.7.pwconv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1536,
+      512
+    ],
+    "data_offsets": [
+      44283904,
+      47429632
+    ]
+  },
+  "backbone.convnext.7.pwconv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      47429632,
+      47431680
+    ]
+  },
+  "backbone.convnext.7.pwconv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1536
+    ],
+    "data_offsets": [
+      47431680,
+      50577408
+    ]
+  },
+  "backbone.embed.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      50577408,
+      50579456
+    ]
+  },
+  "backbone.embed.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      100,
+      7
+    ],
+    "data_offsets": [
+      50579456,
+      52013056
+    ]
+  },
+  "backbone.final_layer_norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      52013056,
+      52015104
+    ]
+  },
+  "backbone.final_layer_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      52015104,
+      52017152
+    ]
+  },
+  "backbone.norm.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      52017152,
+      52019200
+    ]
+  },
+  "backbone.norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      52019200,
+      52021248
+    ]
+  },
+  "feature_extractor.mel_spec.mel_scale.fb": {
+    "dtype": "F32",
+    "shape": [
+      513,
+      100
+    ],
+    "data_offsets": [
+      52021248,
+      52226448
+    ]
+  },
+  "feature_extractor.mel_spec.spectrogram.window": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      52226448,
+      52230544
+    ]
+  },
+  "head.istft.window": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      52230544,
+      52234640
+    ]
+  },
+  "head.out.bias": {
+    "dtype": "F32",
+    "shape": [
+      1026
+    ],
+    "data_offsets": [
+      52234640,
+      52238744
+    ]
+  },
+  "head.out.weight": {
+    "dtype": "F32",
+    "shape": [
+      1026,
+      512
+    ],
+    "data_offsets": [
+      52238744,
+      54339992
+    ]
+  }
+}

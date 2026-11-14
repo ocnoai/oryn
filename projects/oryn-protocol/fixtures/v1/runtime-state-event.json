@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "runtime.state",
+  "seq": 1,
+  "timestamp": 1787000004000,
+  "data": {
+    "state": "shutting-down"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "scope": "Bounded original model configuration and numeric tensor metadata only. No original learned payload.",
+  "sources": [
+    {
+      "repository": "google/owlvit-base-patch16",
+      "fixtures": {
+        "owl-base.config.json": "540ba38d22918b72dabaed452bfa2e91b6e27564e710849e97b9557f82232d6c",
+        "owl-base.preprocessor_config.json": "9e3af165235341f2728d21adc9d8ac19375d6f9cb6c1dc26276486f9efbbf366",
+        "owl-base.metadata.json": "12b06ae4a9f241183fcabcc26b90b1b7d344767adebe46aa457597dcaf9aacbb"
+      },
+      "originalLearnedPayload": false,
+      "revision": "4b420debb9c806fc4caf9ecc8efb72208c0db892"
+    },
+    {
+      "repository": "google/owlvit-large-patch14",
+      "fixtures": {
+        "owl-large.metadata.json": "79e8e4a25e2846e3e364ed7fdf2c5e94e12215df10b1e94727d15e7c513365ac",
+        "owl-large.config.json": "9a32246cb3be571436f7efb259fee76cea032dcc674fa105b11a3f4faafbfb82",
+        "owl-large.preprocessor_config.json": "80304441679d817e923758e4046869d1d4d383b2588746588cb9826cff8689d5"
+      },
+      "originalLearnedPayload": false,
+      "revision": "faf39bb4c1f3ff75544daacd5fd327e9101ecff7"
+    },
+    {
+      "repository": "juhi7ag/idea-model",
+      "fixtures": {
+        "owl-finetune.config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+        "owl-finetune.metadata.json": "4cfdf9ad63cca5ad35dcf4262b1019283a009fb4123e3870871459fffe52f9ed",
+        "owl-finetune.preprocessor_config.json": "9e3af165235341f2728d21adc9d8ac19375d6f9cb6c1dc26276486f9efbbf366"
+      },
+      "originalLearnedPayload": false,
+      "revision": "6dc4d175e3416972d83cfc071cc5d4c1d2512f6e"
+    },
+    {
+      "repository": "lysandre/tiny-tapas-random-wtq",
+      "fixtures": {
+        "tapas-wtq.metadata.json": "b1d8f8b23430e2c2649089e262508669e52149ec42bd49aaa9da29bf3f695e02",
+        "tapas-wtq.config.json": "5ab0928150c81a3613da896e05fcc032b35a2dd80e996b9ec8665f53c394b5f6"
+      },
+      "originalLearnedPayload": false,
+      "revision": "82ff80f61b524e1e9dfd55636bf471f1f4bb0045"
+    },
+    {
+      "repository": "lysandre/tiny-tapas-random-sqa",
+      "fixtures": {
+        "tapas-sqa.config.json": "def961d75a94e20ae10660dda165a25d18072fef6f50be4dc2bde8c53cadeac3",
+        "tapas-sqa.metadata.json": "11f202c78f7802bcd21dd1a599e3f51425875d0c61583d6cd3ede1f27d779121"
+      },
+      "originalLearnedPayload": false,
+      "revision": "2174c2e3dd74ba8a3bdaa58a6c566a7898e36cec"
+    },
+    {
+      "repository": "Meena/table-question-answering-tapas",
+      "fixtures": {
+        "tapas-finetune.metadata.json": "79c8ee915debc6b14066ce5845bafcdb7deb2844db5cb28854a44b6feacd87da",
+        "tapas-finetune.config.json": "6dcc64929175af39551f766b44d9979807e369f4f6785df05430912cd8262b51"
+      },
+      "originalLearnedPayload": false,
+      "revision": "d7a306993ccb09100bbf977bd97c8f9784a06f11"
+    },
+    {
+      "repository": "benschlagman/tapas_fine_tuning",
+      "fixtures": {
+        "tapas-no-tokenizer.config.json": "f852c462fb13f44effd28128b81deb0b107978bf6d45e2a79ba30319c709cc8d",
+        "tapas-no-tokenizer.metadata.json": "76ac94774b2c8e51009290d1dd627eeefd1e684404d5825beeb0d751cbed6984"
+      },
+      "originalLearnedPayload": false,
+      "revision": "a3e35033d43987f95230c764b3812341c2b5a6be"
+    }
+  ]
+}

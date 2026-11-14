@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "job.cancelled",
+  "seq": 22,
+  "timestamp": 1787000003200,
+  "data": {
+    "jobId": "job_cancelled",
+    "sessionId": "session_example",
+    "sequence": 2,
+    "reason": "website"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "job.completed",
+  "seq": 21,
+  "timestamp": 1787000003100,
+  "data": {
+    "jobId": "job_example",
+    "sessionId": "session_example",
+    "sequence": 2,
+    "result": { "kind": "structured", "value": { "text": "done" } },
+    "execution": { "runner": "test", "backend": "cpu", "durationMs": 100 }
+  }
+}

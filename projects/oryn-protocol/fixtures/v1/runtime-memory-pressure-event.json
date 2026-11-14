@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "runtime.memoryPressure.changed",
+  "seq": 2,
+  "timestamp": 1787000000200,
+  "data": {
+    "previous": "normal",
+    "current": "high",
+    "snapshotId": "resource_fixture_2"
+  }
+}

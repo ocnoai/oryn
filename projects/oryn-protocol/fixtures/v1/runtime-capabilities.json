@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_caps_fixture",
+  "ok": true,
+  "result": {
+    "engineVersion": "0.1.0",
+    "engineInstanceId": "engine_fixture_01",
+    "protocolVersion": 1,
+    "providers": ["huggingface"],
+    "backends": [],
+    "runners": [],
+    "scheduler": {
+      "lanes": [{ "id": "generation", "capacity": 1, "global": true }]
+    },
+    "features": {
+      "streaming": false,
+      "artifacts": false,
+      "modelInspection": false,
+      "memoryPressureMonitoring": false,
+      "multipleResidentModels": false
+    },
+    "limits": {
+      "maxMessageBytes": 16777216,
+      "maxArtifactBindingsPerJob": 0
+    }
+  }
+}

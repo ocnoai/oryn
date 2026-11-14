@@ -1,0 +1,26 @@
+{
+  "name": "oryn",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "repository": { "type": "git", "url": "https://github.com/ocnoai/oryn.git" },
+  "packageManager": "pnpm@10.6.5",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "bootstrap": "./scripts/bootstrap",
+    "predev": "pnpm --dir projects/oryn-examples build",
+    "dev": "ORYN_ENGINE_DIR=$PWD/projects/oryn-engine ORYN_ENGINE_PYTHON=$PWD/projects/oryn-engine/.venv/bin/python pnpm --dir projects/oryn-browser dev",
+    "dev:browser": "pnpm dev",
+    "dev:engine": "uv run --project projects/oryn-engine python -m oryn_engine",
+    "build": "./scripts/build-all",
+    "test": "./scripts/test-all",
+    "typecheck": "pnpm --dir projects/oryn-protocol typecheck && pnpm --dir projects/oryn-sdk typecheck && pnpm --dir projects/oryn-browser typecheck && pnpm --dir projects/oryn-examples typecheck",
+    "lint": "pnpm --dir projects/oryn-browser lint && cd projects/oryn-engine && uv run ruff check . && uv run ruff format --check .",
+    "test:e2e": "ORYN_ENGINE_DIR=$PWD/projects/oryn-engine ORYN_ENGINE_PYTHON=$PWD/projects/oryn-engine/.venv/bin/python pnpm --dir projects/oryn-browser test:e2e",
+    "security:verify": "pnpm --dir projects/oryn-browser security:verify",
+    "docs:check": "node scripts/check-public-docs.mjs --all",
+    "vendor:verify": "node scripts/verify-vendor-artifacts.mjs",
+    "package:mac:local": "./scripts/package-macos-developer-alpha local",
+    "package:mac:release": "./scripts/package-macos-developer-alpha release"
+  }
+}

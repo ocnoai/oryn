@@ -1,0 +1,37 @@
+{
+  "repository": "https://huggingface.co/akore/rtmw-l-256x192",
+  "revision": "fd7df05e28ce758a98f90141e6f85097f662e48c",
+  "sourceFile": "modeling_rtmw.py",
+  "sourceSha256": "18c4cb3ab58936afd3e7eb8ac5db42778cfcfdc2c3a36dc9284e0a63f701ebfb",
+  "licenseDeclarationFile": "README.md",
+  "licenseDeclarationSha256": "cfa431b6a93818f908505ea92407f6f872fab81be4e3cb7e31680cc268daf060",
+  "license": "Apache-2.0",
+  "selectedNumericalNodes": [
+    "ConvModule",
+    "DepthwiseSeparableConvModule",
+    "ChannelAttention",
+    "CSPNeXtBlock",
+    "CSPLayer",
+    "SPPBottleneck",
+    "CSPNeXt",
+    "CSPNeXtPAFPN",
+    "ScaleNorm",
+    "Scale",
+    "drop_path",
+    "DropPath",
+    "rope",
+    "gaussian_blur1d",
+    "get_simcc_maximum",
+    "refine_simcc_dark",
+    "SimCCCodec",
+    "RTMCCBlock",
+    "RTMWHead",
+    "RTMWModel"
+  ],
+  "changes": [
+    "Use nn.Module with validated plain configuration instead of repository PreTrainedModel/configuration classes.",
+    "Remove training/model initialization and remote loading inheritance.",
+    "Forward returns complete original x/y predictions with one head evaluation; owned task binding applies the original decoder and original-image coordinate scaling.",
+    "AST formatting only for retained numerical classes/functions."
+  ]
+}

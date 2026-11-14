@@ -1,0 +1,118 @@
+{
+ "cases": {
+  "single": [
+   {
+    "role": "user",
+    "content": "Hello there"
+   }
+  ],
+  "system": [
+   {
+    "role": "system",
+    "content": "Be brief."
+   },
+   {
+    "role": "user",
+    "content": "  What is 2+2?  "
+   }
+  ],
+  "multi": [
+   {
+    "role": "system",
+    "content": "You are kind.\n"
+   },
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "assistant",
+    "content": "\nHello! How can I help?"
+   },
+   {
+    "role": "user",
+    "content": "Name a colour."
+   }
+  ],
+  "trailing_system": [
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "system",
+    "content": "Answer in French."
+   }
+  ]
+ },
+ "expected": {
+  "mlx_prism": {
+   "single": "<|im_start|>user\nHello there<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "system": "<|im_start|>system\nBe brief.<|im_end|>\n<|im_start|>user\nWhat is 2+2?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "multi": "<|im_start|>system\nYou are kind.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\nHello! How can I help?<|im_end|>\n<|im_start|>user\nName a colour.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "trailing_system": "ERROR:PRISM_RESERVED_CONTROL"
+  },
+  "llama_cpp": {
+   "chatml": {
+    "single": "<|im_start|>user\nHello there<|im_end|>\n<|im_start|>assistant\n",
+    "system": "<|im_start|>system\nBe brief.<|im_end|>\n<|im_start|>user\n  What is 2+2?  <|im_end|>\n<|im_start|>assistant\n",
+    "multi": "<|im_start|>system\nYou are kind.\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n\nHello! How can I help?<|im_end|>\n<|im_start|>user\nName a colour.<|im_end|>\n<|im_start|>assistant\n",
+    "trailing_system": "<|im_start|>user\nHi<|im_end|>\n<|im_start|>system\nAnswer in French.<|im_end|>\n<|im_start|>assistant\n"
+   },
+   "llama3": {
+    "single": "<|start_header_id|>user<|end_header_id|>\n\nHello there<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "system": "<|start_header_id|>system<|end_header_id|>\n\nBe brief.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWhat is 2+2?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "multi": "<|start_header_id|>system<|end_header_id|>\n\nYou are kind.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nHello! How can I help?<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nName a colour.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "trailing_system": "<|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|><|start_header_id|>system<|end_header_id|>\n\nAnswer in French.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+   },
+   "gemma3": {
+    "single": "<start_of_turn>user\nHello there<end_of_turn>\n<start_of_turn>model\n",
+    "system": "<start_of_turn>user\nBe brief.\n\nWhat is 2+2?<end_of_turn>\n<start_of_turn>model\n",
+    "multi": "<start_of_turn>user\nYou are kind.\n\nHi<end_of_turn>\n<start_of_turn>model\nHello! How can I help?<end_of_turn>\n<start_of_turn>user\nName a colour.<end_of_turn>\n<start_of_turn>model\n",
+    "trailing_system": "<start_of_turn>user\nHi<end_of_turn>\n<start_of_turn>user\nAnswer in French.<end_of_turn>\n<start_of_turn>model\n"
+   },
+   "gemma4": {
+    "single": "<|turn>user\nHello there<turn|>\n<|turn>model\n",
+    "system": "<|turn>system\nBe brief.<turn|>\n<|turn>user\nWhat is 2+2?<turn|>\n<|turn>model\n",
+    "multi": "<|turn>system\nYou are kind.<turn|>\n<|turn>user\nHi<turn|>\n<|turn>model\nHello! How can I help?<turn|>\n<|turn>user\nName a colour.<turn|>\n<|turn>model\n",
+    "trailing_system": "<|turn>user\nHi<turn|>\n<|turn>system\nAnswer in French.<turn|>\n<|turn>model\n"
+   },
+   "plain": {
+    "single": "User: Hello there\nAssistant:",
+    "system": "System: Be brief.\nUser:   What is 2+2?  \nAssistant:",
+    "multi": "System: You are kind.\n\nUser: Hi\nAssistant: \nHello! How can I help?\nUser: Name a colour.\nAssistant:",
+    "trailing_system": "User: Hi\nSystem: Answer in French.\nAssistant:"
+   }
+  },
+  "mlx_vision": {
+   "qwen2_5_vl": {
+    "single": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Hello there<|im_end|>\n<|im_start|>assistant\n",
+    "system": "<|im_start|>system\nBe brief.<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>  What is 2+2?  <|im_end|>\n<|im_start|>assistant\n",
+    "multi": "<|im_start|>system\nYou are kind.\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n\nHello! How can I help?<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Name a colour.<|im_end|>\n<|im_start|>assistant\n",
+    "trailing_system": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Hi<|im_end|>\n<|im_start|>system\nAnswer in French.<|im_end|>\n<|im_start|>assistant\n"
+   },
+   "qwen3_5": {
+    "single": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Hello there<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "system": "<|im_start|>system\nBe brief.<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>  What is 2+2?  <|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "multi": "<|im_start|>system\nYou are kind.\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n\nHello! How can I help?<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Name a colour.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "trailing_system": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Hi<|im_end|>\n<|im_start|>system\nAnswer in French.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+   }
+  },
+  "mlx_kolibri": {
+   "single": "<|im_start|>system\n# Reasoning effort\n\nReasoning is disabled. Proceed straight to answering according to the user's instructions.<|im_end|>\n<|im_start|>user\nHello there<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "system": "<|im_start|>system\nBe brief.\n\n# Reasoning effort\n\nReasoning is disabled. Proceed straight to answering according to the user's instructions.<|im_end|>\n<|im_start|>user\n  What is 2+2?  <|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "multi": "<|im_start|>system\nYou are kind.\n\n\n# Reasoning effort\n\nReasoning is disabled. Proceed straight to answering according to the user's instructions.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\nHello! How can I help?<|im_end|>\n<|im_start|>user\nName a colour.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "trailing_system": "ERROR:PRISM_RESERVED_CONTROL"
+  },
+  "mlx_gemma": {
+   "single": "<bos><|turn>user\nHello there<turn|>\n<|turn>model\n<|channel>thought\n<channel|>",
+   "system": "<bos><|turn>system\nBe brief.<turn|>\n<|turn>user\nWhat is 2+2?<turn|>\n<|turn>model\n<|channel>thought\n<channel|>",
+   "multi": "<bos><|turn>system\nYou are kind.<turn|>\n<|turn>user\nHi<turn|>\n<|turn>model\nHello! How can I help?<turn|>\n<|turn>user\nName a colour.<turn|>\n<|turn>model\n<|channel>thought\n<channel|>",
+   "trailing_system": "<bos><|turn>user\nHi<turn|>\n<|turn>system\nAnswer in French.<turn|>\n<|turn>model\n<|channel>thought\n<channel|>"
+  },
+  "diffusion": {
+   "thinking_off": "<|im_start|>user\na red fox<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+   "thinking_on": "<|im_start|>user\na red fox<|im_end|>\n<|im_start|>assistant\n"
+  }
+ }
+}

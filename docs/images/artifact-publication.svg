@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1120" viewBox="0 0 1320 1120" role="img" aria-labelledby="title description">
+<title id="title">Oryn output artifact publication</title>
+<desc id="description">Engine staging is copied through securely opened handles into a new Browser-private file. Browser reserves extra disk, validates and flushes the copy, cleans staging and rechecks authority before exposing an artifact ID. Failures roll back; released outputs wait for active readers before deletion.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a9a0ff"/></marker></defs>
+<rect width="1320" height="1120" rx="24" fill="#0c0e14"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="40" y="48" font-size="15" fill="#b2adff" font-weight="700">ORYN  /  ARTIFACT PUBLICATION</text>
+<text x="40" y="102" font-size="36" fill="#f1f3fa" font-weight="700">From Engine output to a private Browser copy</text>
+<text x="40" y="143" font-size="20" fill="#b4bed2" font-weight="400">POSIX + Windows NTFS. Retain file identity. Copy in bounded chunks. Check authority.</text>
+<text x="40" y="192" font-size="14" fill="#b2adff" font-weight="700">ENGINE STAGING</text>
+<text x="400" y="192" font-size="14" fill="#b2adff" font-weight="700">BROWSER AUTHORITY + STORAGE</text>
+<text x="970" y="192" font-size="14" fill="#b2adff" font-weight="700">WEBSITE ACCESS</text>
+<rect x="40" y="218" width="290" height="190" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="60" y="254" font-size="22" fill="#f1f3fa" font-weight="700">Original output</text>
+<text x="60" y="288" font-size="18" fill="#b4bed2" font-weight="400">Engine can write this file.</text>
+<text x="60" y="315" font-size="18" fill="#b4bed2" font-weight="400">Descriptor names the job,</text>
+<text x="60" y="342" font-size="18" fill="#b4bed2" font-weight="400">location and declared size.</text>
+<text x="60" y="369" font-size="18" fill="#b4bed2" font-weight="400">No website filesystem path.</text>
+<rect x="400" y="218" width="450" height="138" rx="16" fill="#151923" stroke="#7b73b6" stroke-width="1.5"/>
+<text x="420" y="254" font-size="22" fill="#f1f3fa" font-weight="700">1. Admit + open</text>
+<text x="420" y="288" font-size="18" fill="#b4bed2" font-weight="400">Check owner; reserve extra copy space.</text>
+<text x="420" y="315" font-size="18" fill="#b4bed2" font-weight="400">Walk from retained directory handles.</text>
+<text x="420" y="342" font-size="18" fill="#b4bed2" font-weight="400">No reparse/links; regular, one link, size.</text>
+<path d="M330 286H395" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M625 356V388" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="400" y="397" width="450" height="165" rx="16" fill="#151923" stroke="#7b73b6" stroke-width="1.5"/>
+<text x="420" y="433" font-size="22" fill="#f1f3fa" font-weight="700">2. Create a private copy</text>
+<text x="420" y="467" font-size="18" fill="#b4bed2" font-weight="400">New file identity; exclusive temporary file.</text>
+<text x="420" y="494" font-size="18" fill="#b4bed2" font-weight="400">Read/write at most 1 MiB per chunk.</text>
+<text x="420" y="521" font-size="18" fill="#b4bed2" font-weight="400">Check size and ordinary source changes.</text>
+<text x="420" y="548" font-size="18" fill="#b4bed2" font-weight="400">Flush copy; POSIX also sets mode by handle.</text>
+<path d="M625 562V594" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="400" y="603" width="450" height="165" rx="16" fill="#151923" stroke="#7b73b6" stroke-width="1.5"/>
+<text x="420" y="639" font-size="22" fill="#f1f3fa" font-weight="700">3. Install + authorize</text>
+<text x="420" y="673" font-size="18" fill="#b4bed2" font-weight="400">Exclusive install in private published store.</text>
+<text x="420" y="700" font-size="18" fill="#b4bed2" font-weight="400">Clean staging with directory handles.</text>
+<text x="420" y="727" font-size="18" fill="#b4bed2" font-weight="400">Recheck cancellation and live document.</text>
+<text x="420" y="754" font-size="18" fill="#b4bed2" font-weight="400">Commit ready records; return opaque ID.</text>
+<rect x="970" y="218" width="310" height="138" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="990" y="254" font-size="22" fill="#f1f3fa" font-weight="700">Website</text>
+<text x="990" y="288" font-size="18" fill="#b4bed2" font-weight="400">Own artifact ID and metadata.</text>
+<text x="990" y="315" font-size="18" fill="#b4bed2" font-weight="400">Authorized capability URL.</text>
+<text x="990" y="342" font-size="18" fill="#b4bed2" font-weight="400">No local file path.</text>
+<path d="M850 676H910V287H965" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="862" y="439" font-size="15" fill="#b2adff" font-weight="400">Ready</text>
+<rect x="970" y="409" width="310" height="190" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="990" y="445" font-size="22" fill="#f1f3fa" font-weight="700">Published lifetime</text>
+<text x="990" y="479" font-size="18" fill="#b4bed2" font-weight="400">Keep while the owner needs it.</text>
+<text x="990" y="506" font-size="18" fill="#b4bed2" font-weight="400">Release / expiry / navigation</text>
+<text x="990" y="533" font-size="18" fill="#b4bed2" font-weight="400">revokes access.</text>
+<text x="990" y="560" font-size="18" fill="#b4bed2" font-weight="400">Delete after readers finish.</text>
+<path d="M1125 356V401" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="465" width="290" height="220" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="60" y="501" font-size="22" fill="#f1f3fa" font-weight="700">Large outputs</text>
+<text x="60" y="535" font-size="18" fill="#b4bed2" font-weight="400">2 GiB source + 2 GiB copy</text>
+<text x="60" y="562" font-size="18" fill="#b4bed2" font-weight="400">may briefly use 4 GiB disk.</text>
+<text x="60" y="589" font-size="18" fill="#b4bed2" font-weight="400">1 MiB copy buffer, plus</text>
+<text x="60" y="616" font-size="18" fill="#b4bed2" font-weight="400">bounded process overhead.</text>
+<text x="60" y="643" font-size="18" fill="#b4bed2" font-weight="400">One helper at a time.</text>
+<rect x="40" y="735" width="290" height="178" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="60" y="771" font-size="22" fill="#f1f3fa" font-weight="700">Source cleanup</text>
+<text x="60" y="805" font-size="18" fill="#b4bed2" font-weight="400">Remove the staging name</text>
+<text x="60" y="832" font-size="18" fill="#b4bed2" font-weight="400">after the copy is complete.</text>
+<text x="60" y="859" font-size="18" fill="#b4bed2" font-weight="400">Disk blocks are freed once</text>
+<text x="60" y="886" font-size="18" fill="#b4bed2" font-weight="400">all source handles close.</text>
+<path d="M400 687H365V819H335" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<path d="M625 768V806" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="400" y="815" width="450" height="175" rx="16" fill="#151923" stroke="#b47d62" stroke-width="1.5"/>
+<text x="420" y="851" font-size="22" fill="#f1f3fa" font-weight="700">Cancellation / failure</text>
+<text x="420" y="885" font-size="18" fill="#b4bed2" font-weight="400">Stop helper; wait for it to exit.</text>
+<text x="420" y="912" font-size="18" fill="#b4bed2" font-weight="400">Remove private partials and uncommitted copies.</text>
+<text x="420" y="939" font-size="18" fill="#b4bed2" font-weight="400">Attempt confined, bounded staging cleanup.</text>
+<text x="420" y="966" font-size="18" fill="#b4bed2" font-weight="400">Never grant a capability to a partial result.</text>
+<rect x="970" y="661" width="310" height="200" rx="16" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="990" y="697" font-size="22" fill="#f1f3fa" font-weight="700">Crash / startup</text>
+<text x="990" y="731" font-size="18" fill="#b4bed2" font-weight="400">Helper detects parent death.</text>
+<text x="990" y="758" font-size="18" fill="#b4bed2" font-weight="400">Reconcile partials and orphans.</text>
+<text x="990" y="785" font-size="18" fill="#b4bed2" font-weight="400">Retry bounded staging cleanup.</text>
+<text x="990" y="812" font-size="18" fill="#b4bed2" font-weight="400">Incomplete cleanup is logged;</text>
+<text x="990" y="839" font-size="18" fill="#b4bed2" font-weight="400">stale debris is not published.</text>
+<path d="M850 905H925V762H965" fill="none" stroke="#a9a0ff" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="40" y="1043" font-size="18" fill="#f1f3fa" font-weight="700">Required isolation: Engine cannot write private stores. Windows Engine confinement is still unimplemented.</text>
+<text x="40" y="1075" font-size="17" fill="#b4bed2" font-weight="400">Native checks pending on macOS and Windows. Copy: 15 min. Cleanup: 10 sec / 10,000 entries / 32 levels.</text>
+</g></svg>

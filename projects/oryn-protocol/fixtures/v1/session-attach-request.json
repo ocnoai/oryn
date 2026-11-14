@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_session_attach_1",
+  "method": "session.attach",
+  "params": {
+    "sessionId": "session_example_1",
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "ensureLoaded": true
+  }
+}

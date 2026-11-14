@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/JacobLinCool/MPSENet",
+  "revision": "e04183d9c52b28d084f853e686ecdd065fdcb49f",
+  "files": {
+    "MPSENet/model/mpsenet.py": "e629e2858836489a598f9b325aa3abfc2a2360c72fc676d45c458c17efcaa7e8",
+    "MPSENet/model/transformer.py": "44fb17b9a604f861304fd72517bfea73508393ca0ef00b58aaab6083c012ef0b",
+    "LICENSE": "df6322ce3ca3c70a0845c4a384432a9af50e7d70886d316741e2f47b5ae01f34"
+  },
+  "model": {
+    "repository": "JacobLinCool/MP-SENet-DNS",
+    "revision": "8b78493f536df1aa53bd3bcbb2f620f705e8589c",
+    "files": [
+      {
+        "file": "config.json",
+        "url": "https://huggingface.co/JacobLinCool/MP-SENet-DNS/resolve/8b78493f536df1aa53bd3bcbb2f620f705e8589c/config.json",
+        "bytes": 248,
+        "sha256": "0c5973617000142390726f8dad98a5b6b1429b4ef1a94da25f3bc009f86a3365"
+      },
+      {
+        "file": "README.md",
+        "url": "https://huggingface.co/JacobLinCool/MP-SENet-DNS/resolve/8b78493f536df1aa53bd3bcbb2f620f705e8589c/README.md",
+        "bytes": 443,
+        "sha256": "a87b942164f5d1f0306c7f0b71756784c17d60708ec658e0e44c69b747d7c710"
+      }
+    ],
+    "headerBytes": 28384,
+    "tensors": 247,
+    "originalLearnedPayloadBytes": 0
+  },
+  "changes": [
+    "Removed Hub mixin and numpy audio I/O; owned runtime controls those boundaries.",
+    "Preserved complete dense encoder, time/frequency attention and bidirectional GRUs, learned magnitude mask and phase heads, and native STFT/ISTFT.",
+    "Preserved original sequence-first attention and GRU layout; no architecture correction or discarded parameters."
+  ]
+}

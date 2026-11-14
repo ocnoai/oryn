@@ -1,0 +1,83 @@
+[
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.krea-2-turbo-mflux-q4",
+      "runtime": {
+        "packId": "oryn.mflux-mlx",
+        "packVersion": "0.7.0",
+        "runnerId": "mflux.image"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "mflux-community/krea-2-turbo-mflux-q4",
+        "revision": "f30071b91ba672767e49e83276fe44cc29bc6a8e"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-image"
+        ]
+      },
+      "taskContract": "text-to-image-v1",
+      "level": "converted-artifact",
+      "requiredFiles": [
+        "*.safetensors",
+        "model.safetensors.index.json",
+        "text_encoder/*.safetensors",
+        "text_encoder/model.safetensors.index.json",
+        "tokenizer/*.json",
+        "vae/*.safetensors",
+        "vae/model.safetensors.index.json"
+      ],
+      "capabilities": {
+        "task": "text-to-image",
+        "architectures": [
+          "Krea2Pipeline"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "image"
+        ],
+        "capabilities": {
+          "deterministicSeed": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 19327352832,
+        "workingMemoryBytes": 6442450944
+      },
+      "metadata": {
+        "license": "Krea-2-Community-License",
+        "quantization": "Q4",
+        "adapterArchitecture": "krea2-mflux-v1",
+        "inferenceDefaults": {
+          "width": 512,
+          "height": 512,
+          "steps": 8,
+          "guidanceScale": 1.0
+        },
+        "source": {
+          "provider": "huggingface",
+          "repository": "krea/Krea-2-Turbo",
+          "revision": "98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7"
+        },
+        "conformance": {
+          "status": "passed",
+          "platforms": [
+            "macos-arm64-mlx"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "616d46e05a95988591ee9bb81ad1e0186f239dc3ee2fa9755d4cbe4e836a18ed",
+      "signature": "TeiCTMXRSyQrawKFWoVaGJZeY1UtBcVQLTHKR2TTGicrnl+niPqnZfuSUR0q94MmnpHEtoXeaXoiy3pId1buP1+I+kG0ScJI34fZ8ZTbGYGiKYLXwLhV0cWVTGNqC+Ce4E6V9kK7/i7QkznTJoth7WW9hvJodcgUDlFennO+v15TLPkDyNMAGJsaUKK4xFlf/dM1cvdnL+r9oaR6jLr/+lyahyZdRqiehPPh4ZIoCefagUDjg5zNr3hY1XXcx/2lOCvvqFojg++hPiNYq9r+1Cl7lZ01RPX9a2qwiqw/nQWiaIEPt2ZGD2Efieh3NOz7Gfza1x6fT00Ix0Wx2nkdpvU7dTJ87E0CF6s9YAGDxx6N8XTtq7ZBwL+Wem3HEPDHJahsdBQRS3RbTOIk/jTotfeNy3JU5l0SqySjZMwacm54su11i65Zx0rfJapX7/frQdad6Egt22bHRf8fje6dgewKgzyu6VRIxWvIqxXHNroO7NktjST8AlFye0eKLxzu"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "generator": "generate_blip_reference.py.txt",
+  "referenceEnvironment": {
+    "tensorflow": "2.20.0",
+    "transformers": "4.46.3",
+    "tf-keras": "2.20.0"
+  },
+  "originalWeightsDownloaded": 0,
+  "sha256": {
+    "blip-caption/config.json": "e94daf7114c4a6f45fd39d3e72a2ff06e46241baf9cdcf399cec7b3c93e0adff",
+    "blip-caption/reference.npz": "b968ad8a9cb9af0aa13be07abcdeef82d563fb2e886d4c2575ed444febb78567",
+    "blip-caption/weights.json": "7ce0d526b8f8dee0b2898c7406731897e1ce6c04798d93949306cf91cd227692",
+    "blip-caption/tf_model.h5": "598461dc4350534c54ddfd0b40b2aabe34dca3525d7917d1badac90bbfe48ec4",
+    "blip-vqa/config.json": "43b5db5bdb4c5328ced43c8b5d57936e2ad7090eb159f4e1603e72c6b90d492d",
+    "blip-vqa/reference.npz": "33630204c9d27dce8189f4ce1c011a04729716f9c12346b123ebdf9333869e4e",
+    "blip-vqa/weights.json": "b47424577aaf5ac737941476eb2d68bc249bbe623033f58ba398ac2b597bb483",
+    "blip-vqa/tf_model.h5": "2853860fe25fb2fbef869a91a1f246c160872ba157e4ed9ec615e8a6c753ae5f"
+  }
+}

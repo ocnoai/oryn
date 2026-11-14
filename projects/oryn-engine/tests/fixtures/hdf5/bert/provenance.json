@@ -1,0 +1,14 @@
+{
+  "fixture": "synthetic complete BERT classifier",
+  "generator": "TensorFlow 2.20.0, Transformers 4.46.3",
+  "originalWeightsDownloaded": 0,
+  "legacyConfig": "model_type deliberately omitted; graph still declares BertForSequenceClassification",
+  "files": {
+    "generate_reference.py.txt": "ce5d17ceab38813ea58b34bdb785bde70322d29cd6b7cc77a1eb0e599852a24b",
+    "config.json": "a8b4e0594c8133238ba6dd6a4ac77072e9b06013beda77738acf1323d5ac381d",
+    "reference.npz": "542a32a5c544e83302fec13f2a9f1fda51da8a553e0bc670190540e2f1810e7a",
+    "weights.json": "16ed3428b8edde9d94a0d390d969b8023a3b55f0e7d512f13f2ac142dbed7acf",
+    "vocab.txt": "9646a9ea001f14c3c9f23653be661f783cc93c352630638663854ebdd10dda3e",
+    "tf_model.h5": "db5d0360f39b2668eeb2ec7bde0af57fc0778fd1f30f61c15197b222c7171e05"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "externalFiles": [],
+  "operators": [
+    "Add",
+    "Cast",
+    "Concat",
+    "ConstantOfShape",
+    "CumSum",
+    "Div",
+    "Einsum",
+    "Equal",
+    "Erf",
+    "Gather",
+    "Gemm",
+    "MatMul",
+    "Mul",
+    "Not",
+    "Pow",
+    "ReduceMean",
+    "Reshape",
+    "Shape",
+    "Softmax",
+    "Split",
+    "Sqrt",
+    "Squeeze",
+    "Sub",
+    "Tanh",
+    "Unsqueeze",
+    "Where"
+  ],
+  "opset": 12,
+  "inputs": [
+    {
+      "name": "input_ids",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "attention_mask",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "logits",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        1
+      ]
+    }
+  ]
+}

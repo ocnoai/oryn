@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_policy_1",
+  "method": "runtime.policy.update",
+  "params": {
+    "policyRevision": 7,
+    "memoryBudgetBytes": 17179869184,
+    "batteryMode": "normal",
+    "allowSpeculativePreload": true
+  }
+}

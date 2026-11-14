@@ -1,0 +1,12 @@
+Kolibri MLX graph
+
+Source: https://github.com/eins78/kolibri-mlx
+Revision: 3f4c5bc38df654ae8cafd881a4672bf96d00781e
+File: kolibri_mlx/models/kolibri1.py
+SHA256: 8f6d43285756fd079a4a811948eed76f2d85249918cbb8e8337a44b423b57870
+
+Copyright (c) 2026 Apple Inc. MIT license; see Kolibri-MLX-LICENSE.
+Derived upstream from mlx-lm qwen3_moe.py, cohere2.py and deepseek_v3.py.
+Oryn changes: removed distributed sharding and implicit checkpoint-name rewriting;
+all input geometry and quantization are bound by the separate owned loader.
+Core attention, expert routing, residual normalization and cache math are preserved.

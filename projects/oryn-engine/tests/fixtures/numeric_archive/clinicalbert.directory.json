@@ -1,0 +1,965 @@
+[
+  {
+    "name": "archive/data.pkl",
+    "size": 22183,
+    "compressedSize": 22183,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 0,
+    "crc32": 2630795784
+  },
+  {
+    "name": "archive/data/93993365384816",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 22263,
+    "crc32": 3034349562
+  },
+  {
+    "name": "archive/data/93993431724144",
+    "size": 367248384,
+    "compressedSize": 367248384,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 25424,
+    "crc32": 3015011468
+  },
+  {
+    "name": "archive/data/93993431742656",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 367273936,
+    "crc32": 2781872344
+  },
+  {
+    "name": "archive/data/93993446351584",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 369633360,
+    "crc32": 1638434087
+  },
+  {
+    "name": "archive/data/93993446887824",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 369636560,
+    "crc32": 2088132512
+  },
+  {
+    "name": "archive/data/93993447095664",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 369639760,
+    "crc32": 3471331430
+  },
+  {
+    "name": "archive/data/93993447334112",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 379077072,
+    "crc32": 2597218314
+  },
+  {
+    "name": "archive/data/93993447529776",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 381436496,
+    "crc32": 3044949610
+  },
+  {
+    "name": "archive/data/93993447896160",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 390873808,
+    "crc32": 236703309
+  },
+  {
+    "name": "archive/data/93993447978464",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393233232,
+    "crc32": 2138894309
+  },
+  {
+    "name": "archive/data/93993448164672",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393236432,
+    "crc32": 1046768465
+  },
+  {
+    "name": "archive/data/93993449131152",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393248848,
+    "crc32": 3209227516
+  },
+  {
+    "name": "archive/data/93993449269520",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393252048,
+    "crc32": 3393575758
+  },
+  {
+    "name": "archive/data/93993449902336",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393255248,
+    "crc32": 828741157
+  },
+  {
+    "name": "archive/data/93993450208912",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393258448,
+    "crc32": 674716567
+  },
+  {
+    "name": "archive/data/93993450329248",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393261648,
+    "crc32": 590304172
+  },
+  {
+    "name": "archive/data/93993450452128",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 393264848,
+    "crc32": 950871756
+  },
+  {
+    "name": "archive/data/93993450534448",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 395624272,
+    "crc32": 2600639098
+  },
+  {
+    "name": "archive/data/93993450683232",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 397983696,
+    "crc32": 3068064605
+  },
+  {
+    "name": "archive/data/93993450683328",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 397986896,
+    "crc32": 2510373668
+  },
+  {
+    "name": "archive/data/93993450768592",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 397990096,
+    "crc32": 1814102130
+  },
+  {
+    "name": "archive/data/93993451422208",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 397993296,
+    "crc32": 3838379237
+  },
+  {
+    "name": "archive/data/93993451468416",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 407430608,
+    "crc32": 3759394407
+  },
+  {
+    "name": "archive/data/93993451495072",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 416867920,
+    "crc32": 3154112419
+  },
+  {
+    "name": "archive/data/93993451531664",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 426305232,
+    "crc32": 2379948034
+  },
+  {
+    "name": "archive/data/93993451538112",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 428664656,
+    "crc32": 2429540739
+  },
+  {
+    "name": "archive/data/93993451538208",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 428667856,
+    "crc32": 415535327
+  },
+  {
+    "name": "archive/data/93993451675264",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 428671056,
+    "crc32": 950023361
+  },
+  {
+    "name": "archive/data/93993451790416",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431030480,
+    "crc32": 1947817943
+  },
+  {
+    "name": "archive/data/93993451831280",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431033680,
+    "crc32": 1443536242
+  },
+  {
+    "name": "archive/data/93993452514496",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431036880,
+    "crc32": 2630344371
+  },
+  {
+    "name": "archive/data/93993452561808",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431040080,
+    "crc32": 1754222702
+  },
+  {
+    "name": "archive/data/93993452821280",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431043280,
+    "crc32": 3442565626
+  },
+  {
+    "name": "archive/data/93993452850400",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431046480,
+    "crc32": 266808055
+  },
+  {
+    "name": "archive/data/93993453019168",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431049680,
+    "crc32": 27637089
+  },
+  {
+    "name": "archive/data/93993453024032",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 431052880,
+    "crc32": 2150869302
+  },
+  {
+    "name": "archive/data/93993453192256",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 433412304,
+    "crc32": 1153440850
+  },
+  {
+    "name": "archive/data/93993453321728",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 433415504,
+    "crc32": 1048997895
+  },
+  {
+    "name": "archive/data/93993453434288",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 435774928,
+    "crc32": 149645361
+  },
+  {
+    "name": "archive/data/93993453799344",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 438134352,
+    "crc32": 987025347
+  },
+  {
+    "name": "archive/data/93993453855264",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 438137552,
+    "crc32": 489560405
+  },
+  {
+    "name": "archive/data/93993453949728",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 438140752,
+    "crc32": 3996809233
+  },
+  {
+    "name": "archive/data/93993454117648",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 438143952,
+    "crc32": 2980423762
+  },
+  {
+    "name": "archive/data/93993454839392",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 438147152,
+    "crc32": 33892166
+  },
+  {
+    "name": "archive/data/93993454889488",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 440506576,
+    "crc32": 2908787594
+  },
+  {
+    "name": "archive/data/93993454947312",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 442866000,
+    "crc32": 3052913971
+  },
+  {
+    "name": "archive/data/93993454955520",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 445225424,
+    "crc32": 2916515526
+  },
+  {
+    "name": "archive/data/93993455208832",
+    "size": 1572864,
+    "compressedSize": 1572864,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 445228624,
+    "crc32": 1723668226
+  },
+  {
+    "name": "archive/data/93993455261184",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 446801616,
+    "crc32": 1436586756
+  },
+  {
+    "name": "archive/data/93993455461728",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 446804816,
+    "crc32": 3988534780
+  },
+  {
+    "name": "archive/data/93993455585280",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 446808016,
+    "crc32": 1472439280
+  },
+  {
+    "name": "archive/data/93993455771008",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 446811216,
+    "crc32": 1457191539
+  },
+  {
+    "name": "archive/data/93993455892176",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 446814416,
+    "crc32": 3440898321
+  },
+  {
+    "name": "archive/data/93993455917504",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 449173840,
+    "crc32": 3677214773
+  },
+  {
+    "name": "archive/data/93993455974336",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 449177040,
+    "crc32": 1973116491
+  },
+  {
+    "name": "archive/data/93993456125072",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 451536464,
+    "crc32": 931977239
+  },
+  {
+    "name": "archive/data/93993456423664",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 453895888,
+    "crc32": 4137189048
+  },
+  {
+    "name": "archive/data/93993456468592",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 453899088,
+    "crc32": 2120233852
+  },
+  {
+    "name": "archive/data/93993456533680",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 453902288,
+    "crc32": 3375793044
+  },
+  {
+    "name": "archive/data/93993456611488",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 453905488,
+    "crc32": 2994445116
+  },
+  {
+    "name": "archive/data/93993456631888",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 456264912,
+    "crc32": 447410571
+  },
+  {
+    "name": "archive/data/93993456868256",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 465702224,
+    "crc32": 437471588
+  },
+  {
+    "name": "archive/data/93993456971504",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 465705424,
+    "crc32": 2688258903
+  },
+  {
+    "name": "archive/data/93993457146256",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 465708624,
+    "crc32": 1015434835
+  },
+  {
+    "name": "archive/data/93993457279664",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 465721040,
+    "crc32": 3809719728
+  },
+  {
+    "name": "archive/data/93993457379808",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 475158352,
+    "crc32": 1603785437
+  },
+  {
+    "name": "archive/data/93993457913040",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 477517776,
+    "crc32": 220319384
+  },
+  {
+    "name": "archive/data/93993458070832",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 479877200,
+    "crc32": 1917444326
+  },
+  {
+    "name": "archive/data/93993458075824",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 482236624,
+    "crc32": 3156622457
+  },
+  {
+    "name": "archive/data/93993458191792",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 491673936,
+    "crc32": 3218555186
+  },
+  {
+    "name": "archive/data/93993458198640",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 501111248,
+    "crc32": 987041001
+  },
+  {
+    "name": "archive/data/93993458249424",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 501114448,
+    "crc32": 3800258086
+  },
+  {
+    "name": "archive/data/93993464362576",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 501117648,
+    "crc32": 3345724501
+  },
+  {
+    "name": "archive/data/93993464370976",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 503477072,
+    "crc32": 1338100311
+  },
+  {
+    "name": "archive/data/93993464377472",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 503480272,
+    "crc32": 405598802
+  },
+  {
+    "name": "archive/data/93993464379520",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 503483472,
+    "crc32": 3430369251
+  },
+  {
+    "name": "archive/data/93993464380032",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 503486672,
+    "crc32": 1421095964
+  },
+  {
+    "name": "archive/data/93993464382496",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 505846096,
+    "crc32": 239396197
+  },
+  {
+    "name": "archive/data/93993464383056",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 505849296,
+    "crc32": 799855834
+  },
+  {
+    "name": "archive/data/93993464384192",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 505852496,
+    "crc32": 2597538881
+  },
+  {
+    "name": "archive/data/93993464385936",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 515289808,
+    "crc32": 1403036621
+  },
+  {
+    "name": "archive/data/93993464387552",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524727120,
+    "crc32": 3574954075
+  },
+  {
+    "name": "archive/data/93993464395552",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524730320,
+    "crc32": 1436939861
+  },
+  {
+    "name": "archive/data/93993464396384",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524742736,
+    "crc32": 2908303780
+  },
+  {
+    "name": "archive/data/93993464397952",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524745936,
+    "crc32": 382840704
+  },
+  {
+    "name": "archive/data/93993464400128",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524749136,
+    "crc32": 2403877110
+  },
+  {
+    "name": "archive/data/93993464400640",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 524752336,
+    "crc32": 3500227725
+  },
+  {
+    "name": "archive/data/93993464408384",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527111760,
+    "crc32": 3855011696
+  },
+  {
+    "name": "archive/data/93993464421648",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527124176,
+    "crc32": 1414969804
+  },
+  {
+    "name": "archive/data/93993464423184",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527127376,
+    "crc32": 3804849057
+  },
+  {
+    "name": "archive/data/93993464429040",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527130576,
+    "crc32": 1410388224
+  },
+  {
+    "name": "archive/data/93993464436304",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527133776,
+    "crc32": 2327400239
+  },
+  {
+    "name": "archive/data/93993464437296",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527146192,
+    "crc32": 1575667919
+  },
+  {
+    "name": "archive/data/93993464447824",
+    "size": 12288,
+    "compressedSize": 12288,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527149392,
+    "crc32": 163107098
+  },
+  {
+    "name": "archive/data/93993464448336",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527161808,
+    "crc32": 2011794025
+  },
+  {
+    "name": "archive/data/93993464451504",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527165008,
+    "crc32": 3802096266
+  },
+  {
+    "name": "archive/data/93993464474496",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527168208,
+    "crc32": 3518563083
+  },
+  {
+    "name": "archive/data/93993464474848",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527171408,
+    "crc32": 4210458858
+  },
+  {
+    "name": "archive/data/93993464482800",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527174608,
+    "crc32": 2188997730
+  },
+  {
+    "name": "archive/data/93993464483744",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527177808,
+    "crc32": 2528220003
+  },
+  {
+    "name": "archive/data/93993464488448",
+    "size": 478188,
+    "compressedSize": 478188,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527181008,
+    "crc32": 788793911
+  },
+  {
+    "name": "archive/data/93993464497456",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 527659324,
+    "crc32": 4251789194
+  },
+  {
+    "name": "archive/data/93993706245664",
+    "size": 3072,
+    "compressedSize": 3072,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 530018704,
+    "crc32": 1128480249
+  },
+  {
+    "name": "archive/data/93993706245760",
+    "size": 2359296,
+    "compressedSize": 2359296,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 530021904,
+    "crc32": 4074785757
+  },
+  {
+    "name": "archive/data/93993706248848",
+    "size": 9437184,
+    "compressedSize": 9437184,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 532381328,
+    "crc32": 3855978084
+  },
+  {
+    "name": "archive/version",
+    "size": 2,
+    "compressedSize": 2,
+    "compression": 0,
+    "flags": 2056,
+    "localHeaderOffset": 541818640,
+    "crc32": 1432854225
+  }
+]

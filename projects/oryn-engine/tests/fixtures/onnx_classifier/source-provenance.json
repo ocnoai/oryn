@@ -1,0 +1,20 @@
+[
+  {
+    "file": "labels_map.json",
+    "source": "https://raw.githubusercontent.com/onnx/models/c5cae0f1942c8d7727372c7b1f6b485aa39e4421/validated/vision/classification/efficientnet-lite4/dependencies/labels_map.txt",
+    "bytes": 31565,
+    "sha256": "3e232637a09beeb733f409908cfc0ba256e83f06815684678abafd4c0990c757"
+  },
+  {
+    "file": "upstream-README.md",
+    "source": "https://raw.githubusercontent.com/onnx/models/c5cae0f1942c8d7727372c7b1f6b485aa39e4421/validated/vision/classification/efficientnet-lite4/README.md",
+    "bytes": 8661,
+    "sha256": "cf215ac04ae5fa3bb308e1688b7f799b307ed27d23b24fc7c14c8cbb3ff81f57"
+  },
+  {
+    "file": "upstream-LICENSE",
+    "source": "https://raw.githubusercontent.com/onnx/models/c5cae0f1942c8d7727372c7b1f6b485aa39e4421/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

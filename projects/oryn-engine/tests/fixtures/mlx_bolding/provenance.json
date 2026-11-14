@@ -1,0 +1,24 @@
+{
+  "repository": "2001Y/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-MLX",
+  "revision": "ea576e1e005bd8d1c50032438b33427276a2a00c",
+  "source": "https://huggingface.co/2001Y/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-MLX/tree/ea576e1e005bd8d1c50032438b33427276a2a00c",
+  "declaredLicense": "Apache-2.0",
+  "scope": "JSON metadata and SafeTensors headers only; no learned payload",
+  "files": {
+    "tokenizer_config.json": "b1bffa77c0129bcf91305daa397f319d0411be5fbe6ae15a22f9cfc53ca64f96",
+    "config.json": "95a1ef8781dc02948778ca91e23e0dc302a0398268bacaeeebeee1dd71189ec8",
+    "tensor-map.json": "550ae68162574bccaaf257c5c43476e463a7ae721e5d46b582b198456a9fc854",
+    "generation_config.json": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e",
+    "headers.json": "6c027d1e44b19ff770f84b2484e69fcfb0ec736bb5a8c07509f4c125815fb565",
+    "model-manifest.json": "7f48f14617dcb4aabfb541ff0c76f290a364417dfa544b4ea75f4bb6d26d6141",
+    "model.safetensors.index.json": "1498963ba2aa84b5377e158a906855942d5072da76b7ef44e4cc091c8176a1dd"
+  },
+  "publicationTransforms": {
+    "tensor-map.json": {
+      "upstreamSha256": "00eb0040fa9bd5c53c5a2a48f58483a54692c56317bd5b111574d0dabceb0ff5",
+      "changes": [
+        "Replaced the upstream author's absolute source_path with its basename."
+      ]
+    }
+  }
+}

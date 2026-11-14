@@ -1,0 +1,5 @@
+url,revision,task
+https://huggingface.co/openai/whisper-tiny,,automatic-speech-recognition
+https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2,,feature-extraction
+https://huggingface.co/Qwen/Qwen3-0.6B,,text-generation
+https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo,fc13ba1986fcb905854dc8de2f52eee395f49b5b,text-to-image

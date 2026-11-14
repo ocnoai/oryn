@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+license = "MIT"
+name = "oryn-engine"
+version = "0.2.0"
+description = "Supervised local AI runtime for Oryn Browser"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "av==16.1.0",
+  "h5py==3.16.0",
+  "jsonschema>=4.25,<5",
+  "huggingface-hub>=1.32,<2",
+  "httpx>=0.28,<1",
+  "numpy>=2.0,<3",
+  "onnxruntime==1.31.1",
+  "pandas==2.3.3",
+  "oryn-protocol==0.1.0",
+  "oryn-depth-native==0.1.0",
+  "opencv-python-headless==4.13.0.92",
+  "psutil>=7.0,<8",
+  "pillow>=12.3,<13",
+  "safetensors>=0.5,<1",
+  "scipy==1.18.1; python_version >= '3.12'",
+  "sentencepiece==0.2.2",
+  "sacremoses==0.2.0",
+  "protobuf==7.35.1",
+  "torch>=2.15,<3",
+  "torchvision>=0.29.2,<0.30",
+  "timm==1.0.30",
+  "transformers>=5.22.1,<6",
+  "chronos-forecasting==2.3.2",
+  "timesfm==3.0.2",
+  "accelerate==1.15.0",
+  "tabpfn==9.2.0",
+  "mlx==0.32.4 ; platform_machine == 'arm64' and sys_platform == 'darwin'",
+  "autogluon-tabular==1.6.3",
+  "einx==0.4.3",
+  "loguru==0.7.3",
+  "tiktoken==0.14.0",
+  "open-clip-torch==3.3.0",
+  "ftfy==6.3.1",
+  "librosa==0.11.0",
+  "ctranslate2==4.8.4",
+]
+
+[project.scripts]
+oryn-engine = "oryn_engine.app:main"
+
+[project.optional-dependencies]
+dev = [
+  "diffusers",
+  "onnx==1.18.0",
+  "ml-dtypes==0.6.0",
+  "onnx-ir==1.0.0",
+  "pytest>=8.4,<10",
+  "pytest-cov>=6.2,<8",
+  "ruff>=0.12,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oryn_engine"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["src/oryn_engine/native_exaone_demand", "src/oryn_engine/native_yug", "src/oryn_engine/native_aurora", "src/oryn_engine/native_birefnet", "src/oryn_engine/native_isnet", "src/oryn_engine/native_rtmw", "src/oryn_engine/native_sopro", "src/oryn_engine/native_omnivoice", "src/oryn_engine/native_breeze", "src/oryn_engine/native_mpsenet", "src/oryn_engine/native_tiger"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.uv.sources]
+oryn-protocol = { path = "vendor/oryn_protocol-0.1.0-py3-none-any.whl" }
+oryn-depth-native = { path = "vendor/oryn_depth_native-0.1.0-py3-none-any.whl" }
+diffusers = { path = "vendor/diffusers-0.42.1-py3-none-any.whl" }

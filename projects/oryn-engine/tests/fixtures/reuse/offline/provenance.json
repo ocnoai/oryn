@@ -1,0 +1,63 @@
+{
+  "repository": "nvidia/RE-USE",
+  "revision": "022e920d727347a64d6c21fbf0628f2a5f37ad78",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/README.md",
+      "bytes": 7695,
+      "sha256": "2ab4f0cfbe1b29a5e59dbfd6dc36452085c69778fb27d81f144bd6eb7be24a81"
+    },
+    {
+      "file": "config.json",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/config.json",
+      "bytes": 830,
+      "sha256": "e69986483774f01893d2727503addc49ef201d19e6e1a266b8d4e971e28c478d"
+    },
+    {
+      "file": "inference.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/inference.py",
+      "bytes": 4766,
+      "sha256": "933c44915fc62332616ee31daba3714a5eb05c5696212147b4a803774ce6b8f6"
+    },
+    {
+      "file": "inference_chunk.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/inference_chunk.py",
+      "bytes": 6659,
+      "sha256": "93f8a387dfeff027a041829f449a5c8782af562020e0e14169bded1a1396c792"
+    },
+    {
+      "file": "models/codec_module_time_d4.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/models/codec_module_time_d4.py",
+      "bytes": 6347,
+      "sha256": "55144dc929626a0f0f66ebfa729852abef6fc63cb8e66fe49615b0b624900145"
+    },
+    {
+      "file": "models/generator_SEMamba_time_d4.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/models/generator_SEMamba_time_d4.py",
+      "bytes": 3599,
+      "sha256": "ff82f2f6a907da311b4c27d0cfc3dfe6485a0de06248ac491c3a1913639742a7"
+    },
+    {
+      "file": "models/mamba_block2_SEMamba.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/models/mamba_block2_SEMamba.py",
+      "bytes": 3021,
+      "sha256": "4aed8861ac17bc8a92b6df53575ef54ab3e742c439a17c89c0cf0ae3c6c13956"
+    },
+    {
+      "file": "models/stfts.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/models/stfts.py",
+      "bytes": 3591,
+      "sha256": "7bd63bb6f4a055fbd7c75e712e47c3c3923c15c969fb1ae6f3c2f2b6c15911a0"
+    },
+    {
+      "file": "utils/util.py",
+      "url": "https://huggingface.co/nvidia/RE-USE/resolve/022e920d727347a64d6c21fbf0628f2a5f37ad78/utils/util.py",
+      "bytes": 1349,
+      "sha256": "f321af54469357756d335e96b49511b8d1db0c1782c1e555546ac51d5a414ee4"
+    }
+  ],
+  "headerBytes": 161952,
+  "tensors": 1416,
+  "originalLearnedPayloadBytes": 0
+}

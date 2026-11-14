@@ -1,0 +1,92 @@
+appId: ai.ocno.oryn.browser
+productName: Oryn Browser
+artifactName: Oryn-Browser-${version}-${arch}.${ext}
+asar: true
+npmRebuild: false
+afterPack: ../../scripts/after-pack-macos-security.mjs
+directories:
+  output: release
+files:
+  - out/**/*
+  - package.json
+extraResources:
+  - from: build/helpers
+    to: helpers
+    filter:
+      - artifact_io.py
+      - artifact_io_windows.py
+      - browser_import_sandbox.node
+      - download_safety.node
+  - from: build/security
+    to: security
+    filter:
+      - '*.sb'
+  - from: ../../packaging/.stage/engine
+    to: engine
+    filter:
+      - '**/*'
+  - from: ../../../oryn-examples/chat/dist
+    to: reference-demos/chat/dist
+    filter:
+      - '**/*'
+  - from: ../../../oryn-examples/song-generation/dist
+    to: reference-demos/song-generation/dist
+    filter:
+      - '**/*'
+  - from: ../../../oryn-examples/transcription/dist
+    to: reference-demos/transcription/dist
+  - from: ../../../oryn-examples/image-generation/dist
+    to: reference-demos/image-generation/dist
+  - from: ../../../oryn-examples/video-subtitles/dist
+    to: reference-demos/video-subtitles/dist
+    filter:
+      - '**/*'
+protocols:
+  - name: Web links
+    schemes: [http, https]
+fileAssociations:
+  - ext: [html, htm, shtml]
+    name: HTML document
+    role: Viewer
+    rank: Alternate
+  - ext: xhtml
+    name: XHTML document
+    role: Viewer
+    rank: Alternate
+mac:
+  icon: build/icon.icns
+  category: public.app-category.utilities
+  minimumSystemVersion: '14.0'
+  hardenedRuntime: true
+  forceCodeSigning: true
+  notarize: true
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.inherit.plist
+  sign: ../../scripts/sign-macos.mjs
+  extendInfo:
+    NSCameraUsageDescription: Oryn lets websites use your camera only after you allow the site.
+    NSMicrophoneUsageDescription: Oryn lets websites use your microphone only after you allow the site.
+    NSAudioCaptureUsageDescription: Oryn lets websites capture audio only after you allow screen or audio sharing.
+    NSLocationUsageDescription: Oryn lets websites use your location only after you allow the site.
+    NSLocationWhenInUseUsageDescription: Oryn lets websites use your location only after you allow the site.
+    NSBluetoothAlwaysUsageDescription: Oryn asks for your permission before a website can use Bluetooth devices.
+    NSBluetoothPeripheralUsageDescription: Oryn asks for your permission before a website can use Bluetooth devices.
+    CFBundleDocumentTypes:
+      - CFBundleTypeName: HTML and XHTML documents
+        CFBundleTypeRole: Viewer
+        LSHandlerRank: Alternate
+        LSItemContentTypes: [public.html, public.xhtml]
+  target:
+    - dmg
+    - zip
+dmg:
+  sign: false
+  title: Oryn Browser ${version}
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+publish: null

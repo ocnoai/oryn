@@ -1,0 +1,15 @@
+node_modules/
+out/
+dist/
+coverage/
+.vite/
+apps/browser/.electron-vite/
+*.log
+packaging/.stage/
+apps/browser/release/
+apps/browser/release-*/
+apps/browser/build/helpers/browser_import_sandbox.node
+apps/browser/build/helpers/download_safety.node
+
+**/test-results/
+**/playwright-report/

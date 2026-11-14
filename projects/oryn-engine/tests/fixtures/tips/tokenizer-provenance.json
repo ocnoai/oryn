@@ -1,0 +1,13 @@
+{
+  "repository": "google/tipsv1-g14-lowres",
+  "revision": "a8c59ff3ac1b229c7178e8d7f626036d812358a4",
+  "file": "tokenizer.model",
+  "bytes": 731655,
+  "sha256": "4c40e7723348d5d9a3d3c2bdcec5120d97fb29edfe1bf118b4494bce02fc7624",
+  "vocabSize": 32000,
+  "padId": 0,
+  "unkId": 2,
+  "bosId": 3,
+  "eosId": 1,
+  "modelType": 2
+}

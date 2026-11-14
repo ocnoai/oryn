@@ -1,0 +1,77 @@
+{
+  "externalFiles": [
+    "onnx/model.onnx_data"
+  ],
+  "operators": [
+    "Add",
+    "Cast",
+    "Concat",
+    "ConstantOfShape",
+    "Div",
+    "Einsum",
+    "Erf",
+    "Expand",
+    "Gather",
+    "Gemm",
+    "MatMul",
+    "Mul",
+    "Neg",
+    "Pow",
+    "ReduceMean",
+    "Reshape",
+    "Shape",
+    "Slice",
+    "Softmax",
+    "Split",
+    "Sqrt",
+    "Squeeze",
+    "Sub",
+    "Tanh",
+    "Transpose",
+    "Unsqueeze",
+    "Where"
+  ],
+  "opset": 16,
+  "inputs": [
+    {
+      "name": "input_ids",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "attention_mask",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        "sequence_length"
+      ]
+    },
+    {
+      "name": "task_id",
+      "dtype": 7,
+      "shape": []
+    }
+  ],
+  "outputs": [
+    {
+      "name": "text_embeds",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        "sequence_length",
+        1024
+      ]
+    },
+    {
+      "name": "13049",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        1024
+      ]
+    }
+  ]
+}

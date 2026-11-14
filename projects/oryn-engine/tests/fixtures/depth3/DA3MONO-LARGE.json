@@ -1,0 +1,44 @@
+{
+  "config": {
+    "__object__": {
+      "args": "as_params",
+      "name": "DepthAnything3Net",
+      "path": "depth_anything_3.model.da3"
+    },
+    "head": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DPT",
+        "path": "depth_anything_3.model.dpt"
+      },
+      "dim_in": 1024,
+      "features": 256,
+      "out_channels": [
+        256,
+        512,
+        1024,
+        1024
+      ],
+      "output_dim": 1
+    },
+    "net": {
+      "__object__": {
+        "args": "as_params",
+        "name": "DinoV2",
+        "path": "depth_anything_3.model.dinov2.dinov2"
+      },
+      "alt_start": -1,
+      "cat_token": false,
+      "name": "vitl",
+      "out_layers": [
+        4,
+        11,
+        17,
+        23
+      ],
+      "qknorm_start": -1,
+      "rope_start": -1
+    }
+  },
+  "model_name": "da3mono-large"
+}

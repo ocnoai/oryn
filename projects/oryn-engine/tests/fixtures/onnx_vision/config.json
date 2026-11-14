@@ -1,0 +1,21 @@
+{
+  "model_name": "camie-tagger",
+  "model_type": "pytorch",
+  "models": [
+    {
+      "name": "camie-tagger-v2-safetensors",
+      "path": "camie-tagger-v2.safetensors",
+      "description": "Safetensors"
+    },
+    {
+      "name": "camie-tagger-v2-onnx",
+      "path": "camie-tagger-v2.onnx",
+      "description": "ONNX"
+    }
+  ],
+  "default_model": "camie-tagger-v2-onnx",
+  "description": "A custom tagging model",
+  "version": "1.0.0",
+  "tags": ["tagger", "classification", "danbooru", "anime"],
+  "license": "gpl-3.0"
+}

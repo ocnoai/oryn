@@ -1,0 +1,95 @@
+[
+  {
+    "name": "source",
+    "selection": {
+      "version": 1,
+      "intent": "source-checkpoint",
+      "sourceCheckpoint": {
+        "provider": "huggingface",
+        "repository": "org/model",
+        "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    },
+    "valid": true
+  },
+  {
+    "name": "preferred",
+    "selection": {
+      "version": 1,
+      "intent": "preferred-variant",
+      "sourceCheckpoint": {
+        "provider": "huggingface",
+        "repository": "org/model",
+        "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    },
+    "preferred": {
+      "provider": "huggingface",
+      "repository": "org/model",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "valid": true
+  },
+  {
+    "name": "pin",
+    "selection": {
+      "version": 1,
+      "intent": "exact-artifact"
+    },
+    "preferred": {
+      "provider": "huggingface",
+      "repository": "org/model",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "files": [
+        "model-Q4.gguf"
+      ]
+    },
+    "valid": true
+  },
+  {
+    "name": "runtime-command",
+    "selection": {
+      "version": 1,
+      "intent": "source-checkpoint",
+      "sourceCheckpoint": {
+        "provider": "huggingface",
+        "repository": "org/model",
+        "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "engine": "mlx"
+    },
+    "valid": false
+  },
+  {
+    "name": "floating-pin",
+    "selection": {
+      "version": 1,
+      "intent": "exact-artifact"
+    },
+    "preferred": {
+      "provider": "huggingface",
+      "repository": "org/model",
+      "revision": "main",
+      "files": [
+        "model.gguf"
+      ]
+    },
+    "valid": false
+  },
+  {
+    "name": "unsafe-files",
+    "selection": {
+      "version": 1,
+      "intent": "exact-artifact"
+    },
+    "preferred": {
+      "provider": "huggingface",
+      "repository": "org/model",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "files": [
+        "../model.gguf"
+      ]
+    },
+    "valid": false
+  }
+]

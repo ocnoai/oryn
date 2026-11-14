@@ -1,0 +1,75 @@
+{
+  "externalFiles": [],
+  "operators": [
+    "Add",
+    "Cast",
+    "Concat",
+    "Constant",
+    "ConstantOfShape",
+    "Conv",
+    "Div",
+    "Equal",
+    "Erf",
+    "Expand",
+    "Gather",
+    "Gemm",
+    "LayerNormalization",
+    "MatMul",
+    "Mod",
+    "Mul",
+    "ReduceMean",
+    "ReduceSum",
+    "Reshape",
+    "ScatterElements",
+    "Shape",
+    "Sigmoid",
+    "Slice",
+    "Softmax",
+    "Split",
+    "Sqrt",
+    "Squeeze",
+    "TopK",
+    "Transpose",
+    "Unsqueeze",
+    "Where"
+  ],
+  "opset": 17,
+  "inputs": [
+    {
+      "name": "input",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        3,
+        512,
+        512
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "initial_predictions",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        70527
+      ]
+    },
+    {
+      "name": "refined_predictions",
+      "dtype": 1,
+      "shape": [
+        "batch_size",
+        70527
+      ]
+    },
+    {
+      "name": "selected_candidates",
+      "dtype": 7,
+      "shape": [
+        "batch_size",
+        256
+      ]
+    }
+  ]
+}

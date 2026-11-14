@@ -1,0 +1,9 @@
+{
+  "originals": {
+    "DAMO-NLP-SG/VideoLLaMA3-2B": "f813276879a1879a68bbd6ad8960fbaac444e92a",
+    "DAMO-NLP-SG/VideoLLaMA3-7B": "d5b763e368861e7f5096e7ff1b49f92fbccf8ae6"
+  },
+  "runtime": "Pinned Transformers native VideoLlama3/Qwen2/NaViT, no repository Python execution.",
+  "weights": "Only original headers inspected; no original learned payload downloaded.",
+  "preprocessing": "Owned eight-frame bound with original patch order, normalization, spatial merge, compression and add_system_prompt=False framing."
+}

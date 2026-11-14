@@ -1,0 +1,14 @@
+[
+  {"group":"mlx","repository":"mlx-community/Qwen2.5-0.5B-Instruct-4bit","revision":"a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3","task":"chat"},
+  {"group":"mlx","repository":"mlx-community/SmolLM2-135M-Instruct-8bit","revision":"0f0d9b8218915bc34d401e1a340b8c049d300d5e","task":"chat"},
+  {"group":"gguf","repository":"bartowski/Qwen2.5-0.5B-Instruct-GGUF","revision":"41ba88dbac95fed2528c92514c131d73eb5a174b","task":"chat"},
+  {"group":"gguf","repository":"bartowski/SmolLM2-135M-Instruct-GGUF","revision":"09816acd5d99df7be770d85ea30822623dab342c","task":"chat"},
+  {"group":"embedding","repository":"sentence-transformers/all-MiniLM-L6-v2","revision":"1110a243fdf4706b3f48f1d95db1a4f5529b4d41","task":"embedding"},
+  {"group":"embedding","repository":"sentence-transformers/paraphrase-MiniLM-L3-v2","revision":"4ca70771034acceecb2e72475f72050fcdde4ddc","task":"embedding"},
+  {"group":"ranking","repository":"cross-encoder/ms-marco-TinyBERT-L2-v2","revision":"81d1926f67cb8eee2c2be17ca9f793c7c3bd20cc","task":"ranking"},
+  {"group":"ranking","repository":"cross-encoder/ms-marco-MiniLM-L2-v2","revision":"1b5cd67b15209f24824c50370e0397743aa9b787","task":"ranking"},
+  {"group":"vision","repository":"HuggingFaceTB/SmolVLM-256M-Instruct","revision":"7e3e67edbbed1bf9888184d9df282b700a323964","task":"vision"},
+  {"group":"vision","repository":"HuggingFaceTB/SmolVLM-500M-Instruct","revision":"a7da5b986cb59b408707209984f360a5f4ad7e47","task":"vision"},
+  {"group":"editing","repository":"stable-diffusion-v1-5/stable-diffusion-v1-5","revision":"451f4fe16113bff5a5d2269ed5ad43b0592e9a14","task":"editing"},
+  {"group":"editing","repository":"Lykon/dreamshaper-8","revision":"a7e52b98680b1ba8ff7bce97c7f9f2e2e5337917","task":"editing"}
+]

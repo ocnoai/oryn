@@ -1,0 +1,3337 @@
+{
+  "acoustic_head.blocks.0.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      0,
+      2048
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      2048,
+      1050624
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      1050624,
+      1052672
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      1052672,
+      2101248
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      2101248,
+      2103296
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      2103296,
+      3151872
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      3151872,
+      3153920
+    ]
+  },
+  "acoustic_head.blocks.0.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      3153920,
+      4202496
+    ]
+  },
+  "acoustic_head.blocks.0.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      4202496,
+      4214784
+    ]
+  },
+  "acoustic_head.blocks.0.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      4214784,
+      10506240
+    ]
+  },
+  "acoustic_head.blocks.0.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      10506240,
+      10510336
+    ]
+  },
+  "acoustic_head.blocks.0.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      10510336,
+      12607488
+    ]
+  },
+  "acoustic_head.blocks.0.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      12607488,
+      12609536
+    ]
+  },
+  "acoustic_head.blocks.0.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      12609536,
+      14706688
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      14706688,
+      14708736
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      14708736,
+      15757312
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      15757312,
+      15759360
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      15759360,
+      16807936
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      16807936,
+      16809984
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      16809984,
+      17858560
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      17858560,
+      17860608
+    ]
+  },
+  "acoustic_head.blocks.1.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      17860608,
+      18909184
+    ]
+  },
+  "acoustic_head.blocks.1.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      18909184,
+      18921472
+    ]
+  },
+  "acoustic_head.blocks.1.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      18921472,
+      25212928
+    ]
+  },
+  "acoustic_head.blocks.1.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      25212928,
+      25217024
+    ]
+  },
+  "acoustic_head.blocks.1.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      25217024,
+      27314176
+    ]
+  },
+  "acoustic_head.blocks.1.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      27314176,
+      27316224
+    ]
+  },
+  "acoustic_head.blocks.1.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      27316224,
+      29413376
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      29413376,
+      29415424
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      29415424,
+      30464000
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      30464000,
+      30466048
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      30466048,
+      31514624
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      31514624,
+      31516672
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      31516672,
+      32565248
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      32565248,
+      32567296
+    ]
+  },
+  "acoustic_head.blocks.2.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      32567296,
+      33615872
+    ]
+  },
+  "acoustic_head.blocks.2.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      33615872,
+      33628160
+    ]
+  },
+  "acoustic_head.blocks.2.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      33628160,
+      39919616
+    ]
+  },
+  "acoustic_head.blocks.2.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      39919616,
+      39923712
+    ]
+  },
+  "acoustic_head.blocks.2.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      39923712,
+      42020864
+    ]
+  },
+  "acoustic_head.blocks.2.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      42020864,
+      42022912
+    ]
+  },
+  "acoustic_head.blocks.2.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      42022912,
+      44120064
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      44120064,
+      44122112
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      44122112,
+      45170688
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      45170688,
+      45172736
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      45172736,
+      46221312
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      46221312,
+      46223360
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      46223360,
+      47271936
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      47271936,
+      47273984
+    ]
+  },
+  "acoustic_head.blocks.3.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      47273984,
+      48322560
+    ]
+  },
+  "acoustic_head.blocks.3.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      48322560,
+      48334848
+    ]
+  },
+  "acoustic_head.blocks.3.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      48334848,
+      54626304
+    ]
+  },
+  "acoustic_head.blocks.3.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      54626304,
+      54630400
+    ]
+  },
+  "acoustic_head.blocks.3.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      54630400,
+      56727552
+    ]
+  },
+  "acoustic_head.blocks.3.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      56727552,
+      56729600
+    ]
+  },
+  "acoustic_head.blocks.3.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      56729600,
+      58826752
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      58826752,
+      58828800
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      58828800,
+      59877376
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      59877376,
+      59879424
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      59879424,
+      60928000
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      60928000,
+      60930048
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      60930048,
+      61978624
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      61978624,
+      61980672
+    ]
+  },
+  "acoustic_head.blocks.4.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      61980672,
+      63029248
+    ]
+  },
+  "acoustic_head.blocks.4.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      63029248,
+      63041536
+    ]
+  },
+  "acoustic_head.blocks.4.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      63041536,
+      69332992
+    ]
+  },
+  "acoustic_head.blocks.4.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      69332992,
+      69337088
+    ]
+  },
+  "acoustic_head.blocks.4.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      69337088,
+      71434240
+    ]
+  },
+  "acoustic_head.blocks.4.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      71434240,
+      71436288
+    ]
+  },
+  "acoustic_head.blocks.4.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      71436288,
+      73533440
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      73533440,
+      73535488
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      73535488,
+      74584064
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      74584064,
+      74586112
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      74586112,
+      75634688
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      75634688,
+      75636736
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      75636736,
+      76685312
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      76685312,
+      76687360
+    ]
+  },
+  "acoustic_head.blocks.5.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      76687360,
+      77735936
+    ]
+  },
+  "acoustic_head.blocks.5.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      77735936,
+      77748224
+    ]
+  },
+  "acoustic_head.blocks.5.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      77748224,
+      84039680
+    ]
+  },
+  "acoustic_head.blocks.5.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      84039680,
+      84043776
+    ]
+  },
+  "acoustic_head.blocks.5.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      84043776,
+      86140928
+    ]
+  },
+  "acoustic_head.blocks.5.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      86140928,
+      86142976
+    ]
+  },
+  "acoustic_head.blocks.5.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      86142976,
+      88240128
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      88240128,
+      88242176
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      88242176,
+      89290752
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      89290752,
+      89292800
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      89292800,
+      90341376
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      90341376,
+      90343424
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      90343424,
+      91392000
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      91392000,
+      91394048
+    ]
+  },
+  "acoustic_head.blocks.6.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      91394048,
+      92442624
+    ]
+  },
+  "acoustic_head.blocks.6.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      92442624,
+      92454912
+    ]
+  },
+  "acoustic_head.blocks.6.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      92454912,
+      98746368
+    ]
+  },
+  "acoustic_head.blocks.6.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      98746368,
+      98750464
+    ]
+  },
+  "acoustic_head.blocks.6.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      98750464,
+      100847616
+    ]
+  },
+  "acoustic_head.blocks.6.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      100847616,
+      100849664
+    ]
+  },
+  "acoustic_head.blocks.6.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      100849664,
+      102946816
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_k.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      102946816,
+      102948864
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_k.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      102948864,
+      103997440
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_out.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      103997440,
+      103999488
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_out.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      103999488,
+      105048064
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_q.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      105048064,
+      105050112
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_q.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      105050112,
+      106098688
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_v.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      106098688,
+      106100736
+    ]
+  },
+  "acoustic_head.blocks.7.attn.to_v.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      106100736,
+      107149312
+    ]
+  },
+  "acoustic_head.blocks.7.attn_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      3072
+    ],
+    "data_offsets": [
+      107149312,
+      107161600
+    ]
+  },
+  "acoustic_head.blocks.7.attn_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      3072,
+      512
+    ],
+    "data_offsets": [
+      107161600,
+      113453056
+    ]
+  },
+  "acoustic_head.blocks.7.ff.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      113453056,
+      113457152
+    ]
+  },
+  "acoustic_head.blocks.7.ff.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      113457152,
+      115554304
+    ]
+  },
+  "acoustic_head.blocks.7.ff.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      115554304,
+      115556352
+    ]
+  },
+  "acoustic_head.blocks.7.ff.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1024
+    ],
+    "data_offsets": [
+      115556352,
+      117653504
+    ]
+  },
+  "acoustic_head.input_embed.cond_mask_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1
+    ],
+    "data_offsets": [
+      117653504,
+      117655552
+    ]
+  },
+  "acoustic_head.input_embed.pos.conv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      117655552,
+      117657600
+    ]
+  },
+  "acoustic_head.input_embed.pos.conv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      32,
+      31
+    ],
+    "data_offsets": [
+      117657600,
+      119689216
+    ]
+  },
+  "acoustic_head.input_embed.pos.conv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      119689216,
+      119691264
+    ]
+  },
+  "acoustic_head.input_embed.pos.conv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      32,
+      31
+    ],
+    "data_offsets": [
+      119691264,
+      121722880
+    ]
+  },
+  "acoustic_head.input_embed.proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      121722880,
+      121724928
+    ]
+  },
+  "acoustic_head.input_embed.proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      380
+    ],
+    "data_offsets": [
+      121724928,
+      122503168
+    ]
+  },
+  "acoustic_head.mu_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      100
+    ],
+    "data_offsets": [
+      122503168,
+      122503568
+    ]
+  },
+  "acoustic_head.mu_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      100,
+      1280,
+      1
+    ],
+    "data_offsets": [
+      122503568,
+      123015568
+    ]
+  },
+  "acoustic_head.out_norm.mod.1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1024
+    ],
+    "data_offsets": [
+      123015568,
+      123019664
+    ]
+  },
+  "acoustic_head.out_norm.mod.1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1024,
+      512
+    ],
+    "data_offsets": [
+      123019664,
+      125116816
+    ]
+  },
+  "acoustic_head.out_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      100
+    ],
+    "data_offsets": [
+      125116816,
+      125117216
+    ]
+  },
+  "acoustic_head.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      100,
+      512
+    ],
+    "data_offsets": [
+      125117216,
+      125322016
+    ]
+  },
+  "acoustic_head.semantic_prelook.conv1.bias": {
+    "dtype": "F32",
+    "shape": [
+      1280
+    ],
+    "data_offsets": [
+      125322016,
+      125327136
+    ]
+  },
+  "acoustic_head.semantic_prelook.conv1.weight": {
+    "dtype": "F32",
+    "shape": [
+      1280,
+      1280,
+      4
+    ],
+    "data_offsets": [
+      125327136,
+      151541536
+    ]
+  },
+  "acoustic_head.semantic_prelook.conv2.bias": {
+    "dtype": "F32",
+    "shape": [
+      1280
+    ],
+    "data_offsets": [
+      151541536,
+      151546656
+    ]
+  },
+  "acoustic_head.semantic_prelook.conv2.weight": {
+    "dtype": "F32",
+    "shape": [
+      1280,
+      1280,
+      3
+    ],
+    "data_offsets": [
+      151546656,
+      171207456
+    ]
+  },
+  "acoustic_head.semantic_token_emb.weight": {
+    "dtype": "F32",
+    "shape": [
+      4375,
+      1280
+    ],
+    "data_offsets": [
+      171207456,
+      193607456
+    ]
+  },
+  "acoustic_head.semantic_upsampler.in_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      1280
+    ],
+    "data_offsets": [
+      193607456,
+      193612576
+    ]
+  },
+  "acoustic_head.semantic_upsampler.in_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      1280,
+      1280,
+      1
+    ],
+    "data_offsets": [
+      193612576,
+      200166176
+    ]
+  },
+  "acoustic_head.semantic_upsampler.mix.conv.bias": {
+    "dtype": "F32",
+    "shape": [
+      1280
+    ],
+    "data_offsets": [
+      200166176,
+      200171296
+    ]
+  },
+  "acoustic_head.semantic_upsampler.mix.conv.weight": {
+    "dtype": "F32",
+    "shape": [
+      1280,
+      1280,
+      3
+    ],
+    "data_offsets": [
+      200171296,
+      219832096
+    ]
+  },
+  "acoustic_head.semantic_upsampler.out_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      1280
+    ],
+    "data_offsets": [
+      219832096,
+      219837216
+    ]
+  },
+  "acoustic_head.semantic_upsampler.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      1280,
+      1280,
+      1
+    ],
+    "data_offsets": [
+      219837216,
+      226390816
+    ]
+  },
+  "acoustic_head.spk_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      80
+    ],
+    "data_offsets": [
+      226390816,
+      226391136
+    ]
+  },
+  "acoustic_head.spk_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      80,
+      512
+    ],
+    "data_offsets": [
+      226391136,
+      226554976
+    ]
+  },
+  "acoustic_head.time_mlp.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      226554976,
+      226557024
+    ]
+  },
+  "acoustic_head.time_mlp.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      256
+    ],
+    "data_offsets": [
+      226557024,
+      227081312
+    ]
+  },
+  "acoustic_head.time_mlp.2.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      227081312,
+      227083360
+    ]
+  },
+  "acoustic_head.time_mlp.2.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      227083360,
+      228131936
+    ]
+  },
+  "ar_prior.out_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      228131936,
+      228133984
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      228133984,
+      228134240
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      228134240,
+      229182816
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      229182816,
+      230231392
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      230231392,
+      230231648
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      230231648,
+      231280224
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      231280224,
+      232328800
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      232328800,
+      232330848
+    ]
+  },
+  "ar_prior.temporal.layers.0.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      232330848,
+      232332896
+    ]
+  },
+  "ar_prior.temporal.layers.0.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      232332896,
+      236527200
+    ]
+  },
+  "ar_prior.temporal.layers.0.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      236527200,
+      240721504
+    ]
+  },
+  "ar_prior.temporal.layers.0.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      240721504,
+      244915808
+    ]
+  },
+  "ar_prior.temporal.layers.0.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      244915808,
+      244917856
+    ]
+  },
+  "ar_prior.temporal.layers.0.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      244917856,
+      244919904
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      244919904,
+      244920160
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      244920160,
+      245968736
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      245968736,
+      247017312
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      247017312,
+      247017568
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      247017568,
+      248066144
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      248066144,
+      249114720
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      249114720,
+      249116768
+    ]
+  },
+  "ar_prior.temporal.layers.1.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      249116768,
+      249118816
+    ]
+  },
+  "ar_prior.temporal.layers.1.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      249118816,
+      253313120
+    ]
+  },
+  "ar_prior.temporal.layers.1.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      253313120,
+      257507424
+    ]
+  },
+  "ar_prior.temporal.layers.1.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      257507424,
+      261701728
+    ]
+  },
+  "ar_prior.temporal.layers.1.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      261701728,
+      261703776
+    ]
+  },
+  "ar_prior.temporal.layers.1.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      261703776,
+      261705824
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      261705824,
+      261706080
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      261706080,
+      262754656
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      262754656,
+      263803232
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      263803232,
+      263803488
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      263803488,
+      264852064
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      264852064,
+      265900640
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      265900640,
+      265902688
+    ]
+  },
+  "ar_prior.temporal.layers.10.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      265902688,
+      265904736
+    ]
+  },
+  "ar_prior.temporal.layers.10.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      265904736,
+      270099040
+    ]
+  },
+  "ar_prior.temporal.layers.10.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      270099040,
+      274293344
+    ]
+  },
+  "ar_prior.temporal.layers.10.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      274293344,
+      278487648
+    ]
+  },
+  "ar_prior.temporal.layers.10.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      278487648,
+      278489696
+    ]
+  },
+  "ar_prior.temporal.layers.10.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      278489696,
+      278491744
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      278491744,
+      278492000
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      278492000,
+      279540576
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      279540576,
+      280589152
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      280589152,
+      280589408
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      280589408,
+      281637984
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      281637984,
+      282686560
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      282686560,
+      282688608
+    ]
+  },
+  "ar_prior.temporal.layers.11.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      282688608,
+      282690656
+    ]
+  },
+  "ar_prior.temporal.layers.11.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      282690656,
+      286884960
+    ]
+  },
+  "ar_prior.temporal.layers.11.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      286884960,
+      291079264
+    ]
+  },
+  "ar_prior.temporal.layers.11.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      291079264,
+      295273568
+    ]
+  },
+  "ar_prior.temporal.layers.11.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      295273568,
+      295275616
+    ]
+  },
+  "ar_prior.temporal.layers.11.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      295275616,
+      295277664
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      295277664,
+      295277920
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      295277920,
+      296326496
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      296326496,
+      297375072
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      297375072,
+      297375328
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      297375328,
+      298423904
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      298423904,
+      299472480
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      299472480,
+      299474528
+    ]
+  },
+  "ar_prior.temporal.layers.2.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      299474528,
+      299476576
+    ]
+  },
+  "ar_prior.temporal.layers.2.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      299476576,
+      303670880
+    ]
+  },
+  "ar_prior.temporal.layers.2.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      303670880,
+      307865184
+    ]
+  },
+  "ar_prior.temporal.layers.2.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      307865184,
+      312059488
+    ]
+  },
+  "ar_prior.temporal.layers.2.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      312059488,
+      312061536
+    ]
+  },
+  "ar_prior.temporal.layers.2.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      312061536,
+      312063584
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      312063584,
+      312063840
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      312063840,
+      313112416
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      313112416,
+      314160992
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      314160992,
+      314161248
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      314161248,
+      315209824
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      315209824,
+      316258400
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      316258400,
+      316260448
+    ]
+  },
+  "ar_prior.temporal.layers.3.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      316260448,
+      316262496
+    ]
+  },
+  "ar_prior.temporal.layers.3.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      316262496,
+      320456800
+    ]
+  },
+  "ar_prior.temporal.layers.3.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      320456800,
+      324651104
+    ]
+  },
+  "ar_prior.temporal.layers.3.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      324651104,
+      328845408
+    ]
+  },
+  "ar_prior.temporal.layers.3.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      328845408,
+      328847456
+    ]
+  },
+  "ar_prior.temporal.layers.3.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      328847456,
+      328849504
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      328849504,
+      328849760
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      328849760,
+      329898336
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      329898336,
+      330946912
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      330946912,
+      330947168
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      330947168,
+      331995744
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      331995744,
+      333044320
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      333044320,
+      333046368
+    ]
+  },
+  "ar_prior.temporal.layers.4.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      333046368,
+      333048416
+    ]
+  },
+  "ar_prior.temporal.layers.4.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      333048416,
+      337242720
+    ]
+  },
+  "ar_prior.temporal.layers.4.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      337242720,
+      341437024
+    ]
+  },
+  "ar_prior.temporal.layers.4.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      341437024,
+      345631328
+    ]
+  },
+  "ar_prior.temporal.layers.4.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      345631328,
+      345633376
+    ]
+  },
+  "ar_prior.temporal.layers.4.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      345633376,
+      345635424
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      345635424,
+      345635680
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      345635680,
+      346684256
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      346684256,
+      347732832
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      347732832,
+      347733088
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      347733088,
+      348781664
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      348781664,
+      349830240
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      349830240,
+      349832288
+    ]
+  },
+  "ar_prior.temporal.layers.5.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      349832288,
+      349834336
+    ]
+  },
+  "ar_prior.temporal.layers.5.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      349834336,
+      354028640
+    ]
+  },
+  "ar_prior.temporal.layers.5.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      354028640,
+      358222944
+    ]
+  },
+  "ar_prior.temporal.layers.5.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      358222944,
+      362417248
+    ]
+  },
+  "ar_prior.temporal.layers.5.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      362417248,
+      362419296
+    ]
+  },
+  "ar_prior.temporal.layers.5.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      362419296,
+      362421344
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      362421344,
+      362421600
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      362421600,
+      363470176
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      363470176,
+      364518752
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      364518752,
+      364519008
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      364519008,
+      365567584
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      365567584,
+      366616160
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      366616160,
+      366618208
+    ]
+  },
+  "ar_prior.temporal.layers.6.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      366618208,
+      366620256
+    ]
+  },
+  "ar_prior.temporal.layers.6.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      366620256,
+      370814560
+    ]
+  },
+  "ar_prior.temporal.layers.6.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      370814560,
+      375008864
+    ]
+  },
+  "ar_prior.temporal.layers.6.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      375008864,
+      379203168
+    ]
+  },
+  "ar_prior.temporal.layers.6.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      379203168,
+      379205216
+    ]
+  },
+  "ar_prior.temporal.layers.6.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      379205216,
+      379207264
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      379207264,
+      379207520
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      379207520,
+      380256096
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      380256096,
+      381304672
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      381304672,
+      381304928
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      381304928,
+      382353504
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      382353504,
+      383402080
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      383402080,
+      383404128
+    ]
+  },
+  "ar_prior.temporal.layers.7.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      383404128,
+      383406176
+    ]
+  },
+  "ar_prior.temporal.layers.7.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      383406176,
+      387600480
+    ]
+  },
+  "ar_prior.temporal.layers.7.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      387600480,
+      391794784
+    ]
+  },
+  "ar_prior.temporal.layers.7.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      391794784,
+      395989088
+    ]
+  },
+  "ar_prior.temporal.layers.7.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      395989088,
+      395991136
+    ]
+  },
+  "ar_prior.temporal.layers.7.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      395991136,
+      395993184
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      395993184,
+      395993440
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      395993440,
+      397042016
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      397042016,
+      398090592
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      398090592,
+      398090848
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      398090848,
+      399139424
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      399139424,
+      400188000
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      400188000,
+      400190048
+    ]
+  },
+  "ar_prior.temporal.layers.8.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      400190048,
+      400192096
+    ]
+  },
+  "ar_prior.temporal.layers.8.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      400192096,
+      404386400
+    ]
+  },
+  "ar_prior.temporal.layers.8.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      404386400,
+      408580704
+    ]
+  },
+  "ar_prior.temporal.layers.8.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      408580704,
+      412775008
+    ]
+  },
+  "ar_prior.temporal.layers.8.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      412775008,
+      412777056
+    ]
+  },
+  "ar_prior.temporal.layers.8.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      412777056,
+      412779104
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.k_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      412779104,
+      412779360
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      412779360,
+      413827936
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      413827936,
+      414876512
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.q_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      414876512,
+      414876768
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      414876768,
+      415925344
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      415925344,
+      416973920
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      416973920,
+      416975968
+    ]
+  },
+  "ar_prior.temporal.layers.9.attn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      416975968,
+      416978016
+    ]
+  },
+  "ar_prior.temporal.layers.9.ffn.down_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      2048
+    ],
+    "data_offsets": [
+      416978016,
+      421172320
+    ]
+  },
+  "ar_prior.temporal.layers.9.ffn.gate_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      421172320,
+      425366624
+    ]
+  },
+  "ar_prior.temporal.layers.9.ffn.up_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      2048,
+      512
+    ],
+    "data_offsets": [
+      425366624,
+      429560928
+    ]
+  },
+  "ar_prior.temporal.layers.9.ffn_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      429560928,
+      429562976
+    ]
+  },
+  "ar_prior.temporal.layers.9.ffn_scale.scale": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      429562976,
+      429565024
+    ]
+  },
+  "ar_prior.token_head.bias": {
+    "dtype": "F32",
+    "shape": [
+      4377
+    ],
+    "data_offsets": [
+      429565024,
+      429582532
+    ]
+  },
+  "ar_prior.token_head.weight": {
+    "dtype": "F32",
+    "shape": [
+      4377,
+      512
+    ],
+    "data_offsets": [
+      429582532,
+      438546628
+    ]
+  },
+  "cond_proj.0.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      438546628,
+      438548676
+    ]
+  },
+  "cond_proj.0.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      328
+    ],
+    "data_offsets": [
+      438548676,
+      439220420
+    ]
+  },
+  "cond_proj.3.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      439220420,
+      439222468
+    ]
+  },
+  "cond_proj.3.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      439222468,
+      440271044
+    ]
+  },
+  "sem_in_proj.bias": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      440271044,
+      440273092
+    ]
+  },
+  "sem_in_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      1280
+    ],
+    "data_offsets": [
+      440273092,
+      442894532
+    ]
+  },
+  "semantic_tok_emb.weight": {
+    "dtype": "F32",
+    "shape": [
+      4377,
+      1280
+    ],
+    "data_offsets": [
+      442894532,
+      465304772
+    ]
+  },
+  "style_prefix.k_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      465304772,
+      466353348
+    ]
+  },
+  "style_prefix.kv_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      466353348,
+      466355396
+    ]
+  },
+  "style_prefix.out_norm.weight": {
+    "dtype": "F32",
+    "shape": [
+      512
+    ],
+    "data_offsets": [
+      466355396,
+      466357444
+    ]
+  },
+  "style_prefix.out_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      466357444,
+      467406020
+    ]
+  },
+  "style_prefix.q_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      467406020,
+      468454596
+    ]
+  },
+  "style_prefix.queries": {
+    "dtype": "F32",
+    "shape": [
+      8,
+      512
+    ],
+    "data_offsets": [
+      468454596,
+      468470980
+    ]
+  },
+  "style_prefix.v_proj.weight": {
+    "dtype": "F32",
+    "shape": [
+      512,
+      512
+    ],
+    "data_offsets": [
+      468470980,
+      469519556
+    ]
+  },
+  "text_tok_emb.weight": {
+    "dtype": "F32",
+    "shape": [
+      8192,
+      512
+    ],
+    "data_offsets": [
+      469519556,
+      486296772
+    ]
+  }
+}

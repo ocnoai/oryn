@@ -1,0 +1,3382 @@
+{
+  "repository": "Systran/faster-whisper-small",
+  "revision": "536b0662742c02347bc0e980a01041f333bce120",
+  "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/model.bin",
+  "fileBytes": 483546902,
+  "binaryVersion": 6,
+  "spec": "WhisperSpec",
+  "specRevision": 3,
+  "tensorCount": 404,
+  "tensors": {
+    "decoder/activation": {
+      "shape": [],
+      "dtype": 1,
+      "dataOffset": 53,
+      "bytes": 1,
+      "controlValue": 3
+    },
+    "decoder/alibi": {
+      "shape": [],
+      "dtype": 1,
+      "dataOffset": 76,
+      "bytes": 1,
+      "controlValue": 0
+    },
+    "decoder/alignment_heads": {
+      "shape": [],
+      "dtype": 2,
+      "dataOffset": 109,
+      "bytes": 2,
+      "controlValue": 1
+    },
+    "decoder/alignment_layer": {
+      "shape": [],
+      "dtype": 2,
+      "dataOffset": 143,
+      "bytes": 2,
+      "controlValue": -1
+    },
+    "decoder/embeddings/weight": {
+      "shape": [
+        51865,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 187,
+      "bytes": 79664640
+    },
+    "decoder/layer_0/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 79664881,
+      "bytes": 1536
+    },
+    "decoder/layer_0/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 79666472,
+      "bytes": 1536
+    },
+    "decoder/layer_0/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 79668060,
+      "bytes": 1536
+    },
+    "decoder/layer_0/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 79669654,
+      "bytes": 1179648
+    },
+    "decoder/layer_0/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 80849354,
+      "bytes": 3072
+    },
+    "decoder/layer_0/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 80852484,
+      "bytes": 2359296
+    },
+    "decoder/layer_0/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 83211832,
+      "bytes": 1536
+    },
+    "decoder/layer_0/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 83213426,
+      "bytes": 1179648
+    },
+    "decoder/layer_0/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 84393122,
+      "bytes": 1536
+    },
+    "decoder/layer_0/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 84394707,
+      "bytes": 1536
+    },
+    "decoder/layer_0/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 84396289,
+      "bytes": 6144
+    },
+    "decoder/layer_0/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 84402485,
+      "bytes": 4718592
+    },
+    "decoder/layer_0/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 89121123,
+      "bytes": 1536
+    },
+    "decoder/layer_0/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 89122711,
+      "bytes": 4718592
+    },
+    "decoder/layer_0/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 93841362,
+      "bytes": 1536
+    },
+    "decoder/layer_0/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 93842958,
+      "bytes": 1536
+    },
+    "decoder/layer_0/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 93844551,
+      "bytes": 4608
+    },
+    "decoder/layer_0/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 93849222,
+      "bytes": 3538944
+    },
+    "decoder/layer_0/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 97388223,
+      "bytes": 1536
+    },
+    "decoder/layer_0/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 97389822,
+      "bytes": 1179648
+    },
+    "decoder/layer_1/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 98569524,
+      "bytes": 1536
+    },
+    "decoder/layer_1/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 98571115,
+      "bytes": 1536
+    },
+    "decoder/layer_1/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 98572703,
+      "bytes": 1536
+    },
+    "decoder/layer_1/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 98574297,
+      "bytes": 1179648
+    },
+    "decoder/layer_1/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 99753997,
+      "bytes": 3072
+    },
+    "decoder/layer_1/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 99757127,
+      "bytes": 2359296
+    },
+    "decoder/layer_1/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 102116475,
+      "bytes": 1536
+    },
+    "decoder/layer_1/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 102118069,
+      "bytes": 1179648
+    },
+    "decoder/layer_1/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 103297765,
+      "bytes": 1536
+    },
+    "decoder/layer_1/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 103299350,
+      "bytes": 1536
+    },
+    "decoder/layer_1/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 103300932,
+      "bytes": 6144
+    },
+    "decoder/layer_1/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 103307128,
+      "bytes": 4718592
+    },
+    "decoder/layer_1/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 108025766,
+      "bytes": 1536
+    },
+    "decoder/layer_1/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 108027354,
+      "bytes": 4718592
+    },
+    "decoder/layer_1/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 112746005,
+      "bytes": 1536
+    },
+    "decoder/layer_1/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 112747601,
+      "bytes": 1536
+    },
+    "decoder/layer_1/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 112749194,
+      "bytes": 4608
+    },
+    "decoder/layer_1/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 112753865,
+      "bytes": 3538944
+    },
+    "decoder/layer_1/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 116292866,
+      "bytes": 1536
+    },
+    "decoder/layer_1/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 116294465,
+      "bytes": 1179648
+    },
+    "decoder/layer_10/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 117474168,
+      "bytes": 1536
+    },
+    "decoder/layer_10/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 117475760,
+      "bytes": 1536
+    },
+    "decoder/layer_10/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 117477349,
+      "bytes": 1536
+    },
+    "decoder/layer_10/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 117478944,
+      "bytes": 1179648
+    },
+    "decoder/layer_10/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 118658645,
+      "bytes": 3072
+    },
+    "decoder/layer_10/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 118661776,
+      "bytes": 2359296
+    },
+    "decoder/layer_10/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 121021125,
+      "bytes": 1536
+    },
+    "decoder/layer_10/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 121022720,
+      "bytes": 1179648
+    },
+    "decoder/layer_10/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 122202417,
+      "bytes": 1536
+    },
+    "decoder/layer_10/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 122204003,
+      "bytes": 1536
+    },
+    "decoder/layer_10/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 122205586,
+      "bytes": 6144
+    },
+    "decoder/layer_10/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 122211783,
+      "bytes": 4718592
+    },
+    "decoder/layer_10/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 126930422,
+      "bytes": 1536
+    },
+    "decoder/layer_10/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 126932011,
+      "bytes": 4718592
+    },
+    "decoder/layer_10/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 131650663,
+      "bytes": 1536
+    },
+    "decoder/layer_10/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 131652260,
+      "bytes": 1536
+    },
+    "decoder/layer_10/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 131653854,
+      "bytes": 4608
+    },
+    "decoder/layer_10/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 131658526,
+      "bytes": 3538944
+    },
+    "decoder/layer_10/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 135197528,
+      "bytes": 1536
+    },
+    "decoder/layer_10/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 135199128,
+      "bytes": 1179648
+    },
+    "decoder/layer_11/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 136378831,
+      "bytes": 1536
+    },
+    "decoder/layer_11/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 136380423,
+      "bytes": 1536
+    },
+    "decoder/layer_11/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 136382012,
+      "bytes": 1536
+    },
+    "decoder/layer_11/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 136383607,
+      "bytes": 1179648
+    },
+    "decoder/layer_11/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 137563308,
+      "bytes": 3072
+    },
+    "decoder/layer_11/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 137566439,
+      "bytes": 2359296
+    },
+    "decoder/layer_11/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 139925788,
+      "bytes": 1536
+    },
+    "decoder/layer_11/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 139927383,
+      "bytes": 1179648
+    },
+    "decoder/layer_11/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 141107080,
+      "bytes": 1536
+    },
+    "decoder/layer_11/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 141108666,
+      "bytes": 1536
+    },
+    "decoder/layer_11/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 141110249,
+      "bytes": 6144
+    },
+    "decoder/layer_11/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 141116446,
+      "bytes": 4718592
+    },
+    "decoder/layer_11/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 145835085,
+      "bytes": 1536
+    },
+    "decoder/layer_11/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 145836674,
+      "bytes": 4718592
+    },
+    "decoder/layer_11/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 150555326,
+      "bytes": 1536
+    },
+    "decoder/layer_11/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 150556923,
+      "bytes": 1536
+    },
+    "decoder/layer_11/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 150558517,
+      "bytes": 4608
+    },
+    "decoder/layer_11/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 150563189,
+      "bytes": 3538944
+    },
+    "decoder/layer_11/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 154102191,
+      "bytes": 1536
+    },
+    "decoder/layer_11/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 154103791,
+      "bytes": 1179648
+    },
+    "decoder/layer_2/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 155283493,
+      "bytes": 1536
+    },
+    "decoder/layer_2/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 155285084,
+      "bytes": 1536
+    },
+    "decoder/layer_2/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 155286672,
+      "bytes": 1536
+    },
+    "decoder/layer_2/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 155288266,
+      "bytes": 1179648
+    },
+    "decoder/layer_2/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 156467966,
+      "bytes": 3072
+    },
+    "decoder/layer_2/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 156471096,
+      "bytes": 2359296
+    },
+    "decoder/layer_2/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 158830444,
+      "bytes": 1536
+    },
+    "decoder/layer_2/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 158832038,
+      "bytes": 1179648
+    },
+    "decoder/layer_2/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 160011734,
+      "bytes": 1536
+    },
+    "decoder/layer_2/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 160013319,
+      "bytes": 1536
+    },
+    "decoder/layer_2/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 160014901,
+      "bytes": 6144
+    },
+    "decoder/layer_2/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 160021097,
+      "bytes": 4718592
+    },
+    "decoder/layer_2/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 164739735,
+      "bytes": 1536
+    },
+    "decoder/layer_2/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 164741323,
+      "bytes": 4718592
+    },
+    "decoder/layer_2/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 169459974,
+      "bytes": 1536
+    },
+    "decoder/layer_2/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 169461570,
+      "bytes": 1536
+    },
+    "decoder/layer_2/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 169463163,
+      "bytes": 4608
+    },
+    "decoder/layer_2/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 169467834,
+      "bytes": 3538944
+    },
+    "decoder/layer_2/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 173006835,
+      "bytes": 1536
+    },
+    "decoder/layer_2/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 173008434,
+      "bytes": 1179648
+    },
+    "decoder/layer_3/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 174188136,
+      "bytes": 1536
+    },
+    "decoder/layer_3/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 174189727,
+      "bytes": 1536
+    },
+    "decoder/layer_3/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 174191315,
+      "bytes": 1536
+    },
+    "decoder/layer_3/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 174192909,
+      "bytes": 1179648
+    },
+    "decoder/layer_3/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 175372609,
+      "bytes": 3072
+    },
+    "decoder/layer_3/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 175375739,
+      "bytes": 2359296
+    },
+    "decoder/layer_3/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 177735087,
+      "bytes": 1536
+    },
+    "decoder/layer_3/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 177736681,
+      "bytes": 1179648
+    },
+    "decoder/layer_3/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 178916377,
+      "bytes": 1536
+    },
+    "decoder/layer_3/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 178917962,
+      "bytes": 1536
+    },
+    "decoder/layer_3/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 178919544,
+      "bytes": 6144
+    },
+    "decoder/layer_3/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 178925740,
+      "bytes": 4718592
+    },
+    "decoder/layer_3/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 183644378,
+      "bytes": 1536
+    },
+    "decoder/layer_3/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 183645966,
+      "bytes": 4718592
+    },
+    "decoder/layer_3/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 188364617,
+      "bytes": 1536
+    },
+    "decoder/layer_3/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 188366213,
+      "bytes": 1536
+    },
+    "decoder/layer_3/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 188367806,
+      "bytes": 4608
+    },
+    "decoder/layer_3/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 188372477,
+      "bytes": 3538944
+    },
+    "decoder/layer_3/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 191911478,
+      "bytes": 1536
+    },
+    "decoder/layer_3/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 191913077,
+      "bytes": 1179648
+    },
+    "decoder/layer_4/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 193092779,
+      "bytes": 1536
+    },
+    "decoder/layer_4/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 193094370,
+      "bytes": 1536
+    },
+    "decoder/layer_4/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 193095958,
+      "bytes": 1536
+    },
+    "decoder/layer_4/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 193097552,
+      "bytes": 1179648
+    },
+    "decoder/layer_4/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 194277252,
+      "bytes": 3072
+    },
+    "decoder/layer_4/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 194280382,
+      "bytes": 2359296
+    },
+    "decoder/layer_4/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 196639730,
+      "bytes": 1536
+    },
+    "decoder/layer_4/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 196641324,
+      "bytes": 1179648
+    },
+    "decoder/layer_4/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 197821020,
+      "bytes": 1536
+    },
+    "decoder/layer_4/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 197822605,
+      "bytes": 1536
+    },
+    "decoder/layer_4/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 197824187,
+      "bytes": 6144
+    },
+    "decoder/layer_4/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 197830383,
+      "bytes": 4718592
+    },
+    "decoder/layer_4/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 202549021,
+      "bytes": 1536
+    },
+    "decoder/layer_4/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 202550609,
+      "bytes": 4718592
+    },
+    "decoder/layer_4/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 207269260,
+      "bytes": 1536
+    },
+    "decoder/layer_4/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 207270856,
+      "bytes": 1536
+    },
+    "decoder/layer_4/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 207272449,
+      "bytes": 4608
+    },
+    "decoder/layer_4/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 207277120,
+      "bytes": 3538944
+    },
+    "decoder/layer_4/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 210816121,
+      "bytes": 1536
+    },
+    "decoder/layer_4/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 210817720,
+      "bytes": 1179648
+    },
+    "decoder/layer_5/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 211997422,
+      "bytes": 1536
+    },
+    "decoder/layer_5/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 211999013,
+      "bytes": 1536
+    },
+    "decoder/layer_5/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 212000601,
+      "bytes": 1536
+    },
+    "decoder/layer_5/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 212002195,
+      "bytes": 1179648
+    },
+    "decoder/layer_5/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 213181895,
+      "bytes": 3072
+    },
+    "decoder/layer_5/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 213185025,
+      "bytes": 2359296
+    },
+    "decoder/layer_5/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 215544373,
+      "bytes": 1536
+    },
+    "decoder/layer_5/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 215545967,
+      "bytes": 1179648
+    },
+    "decoder/layer_5/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 216725663,
+      "bytes": 1536
+    },
+    "decoder/layer_5/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 216727248,
+      "bytes": 1536
+    },
+    "decoder/layer_5/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 216728830,
+      "bytes": 6144
+    },
+    "decoder/layer_5/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 216735026,
+      "bytes": 4718592
+    },
+    "decoder/layer_5/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 221453664,
+      "bytes": 1536
+    },
+    "decoder/layer_5/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 221455252,
+      "bytes": 4718592
+    },
+    "decoder/layer_5/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 226173903,
+      "bytes": 1536
+    },
+    "decoder/layer_5/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 226175499,
+      "bytes": 1536
+    },
+    "decoder/layer_5/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 226177092,
+      "bytes": 4608
+    },
+    "decoder/layer_5/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 226181763,
+      "bytes": 3538944
+    },
+    "decoder/layer_5/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 229720764,
+      "bytes": 1536
+    },
+    "decoder/layer_5/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 229722363,
+      "bytes": 1179648
+    },
+    "decoder/layer_6/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 230902065,
+      "bytes": 1536
+    },
+    "decoder/layer_6/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 230903656,
+      "bytes": 1536
+    },
+    "decoder/layer_6/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 230905244,
+      "bytes": 1536
+    },
+    "decoder/layer_6/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 230906838,
+      "bytes": 1179648
+    },
+    "decoder/layer_6/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 232086538,
+      "bytes": 3072
+    },
+    "decoder/layer_6/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 232089668,
+      "bytes": 2359296
+    },
+    "decoder/layer_6/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 234449016,
+      "bytes": 1536
+    },
+    "decoder/layer_6/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 234450610,
+      "bytes": 1179648
+    },
+    "decoder/layer_6/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 235630306,
+      "bytes": 1536
+    },
+    "decoder/layer_6/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 235631891,
+      "bytes": 1536
+    },
+    "decoder/layer_6/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 235633473,
+      "bytes": 6144
+    },
+    "decoder/layer_6/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 235639669,
+      "bytes": 4718592
+    },
+    "decoder/layer_6/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 240358307,
+      "bytes": 1536
+    },
+    "decoder/layer_6/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 240359895,
+      "bytes": 4718592
+    },
+    "decoder/layer_6/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 245078546,
+      "bytes": 1536
+    },
+    "decoder/layer_6/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 245080142,
+      "bytes": 1536
+    },
+    "decoder/layer_6/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 245081735,
+      "bytes": 4608
+    },
+    "decoder/layer_6/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 245086406,
+      "bytes": 3538944
+    },
+    "decoder/layer_6/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 248625407,
+      "bytes": 1536
+    },
+    "decoder/layer_6/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 248627006,
+      "bytes": 1179648
+    },
+    "decoder/layer_7/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 249806708,
+      "bytes": 1536
+    },
+    "decoder/layer_7/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 249808299,
+      "bytes": 1536
+    },
+    "decoder/layer_7/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 249809887,
+      "bytes": 1536
+    },
+    "decoder/layer_7/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 249811481,
+      "bytes": 1179648
+    },
+    "decoder/layer_7/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 250991181,
+      "bytes": 3072
+    },
+    "decoder/layer_7/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 250994311,
+      "bytes": 2359296
+    },
+    "decoder/layer_7/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 253353659,
+      "bytes": 1536
+    },
+    "decoder/layer_7/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 253355253,
+      "bytes": 1179648
+    },
+    "decoder/layer_7/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 254534949,
+      "bytes": 1536
+    },
+    "decoder/layer_7/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 254536534,
+      "bytes": 1536
+    },
+    "decoder/layer_7/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 254538116,
+      "bytes": 6144
+    },
+    "decoder/layer_7/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 254544312,
+      "bytes": 4718592
+    },
+    "decoder/layer_7/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 259262950,
+      "bytes": 1536
+    },
+    "decoder/layer_7/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 259264538,
+      "bytes": 4718592
+    },
+    "decoder/layer_7/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 263983189,
+      "bytes": 1536
+    },
+    "decoder/layer_7/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 263984785,
+      "bytes": 1536
+    },
+    "decoder/layer_7/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 263986378,
+      "bytes": 4608
+    },
+    "decoder/layer_7/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 263991049,
+      "bytes": 3538944
+    },
+    "decoder/layer_7/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 267530050,
+      "bytes": 1536
+    },
+    "decoder/layer_7/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 267531649,
+      "bytes": 1179648
+    },
+    "decoder/layer_8/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 268711351,
+      "bytes": 1536
+    },
+    "decoder/layer_8/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 268712942,
+      "bytes": 1536
+    },
+    "decoder/layer_8/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 268714530,
+      "bytes": 1536
+    },
+    "decoder/layer_8/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 268716124,
+      "bytes": 1179648
+    },
+    "decoder/layer_8/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 269895824,
+      "bytes": 3072
+    },
+    "decoder/layer_8/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 269898954,
+      "bytes": 2359296
+    },
+    "decoder/layer_8/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 272258302,
+      "bytes": 1536
+    },
+    "decoder/layer_8/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 272259896,
+      "bytes": 1179648
+    },
+    "decoder/layer_8/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 273439592,
+      "bytes": 1536
+    },
+    "decoder/layer_8/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 273441177,
+      "bytes": 1536
+    },
+    "decoder/layer_8/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 273442759,
+      "bytes": 6144
+    },
+    "decoder/layer_8/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 273448955,
+      "bytes": 4718592
+    },
+    "decoder/layer_8/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 278167593,
+      "bytes": 1536
+    },
+    "decoder/layer_8/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 278169181,
+      "bytes": 4718592
+    },
+    "decoder/layer_8/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 282887832,
+      "bytes": 1536
+    },
+    "decoder/layer_8/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 282889428,
+      "bytes": 1536
+    },
+    "decoder/layer_8/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 282891021,
+      "bytes": 4608
+    },
+    "decoder/layer_8/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 282895692,
+      "bytes": 3538944
+    },
+    "decoder/layer_8/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 286434693,
+      "bytes": 1536
+    },
+    "decoder/layer_8/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 286436292,
+      "bytes": 1179648
+    },
+    "decoder/layer_9/attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 287615994,
+      "bytes": 1536
+    },
+    "decoder/layer_9/attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 287617585,
+      "bytes": 1536
+    },
+    "decoder/layer_9/attention/linear_0/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 287619173,
+      "bytes": 1536
+    },
+    "decoder/layer_9/attention/linear_0/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 287620767,
+      "bytes": 1179648
+    },
+    "decoder/layer_9/attention/linear_1/bias": {
+      "shape": [
+        1536
+      ],
+      "dtype": 4,
+      "dataOffset": 288800467,
+      "bytes": 3072
+    },
+    "decoder/layer_9/attention/linear_1/weight": {
+      "shape": [
+        1536,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 288803597,
+      "bytes": 2359296
+    },
+    "decoder/layer_9/attention/linear_2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 291162945,
+      "bytes": 1536
+    },
+    "decoder/layer_9/attention/linear_2/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 291164539,
+      "bytes": 1179648
+    },
+    "decoder/layer_9/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 292344235,
+      "bytes": 1536
+    },
+    "decoder/layer_9/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 292345820,
+      "bytes": 1536
+    },
+    "decoder/layer_9/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 292347402,
+      "bytes": 6144
+    },
+    "decoder/layer_9/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 292353598,
+      "bytes": 4718592
+    },
+    "decoder/layer_9/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 297072236,
+      "bytes": 1536
+    },
+    "decoder/layer_9/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 297073824,
+      "bytes": 4718592
+    },
+    "decoder/layer_9/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 301792475,
+      "bytes": 1536
+    },
+    "decoder/layer_9/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 301794071,
+      "bytes": 1536
+    },
+    "decoder/layer_9/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 301795664,
+      "bytes": 4608
+    },
+    "decoder/layer_9/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 301800335,
+      "bytes": 3538944
+    },
+    "decoder/layer_9/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 305339336,
+      "bytes": 1536
+    },
+    "decoder/layer_9/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 305340935,
+      "bytes": 1179648
+    },
+    "decoder/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 306520619,
+      "bytes": 1536
+    },
+    "decoder/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 306522192,
+      "bytes": 1536
+    },
+    "decoder/num_heads": {
+      "shape": [],
+      "dtype": 2,
+      "dataOffset": 306523754,
+      "bytes": 2,
+      "controlValue": 12
+    },
+    "decoder/position_encodings/encodings": {
+      "shape": [
+        448,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 306523809,
+      "bytes": 688128
+    },
+    "decoder/pre_norm": {
+      "shape": [],
+      "dtype": 1,
+      "dataOffset": 307211962,
+      "bytes": 1,
+      "controlValue": 1
+    },
+    "decoder/scale_embeddings": {
+      "shape": [],
+      "dtype": 1,
+      "dataOffset": 307211996,
+      "bytes": 1,
+      "controlValue": 0
+    },
+    "decoder/start_from_zero_embedding": {
+      "shape": [],
+      "dtype": 1,
+      "dataOffset": 307212039,
+      "bytes": 1,
+      "controlValue": 0
+    },
+    "encoder/conv1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 307212071,
+      "bytes": 1536
+    },
+    "encoder/conv1/weight": {
+      "shape": [
+        768,
+        80,
+        3
+      ],
+      "dtype": 4,
+      "dataOffset": 307213648,
+      "bytes": 368640
+    },
+    "encoder/conv2/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 307582319,
+      "bytes": 1536
+    },
+    "encoder/conv2/weight": {
+      "shape": [
+        768,
+        768,
+        3
+      ],
+      "dtype": 4,
+      "dataOffset": 307583896,
+      "bytes": 3538944
+    },
+    "encoder/layer_0/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 311122888,
+      "bytes": 1536
+    },
+    "encoder/layer_0/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 311124473,
+      "bytes": 1536
+    },
+    "encoder/layer_0/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 311126055,
+      "bytes": 6144
+    },
+    "encoder/layer_0/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 311132251,
+      "bytes": 4718592
+    },
+    "encoder/layer_0/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 315850889,
+      "bytes": 1536
+    },
+    "encoder/layer_0/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 315852477,
+      "bytes": 4718592
+    },
+    "encoder/layer_0/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 320571128,
+      "bytes": 1536
+    },
+    "encoder/layer_0/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 320572724,
+      "bytes": 1536
+    },
+    "encoder/layer_0/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 320574317,
+      "bytes": 4608
+    },
+    "encoder/layer_0/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 320578988,
+      "bytes": 3538944
+    },
+    "encoder/layer_0/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 324117989,
+      "bytes": 1536
+    },
+    "encoder/layer_0/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 324119588,
+      "bytes": 1179648
+    },
+    "encoder/layer_1/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 325299284,
+      "bytes": 1536
+    },
+    "encoder/layer_1/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 325300869,
+      "bytes": 1536
+    },
+    "encoder/layer_1/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 325302451,
+      "bytes": 6144
+    },
+    "encoder/layer_1/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 325308647,
+      "bytes": 4718592
+    },
+    "encoder/layer_1/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 330027285,
+      "bytes": 1536
+    },
+    "encoder/layer_1/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 330028873,
+      "bytes": 4718592
+    },
+    "encoder/layer_1/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 334747524,
+      "bytes": 1536
+    },
+    "encoder/layer_1/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 334749120,
+      "bytes": 1536
+    },
+    "encoder/layer_1/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 334750713,
+      "bytes": 4608
+    },
+    "encoder/layer_1/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 334755384,
+      "bytes": 3538944
+    },
+    "encoder/layer_1/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 338294385,
+      "bytes": 1536
+    },
+    "encoder/layer_1/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 338295984,
+      "bytes": 1179648
+    },
+    "encoder/layer_10/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 339475681,
+      "bytes": 1536
+    },
+    "encoder/layer_10/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 339477267,
+      "bytes": 1536
+    },
+    "encoder/layer_10/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 339478850,
+      "bytes": 6144
+    },
+    "encoder/layer_10/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 339485047,
+      "bytes": 4718592
+    },
+    "encoder/layer_10/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 344203686,
+      "bytes": 1536
+    },
+    "encoder/layer_10/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 344205275,
+      "bytes": 4718592
+    },
+    "encoder/layer_10/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 348923927,
+      "bytes": 1536
+    },
+    "encoder/layer_10/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 348925524,
+      "bytes": 1536
+    },
+    "encoder/layer_10/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 348927118,
+      "bytes": 4608
+    },
+    "encoder/layer_10/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 348931790,
+      "bytes": 3538944
+    },
+    "encoder/layer_10/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 352470792,
+      "bytes": 1536
+    },
+    "encoder/layer_10/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 352472392,
+      "bytes": 1179648
+    },
+    "encoder/layer_11/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 353652089,
+      "bytes": 1536
+    },
+    "encoder/layer_11/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 353653675,
+      "bytes": 1536
+    },
+    "encoder/layer_11/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 353655258,
+      "bytes": 6144
+    },
+    "encoder/layer_11/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 353661455,
+      "bytes": 4718592
+    },
+    "encoder/layer_11/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 358380094,
+      "bytes": 1536
+    },
+    "encoder/layer_11/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 358381683,
+      "bytes": 4718592
+    },
+    "encoder/layer_11/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 363100335,
+      "bytes": 1536
+    },
+    "encoder/layer_11/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 363101932,
+      "bytes": 1536
+    },
+    "encoder/layer_11/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 363103526,
+      "bytes": 4608
+    },
+    "encoder/layer_11/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 363108198,
+      "bytes": 3538944
+    },
+    "encoder/layer_11/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 366647200,
+      "bytes": 1536
+    },
+    "encoder/layer_11/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 366648800,
+      "bytes": 1179648
+    },
+    "encoder/layer_2/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 367828496,
+      "bytes": 1536
+    },
+    "encoder/layer_2/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 367830081,
+      "bytes": 1536
+    },
+    "encoder/layer_2/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 367831663,
+      "bytes": 6144
+    },
+    "encoder/layer_2/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 367837859,
+      "bytes": 4718592
+    },
+    "encoder/layer_2/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 372556497,
+      "bytes": 1536
+    },
+    "encoder/layer_2/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 372558085,
+      "bytes": 4718592
+    },
+    "encoder/layer_2/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 377276736,
+      "bytes": 1536
+    },
+    "encoder/layer_2/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 377278332,
+      "bytes": 1536
+    },
+    "encoder/layer_2/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 377279925,
+      "bytes": 4608
+    },
+    "encoder/layer_2/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 377284596,
+      "bytes": 3538944
+    },
+    "encoder/layer_2/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 380823597,
+      "bytes": 1536
+    },
+    "encoder/layer_2/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 380825196,
+      "bytes": 1179648
+    },
+    "encoder/layer_3/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 382004892,
+      "bytes": 1536
+    },
+    "encoder/layer_3/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 382006477,
+      "bytes": 1536
+    },
+    "encoder/layer_3/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 382008059,
+      "bytes": 6144
+    },
+    "encoder/layer_3/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 382014255,
+      "bytes": 4718592
+    },
+    "encoder/layer_3/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 386732893,
+      "bytes": 1536
+    },
+    "encoder/layer_3/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 386734481,
+      "bytes": 4718592
+    },
+    "encoder/layer_3/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 391453132,
+      "bytes": 1536
+    },
+    "encoder/layer_3/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 391454728,
+      "bytes": 1536
+    },
+    "encoder/layer_3/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 391456321,
+      "bytes": 4608
+    },
+    "encoder/layer_3/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 391460992,
+      "bytes": 3538944
+    },
+    "encoder/layer_3/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 394999993,
+      "bytes": 1536
+    },
+    "encoder/layer_3/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 395001592,
+      "bytes": 1179648
+    },
+    "encoder/layer_4/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 396181288,
+      "bytes": 1536
+    },
+    "encoder/layer_4/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 396182873,
+      "bytes": 1536
+    },
+    "encoder/layer_4/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 396184455,
+      "bytes": 6144
+    },
+    "encoder/layer_4/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 396190651,
+      "bytes": 4718592
+    },
+    "encoder/layer_4/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 400909289,
+      "bytes": 1536
+    },
+    "encoder/layer_4/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 400910877,
+      "bytes": 4718592
+    },
+    "encoder/layer_4/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 405629528,
+      "bytes": 1536
+    },
+    "encoder/layer_4/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 405631124,
+      "bytes": 1536
+    },
+    "encoder/layer_4/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 405632717,
+      "bytes": 4608
+    },
+    "encoder/layer_4/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 405637388,
+      "bytes": 3538944
+    },
+    "encoder/layer_4/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 409176389,
+      "bytes": 1536
+    },
+    "encoder/layer_4/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 409177988,
+      "bytes": 1179648
+    },
+    "encoder/layer_5/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 410357684,
+      "bytes": 1536
+    },
+    "encoder/layer_5/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 410359269,
+      "bytes": 1536
+    },
+    "encoder/layer_5/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 410360851,
+      "bytes": 6144
+    },
+    "encoder/layer_5/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 410367047,
+      "bytes": 4718592
+    },
+    "encoder/layer_5/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 415085685,
+      "bytes": 1536
+    },
+    "encoder/layer_5/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 415087273,
+      "bytes": 4718592
+    },
+    "encoder/layer_5/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 419805924,
+      "bytes": 1536
+    },
+    "encoder/layer_5/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 419807520,
+      "bytes": 1536
+    },
+    "encoder/layer_5/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 419809113,
+      "bytes": 4608
+    },
+    "encoder/layer_5/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 419813784,
+      "bytes": 3538944
+    },
+    "encoder/layer_5/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 423352785,
+      "bytes": 1536
+    },
+    "encoder/layer_5/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 423354384,
+      "bytes": 1179648
+    },
+    "encoder/layer_6/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 424534080,
+      "bytes": 1536
+    },
+    "encoder/layer_6/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 424535665,
+      "bytes": 1536
+    },
+    "encoder/layer_6/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 424537247,
+      "bytes": 6144
+    },
+    "encoder/layer_6/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 424543443,
+      "bytes": 4718592
+    },
+    "encoder/layer_6/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 429262081,
+      "bytes": 1536
+    },
+    "encoder/layer_6/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 429263669,
+      "bytes": 4718592
+    },
+    "encoder/layer_6/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 433982320,
+      "bytes": 1536
+    },
+    "encoder/layer_6/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 433983916,
+      "bytes": 1536
+    },
+    "encoder/layer_6/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 433985509,
+      "bytes": 4608
+    },
+    "encoder/layer_6/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 433990180,
+      "bytes": 3538944
+    },
+    "encoder/layer_6/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 437529181,
+      "bytes": 1536
+    },
+    "encoder/layer_6/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 437530780,
+      "bytes": 1179648
+    },
+    "encoder/layer_7/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 438710476,
+      "bytes": 1536
+    },
+    "encoder/layer_7/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 438712061,
+      "bytes": 1536
+    },
+    "encoder/layer_7/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 438713643,
+      "bytes": 6144
+    },
+    "encoder/layer_7/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 438719839,
+      "bytes": 4718592
+    },
+    "encoder/layer_7/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 443438477,
+      "bytes": 1536
+    },
+    "encoder/layer_7/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 443440065,
+      "bytes": 4718592
+    },
+    "encoder/layer_7/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 448158716,
+      "bytes": 1536
+    },
+    "encoder/layer_7/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 448160312,
+      "bytes": 1536
+    },
+    "encoder/layer_7/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 448161905,
+      "bytes": 4608
+    },
+    "encoder/layer_7/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 448166576,
+      "bytes": 3538944
+    },
+    "encoder/layer_7/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 451705577,
+      "bytes": 1536
+    },
+    "encoder/layer_7/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 451707176,
+      "bytes": 1179648
+    },
+    "encoder/layer_8/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 452886872,
+      "bytes": 1536
+    },
+    "encoder/layer_8/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 452888457,
+      "bytes": 1536
+    },
+    "encoder/layer_8/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 452890039,
+      "bytes": 6144
+    },
+    "encoder/layer_8/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 452896235,
+      "bytes": 4718592
+    },
+    "encoder/layer_8/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 457614873,
+      "bytes": 1536
+    },
+    "encoder/layer_8/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 457616461,
+      "bytes": 4718592
+    },
+    "encoder/layer_8/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 462335112,
+      "bytes": 1536
+    },
+    "encoder/layer_8/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 462336708,
+      "bytes": 1536
+    },
+    "encoder/layer_8/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 462338301,
+      "bytes": 4608
+    },
+    "encoder/layer_8/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 462342972,
+      "bytes": 3538944
+    },
+    "encoder/layer_8/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 465881973,
+      "bytes": 1536
+    },
+    "encoder/layer_8/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 465883572,
+      "bytes": 1179648
+    },
+    "encoder/layer_9/ffn/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 467063268,
+      "bytes": 1536
+    },
+    "encoder/layer_9/ffn/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 467064853,
+      "bytes": 1536
+    },
+    "encoder/layer_9/ffn/linear_0/bias": {
+      "shape": [
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 467066435,
+      "bytes": 6144
+    },
+    "encoder/layer_9/ffn/linear_0/weight": {
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 467072631,
+      "bytes": 4718592
+    },
+    "encoder/layer_9/ffn/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 471791269,
+      "bytes": 1536
+    },
+    "encoder/layer_9/ffn/linear_1/weight": {
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": 4,
+      "dataOffset": 471792857,
+      "bytes": 4718592
+    },
+    "encoder/layer_9/self_attention/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 476511508,
+      "bytes": 1536
+    },
+    "encoder/layer_9/self_attention/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 476513104,
+      "bytes": 1536
+    },
+    "encoder/layer_9/self_attention/linear_0/bias": {
+      "shape": [
+        2304
+      ],
+      "dtype": 4,
+      "dataOffset": 476514697,
+      "bytes": 4608
+    },
+    "encoder/layer_9/self_attention/linear_0/weight": {
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 476519368,
+      "bytes": 3538944
+    },
+    "encoder/layer_9/self_attention/linear_1/bias": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 480058369,
+      "bytes": 1536
+    },
+    "encoder/layer_9/self_attention/linear_1/weight": {
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 480059968,
+      "bytes": 1179648
+    },
+    "encoder/layer_norm/beta": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 481239652,
+      "bytes": 1536
+    },
+    "encoder/layer_norm/gamma": {
+      "shape": [
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 481241225,
+      "bytes": 1536
+    },
+    "encoder/num_heads": {
+      "shape": [],
+      "dtype": 2,
+      "dataOffset": 481242787,
+      "bytes": 2,
+      "controlValue": 12
+    },
+    "encoder/position_encodings/encodings": {
+      "shape": [
+        1500,
+        768
+      ],
+      "dtype": 4,
+      "dataOffset": 481242842,
+      "bytes": 2304000
+    }
+  },
+  "aliases": {
+    "decoder/projection/weight": "decoder/embeddings/weight"
+  },
+  "directoryBytesConsumed": 21782,
+  "transferredBytes": 202300,
+  "incidentalArrayBytesUpperBound": 180518,
+  "originalCheckpointDownloaded": false,
+  "originalInference": false
+}

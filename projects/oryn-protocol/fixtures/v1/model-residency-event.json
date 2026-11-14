@@ -1,0 +1,17 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "model.residency.changed",
+  "seq": 21,
+  "timestamp": 1787000002000,
+  "data": {
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "state": "loaded",
+    "estimatedResidentBytes": 4096,
+    "reason": "explicit-load"
+  }
+}

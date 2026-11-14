@@ -1,0 +1,10 @@
+{
+  "_class_name": "ScoreSdeVeScheduler",
+  "_diffusers_version": "0.1.1",
+  "correct_steps": 1,
+  "num_train_timesteps": 2000,
+  "sampling_eps": 1e-05,
+  "sigma_max": 380,
+  "sigma_min": 0.01,
+  "snr": 0.075
+}

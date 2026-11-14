@@ -1,0 +1,8 @@
+#!/bin/zsh
+set -euo pipefail
+WORKSPACE_DIR=${0:A:h:h}
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol" build
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-sdk" build
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" build
+uv build --project "$WORKSPACE_DIR/projects/oryn-engine"
+pnpm --dir "$WORKSPACE_DIR/projects/oryn-examples" build

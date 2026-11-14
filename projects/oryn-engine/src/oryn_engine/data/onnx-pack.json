@@ -1,0 +1,49 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.onnx-runtime",
+    "version": "0.5.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.onnx_worker"
+    },
+    "dependencyClosure": "oryn-onnxruntime1.31.1-encoders2-q4-tdt1-classifier1-opencv4.13-py312",
+    "runners": [
+      {
+        "runnerId": "onnx.encoder",
+        "taskContracts": [
+          "audio-transformation-v1",
+          "embeddings-v1",
+          "image-classification-v1",
+          "reranking-v1",
+          "text-classification-v1",
+          "token-classification-v1",
+          "transcription-v1",
+          "voice-activity-detection-v1"
+        ],
+        "backends": [
+          "cpu",
+          "coreml"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "b0924fc916f9ac32398bd12089f9fe8617344330862617fe9a33995dcd03af53",
+    "signature": "KyX10w8ehcoByJFFXoCAKOennrfw4uXq1r4Pbnzf/KyEOKXpX23mkv2mfaWJFMiuT8ypdUzW/PC2pcpxE+ewWdGFBDnu2YFwuIxhwwIyI9Iagph+3YulaI34NJUeJn4K5hjNxVUhDXtU2QGtc0DuDAmwXnd7klTNX4kk+fRTDQC97tdH13jqLv654r3Tj+j6r8BQcrnyJEevxM6Xs5A+RWwLpuK2b7+QrTcqXmnXGD4Mef1z39SlUYF85CSGVmROp4gwWL1NqRCCWti7S+iHcd/eyu6AzFHiqC9+HUo3VDJKohPjxSM1mzqafIqRScEffFMOmh65+lmUdM5llU68lkafbOjfqL3eu0FpokSwwfEdxNR+0yU7LbVfBWGUd8dh36LhNoggnwzJcZNen6W0rbGyZOUi/zoMWH30RZFrLdZVZplyElcqpZWDen/cowbIj+8kqpO9fN9SD2GJZF6acmTErxxNkw35umTP1ujiM7e5RX+Q9B8w505Pj50CAWU0"
+  }
+}

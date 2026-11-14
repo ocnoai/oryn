@@ -1,0 +1,11 @@
+{
+  "auto_map": {
+    "AutoProcessor": "processing_colqwen3.ColQwen3Processor"
+  },
+  "processor_class": "ColQwen3Processor",
+  "query_prefix": "",
+  "video_prompt_prefix": "<|im_start|>user\n<|vision_start|><|video_pad|><|vision_end|>Describe the video.",
+  "video_prompt_suffix": "<|im_end|><|endoftext|>",
+  "visual_prompt_prefix": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Describe the image.",
+  "visual_prompt_suffix": "<|im_end|><|endoftext|>"
+}

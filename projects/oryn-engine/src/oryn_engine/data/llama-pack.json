@@ -1,0 +1,53 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.llama-cpp",
+    "version": "0.4.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.llama_cpp_worker"
+    },
+    "dependencyClosure": "llama.cpp-v0.8.0-b11960-8642541b-mtmd2-translation1-pillow12.3-abi1",
+    "runners": [
+      {
+        "runnerId": "llama.cpp.chat",
+        "taskContracts": [
+          "chat-v1"
+        ],
+        "backends": [
+          "metal",
+          "cuda",
+          "cpu"
+        ]
+      },
+      {
+        "runnerId": "llama.cpp.translation",
+        "taskContracts": [
+          "translation-v1"
+        ],
+        "backends": [
+          "metal",
+          "cuda",
+          "cpu"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "e63d9f9a9d80b3d90b685176392da247860d9136dd61cc451ac9f8cb6b079ea6",
+    "signature": "EkZiRwNFHA35/SDIlniNtgXZNikm1Yz8rr5ACRPNyi2u9xhbWfHjh+wyI25n065OEpmVeX2usOVQ61scBxyPgEjtA9QUDQAot3pnpunS8a2X6zG22rcIuD3ZV8MOxCCQM8bxrroBza/exGlxpOW0tyE18x3WnSrlQkCatyhdNh1UiwadgtPmNGZEaMdnvdAIe5cvVEzzc3szrqrWkZVZwHMClb1LvrwH5qfi8oS7O4VaeYnCvp3CbzqSGHfkVXgq+etWNNMUi1QxQCw2r0EIFc4uv1YMkriirFKpR4oJI7rXQoObQipqUHn1dqvlDa5JyF1N9XHur3vvOVXS4ghqQAOBbSk7jtuMUEFtkWwaowdG5rS7/DdHQel57Nf1eycEZGBCyviWv3/czxtF8RsqBIJ3ChZoPoqgIE5uU/y7RdzZl5Lx6YOVtDdvQiqpqwMbTQRnD7uDKDXj+Fw/9KbTnwn5DljrOe0/dmkvx6Y9o4V0ftTnlTuMxUwfQ6I2Ypz+"
+  }
+}

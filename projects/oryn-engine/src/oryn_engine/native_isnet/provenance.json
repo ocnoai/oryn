@@ -1,0 +1,82 @@
+{
+  "source": "isnet-official/isnet.py",
+  "sourceSha256": "83505426387792a3cb9357254a5e21547cd074710d120485960aa8cc9d0b39bb",
+  "prototypeSha256": "cf776a2c44478e70410beb03658502703587fb2ed5d8586130b82e7f962a3d6e",
+  "selectedNodes": {
+    "REBNCONV": {
+      "start": 59,
+      "end": 72
+    },
+    "_upsample_like": {
+      "start": 75,
+      "end": 79
+    },
+    "RSU7": {
+      "start": 83,
+      "end": 162
+    },
+    "RSU6": {
+      "start": 166,
+      "end": 232
+    },
+    "RSU5": {
+      "start": 235,
+      "end": 290
+    },
+    "RSU4": {
+      "start": 293,
+      "end": 338
+    },
+    "RSU4F": {
+      "start": 341,
+      "end": 374
+    },
+    "ISNetDIS": {
+      "start": 491,
+      "end": 610
+    }
+  },
+  "changes": [
+    "Remove unused training losses and ground-truth encoder",
+    "Replace deprecated F.upsample by equivalent F.interpolate; all graph classes and forward arithmetic retained"
+  ],
+  "sourceProvenance": {
+    "repository": "https://github.com/xuebinqin/DIS",
+    "revision": "b6764e20381f6f42a70f83fa3324181529ed1403",
+    "files": [
+      {
+        "path": "IS-Net/models/isnet.py",
+        "localName": "isnet.py",
+        "sha256": "83505426387792a3cb9357254a5e21547cd074710d120485960aa8cc9d0b39bb"
+      },
+      {
+        "path": "LICENSE.md",
+        "localName": "LICENSE.md",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  "targetComparison": {
+    "upstreamRepository": "https://github.com/xuebinqin/DIS",
+    "upstreamRevision": "b6764e20381f6f42a70f83fa3324181529ed1403",
+    "targetRepository": "briaai/RMBG-1.4",
+    "targetRevision": "2ceba5a5efaec153162aedea169f76caf9b46cf8",
+    "identicalNumericalClasses": [
+      "REBNCONV",
+      "RSU7",
+      "RSU6",
+      "RSU5",
+      "RSU4",
+      "RSU4F"
+    ],
+    "identicalCompleteForward": true,
+    "upsampleDifference": "Upstream uses deprecated F.upsample; target uses F.interpolate with otherwise identical bilinear arguments.",
+    "license": "Apache-2.0 for original numerical source; model weights retain their separately declared publisher license."
+  },
+  "files": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "__init__.py": "5ba11a814cc14ec7f9484a3d6068beecddfd6c7fc2df601e75caf2581d43e5a9",
+    "model.py": "cf776a2c44478e70410beb03658502703587fb2ed5d8586130b82e7f962a3d6e",
+    "NOTICE.md": "03ba640dac7d2978d1833cbe7c78808804bbfd3620b2b6de4552f69177ab5d27"
+  }
+}

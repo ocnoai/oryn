@@ -1,0 +1,2366 @@
+{
+  "text_encoder.ln_final.bias": [
+    1536
+  ],
+  "text_encoder.ln_final.weight": [
+    1536
+  ],
+  "text_encoder.token_embedding.weight": [
+    32000,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.0.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.0.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.0.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.1.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.1.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.1.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.1.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.10.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.10.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.10.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.10.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.11.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.11.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.11.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.11.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.2.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.2.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.2.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.2.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.3.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.3.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.3.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.3.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.4.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.4.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.4.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.4.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.5.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.5.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.5.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.5.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.6.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.6.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.6.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.6.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.7.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.7.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.7.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.7.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.8.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.8.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.8.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.8.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "text_encoder.transformer.resblocks.9.attn.in_proj_bias": [
+    4608
+  ],
+  "text_encoder.transformer.resblocks.9.attn.in_proj_weight": [
+    4608,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.attn.out_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.attn.out_proj.weight": [
+    1536,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.ln_1.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.ln_1.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.ln_2.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.ln_2.weight": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.mlp.c_fc.bias": [
+    6144
+  ],
+  "text_encoder.transformer.resblocks.9.mlp.c_fc.weight": [
+    6144,
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.mlp.c_proj.bias": [
+    1536
+  ],
+  "text_encoder.transformer.resblocks.9.mlp.c_proj.weight": [
+    1536,
+    6144
+  ],
+  "vision_encoder.blocks.0.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.0.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.0.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.0.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.0.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.0.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.0.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.0.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.0.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.0.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.0.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.0.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.0.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.0.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.1.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.1.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.1.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.1.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.1.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.1.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.1.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.1.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.1.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.1.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.1.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.1.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.1.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.1.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.10.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.10.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.10.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.10.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.10.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.10.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.10.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.10.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.10.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.10.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.10.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.10.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.10.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.10.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.11.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.11.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.11.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.11.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.11.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.11.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.11.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.11.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.11.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.11.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.11.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.11.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.11.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.11.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.12.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.12.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.12.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.12.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.12.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.12.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.12.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.12.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.12.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.12.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.12.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.12.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.12.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.12.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.13.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.13.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.13.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.13.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.13.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.13.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.13.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.13.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.13.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.13.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.13.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.13.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.13.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.13.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.14.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.14.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.14.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.14.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.14.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.14.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.14.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.14.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.14.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.14.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.14.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.14.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.14.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.14.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.15.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.15.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.15.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.15.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.15.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.15.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.15.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.15.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.15.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.15.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.15.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.15.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.15.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.15.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.16.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.16.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.16.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.16.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.16.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.16.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.16.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.16.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.16.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.16.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.16.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.16.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.16.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.16.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.17.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.17.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.17.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.17.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.17.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.17.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.17.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.17.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.17.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.17.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.17.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.17.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.17.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.17.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.18.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.18.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.18.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.18.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.18.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.18.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.18.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.18.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.18.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.18.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.18.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.18.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.18.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.18.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.19.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.19.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.19.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.19.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.19.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.19.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.19.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.19.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.19.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.19.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.19.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.19.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.19.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.19.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.2.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.2.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.2.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.2.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.2.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.2.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.2.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.2.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.2.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.2.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.2.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.2.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.2.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.2.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.20.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.20.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.20.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.20.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.20.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.20.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.20.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.20.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.20.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.20.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.20.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.20.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.20.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.20.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.21.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.21.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.21.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.21.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.21.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.21.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.21.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.21.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.21.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.21.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.21.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.21.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.21.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.21.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.22.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.22.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.22.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.22.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.22.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.22.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.22.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.22.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.22.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.22.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.22.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.22.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.22.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.22.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.23.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.23.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.23.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.23.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.23.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.23.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.23.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.23.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.23.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.23.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.23.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.23.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.23.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.23.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.24.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.24.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.24.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.24.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.24.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.24.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.24.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.24.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.24.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.24.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.24.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.24.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.24.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.24.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.25.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.25.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.25.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.25.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.25.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.25.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.25.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.25.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.25.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.25.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.25.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.25.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.25.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.25.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.26.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.26.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.26.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.26.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.26.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.26.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.26.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.26.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.26.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.26.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.26.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.26.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.26.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.26.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.27.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.27.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.27.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.27.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.27.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.27.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.27.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.27.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.27.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.27.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.27.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.27.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.27.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.27.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.28.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.28.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.28.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.28.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.28.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.28.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.28.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.28.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.28.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.28.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.28.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.28.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.28.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.28.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.29.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.29.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.29.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.29.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.29.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.29.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.29.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.29.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.29.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.29.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.29.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.29.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.29.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.29.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.3.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.3.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.3.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.3.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.3.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.3.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.3.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.3.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.3.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.3.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.3.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.3.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.3.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.3.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.30.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.30.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.30.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.30.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.30.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.30.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.30.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.30.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.30.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.30.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.30.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.30.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.30.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.30.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.31.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.31.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.31.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.31.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.31.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.31.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.31.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.31.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.31.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.31.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.31.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.31.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.31.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.31.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.32.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.32.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.32.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.32.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.32.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.32.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.32.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.32.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.32.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.32.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.32.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.32.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.32.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.32.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.33.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.33.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.33.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.33.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.33.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.33.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.33.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.33.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.33.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.33.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.33.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.33.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.33.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.33.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.34.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.34.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.34.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.34.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.34.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.34.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.34.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.34.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.34.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.34.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.34.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.34.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.34.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.34.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.35.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.35.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.35.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.35.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.35.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.35.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.35.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.35.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.35.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.35.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.35.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.35.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.35.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.35.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.36.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.36.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.36.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.36.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.36.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.36.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.36.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.36.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.36.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.36.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.36.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.36.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.36.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.36.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.37.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.37.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.37.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.37.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.37.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.37.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.37.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.37.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.37.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.37.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.37.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.37.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.37.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.37.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.38.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.38.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.38.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.38.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.38.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.38.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.38.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.38.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.38.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.38.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.38.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.38.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.38.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.38.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.39.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.39.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.39.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.39.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.39.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.39.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.39.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.39.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.39.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.39.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.39.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.39.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.39.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.39.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.4.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.4.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.4.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.4.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.4.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.4.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.4.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.4.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.4.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.4.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.4.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.4.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.4.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.4.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.5.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.5.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.5.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.5.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.5.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.5.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.5.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.5.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.5.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.5.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.5.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.5.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.5.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.5.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.6.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.6.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.6.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.6.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.6.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.6.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.6.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.6.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.6.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.6.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.6.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.6.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.6.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.6.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.7.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.7.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.7.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.7.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.7.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.7.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.7.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.7.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.7.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.7.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.7.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.7.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.7.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.7.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.8.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.8.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.8.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.8.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.8.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.8.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.8.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.8.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.8.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.8.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.8.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.8.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.8.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.8.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.9.attn.proj.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.9.attn.proj.weight": [
+    1536,
+    1536
+  ],
+  "vision_encoder.blocks.9.attn.qkv.bias": [
+    4608
+  ],
+  "vision_encoder.blocks.9.attn.qkv.weight": [
+    4608,
+    1536
+  ],
+  "vision_encoder.blocks.9.ls1.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.9.ls2.gamma": [
+    1536
+  ],
+  "vision_encoder.blocks.9.mlp.w12.bias": [
+    8192
+  ],
+  "vision_encoder.blocks.9.mlp.w12.weight": [
+    8192,
+    1536
+  ],
+  "vision_encoder.blocks.9.mlp.w3.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.9.mlp.w3.weight": [
+    1536,
+    4096
+  ],
+  "vision_encoder.blocks.9.norm1.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.9.norm1.weight": [
+    1536
+  ],
+  "vision_encoder.blocks.9.norm2.bias": [
+    1536
+  ],
+  "vision_encoder.blocks.9.norm2.weight": [
+    1536
+  ],
+  "vision_encoder.cls_token": [
+    1,
+    1,
+    1536
+  ],
+  "vision_encoder.mask_token": [
+    1,
+    1536
+  ],
+  "vision_encoder.norm.bias": [
+    1536
+  ],
+  "vision_encoder.norm.weight": [
+    1536
+  ],
+  "vision_encoder.patch_embed.proj.bias": [
+    1536
+  ],
+  "vision_encoder.patch_embed.proj.weight": [
+    1536,
+    3,
+    14,
+    14
+  ],
+  "vision_encoder.pos_embed": [
+    1,
+    257,
+    1536
+  ],
+  "vision_encoder.register_tokens": [
+    1,
+    1,
+    1536
+  ]
+}

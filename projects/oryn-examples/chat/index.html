@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oryn Local Chat</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Oryn reference application</p>
+        <h1>Local streaming chat</h1>
+        <p id="status" aria-live="polite">Checking Oryn runtime…</p>
+      </header>
+      <form id="chat-form">
+        <label for="prompt">Message</label>
+        <textarea id="prompt" rows="4" required>Explain KV cache in one sentence.</textarea>
+        <label for="max-tokens">Maximum response length</label>
+        <select id="max-tokens">
+          <option value="96" selected>Short · 96 tokens</option>
+          <option value="256">Medium · 256 tokens</option>
+          <option value="512">Long · 512 tokens</option>
+        </select>
+        <button id="send" type="submit">Generate locally</button>
+      </form>
+      <section id="conversations" aria-label="Chat jobs"></section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

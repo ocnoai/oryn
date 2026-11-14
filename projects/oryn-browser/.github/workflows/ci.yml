@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * 1'
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm security:verify
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - name: Electron critical workflows (isolated profiles, no model downloads)
+        run: node scripts/run-source-ui.mjs
+      - name: Scheduled repetition for native lifecycle and input timing
+        if: github.event_name == 'schedule'
+        run: node scripts/run-source-ui.mjs --repeat-each=3
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: electron-workflow-evidence
+          path: apps/browser/test-results
+          if-no-files-found: error

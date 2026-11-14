@@ -1,0 +1,9 @@
+{
+  "prompts": {
+    "query": "Instruct: Given a query, retrieve relevant passages\nQuery: ",
+    "document": ""
+  },
+  "default_prompt_name": null,
+  "model_type": "SentenceTransformer",
+  "similarity_fn_name": "cosine"
+}

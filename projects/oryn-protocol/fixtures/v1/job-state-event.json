@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "type": "event",
+  "event": "job.state",
+  "seq": 20,
+  "timestamp": 1787000003000,
+  "data": {
+    "jobId": "job_example",
+    "sessionId": "session_example",
+    "sequence": 1,
+    "state": "running"
+  }
+}

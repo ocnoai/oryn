@@ -1,0 +1,10 @@
+{
+  "type": "request",
+  "id": "req_handshake_fixture",
+  "method": "protocol.handshake",
+  "params": {
+    "supportedVersions": [1],
+    "browserVersion": "0.1.0",
+    "maxMessageBytes": 16777216
+  }
+}

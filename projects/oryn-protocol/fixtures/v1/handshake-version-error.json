@@ -1,0 +1,14 @@
+{
+  "type": "response",
+  "id": "req_handshake_fixture",
+  "ok": false,
+  "error": {
+    "code": "PROTOCOL_VERSION_UNSUPPORTED",
+    "category": "protocol",
+    "message": "No compatible protocol version is available.",
+    "retryable": false,
+    "details": {
+      "engineSupportedVersions": [1]
+    }
+  }
+}

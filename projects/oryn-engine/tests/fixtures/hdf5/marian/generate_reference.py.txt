@@ -1,0 +1,28 @@
+"""Independent TensorFlow Marian translation reference with synthetic weights."""
+import json
+from pathlib import Path
+import numpy as np
+import tensorflow as tf
+from transformers import MarianConfig,TFMarianMTModel
+
+OUT=Path(__file__).resolve().parent/'tiny';OUT.mkdir(exist_ok=True)
+config=MarianConfig(vocab_size=32,decoder_vocab_size=32,d_model=32,encoder_layers=2,decoder_layers=2,
+    encoder_attention_heads=4,decoder_attention_heads=4,encoder_ffn_dim=64,decoder_ffn_dim=64,
+    max_position_embeddings=64,pad_token_id=31,decoder_start_token_id=31,eos_token_id=0,bos_token_id=0,
+    forced_eos_token_id=0,activation_function='swish',scale_embedding=True,dropout=0.0,
+    attention_dropout=0.0,activation_dropout=0.0,num_beams=2,bad_words_ids=[[31]])
+model=TFMarianMTModel(config)
+inputs={'input_ids':np.array([[5,6,7,0]],np.int32),'attention_mask':np.ones((1,4),np.int32),
+        'decoder_input_ids':np.array([[31,8,9]],np.int32)}
+model(**{k:tf.constant(v) for k,v in inputs.items()},training=False)
+rng=np.random.default_rng(6180)
+for w in model.weights:
+    values=rng.normal(0,0.03,w.shape).astype(np.float32)
+    if w.name.endswith('gamma:0'):values+=1
+    if 'final_logits_bias' in w.name:values[0,8]=1
+    w.assign(values)
+result=model(**{k:tf.constant(v) for k,v in inputs.items()},training=False)
+model.save_pretrained(OUT,safe_serialization=False)
+np.savez(OUT/'reference.npz',**inputs,logits=result.logits.numpy(),encoder=result.encoder_last_hidden_state.numpy())
+(OUT/'weights.json').write_text(json.dumps([{'name':w.name,'shape':list(w.shape)} for w in model.weights],indent=2)+'\n')
+print(len(model.weights),flush=True)

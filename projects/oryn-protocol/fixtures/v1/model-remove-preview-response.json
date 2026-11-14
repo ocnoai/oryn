@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_remove_preview_1",
+  "ok": true,
+  "result": {
+    "installationId": "install_fixture_1",
+    "canRemoveNow": true,
+    "activeSessions": 0,
+    "runningJobs": 0,
+    "queuedJobs": 0,
+    "reclaimableBytes": 100,
+    "sharedBytesRetained": 0,
+    "blockers": []
+  }
+}

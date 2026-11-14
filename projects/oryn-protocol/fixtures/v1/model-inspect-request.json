@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_inspect_1",
+  "method": "model.inspect",
+  "params": {
+    "model": {
+      "provider": "huggingface",
+      "repository": "openai/whisper-small",
+      "revision": "main"
+    }
+  }
+}

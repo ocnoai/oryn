@@ -1,0 +1,539 @@
+[
+  {
+    "model": {
+      "provider": "huggingface",
+      "repository": "ccore/Qwen3.5-4B-3D-Coder",
+      "revision": "ca22fba63f81db16276187cc6415f2bb102c3b40"
+    },
+    "exactRevision": "ca22fba63f81db16276187cc6415f2bb102c3b40",
+    "executable": true,
+    "executableBackends": ["mps"],
+    "requiresCustomCode": false,
+    "estimatedDiskBytes": 9098688092,
+    "estimatedMemoryBytes": 11373360115,
+    "selectedFiles": [
+      {
+        "name": "chat_template.jinja",
+        "sizeBytes": 7756
+      },
+      {
+        "name": "config.json",
+        "sizeBytes": 2902
+      },
+      {
+        "name": "generation_config.json",
+        "sizeBytes": 268
+      },
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "sizeBytes": 2474053384
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "sizeBytes": 2498894208
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "sizeBytes": 2498899424
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "sizeBytes": 1606772384
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "sizeBytes": 66236
+      },
+      {
+        "name": "preprocessor_config.json",
+        "sizeBytes": 390
+      },
+      {
+        "name": "tokenizer.json",
+        "sizeBytes": 19989339
+      },
+      {
+        "name": "tokenizer_config.json",
+        "sizeBytes": 1416
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "sizeBytes": 385
+      }
+    ],
+    "technicalCapabilities": {
+      "architectures": ["Qwen3_5ForConditionalGeneration"],
+      "task": "text-generation",
+      "inputModalities": ["text", "image"],
+      "outputModalities": ["text"],
+      "capabilities": {
+        "chat": "unknown",
+        "multimodalConversation": true,
+        "streaming": true,
+        "structuredOutput": "unknown",
+        "toolCalling": "unknown"
+      }
+    },
+    "runner": "transformers",
+    "descriptorSchemaVersion": "oryn-model-descriptor/1",
+    "capabilityRegistryDigest": "5a764bcf446b30190316af5a89ac398c611a35710a736d7ef36911bd7a31e2f7",
+    "eligibility": {
+      "access": {
+        "state": "available",
+        "reasons": []
+      },
+      "artifacts": {
+        "state": "safe",
+        "reasons": []
+      },
+      "runtime": {
+        "state": "supported",
+        "reasons": []
+      },
+      "task": {
+        "state": "supported",
+        "reasons": []
+      },
+      "resources": {
+        "state": "admissible",
+        "reasons": []
+      },
+      "conformance": {
+        "state": "untested",
+        "reasons": ["CONFORMANCE_REQUIRED"]
+      }
+    },
+    "loadDisposition": "trust-required",
+    "matchedCapability": {
+      "foundationId": "oryn.runtime.pytorch",
+      "foundationVersion": "1.2.0",
+      "familyAdapterId": "oryn.family.vision-language",
+      "familyAdapterVersion": "1.0.0",
+      "taskAdapterId": "oryn.task.chat-v1",
+      "taskAdapterVersion": "1.0.0"
+    },
+    "blockingReasons": ["CONFORMANCE_REQUIRED"],
+    "taskProfile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v1.c0e19924fccc9a113c7a5271",
+      "contract": {
+        "id": "chat-v1",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": ["text", "image"],
+      "outputModalities": ["text"],
+      "inputSchemaRef": "taskInput.chat-v1",
+      "resultSchemaRef": "taskResult.chat-v1",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported",
+        "multimodalConversation": "supported",
+        "toolCalling": "unsupported",
+        "structuredOutput": "unsupported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 128
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.9
+        }
+      },
+      "limits": {},
+      "streamingChannels": ["text"],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "lineageDeclarations": ["Qwen/Qwen3.5-4B"],
+    "routingFacts": {
+      "version": 1,
+      "offers": [
+        {
+          "engine": "oryn.transformers-pytorch",
+          "engineVersion": "1.2.0",
+          "features": ["chat", "multimodalConversation", "streaming"]
+        }
+      ]
+    }
+  },
+  {
+    "model": {
+      "provider": "huggingface",
+      "repository": "openbmb/MiniCPM-OCR-Jev",
+      "revision": "a0ed278eb6aa1f333a711665ab610055a4a816ab"
+    },
+    "exactRevision": "a0ed278eb6aa1f333a711665ab610055a4a816ab",
+    "executable": true,
+    "executableBackends": ["mps"],
+    "requiresCustomCode": false,
+    "estimatedDiskBytes": 4446569921,
+    "estimatedMemoryBytes": 5558212401,
+    "selectedFiles": [
+      {
+        "name": "chat_template.jinja",
+        "sizeBytes": 7755
+      },
+      {
+        "name": "config.json",
+        "sizeBytes": 2775
+      },
+      {
+        "name": "generation_config.json",
+        "sizeBytes": 176
+      },
+      {
+        "name": "model.safetensors",
+        "sizeBytes": 4426567144
+      },
+      {
+        "name": "preprocessor_config.json",
+        "sizeBytes": 390
+      },
+      {
+        "name": "processor_config.json",
+        "sizeBytes": 1191
+      },
+      {
+        "name": "tokenizer.json",
+        "sizeBytes": 19989325
+      },
+      {
+        "name": "tokenizer_config.json",
+        "sizeBytes": 1165
+      }
+    ],
+    "technicalCapabilities": {
+      "architectures": ["Qwen3_5ForConditionalGeneration"],
+      "task": "text-generation",
+      "inputModalities": ["text", "image"],
+      "outputModalities": ["text"],
+      "capabilities": {
+        "chat": "unknown",
+        "multimodalConversation": true,
+        "streaming": true,
+        "structuredOutput": "unknown",
+        "toolCalling": "unknown"
+      }
+    },
+    "runner": "transformers",
+    "descriptorSchemaVersion": "oryn-model-descriptor/1",
+    "capabilityRegistryDigest": "5a764bcf446b30190316af5a89ac398c611a35710a736d7ef36911bd7a31e2f7",
+    "eligibility": {
+      "access": {
+        "state": "available",
+        "reasons": []
+      },
+      "artifacts": {
+        "state": "safe",
+        "reasons": []
+      },
+      "runtime": {
+        "state": "supported",
+        "reasons": []
+      },
+      "task": {
+        "state": "supported",
+        "reasons": []
+      },
+      "resources": {
+        "state": "admissible",
+        "reasons": []
+      },
+      "conformance": {
+        "state": "untested",
+        "reasons": ["CONFORMANCE_REQUIRED"]
+      }
+    },
+    "loadDisposition": "trust-required",
+    "matchedCapability": {
+      "foundationId": "oryn.runtime.pytorch",
+      "foundationVersion": "1.2.0",
+      "familyAdapterId": "oryn.family.vision-language",
+      "familyAdapterVersion": "1.0.0",
+      "taskAdapterId": "oryn.task.chat-v1",
+      "taskAdapterVersion": "1.0.0"
+    },
+    "blockingReasons": ["CONFORMANCE_REQUIRED"],
+    "taskProfile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v1.c0e19924fccc9a113c7a5271",
+      "contract": {
+        "id": "chat-v1",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": ["text", "image"],
+      "outputModalities": ["text"],
+      "inputSchemaRef": "taskInput.chat-v1",
+      "resultSchemaRef": "taskResult.chat-v1",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported",
+        "multimodalConversation": "supported",
+        "toolCalling": "unsupported",
+        "structuredOutput": "unsupported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 128
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.9
+        }
+      },
+      "limits": {},
+      "streamingChannels": ["text"],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "lineageDeclarations": ["Qwen/Qwen3.5-2B"],
+    "routingFacts": {
+      "version": 1,
+      "offers": [
+        {
+          "engine": "oryn.mlx-lm",
+          "engineVersion": "0.10.0",
+          "features": ["chat", "multimodalConversation", "streaming"]
+        },
+        {
+          "engine": "oryn.transformers-pytorch",
+          "engineVersion": "1.2.0",
+          "features": ["chat", "multimodalConversation", "streaming"]
+        }
+      ]
+    }
+  },
+  {
+    "model": {
+      "provider": "huggingface",
+      "repository": "jialinyyzz/humanizer",
+      "revision": "2e57b6528a4070c33f3e09ca24e3325a84272f68"
+    },
+    "exactRevision": "2e57b6528a4070c33f3e09ca24e3325a84272f68",
+    "executable": true,
+    "executableBackends": ["mps"],
+    "requiresCustomCode": false,
+    "estimatedDiskBytes": 23951726092,
+    "estimatedMemoryBytes": 29939657615,
+    "selectedFiles": [
+      {
+        "name": "config.json",
+        "sizeBytes": 4298
+      },
+      {
+        "name": "generation_config.json",
+        "sizeBytes": 228
+      },
+      {
+        "name": "model.safetensors",
+        "sizeBytes": 23919549408
+      },
+      {
+        "name": "prompt_format.json",
+        "sizeBytes": 553
+      },
+      {
+        "name": "tokenizer.json",
+        "sizeBytes": 32170070
+      },
+      {
+        "name": "tokenizer_config.json",
+        "sizeBytes": 1535
+      }
+    ],
+    "technicalCapabilities": {
+      "architectures": ["Gemma4UnifiedForConditionalGeneration"],
+      "task": "text-generation",
+      "inputModalities": ["text"],
+      "outputModalities": ["text"],
+      "capabilities": {
+        "chat": "unknown",
+        "multimodalConversation": false,
+        "streaming": true,
+        "structuredOutput": "unknown",
+        "toolCalling": "unknown"
+      }
+    },
+    "runner": "transformers",
+    "descriptorSchemaVersion": "oryn-model-descriptor/1",
+    "capabilityRegistryDigest": "5a764bcf446b30190316af5a89ac398c611a35710a736d7ef36911bd7a31e2f7",
+    "eligibility": {
+      "access": {
+        "state": "available",
+        "reasons": []
+      },
+      "artifacts": {
+        "state": "safe",
+        "reasons": []
+      },
+      "runtime": {
+        "state": "supported",
+        "reasons": []
+      },
+      "task": {
+        "state": "supported",
+        "reasons": []
+      },
+      "resources": {
+        "state": "admissible",
+        "reasons": []
+      },
+      "conformance": {
+        "state": "untested",
+        "reasons": ["CONFORMANCE_REQUIRED"]
+      }
+    },
+    "loadDisposition": "trust-required",
+    "matchedCapability": {
+      "foundationId": "oryn.runtime.pytorch",
+      "foundationVersion": "1.2.0",
+      "familyAdapterId": "oryn.family.causal-lm",
+      "familyAdapterVersion": "1.0.0",
+      "taskAdapterId": "oryn.task.chat-v1",
+      "taskAdapterVersion": "1.0.0"
+    },
+    "blockingReasons": ["CONFORMANCE_REQUIRED"],
+    "taskProfile": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v1.368aaaace3d40ecb6263b5af",
+      "contract": {
+        "id": "chat-v1",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": ["text"],
+      "outputModalities": ["text"],
+      "inputSchemaRef": "taskInput.chat-v1",
+      "resultSchemaRef": "taskResult.chat-v1",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported",
+        "multimodalConversation": "unsupported",
+        "toolCalling": "unsupported",
+        "structuredOutput": "unsupported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 512
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 128
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": ["result"],
+          "default": 0.9
+        }
+      },
+      "limits": {},
+      "streamingChannels": ["text"],
+      "extensions": {},
+      "provenance": "adapter-derived"
+    },
+    "lineageDeclarations": ["google/gemma-4-12B"],
+    "routingFacts": {
+      "version": 1,
+      "offers": [
+        {
+          "engine": "oryn.mlx-lm",
+          "engineVersion": "0.10.0",
+          "features": ["chat", "streaming"]
+        },
+        {
+          "engine": "oryn.transformers-pytorch",
+          "engineVersion": "1.2.0",
+          "features": ["chat", "streaming"]
+        }
+      ]
+    }
+  }
+]

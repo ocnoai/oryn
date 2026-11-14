@@ -1,0 +1,335 @@
+{
+  "model": {
+    "provider": "huggingface",
+    "repository": "Qwen/Qwen-Image-2.1-Turbo",
+    "revision": "fc13ba1986fcb905854dc8de2f52eee395f49b5b"
+  },
+  "exactRevision": "fc13ba1986fcb905854dc8de2f52eee395f49b5b",
+  "executable": false,
+  "executableBackends": [],
+  "requiresCustomCode": false,
+  "estimatedDiskBytes": 32451599267,
+  "estimatedMemoryBytes": 54269441528,
+  "selectedFiles": [
+    {
+      "name": "model_index.json",
+      "sizeBytes": 578
+    },
+    {
+      "name": "processor/chat_template.jinja",
+      "sizeBytes": 5292
+    },
+    {
+      "name": "processor/processor_config.json",
+      "sizeBytes": 1300
+    },
+    {
+      "name": "processor/tokenizer.json",
+      "sizeBytes": 11422650
+    },
+    {
+      "name": "processor/tokenizer_config.json",
+      "sizeBytes": 705
+    },
+    {
+      "name": "scheduler/scheduler_config.json",
+      "sizeBytes": 486
+    },
+    {
+      "name": "text_encoder/config.json",
+      "sizeBytes": 1542
+    },
+    {
+      "name": "text_encoder/generation_config.json",
+      "sizeBytes": 241
+    },
+    {
+      "name": "text_encoder/model.safetensors",
+      "sizeBytes": 17534340584
+    },
+    {
+      "name": "transformer/config.json",
+      "sizeBytes": 370
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "sizeBytes": 9968332504
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "sizeBytes": 4261951904
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "sizeBytes": 30283
+    },
+    {
+      "name": "vae/config.json",
+      "sizeBytes": 2172
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.safetensors",
+      "sizeBytes": 675508656
+    }
+  ],
+  "technicalCapabilities": {
+    "task": "text-to-image",
+    "architectures": ["QwenImage21Pipeline"],
+    "inputModalities": ["text", "image"],
+    "outputModalities": ["image"],
+    "capabilities": {
+      "imageEditing": true,
+      "instructionEditing": true
+    }
+  },
+  "runner": "runtime-pack",
+  "descriptorSchemaVersion": "oryn-model-descriptor/1",
+  "capabilityRegistryDigest": "dc3dc0342b4d6bf204db0a9296d600214213e4f5d44a98c31e283da6193fcb98",
+  "eligibility": {
+    "access": {
+      "state": "available",
+      "reasons": []
+    },
+    "artifacts": {
+      "state": "safe",
+      "reasons": []
+    },
+    "runtime": {
+      "state": "supported",
+      "reasons": []
+    },
+    "task": {
+      "state": "supported",
+      "reasons": []
+    },
+    "resources": {
+      "state": "not-admissible",
+      "reasons": ["MODEL_MEMORY_INSUFFICIENT"]
+    },
+    "conformance": {
+      "state": "untested",
+      "reasons": ["CONFORMANCE_REQUIRED"]
+    }
+  },
+  "loadDisposition": "not-admissible-on-this-device",
+  "runtimePack": {
+    "packId": "oryn.diffusers-pytorch",
+    "packVersion": "0.4.0",
+    "runnerId": "diffusers.pipeline",
+    "taskContract": "text-to-image-v1",
+    "compatibilityLevel": "native-declarative",
+    "manifestDigest": "4f6ddfee59f5e66a8df9ae7e7970b3319831edec565990127eefa2ff53efab43"
+  },
+  "generationProfile": {
+    "profileId": "runtime.qwen-image-2.1.sampling-grid",
+    "provenance": "adapter-derived",
+    "recommended": true,
+    "parameters": {
+      "width": {
+        "default": 512,
+        "minimum": 64,
+        "maximum": 1024,
+        "step": 32,
+        "supported": true,
+        "editable": true
+      },
+      "height": {
+        "default": 512,
+        "minimum": 64,
+        "maximum": 1024,
+        "step": 32,
+        "supported": true,
+        "editable": true
+      },
+      "steps": {
+        "default": 8,
+        "minimum": 8,
+        "maximum": 8,
+        "step": 1,
+        "supported": true,
+        "editable": false
+      },
+      "guidanceScale": {
+        "default": 1.0,
+        "minimum": 0.0,
+        "maximum": 10.0,
+        "step": 0.1,
+        "supported": true,
+        "editable": true
+      }
+    }
+  },
+  "blockingReasons": [
+    "CONFORMANCE_REQUIRED",
+    "MODEL_MEMORY_INSUFFICIENT",
+    "RUNTIME_RESOURCES_INSUFFICIENT"
+  ],
+  "taskProfile": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "text-to-image-v1.319dba538ac86cb639b5fba5",
+    "contract": {
+      "id": "text-to-image-v1",
+      "revision": 1
+    },
+    "task": "text-to-image",
+    "inputModalities": ["text"],
+    "outputModalities": ["image"],
+    "inputSchemaRef": "taskInput.text-to-image-v1",
+    "resultSchemaRef": "taskResult.text-to-image-v1",
+    "features": {
+      "deterministicSeed": "supported",
+      "imageEditing": "supported",
+      "negativePrompt": "supported"
+    },
+    "parameters": {
+      "negativePrompt": {
+        "inputPointer": "/negativePrompt",
+        "valueSchema": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 4096
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": ""
+      },
+      "width": {
+        "inputPointer": "/width",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "integer",
+              "minimum": 64,
+              "maximum": 2048,
+              "multipleOf": 8
+            },
+            {
+              "minimum": 64,
+              "maximum": 1024,
+              "multipleOf": 32
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": 512
+      },
+      "height": {
+        "inputPointer": "/height",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "integer",
+              "minimum": 64,
+              "maximum": 2048,
+              "multipleOf": 8
+            },
+            {
+              "minimum": 64,
+              "maximum": 1024,
+              "multipleOf": 32
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": 512
+      },
+      "steps": {
+        "inputPointer": "/steps",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            {
+              "minimum": 8,
+              "maximum": 8,
+              "multipleOf": 1
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": 8
+      },
+      "guidanceScale": {
+        "inputPointer": "/guidanceScale",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            {
+              "minimum": 0.0,
+              "maximum": 10.0
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": 1.0
+      },
+      "seed": {
+        "inputPointer": "/seed",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"],
+        "default": 0
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  },
+  "runtimePlanFailure": {
+    "code": "RUNTIME_RESOURCES_INSUFFICIENT",
+    "rejected": [
+      {
+        "candidateId": "candidate-645de130773dbdac47ef2ae6",
+        "reasonCodes": ["MEMORY_INSUFFICIENT"]
+      },
+      {
+        "candidateId": "candidate-9a3c51dd0eb01abad147697d",
+        "reasonCodes": [
+          "TASK_INCOMPATIBLE",
+          "MODEL_SUBSET_INCOMPLETE",
+          "MODEL_SECURITY_BLOCKED",
+          "MEMORY_INSUFFICIENT"
+        ]
+      }
+    ]
+  },
+  "lineageDeclarations": ["Qwen/Qwen-Image-2.1"],
+  "routingFacts": {
+    "version": 1,
+    "offers": [
+      {
+        "engine": "oryn.diffusers-pytorch",
+        "engineVersion": "0.4.0",
+        "features": ["deterministicSeed", "imageEditing", "negativePrompt"]
+      },
+      {
+        "engine": "oryn.mflux-mlx",
+        "engineVersion": "0.3.0",
+        "features": ["deterministicSeed"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+<!doctype html><html><body><script type="module">
+const check=(value,message)=>{if(!value)throw new Error(message);};
+const wait=async predicate=>{for(let i=0;i<600;i++){if(predicate())return;await new Promise(resolve=>setTimeout(resolve,25));}throw new Error('UI timeout: '+document.querySelector('#status')?.textContent+' / '+document.querySelector('#batch-status')?.textContent);};
+const $=selector=>document.querySelector(selector);
+try {
+  localStorage.removeItem('oryn-caption-design-v1');
+  const parsed=new DOMParser().parseFromString(await fetch('/dist/index.html').then(r=>r.text()),'text/html');
+  const modulePath='/dist'+parsed.querySelector('script[src^="/assets/"]').getAttribute('src');
+  for(const original of parsed.querySelectorAll('link[rel=stylesheet]')){const link=document.createElement('link');link.rel='stylesheet';link.href='/dist'+original.getAttribute('href');document.head.append(link);}
+  parsed.querySelectorAll('script').forEach(s=>s.remove());document.body.innerHTML=parsed.body.innerHTML;
+  const ok=value=>({ok:true,value});
+  let listener,invocations=0,modelRequests=0,mode='fail-second',currentJob,currentSession,artifactSequence=0,currentUpload;
+  let saveFailure=false,savedZip,savedName,artifactReleases=0,sessionReleases=0;
+  const uploads=new Map(),artifacts=new Map();
+  window.localAI={
+    getCapabilities:async()=>({runtimeAvailable:true,features:{}}),
+    onModelRequestProgress:()=>()=>{},cancelModelRequest:async()=>ok(),
+    requestModel:async()=>{modelRequests++;currentSession='session-'+modelRequests;return ok({sessionId:currentSession,capabilities:{task:'automatic-speech-recognition'},resolution:{resolvedModel:{repository:'synthetic-timed-asr'}}});},
+    releaseModelSession:async()=>{sessionReleases++;return ok();},
+    onJobEvent:fn=>{listener=fn;return()=>{listener=undefined;};},
+    invokeJob:async request=>{
+      invocations++;currentJob='job-'+invocations;
+      const event={sessionId:request.sessionId,jobId:currentJob};
+      if(mode!=='hold')setTimeout(()=>listener?.({...event,event:mode==='fail-second'&&invocations===2?'job.failed':'job.completed',data:mode==='fail-second'&&invocations===2?{error:{code:'MODEL_GENERATION_FAILED',message:'Synthetic transcription failure'}}:{result:{kind:'structured',value:{text:'Hello world',language:'en',segments:[{text:'Hello',start:.1,end:.7},{text:'world',start:.7,end:1.5}]}}}}),35);
+      return ok({jobId:currentJob});
+    },
+    cancelJob:async()=>{listener?.({sessionId:currentSession,jobId:currentJob,event:'job.cancelled',data:{}});return ok();},
+    beginArtifactCreate:async metadata=>{currentUpload='upload-'+(++artifactSequence);uploads.set(currentUpload,{metadata,chunks:[]});return ok({uploadId:currentUpload});},
+    appendArtifactChunk:async(id,chunk)=>{uploads.get(id).chunks.push(chunk);return ok();},
+    finishArtifactCreate:async id=>{const upload=uploads.get(id);const artifact='artifact-'+id;artifacts.set(artifact,new Blob(upload.chunks,{type:upload.metadata.mimeType}));uploads.delete(id);return ok({id:artifact});},
+    saveArtifactAs:async(id,options)=>{if(saveFailure){saveFailure=false;return {ok:false,error:{code:'ARTIFACT_SAVE_FAILED',message:'Synthetic save failure'}};}savedName=options.suggestedFilename;savedZip=artifacts.get(id);return ok();},
+    releaseArtifact:async id=>{artifactReleases++;artifacts.delete(id);return ok();},
+  };
+  await import(modulePath);
+  const fixture=await fetch('/tests/fixture.mp4').then(r=>r.blob());
+  const select=(selector,files)=>{const transfer=new DataTransfer();files.forEach(file=>transfer.items.add(file));$(selector).files=transfer.files;$(selector).dispatchEvent(new Event('change'));};
+  const rows=()=>[...document.querySelectorAll('.queue-select')];
+  const open=index=>rows()[index].click();
+  const idle=()=>!$('#video-file').disabled;
+  const change=(selector,value)=>{const input=$(selector);input.value=value;input.dispatchEvent(new Event('input',{bubbles:true}));};
+  const file=()=>new File([fixture],'clip.mp4',{type:'video/mp4'});
+  select('#video-file',[file(),file()]);
+  check(!$('#batch').hidden&&rows().length===2,'Multiple upload did not create queue');
+  check($('#render-all').disabled&&$('#download-all').disabled,'Unreviewed batch can render/download');
+  $('#start').click();await wait(()=>invocations===2&&idle());
+  check(rows()[0].textContent.includes('Needs review')&&rows()[1].textContent.includes('Synthetic transcription failure'),'Transcription failure did not preserve first result');
+  check(sessionReleases===2,'Transcription sessions not released');
+  change('#cues textarea','Hello batch');$('#review-video').click();
+  check(rows()[0].textContent.includes('Reviewed'),'Review state missing');
+  mode='success';$('#start').click();await wait(()=>invocations===3&&idle());
+  check(rows()[0].textContent.includes('Reviewed'),'Retry overwrote earlier review');
+  $('#review-video').click();check(!$('#render-all').disabled,'Reviewed batch did not unlock render');
+  open(0);check($('#cues textarea').value==='Hello batch','Edited captions lost on switch');
+  open(1);check($('#cues textarea').value==='Hello world','Edits leaked between videos');
+  check(!$('#render-video').disabled,'Word timings lost on switch');
+  const ending=await fetch('/tests/ending-fixture.mp4').then(r=>r.blob());
+  change('#ending-kind','video');select('#ending-file',[new File([ending],'outro.mp4',{type:'video/mp4'})]);
+  $('#render-all').click();
+  await wait(()=>rows()[0].textContent.includes('Rendered')&&rows()[1].textContent.includes('Rendering'));
+  $('#cancel-batch').click();await wait(idle);
+  check(rows()[0].textContent.includes('Rendered')&&!$('#render-all').disabled,'Cancellation discarded finished render');
+  $('#render-all').click();await wait(()=>!$('#download-all').disabled);
+  open(0);check(!$('#save-video').disabled,'Rendered result lost on switch');
+  open(1);check(!$('#save-video').disabled,'Second result lost on switch');
+  saveFailure=true;$('#download-all').click();await wait(()=>idle()&&$('#batch-status').textContent.includes('Synthetic save failure'));
+  check(!$('#download-all').disabled,'ZIP save failure cannot be retried');
+  $('#download-all').click();await wait(()=>savedZip&&idle());
+  check(savedName==='captioned-videos.zip','Wrong ZIP filename');
+  const bytes=new Uint8Array(await savedZip.arrayBuffer()),view=new DataView(bytes.buffer),end=bytes.length-22;
+  check(view.getUint32(end,true)===0x06054b50&&view.getUint16(end+10,true)===2,'Download is not a two-video ZIP');
+  let cursor=view.getUint32(end+16,true);const names=[],durations=[];
+  for(let i=0;i<2;i++){
+    const length=view.getUint16(cursor+28,true),offset=view.getUint32(cursor+42,true),size=view.getUint32(cursor+24,true);
+    names.push(new TextDecoder().decode(bytes.slice(cursor+46,cursor+46+length)));
+    const blob=new Blob([bytes.slice(offset+30+length,offset+30+length+size)],{type:'video/mp4'});
+    const video=document.createElement('video'),url=URL.createObjectURL(blob);video.src=url;video.preload='auto';
+    await wait(()=>video.readyState>=2||video.error);check(!video.error,'ZIP video is not playable');
+    check(video.duration>3.2&&video.duration<3.9,'Shared uploaded ending absent from ZIP video: '+video.duration);durations.push(video.duration);
+    video.removeAttribute('src');video.load();URL.revokeObjectURL(url);cursor+=46+length;
+  }
+  check(names.join(',')==='clip-captioned.mp4,clip-captioned-2.mp4','Duplicate filenames overwrite each other');
+  open(0);change('#cues textarea','Hello corrected');
+  check($('#render-all').disabled&&$('#download-all').disabled&&!rows()[0].textContent.includes('Rendered'),'Edit did not revoke review/render');
+  check(rows()[1].textContent.includes('Rendered'),'Edit invalidated unrelated video');
+  open(1);open(0);check($('#cues textarea').value==='Hello corrected','New edit lost on round trip');
+  $('#review-video').click();change('#ending-kind','none');
+  check(rows().every(row=>row.textContent.includes('Reviewed'))&&!$('#render-all').disabled,'Shared ending edit should retain caption review and invalidate both exports');
+  // Add and cancel queued transcription, then continue without repeating finished transcripts.
+  select('#add-videos',[file(),file()]);mode='hold';$('#start').click();await wait(()=>invocations===4);
+  $('#cancel-batch').click();await wait(idle);
+  check(invocations===4&&rows().length===4,'Cancellation continued to next video');
+  mode='success';$('#start').click();await wait(()=>invocations===6&&idle());
+  check(rows().every(row=>!row.textContent.includes('Waiting')&&!row.textContent.includes('cancelled')),'Queue did not resume pending transcriptions');
+  check(rows()[0].textContent.includes('Reviewed')&&rows()[1].textContent.includes('Reviewed'),'Adding videos lost existing approvals');
+  // Removing the current item safely restores the other item, down to single-video mode.
+  document.querySelectorAll('.queue-remove')[3].click();document.querySelectorAll('.queue-remove')[2].click();
+  open(0);document.querySelectorAll('.queue-remove')[1].click();
+  check($('#batch').hidden&&!$('#editor').hidden&&$('#cues textarea').value==='Hello corrected','Single-video UX did not return after removal');
+  select('#add-videos',[file()]);
+  select('#subtitle-file',[new File(['1\n00:00:00,100 --> 00:00:01,500\nImported caption\n'],'other.srt')]);
+  await wait(()=>$('#cues textarea')?.value==='Imported caption');
+  check($('#render-video').disabled,'Untimed SRT incorrectly enables word animation');
+  open(0);check($('#cues textarea').value==='Hello corrected','Per-video import replaced another transcript');
+  open(1);$('#review-video').click();$('#render-all').click();
+  check($('#batch-status').textContent.includes('individual word timings'),'Batch did not preflight missing word timings');
+  $('#cues .repair-caption').click();
+  const bounds=[...document.querySelectorAll('.word-timing-row input')];
+  [100,700,700,1500].forEach((value,index)=>bounds[index].value=value);
+  [...document.querySelectorAll('.caption-repair button')].find(button=>button.textContent==='Apply word timings').click();
+  check(!$('#render-video').disabled&&!$('#review-video').disabled,'Manual repair did not unlock word animation or revoke review');
+  $('#review-video').click();open(0);open(1);
+  check(!$('#render-video').disabled&&$('#cues textarea').value==='Imported caption','Repaired word timings did not survive switching');
+  // End on a review screen for desktop/mobile visual inspection.
+  $('.caption-transcript').open=true;
+  check(artifacts.size===0,'Artifacts were not released');
+  window.smokeResult={ok:true,multipleUpload:true,sequentialTranscription:true,transcriptionRetry:true,cancelAndResume:true,perVideoEdits:true,reviewGate:true,renderCancellation:true,resumeRender:true,sharedUploadedEnding:true,zipPlayableVideos:durations,zipNames:names,zipRetry:true,editInvalidation:true,sharedEndingInvalidation:true,addRemove:true,singleVideoPreserved:true,perVideoImport:true,missingTimingPreflight:true,repairSurvivesSwitch:true,artifactReleases,sessionReleases,bridge:'stub ASR and save dialog; real decoding, rendering and ZIP download payload'};
+}catch(error){window.smokeResult={ok:false,error:String(error),stack:error.stack};}
+</script></body></html>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="940" viewBox="0 0 1280 940" role="img" aria-labelledby="title description">
+<title id="title">Oryn system architecture</title><desc id="description">A website uses the SDK and a constrained bridge to trusted Oryn Browser services. Browser supervises the Engine through a versioned protocol. Engine executes models in local workers. Model discovery and downloads use a separate network path; artifacts stay browser-managed and origin-bound.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b2adff"/></marker></defs>
+<rect width="1280" height="940" rx="24" fill="#0c0e14"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="48" y="52" font-size="15" font-weight="700" fill="#b2adff" letter-spacing="2">ORYN  /  ARCHITECTURE</text>
+<text x="48" y="111" font-size="42" font-weight="700" fill="#f1f3fa" >Local AI, through your browser.</text>
+<text x="48" y="151" font-size="22" font-weight="400" fill="#b4bed2" >A small website API. Explicit user control. Supervised local execution.</text>
+<text x="48" y="210" font-size="14" font-weight="700" fill="#b4bed2" letter-spacing="1.8">WEBSITE CONTEXT</text>
+<text x="430" y="210" font-size="14" font-weight="700" fill="#b4bed2" letter-spacing="1.8">TRUSTED BROWSER</text>
+<text x="870" y="210" font-size="14" font-weight="700" fill="#b4bed2" letter-spacing="1.8">LOCAL RUNTIME</text>
+<rect x="48" y="233" width="300" height="252" rx="18" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="72" y="275" font-size="28" font-weight="700" fill="#f1f3fa" >Your website</text>
+<text x="72" y="311" font-size="19" font-weight="400" fill="#b4bed2" >UI · task intent · fallback</text>
+<rect x="72" y="339" width="252" height="65" rx="18" fill="#24243e" stroke="#655e9b" stroke-width="1.5"/>
+<text x="91" y="379" font-size="22" font-weight="700" fill="#b2adff" >@ocno/oryn-sdk</text>
+<text x="72" y="447" font-size="17" font-weight="400" fill="#b4bed2" >Own sessions, jobs, artifacts</text>
+<rect x="430" y="233" width="360" height="252" rx="18" fill="#151923" stroke="#7b73b6" stroke-width="1.5"/>
+<text x="454" y="275" font-size="28" font-weight="700" fill="#f1f3fa" >Oryn Browser</text>
+<text x="454" y="319" font-size="19" font-weight="400" fill="#b4bed2" >Permission + model choice</text>
+<text x="454" y="356" font-size="19" font-weight="400" fill="#b4bed2" >Origin and session authorization</text>
+<text x="454" y="393" font-size="19" font-weight="400" fill="#b4bed2" >Activity + cancellation controls</text>
+<text x="454" y="430" font-size="19" font-weight="400" fill="#b4bed2" >Artifact access + supervision</text>
+<rect x="870" y="233" width="362" height="252" rx="18" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="894" y="275" font-size="28" font-weight="700" fill="#f1f3fa" >Oryn Engine</text>
+<text x="894" y="319" font-size="19" font-weight="400" fill="#b4bed2" >Model + task compatibility</text>
+<text x="894" y="356" font-size="19" font-weight="400" fill="#b4bed2" >Downloads + model residency</text>
+<text x="894" y="393" font-size="19" font-weight="400" fill="#b4bed2" >Resource planning + scheduling</text>
+<text x="894" y="430" font-size="19" font-weight="400" fill="#b4bed2" >Runtime dispatch</text>
+<path d="M 355 355 H 420" fill="none" stroke="#b2adff" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="389" y="328" font-size="14" font-weight="400" fill="#b2adff" text-anchor="middle">bridge</text>
+<path d="M 799 355 H 860" fill="none" stroke="#b2adff" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="831" y="328" font-size="14" font-weight="400" fill="#b2adff" text-anchor="middle">protocol</text>
+<path d="M 198 613 V 541 H 850 V 430 H 860" fill="none" stroke="#b2adff" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)" stroke-dasharray="7 7"/>
+<rect x="443" y="520" width="370" height="42" rx="18" fill="#0c0e14" stroke="#0c0e14" stroke-width="1.5"/>
+<text x="462" y="546" font-size="18" font-weight="400" fill="#b2adff" >Model discovery + downloads</text>
+<rect x="48" y="623" width="300" height="161" rx="18" fill="#151923" stroke="#575269" stroke-width="1.5"/>
+<text x="72" y="663" font-size="25" font-weight="700" fill="#f1f3fa" >Model hosts</text>
+<text x="72" y="701" font-size="17" font-weight="400" fill="#b4bed2" >Network access for model files</text>
+<text x="72" y="732" font-size="17" font-weight="400" fill="#b4bed2" >and metadata, when needed</text>
+<path d="M 610 570 V 613" fill="none" stroke="#b2adff" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="623" y="598" font-size="15" font-weight="400" fill="#b2adff" >authorized files</text>
+<rect x="430" y="623" width="360" height="161" rx="18" fill="#151923" stroke="#333b50" stroke-width="1.5"/>
+<text x="454" y="663" font-size="25" font-weight="700" fill="#f1f3fa" >Managed artifacts</text>
+<text x="454" y="701" font-size="18" font-weight="400" fill="#b4bed2" >Origin-bound IDs + media URLs</text>
+<text x="454" y="733" font-size="18" font-weight="400" fill="#b4bed2" >Display · read · save · release</text>
+<path d="M 610 485 V 512 M 610 563 V 570" stroke="#b2adff" stroke-width="2" fill="none"/>
+<path d="M 1051 495 V 613" fill="none" stroke="#b2adff" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1064" y="598" font-size="15" font-weight="400" fill="#b2adff" >execute</text>
+<rect x="870" y="623" width="362" height="161" rx="18" fill="#151923" stroke="#375d55" stroke-width="1.5"/>
+<text x="894" y="663" font-size="25" font-weight="700" fill="#f1f3fa" >Runtime workers</text>
+<text x="894" y="701" font-size="18" font-weight="400" fill="#b4bed2" >Supported backends + models</text>
+<text x="894" y="733" font-size="18" font-weight="700" fill="#98ddc5" >Local inference</text>
+<path d="M 48 827 H 1232" stroke="#333b50"/>
+<text x="48" y="862" font-size="14" font-weight="700" fill="#98ddc5" letter-spacing="1.8">THE BOUNDARY</text>
+<text x="48" y="897" font-size="20" font-weight="400" fill="#b4bed2" >Websites receive authorized results. They do not receive native runtime or filesystem access.</text>
+</g></svg>

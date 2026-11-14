@@ -1,0 +1,7 @@
+{
+  "repository": "eins78/Kolibri-1-mlx-mixed-4-8-bit",
+  "revision": "20a42da14e58c0f9de5af5a50b6766874c259b0c",
+  "scope": "JSON metadata and tensor headers only; no learned payload",
+  "referenceSource": "eins78/kolibri-mlx@3f4c5bc38df654ae8cafd881a4672bf96d00781e/kolibri_mlx/reference_torch.py",
+  "referenceSha256": "2bdc365f4f3fb71b8089a359efb96e3dd05356a59924a0009897036f8c0df61e"
+}

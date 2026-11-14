@@ -1,0 +1,15 @@
+{
+  "referenceEnvironment": {
+    "tensorflow": "2.20.0",
+    "transformers": "4.46.3",
+    "tf-keras": "2.20.0"
+  },
+  "originalWeightsDownloaded": 0,
+  "sha256": {
+    "generate_reference.py.txt": "7dd96f289133a225c56f97de7a2a3ef752d59141471934653a2b5424b72bc1b6",
+    "config.json": "46a99dc689dcb21ebba5b19f0d18324e54690c3d590bf066f6e13a03b43517ca",
+    "reference.npz": "8a87e8c58936fea57ef3a99af18c30531887a297f93820866dafec67eac31b70",
+    "weights.json": "e59d9b9204294a7032f81d57f6469552bf45b4d95b1c4015e199cc371e702e17",
+    "tf_model.h5": "7a6ab1bdf12416d13f6532cabdbc6f7a26e9676304c9a7acfb2d64357cc11637"
+  }
+}

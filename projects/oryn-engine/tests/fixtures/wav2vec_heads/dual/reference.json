@@ -1,0 +1,38 @@
+{
+  "publisher": "Modotte/AIRealNet-Audio",
+  "publisherSourceSha256": "fe599d6f17fe8ef4e5610cb18374b4b3609ee47fbd10fc8ecf06772618eb0051",
+  "checkpointSeed": 61283,
+  "inputSeed": 61284,
+  "tensorCount": 55,
+  "parameterBytes": 27912,
+  "originalWeightsDownloaded": false,
+  "cases": [
+    {
+      "index": 0,
+      "lengths": [
+        8000
+      ]
+    },
+    {
+      "index": 1,
+      "lengths": [
+        6400
+      ]
+    },
+    {
+      "index": 2,
+      "lengths": [
+        1600
+      ]
+    },
+    {
+      "index": 3,
+      "lengths": [
+        4000,
+        2100
+      ]
+    }
+  ],
+  "maximumCpuMetalProbabilityDifference": 0.0001125335693359375,
+  "notes": "Pinned publisher head definitions evaluated over the complete native Wav2Vec2 graph, with generated parameters. Single-clip normalization is independently computed. Padded batch checks preserve family-specific masking."
+}

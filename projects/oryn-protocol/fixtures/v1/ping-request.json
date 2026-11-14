@@ -1,0 +1,7 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_ping_fixture",
+  "method": "protocol.ping",
+  "params": {}
+}

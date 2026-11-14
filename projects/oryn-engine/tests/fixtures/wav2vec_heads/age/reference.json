@@ -1,0 +1,38 @@
+{
+  "publisher": "audeering/wav2vec2-large-robust-24-ft-age-gender",
+  "publisherSourceSha256": "5e6fdce50df2fa08b397463167f578f927ed479fa6bcf1e5cafb69d121aeeefe",
+  "checkpointSeed": 61283,
+  "inputSeed": 61284,
+  "tensorCount": 78,
+  "parameterBytes": 30352,
+  "originalWeightsDownloaded": false,
+  "cases": [
+    {
+      "index": 0,
+      "lengths": [
+        8000
+      ]
+    },
+    {
+      "index": 1,
+      "lengths": [
+        6400
+      ]
+    },
+    {
+      "index": 2,
+      "lengths": [
+        1600
+      ]
+    },
+    {
+      "index": 3,
+      "lengths": [
+        4000,
+        2100
+      ]
+    }
+  ],
+  "maximumCpuMetalProbabilityDifference": 8.940696716308594e-08,
+  "notes": "Pinned publisher head definitions evaluated over the complete native Wav2Vec2 graph, with generated parameters. Single-clip normalization is independently computed. Padded batch checks preserve family-specific masking."
+}

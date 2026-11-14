@@ -1,0 +1,64 @@
+{
+  "payload": {
+    "kind": "runtime-adapter",
+    "schemaVersion": 1,
+    "adapterId": "oryn.adapter.qwen-tts",
+    "version": "1.0.0",
+    "publisher": "oryn.first-party",
+    "foundation": {
+      "id": "oryn.runtime.pytorch-speech",
+      "abi": "1",
+      "minimumVersion": "1.0.0"
+    },
+    "architectures": [
+      "Qwen3TTSForConditionalGeneration"
+    ],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer"
+    ],
+    "taskContracts": [
+      "speech-synthesis-v1"
+    ],
+    "backends": [
+      "mps",
+      "cpu"
+    ],
+    "dtypes": [
+      "fp32"
+    ],
+    "quantizations": [],
+    "requiredFiles": [
+      "config.json",
+      "merges.txt",
+      "model.safetensors",
+      "speech_tokenizer/config.json",
+      "speech_tokenizer/model.safetensors",
+      "tokenizer_config.json",
+      "vocab.json"
+    ],
+    "forbiddenSuffixes": [
+      ".py",
+      ".pyc",
+      ".pkl",
+      ".pickle",
+      ".dylib",
+      ".so",
+      ".dll",
+      ".exe",
+      ".sh"
+    ],
+    "resourceEstimator": "qwen-tts-v1",
+    "equivalenceClass": "exact-model",
+    "legacyPackIds": [
+      "oryn.qwen-tts-pytorch"
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "bbc26916baa8b16a3e26a23467e45dabcd8ebd80f0dbbac422221d923184d281",
+    "signature": "5F4drFITxXt2zNRZ1zjo9qoqa8S5dgZW2SpCy6KF2GMvMZWaTtgeU2C0hi6e5TdFr7beHflNuRRqy1T/jcy9mpVUuzS63RWWOBiovvNL8KziqYeulwt9HKIOlnvtMUivsi2jYUCbj1IUWdni5p5Vlm0xl5DmeX/WU6EBamSfkWDzPen/+CrgJZ9LoZfEH+SSNo+HeF3BJhB+R59I8IWy1nam+NTVgi9lmi9d3lH3k+DnTx0eShMxVCMeJQDKfM90VOFt5wcDPTrhnUsI6rUO8dbW1n4OO14ORazMenbH77VWHWtQhRzmKaeahrLZiePJpBe8M+FdFABrzZURfXF4Xa87wZLPYiinK6woh+47LvvoJkPy4Q2oR4SX9DLnWw+cfRgCBT20KF7NFRabj9A1u5sm18XuH4L2sQOI49Ggnjup59nyXq6K/D9cqRB1gdsJZFXZSiV6HrpkVdtGoHu0BEiDviXrKBNF8l/RjRbEDtjfug8IdyLD1PJFVbPJ6uqS"
+  }
+}

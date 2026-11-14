@@ -1,0 +1,199 @@
+{
+  "kind": "task-profile",
+  "schemaVersion": 1,
+  "profileId": "text-to-video-v1.259c34600bdfaea45aa126ca",
+  "contract": {
+    "id": "text-to-video-v1",
+    "revision": 1
+  },
+  "task": "text-to-video",
+  "inputModalities": [
+    "text"
+  ],
+  "outputModalities": [
+    "video"
+  ],
+  "inputSchemaRef": "taskInput.text-to-video-v1",
+  "resultSchemaRef": "taskResult.text-to-video-v1",
+  "features": {
+    "deterministicSeed": "supported",
+    "imageEditing": "unknown",
+    "negativePrompt": "unsupported"
+  },
+  "parameters": {
+    "negativePrompt": {
+      "inputPointer": "/negativePrompt",
+      "valueSchema": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 4096,
+        "const": ""
+      },
+      "handling": "fixed",
+      "editable": false,
+      "affects": [
+        "result"
+      ],
+      "default": ""
+    },
+    "width": {
+      "inputPointer": "/width",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 1280,
+            "multipleOf": 8
+          },
+          {
+            "maximum": 1024,
+            "multipleOf": 32
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 512
+    },
+    "height": {
+      "inputPointer": "/height",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 64,
+            "maximum": 1280,
+            "multipleOf": 8
+          },
+          {
+            "maximum": 1024,
+            "multipleOf": 32
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 512
+    },
+    "steps": {
+      "inputPointer": "/steps",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          {
+            "minimum": 1,
+            "maximum": 100
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 20
+    },
+    "guidanceScale": {
+      "inputPointer": "/guidanceScale",
+      "valueSchema": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 30,
+        "const": 1
+      },
+      "handling": "fixed",
+      "editable": false,
+      "affects": [
+        "result"
+      ],
+      "default": 1
+    },
+    "seed": {
+      "inputPointer": "/seed",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4294967295
+          },
+          {
+            "minimum": 0
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 0
+    },
+    "frames": {
+      "inputPointer": "/frames",
+      "valueSchema": {
+        "allOf": [
+          {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 360
+          },
+          {
+            "enum": [
+              124,
+              141,
+              158,
+              175,
+              192,
+              209,
+              226,
+              243,
+              260,
+              277,
+              294,
+              311,
+              328,
+              345
+            ]
+          }
+        ]
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 124
+    },
+    "fps": {
+      "inputPointer": "/fps",
+      "valueSchema": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 60,
+        "const": 24
+      },
+      "handling": "fixed",
+      "editable": false,
+      "affects": [
+        "result"
+      ],
+      "default": 24
+    }
+  },
+  "limits": {},
+  "streamingChannels": [],
+  "extensions": {},
+  "provenance": "adapter-derived"
+}

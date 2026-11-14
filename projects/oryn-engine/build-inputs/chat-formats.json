@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "formats": {
+    "chatml": {
+      "recognize": ["<|im_start|>", "<|im_end|>"],
+      "turn": "<|im_start|>{role}\n{content}<|im_end|>\n",
+      "reply": "<|im_start|>assistant\n",
+      "thinkingOff": "<think>\n\n</think>\n\n",
+      "image": "<|vision_start|><|image_pad|><|vision_end|>",
+      "stop": ["<|im_end|>"],
+      "llamaCppBuiltin": "chatml",
+      "reviewedFrom": ["Qwen/Qwen2.5-7B-Instruct", "Qwen/Qwen3-8B", "Qwen/Qwen2.5-VL-7B-Instruct"]
+    },
+    "deepseek": {
+      "recognize": ["<｜User｜>", "<｜Assistant｜>"],
+      "system": "lead",
+      "turns": {
+        "system": "{content}",
+        "user": "<｜User｜>{content}",
+        "assistant": "<｜Assistant｜>{content}<｜end▁of▁sentence｜>"
+      },
+      "reply": "<｜Assistant｜>",
+      "thinkingOff": "<think>\n\n</think>\n\n",
+      "stop": ["<｜end▁of▁sentence｜>"],
+      "reviewedFrom": ["CMSManhattan/JiRackUltra_14b"]
+    },
+    "flint": {
+      "recognize": ["<|begin_of_text|>", "<|end_of_text|>", "<|system|>", "<|user|>", "<|assistant|>"],
+      "turn": "<|{role}|>{content}",
+      "reply": "<|assistant|>",
+      "stop": ["<|end_of_text|>", "<|user|>", "<|observation|>"],
+      "reserved": ["<|developer|>", "<tool_call>", "</tool_call>", "<tool_response>", "</tool_response>"],
+      "reviewedFrom": ["RecursiveSI/flint", "unsloth/flint-GGUF"]
+    },
+    "gemma3": {
+      "recognize": ["<start_of_turn>", "<end_of_turn>"],
+      "turn": "<start_of_turn>{role}\n{content}<end_of_turn>\n",
+      "roles": {"assistant": "model"},
+      "system": "merge-into-next-user",
+      "trim": true,
+      "reply": "<start_of_turn>model\n",
+      "image": "<start_of_image>",
+      "stop": ["<end_of_turn>"],
+      "reviewedFrom": ["google/gemma-3-4b-it"]
+    },
+    "gemma4": {
+      "recognize": ["<|turn>", "<turn|>"],
+      "turn": "<|turn>{role}\n{content}<turn|>\n",
+      "roles": {"assistant": "model"},
+      "trim": true,
+      "reply": "<|turn>model\n",
+      "thinkingOff": "<|channel>thought\n<channel|>",
+      "image": "<|image|>",
+      "stop": ["<turn|>"],
+      "reviewedFrom": ["google/gemma-4-31B-it"]
+    },
+    "glm": {
+      "recognize": ["[gMASK]", "<sop>", "<|user|>", "<|assistant|>"],
+      "begin": "[gMASK]<sop>",
+      "turns": {
+        "system": "<|system|>{content}",
+        "user": "<|user|>{content}",
+        "assistant": "<|assistant|><think></think>{content}"
+      },
+      "trim": ["assistant"],
+      "reply": "<|assistant|>",
+      "thinkingOff": "<think></think>",
+      "image": "<|begin_of_image|><|image|><|end_of_image|>",
+      "stop": ["<|user|>", "<|observation|>"],
+      "reserved": ["<|system|>"],
+      "reviewedFrom": ["zai-org/GLM-5.3-Flash"]
+    },
+    "lfm3": {
+      "recognize": ["<|im_start|>", "<|im_end|>", "CONTINUE_FINAL_MESSAGE_TAG "],
+      "turns": {
+        "system": "<|im_start|>system\n{content}<|im_end|>\n",
+        "user": "<|im_start|>user\n{content}<|im_end|>\n",
+        "assistant": "<|im_start|>assistant\n<think></think>{content}<|im_end|>\n"
+      },
+      "reply": "<|im_start|>assistant\n<think></think>",
+      "stop": ["<|im_end|>"],
+      "reserved": ["<tools>", "</tools>", "<tool_call>", "</tool_call>", "<tool_response>", "</tool_response>", "<additional_tools>", "</additional_tools>", "<function=", "</function>", "<parameter=", "</parameter>", "<|vision_start|>", "<|vision_end|>"],
+      "reviewedFrom": ["LiquidAI/LFM3-1.7B-GGUF", "AtomicChat/LFM3-1.7B-Uncensored-GGUF"]
+    },
+    "llama3": {
+      "recognize": ["<|start_header_id|>", "<|eot_id|>"],
+      "turn": "<|start_header_id|>{role}<|end_header_id|>\n\n{content}<|eot_id|>",
+      "trim": true,
+      "reply": "<|start_header_id|>assistant<|end_header_id|>\n\n",
+      "stop": ["<|eot_id|>"],
+      "reserved": ["<|end_header_id|>", "<|begin_of_text|>"],
+      "reviewedFrom": ["meta-llama/Llama-3.2-3B-Instruct"]
+    },
+    "plain": {
+      "recognize": [],
+      "turn": "{role}: {content}\n",
+      "roles": {"system": "System", "user": "User", "assistant": "Assistant"},
+      "reply": "Assistant:"
+    },
+    "spark": {
+      "recognize": ["<｜start▁of▁sentence｜>", "<｜end▁of▁sentence｜>", "<|System|>", "<|User|>", "<|Bot|>"],
+      "begin": "<｜start▁of▁sentence｜><|System|>\nyou are a helpful assistant.<｜end▁of▁sentence｜>",
+      "turns": {
+        "system": "<｜start▁of▁sentence｜><|System|>\n{content}<｜end▁of▁sentence｜>",
+        "user": "<｜start▁of▁sentence｜><|User|>{content}<｜end▁of▁sentence｜>",
+        "assistant": "<｜start▁of▁sentence｜><|Bot|></think>{content}<｜end▁of▁sentence｜>"
+      },
+      "reply": "<｜start▁of▁sentence｜><|Bot|></think>",
+      "stop": ["<｜end▁of▁sentence｜>"],
+      "reserved": ["<|Tool|>", "<think>", "</think>", "<tool_call>", "</tool_call>", "<tool_response>", "</tool_response>", "<arg_key>", "</arg_key>", "<arg_value>", "</arg_value>"],
+      "reviewedFrom": ["XHToken/Spark-X2.6-4B-GGUF", "XHToken/Spark-X2.6-1.7B-GGUF"]
+    }
+  }
+}

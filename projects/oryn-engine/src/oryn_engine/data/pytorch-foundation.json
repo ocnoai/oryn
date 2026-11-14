@@ -1,0 +1,56 @@
+{
+  "payload": {
+    "kind": "runtime-foundation",
+    "schemaVersion": 1,
+    "foundationId": "oryn.runtime.pytorch",
+    "version": "1.2.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "minimumSafeVersion": "1.0.0",
+    "dependencyClosure": "oryn-engine-py312-torch2.15-ct2-4.8.4",
+    "platforms": [
+      "macos-arm64"
+    ],
+    "backends": [
+      "mps",
+      "cuda",
+      "cpu"
+    ],
+    "formats": [
+      "ctranslate2",
+      "diffusers",
+      "json",
+      "safetensors",
+      "tokenizer",
+      "torch-numeric-zip"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [
+      "bitsandbytes-nf4"
+    ],
+    "workerAbi": "1",
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    },
+    "license": {
+      "summary": "BSD-3-Clause PyTorch with composite dependencies",
+      "notice": "Review packaged upstream license notices before distribution."
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "164b860d315e9363c3a5030d462f9c5fea82849d130cb11e524e16e26a9d5b96",
+    "signature": "q4KsI3U4maoKgKup8IMSsjtPc45QMgm4Fp96fP0k+SD0Eb76o9nuOfZEEqtwX5GGWVSRY78TQ3ouqbkzxVIfgnvibrPqbKev0uqrDmyNja2edOL4Dp/9o7kEaxwbvXXI8slTkVx48gYIPawbhwI4RckqAklhLT/0sEmzLPKGlksGD5BeEyAGEhRKahRsg+sQspRLCm0oPPP8dXHKUxF/wl6unysEWaj/Z5b4VdMeJMejezVlgGfLn77FYf3k430fyPG7whsJqKgP7FBs2gM2iXrsPu2slDzqESvMp6PlZA4NzAo4afLFN9/1eGkqp5iz7GY+mmNxpLUQINfMF5XpgpCovgG+9/tqsd1a4BIQXCGVuGa4+Wt0IkWIePKMdsInxC58OJ+tu1x2/0WSWLBDGE9gTOtYv1uBqfqpSWV63ZXYrE0jrsfarNJFrXog+t5CYAtXODGoOWFUkZm39SCu2qMjPmn7A1ynqCzjxve4GwCKdNLjiQ3sq9/gZhEGFTzi"
+  }
+}

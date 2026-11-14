@@ -1,0 +1,19 @@
+{
+  "name": "@ocno/oryn-examples-workspace",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm typecheck && pnpm build && pnpm --filter @ocno/oryn-example-transcription test:unit && pnpm --filter @ocno/oryn-example-video-subtitles test:unit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.3.6"
+  }
+}

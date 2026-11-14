@@ -1,0 +1,153 @@
+[
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "Viggle/Qwen-Image-2.1-viggle-turbo",
+      "revision": "009a44a895ef85f7e643c80fdca9543795248867"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0,
+    "overrides": [
+      "scheduler/scheduler_config.json"
+    ],
+    "sampling": {
+      "steps": 6,
+      "sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "guidanceScale": 1.0,
+      "negativePrompt": ""
+    }
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "lilylilith/QI_2.1_AnyAngle",
+      "revision": "5f6e234c1705c9b4eb653cb1d3452b0cfc987996"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "QI2.1_AnyAngle.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "prithivMLmods/Qwen-Image-2.1-Natural-Exposure-LoRA",
+      "revision": "382d066d079854a86c9513f3c5a4026ada21ddbe"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "Qwen-Image-2.1-Natural-Exposure-LoRA-4000.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "RunningHubAI/rh-qwen-image-2.1-lora-2104918997757157378",
+      "revision": "682fb47975c4fe57f97b54cfb42398f3efe397cb"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "Qwenimag21_c2-st2000.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "JoyFusionAI/Qwen-Image-2.1-Uncensored-LoRA",
+      "revision": "112f15b699d8071ae7e79640fe4a35c4acfac7d0"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "qwen-image-2.1-uncensored-lora.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "ausboss/Qwen-Image-2.1-Outpaint-LoRA",
+      "revision": "449336db42ff074aee970ba0facc0ac0feb77863"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "qwen-image-2.1-outpaint-v2.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "ausboss/Qwen-Image-2.1-Consistency-LoRA",
+      "revision": "8f05b0fa027d517fa396fb31b71e0eaf48110e89"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "qwen-image-2.1-consistency.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "lightx2v/Qwen-Image-Edit-2511-Lightning",
+      "revision": "d74eba145674fd7e31b949324e148e21e7118abd"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-Edit-2511",
+      "revision": "6f3ccc0b56e431dc6a0c2b2039706d7d26f22cb9"
+    },
+    "adapterFile": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+    "family": "QwenImageEditPlusPipeline",
+    "scale": 1.0,
+    "sampling": {
+      "steps": 4,
+      "guidanceScale": 1.0,
+      "negativePrompt": ""
+    }
+  },
+  {
+    "kind": "diffusers-lora-v1",
+    "model": {
+      "repository": "ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA",
+      "revision": "a4ec9064268e413f6cf79b3c037963c67760e044"
+    },
+    "base": {
+      "repository": "Qwen/Qwen-Image-2.1",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3"
+    },
+    "adapterFile": "qwen-image-2.1-outfit-swap.safetensors",
+    "family": "QwenImage21Pipeline",
+    "scale": 1.0,
+    "referenceImages": {
+      "minimum": 2,
+      "maximum": 2
+    }
+  }
+]

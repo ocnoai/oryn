@@ -1,0 +1,71 @@
+{
+  "repository": "https://huggingface.co/DecisionIntelligence/Aurora",
+  "revision": "c495b02c1b151be52a3c174237ed240aa66e6384",
+  "licenseDeclaration": "README.md: license: mit",
+  "files": [
+    {
+      "file": "configuration_aurora.py",
+      "source": "configuration_aurora.py",
+      "upstreamSha256": "c28c493a375921a9bb791536396d142083f2ba42828ffb5be1250a8e10983533",
+      "sha256": "c28c493a375921a9bb791536396d142083f2ba42828ffb5be1250a8e10983533"
+    },
+    {
+      "file": "flow_loss.py",
+      "source": "flow_loss.py",
+      "upstreamSha256": "7874dc95e71d38e4af61e9c8d62cb04464c3c03ff00621503850ee07b2cb1b80",
+      "sha256": "7874dc95e71d38e4af61e9c8d62cb04464c3c03ff00621503850ee07b2cb1b80"
+    },
+    {
+      "file": "modality_connector.py",
+      "source": "modality_connector.py",
+      "upstreamSha256": "e1b2d944012e64f8c019f66e7918801b18e29c67d65b11bac2f897d6c07bbf7f",
+      "sha256": "e1b2d944012e64f8c019f66e7918801b18e29c67d65b11bac2f897d6c07bbf7f"
+    },
+    {
+      "file": "modeling_aurora.py",
+      "source": "modeling_aurora.py",
+      "upstreamSha256": "d76100ba4119626b2f208ce86c6dee0e23037a94edafd5f29c2d444c205da70d",
+      "sha256": "14ee3993ad131e87297737b134d70a61878a31b8c8aa55c889071ff2a59075c8"
+    },
+    {
+      "file": "prototype_retriever.py",
+      "source": "prototype_retriever.py",
+      "upstreamSha256": "9cb1dcf055a47373ca905d3a290a9d3095f5c457739b63a35ccc0b9b37371fb7",
+      "sha256": "9cb1dcf055a47373ca905d3a290a9d3095f5c457739b63a35ccc0b9b37371fb7"
+    },
+    {
+      "file": "util_functions.py",
+      "source": "util_functions.py",
+      "upstreamSha256": "360703ae7a83c38529c77d501032a240fb74452bda9a957de31627c1e56d674d",
+      "sha256": "360703ae7a83c38529c77d501032a240fb74452bda9a957de31627c1e56d674d"
+    },
+    {
+      "file": "bert_config/config.json",
+      "source": "bert_config/config.json",
+      "upstreamSha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+    },
+    {
+      "file": "vit_config/config.json",
+      "source": "vit_config/config.json",
+      "upstreamSha256": "d477a481f825c170a1bb8cd5e4f5788319466ecf4ede0eb24e9cd923a9aa8fea",
+      "sha256": "d477a481f825c170a1bb8cd5e4f5788319466ecf4ede0eb24e9cd923a9aa8fea"
+    },
+    {
+      "file": "vit_config/preprocessor_config.json",
+      "source": "vit_config/preprocessor_config.json",
+      "upstreamSha256": "90d1ae427c27d2b9dcb01f6a62ba96aa67aac2de1697c59cd212055b5035c4a2",
+      "sha256": "90d1ae427c27d2b9dcb01f6a62ba96aa67aac2de1697c59cd212055b5035c4a2"
+    },
+    {
+      "file": "README.md",
+      "source": "README.md",
+      "upstreamSha256": "86a03b5886edfbcf04f97324c65474731a9384be2bb0502288613625b8dfea94",
+      "sha256": "86a03b5886edfbcf04f97324c65474731a9384be2bb0502288613625b8dfea94"
+    }
+  ],
+  "modifications": [
+    "Removed unused TSGenerationMixin import and inheritance; engine calls native numerical forward. No tokenizer, hub or generation API included.",
+    "Package initializer and NOTICE.md are engine-owned. Numerical operations and fixed auxiliary configurations otherwise unchanged."
+  ]
+}

@@ -1,0 +1,59 @@
+(version 1)
+(deny default)
+
+; The control-plane engine may download approved model data, but it cannot read
+; the user's browser profile, Documents, SSH material, or other ambient files.
+(allow process*)
+(allow process-info* (target self))
+(allow signal (target self))
+(allow sysctl*)
+(allow mach-lookup)
+(allow mach-per-user-lookup)
+(allow ipc-posix-shm)
+(allow file-fsctl)
+(allow file-ioctl)
+(allow system-sched)
+
+; Apple Silicon Metal compute for the shared PyTorch/MLX foundations.
+(allow iokit-open
+  (iokit-user-client-class "AGXDeviceUserClient" "IOSurfaceRootUserClient"))
+(allow network-outbound)
+
+(allow file-read-metadata)
+(allow file-read*)
+(deny file-read*
+  (require-all
+    (regex #"^/(Users|Volumes|Network|home|opt|private/(tmp|var/(folders|tmp)))(/|$)")
+    (require-not (subpath (param "ENGINE_ROOT")))
+    (require-not (subpath (param "PYTHON_ROOT")))
+    (require-not (subpath (param "SECURITY_ROOT")))
+    (require-not (subpath (param "MODEL_ROOT")))
+    (require-not (subpath (param "PACK_ROOT")))
+    (require-not (subpath (param "ARTIFACT_INPUT_ROOT")))
+    (require-not (subpath (param "ARTIFACT_OUTPUT_ROOT")))
+    (require-not (subpath (param "SCRATCH_ROOT")))))
+(allow file-read*
+  (literal "/dev/null")
+  (literal "/dev/random")
+  (literal "/dev/urandom")
+  (subpath "/System")
+  (subpath "/bin")
+  (subpath "/sbin")
+  (subpath "/usr")
+  (subpath "/Library/Apple")
+  (subpath "/private/etc")
+  (subpath (param "ENGINE_ROOT"))
+  (subpath (param "PYTHON_ROOT"))
+  (subpath (param "SECURITY_ROOT"))
+  (subpath (param "MODEL_ROOT"))
+  (subpath (param "PACK_ROOT"))
+  (subpath (param "ARTIFACT_INPUT_ROOT"))
+  (subpath (param "ARTIFACT_OUTPUT_ROOT"))
+  (subpath (param "SCRATCH_ROOT")))
+
+(allow file-write*
+  (literal "/dev/null")
+  (subpath (param "MODEL_ROOT"))
+  (subpath (param "PACK_ROOT"))
+  (subpath (param "ARTIFACT_OUTPUT_ROOT"))
+  (subpath (param "SCRATCH_ROOT")))

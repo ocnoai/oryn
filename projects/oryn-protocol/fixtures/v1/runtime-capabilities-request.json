@@ -1,0 +1,7 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_caps_fixture",
+  "method": "runtime.capabilities",
+  "params": {}
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "adapterId": "oryn.lfm3.torch.v1",
+  "reference": {
+    "repository": "LiquidAI/LFM3-1.7B",
+    "revision": "875094441ea6517efc0f44a5685f05e381b72b14",
+    "license": "Apache-2.0 source headers; model weights retain their upstream license"
+  },
+  "changes": [
+    "Oryn-owned eager CPU graph and single-request bounded cache",
+    "No upstream module imports, Hub kernels, Triton, compiler/JIT, offload or runtime installs",
+    "Closed BF16 config and exact tensor shapes; unsupported representations fail closed"
+  ],
+  "qualification": "Source recognition does not establish exact-checkpoint conformance."
+}

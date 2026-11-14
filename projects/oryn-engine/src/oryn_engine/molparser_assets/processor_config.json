@@ -1,0 +1,7 @@
+{
+  "processor_class": "MolParserProcessor",
+  "model_name": "MolParser Mobile V2",
+  "auto_map": {
+    "AutoProcessor": "processing_molparser_mobile.MolParserProcessor"
+  }
+}

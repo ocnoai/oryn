@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "normalizer": "oryn.pyast.cpython3.12.16-grammar3.11.v1",
+  "shards": [
+    {
+      "name": "reviewed-implementations-lfm3.json",
+      "sizeBytes": 5407,
+      "sha256": "15ce6951689e4d5800544919199ae9c87dbd710953861e7fd3e6ce6d26de4ed1"
+    }
+  ]
+}

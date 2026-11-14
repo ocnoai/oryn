@@ -1,0 +1,3235 @@
+{
+  "__metadata__": {
+    "format": "pt"
+  },
+  "decoder.model.decoder.embed_positions.weight": {
+    "dtype": "F16",
+    "shape": [
+      1026,
+      192
+    ],
+    "data_offsets": [
+      0,
+      393984
+    ]
+  },
+  "decoder.model.decoder.embed_tokens.weight": {
+    "dtype": "F16",
+    "shape": [
+      414,
+      192
+    ],
+    "data_offsets": [
+      393984,
+      552960
+    ]
+  },
+  "decoder.model.decoder.layernorm_embedding.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      552960,
+      553344
+    ]
+  },
+  "decoder.model.decoder.layernorm_embedding.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      553344,
+      553728
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      553728,
+      554112
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      554112,
+      627840
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      627840,
+      628224
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      628224,
+      701952
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      701952,
+      702336
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      702336,
+      776064
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      776064,
+      776448
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      776448,
+      850176
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      850176,
+      850560
+    ]
+  },
+  "decoder.model.decoder.layers.0.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      850560,
+      850944
+    ]
+  },
+  "decoder.model.decoder.layers.0.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      850944,
+      852480
+    ]
+  },
+  "decoder.model.decoder.layers.0.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      852480,
+      1147392
+    ]
+  },
+  "decoder.model.decoder.layers.0.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1147392,
+      1147776
+    ]
+  },
+  "decoder.model.decoder.layers.0.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      1147776,
+      1442688
+    ]
+  },
+  "decoder.model.decoder.layers.0.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1442688,
+      1443072
+    ]
+  },
+  "decoder.model.decoder.layers.0.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1443072,
+      1443456
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1443456,
+      1443840
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1443840,
+      1517568
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1517568,
+      1517952
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1517952,
+      1591680
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1591680,
+      1592064
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1592064,
+      1665792
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1665792,
+      1666176
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1666176,
+      1739904
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1739904,
+      1740288
+    ]
+  },
+  "decoder.model.decoder.layers.0.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1740288,
+      1740672
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1740672,
+      1741056
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1741056,
+      1814784
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1814784,
+      1815168
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1815168,
+      1888896
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1888896,
+      1889280
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1889280,
+      1963008
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      1963008,
+      1963392
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      1963392,
+      2037120
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2037120,
+      2037504
+    ]
+  },
+  "decoder.model.decoder.layers.1.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2037504,
+      2037888
+    ]
+  },
+  "decoder.model.decoder.layers.1.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      2037888,
+      2039424
+    ]
+  },
+  "decoder.model.decoder.layers.1.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      2039424,
+      2334336
+    ]
+  },
+  "decoder.model.decoder.layers.1.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2334336,
+      2334720
+    ]
+  },
+  "decoder.model.decoder.layers.1.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      2334720,
+      2629632
+    ]
+  },
+  "decoder.model.decoder.layers.1.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2629632,
+      2630016
+    ]
+  },
+  "decoder.model.decoder.layers.1.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2630016,
+      2630400
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2630400,
+      2630784
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      2630784,
+      2704512
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2704512,
+      2704896
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      2704896,
+      2778624
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2778624,
+      2779008
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      2779008,
+      2852736
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2852736,
+      2853120
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      2853120,
+      2926848
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2926848,
+      2927232
+    ]
+  },
+  "decoder.model.decoder.layers.1.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2927232,
+      2927616
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      2927616,
+      2928000
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      2928000,
+      3001728
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3001728,
+      3002112
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3002112,
+      3075840
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3075840,
+      3076224
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3076224,
+      3149952
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3149952,
+      3150336
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3150336,
+      3224064
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3224064,
+      3224448
+    ]
+  },
+  "decoder.model.decoder.layers.2.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3224448,
+      3224832
+    ]
+  },
+  "decoder.model.decoder.layers.2.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      3224832,
+      3226368
+    ]
+  },
+  "decoder.model.decoder.layers.2.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      3226368,
+      3521280
+    ]
+  },
+  "decoder.model.decoder.layers.2.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3521280,
+      3521664
+    ]
+  },
+  "decoder.model.decoder.layers.2.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      3521664,
+      3816576
+    ]
+  },
+  "decoder.model.decoder.layers.2.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3816576,
+      3816960
+    ]
+  },
+  "decoder.model.decoder.layers.2.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3816960,
+      3817344
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3817344,
+      3817728
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3817728,
+      3891456
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3891456,
+      3891840
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3891840,
+      3965568
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      3965568,
+      3965952
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      3965952,
+      4039680
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4039680,
+      4040064
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      4040064,
+      4113792
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4113792,
+      4114176
+    ]
+  },
+  "decoder.model.decoder.layers.2.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4114176,
+      4114560
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4114560,
+      4114944
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      4114944,
+      4188672
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4188672,
+      4189056
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      4189056,
+      4262784
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4262784,
+      4263168
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      4263168,
+      4336896
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4336896,
+      4337280
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      4337280,
+      4411008
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4411008,
+      4411392
+    ]
+  },
+  "decoder.model.decoder.layers.3.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4411392,
+      4411776
+    ]
+  },
+  "decoder.model.decoder.layers.3.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      4411776,
+      4413312
+    ]
+  },
+  "decoder.model.decoder.layers.3.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      4413312,
+      4708224
+    ]
+  },
+  "decoder.model.decoder.layers.3.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      4708224,
+      4708608
+    ]
+  },
+  "decoder.model.decoder.layers.3.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      4708608,
+      5003520
+    ]
+  },
+  "decoder.model.decoder.layers.3.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5003520,
+      5003904
+    ]
+  },
+  "decoder.model.decoder.layers.3.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5003904,
+      5004288
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5004288,
+      5004672
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5004672,
+      5078400
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5078400,
+      5078784
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5078784,
+      5152512
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5152512,
+      5152896
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5152896,
+      5226624
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5226624,
+      5227008
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5227008,
+      5300736
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5300736,
+      5301120
+    ]
+  },
+  "decoder.model.decoder.layers.3.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5301120,
+      5301504
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5301504,
+      5301888
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5301888,
+      5375616
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5375616,
+      5376000
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5376000,
+      5449728
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5449728,
+      5450112
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5450112,
+      5523840
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5523840,
+      5524224
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      5524224,
+      5597952
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5597952,
+      5598336
+    ]
+  },
+  "decoder.model.decoder.layers.4.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5598336,
+      5598720
+    ]
+  },
+  "decoder.model.decoder.layers.4.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      5598720,
+      5600256
+    ]
+  },
+  "decoder.model.decoder.layers.4.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      5600256,
+      5895168
+    ]
+  },
+  "decoder.model.decoder.layers.4.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      5895168,
+      5895552
+    ]
+  },
+  "decoder.model.decoder.layers.4.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      5895552,
+      6190464
+    ]
+  },
+  "decoder.model.decoder.layers.4.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6190464,
+      6190848
+    ]
+  },
+  "decoder.model.decoder.layers.4.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6190848,
+      6191232
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6191232,
+      6191616
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6191616,
+      6265344
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6265344,
+      6265728
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6265728,
+      6339456
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6339456,
+      6339840
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6339840,
+      6413568
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6413568,
+      6413952
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6413952,
+      6487680
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6487680,
+      6488064
+    ]
+  },
+  "decoder.model.decoder.layers.4.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6488064,
+      6488448
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6488448,
+      6488832
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6488832,
+      6562560
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6562560,
+      6562944
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6562944,
+      6636672
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6636672,
+      6637056
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6637056,
+      6710784
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6710784,
+      6711168
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      6711168,
+      6784896
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6784896,
+      6785280
+    ]
+  },
+  "decoder.model.decoder.layers.5.encoder_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      6785280,
+      6785664
+    ]
+  },
+  "decoder.model.decoder.layers.5.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      6785664,
+      6787200
+    ]
+  },
+  "decoder.model.decoder.layers.5.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      6787200,
+      7082112
+    ]
+  },
+  "decoder.model.decoder.layers.5.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7082112,
+      7082496
+    ]
+  },
+  "decoder.model.decoder.layers.5.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      7082496,
+      7377408
+    ]
+  },
+  "decoder.model.decoder.layers.5.final_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7377408,
+      7377792
+    ]
+  },
+  "decoder.model.decoder.layers.5.final_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7377792,
+      7378176
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.k_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7378176,
+      7378560
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.k_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      7378560,
+      7452288
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.out_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7452288,
+      7452672
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.out_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      7452672,
+      7526400
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.q_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7526400,
+      7526784
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.q_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      7526784,
+      7600512
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.v_proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7600512,
+      7600896
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn.v_proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      7600896,
+      7674624
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn_layer_norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7674624,
+      7675008
+    ]
+  },
+  "decoder.model.decoder.layers.5.self_attn_layer_norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7675008,
+      7675392
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      7675392,
+      7675776
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      7675776,
+      7749504
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      7749504,
+      7750656
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      7750656,
+      7971840
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      7971840,
+      7973376
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      7973376,
+      8268288
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8268288,
+      8268672
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      8268672,
+      8563584
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8563584,
+      8563968
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8563968,
+      8564352
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8564352,
+      8564736
+    ]
+  },
+  "encoder.timm_model.model.blocks.0.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8564736,
+      8565120
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      8565120,
+      8565504
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      8565504,
+      8639232
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      8639232,
+      8640384
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      8640384,
+      8861568
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      8861568,
+      8863104
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      8863104,
+      9158016
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9158016,
+      9158400
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      9158400,
+      9453312
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9453312,
+      9453696
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9453696,
+      9454080
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9454080,
+      9454464
+    ]
+  },
+  "encoder.timm_model.model.blocks.1.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9454464,
+      9454848
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      9454848,
+      9455232
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      9455232,
+      9528960
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      9528960,
+      9530112
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      9530112,
+      9751296
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      9751296,
+      9752832
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      9752832,
+      10047744
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10047744,
+      10048128
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      10048128,
+      10343040
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10343040,
+      10343424
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10343424,
+      10343808
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10343808,
+      10344192
+    ]
+  },
+  "encoder.timm_model.model.blocks.10.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10344192,
+      10344576
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10344576,
+      10344960
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      10344960,
+      10418688
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      10418688,
+      10419840
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      10419840,
+      10641024
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      10641024,
+      10642560
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      10642560,
+      10937472
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      10937472,
+      10937856
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      10937856,
+      11232768
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11232768,
+      11233152
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11233152,
+      11233536
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11233536,
+      11233920
+    ]
+  },
+  "encoder.timm_model.model.blocks.11.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11233920,
+      11234304
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11234304,
+      11234688
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      11234688,
+      11308416
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      11308416,
+      11309568
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      11309568,
+      11530752
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      11530752,
+      11532288
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      11532288,
+      11827200
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      11827200,
+      11827584
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      11827584,
+      12122496
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12122496,
+      12122880
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12122880,
+      12123264
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12123264,
+      12123648
+    ]
+  },
+  "encoder.timm_model.model.blocks.2.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12123648,
+      12124032
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12124032,
+      12124416
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      12124416,
+      12198144
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      12198144,
+      12199296
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      12199296,
+      12420480
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      12420480,
+      12422016
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      12422016,
+      12716928
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      12716928,
+      12717312
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      12717312,
+      13012224
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13012224,
+      13012608
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13012608,
+      13012992
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13012992,
+      13013376
+    ]
+  },
+  "encoder.timm_model.model.blocks.3.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13013376,
+      13013760
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13013760,
+      13014144
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      13014144,
+      13087872
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      13087872,
+      13089024
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      13089024,
+      13310208
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      13310208,
+      13311744
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      13311744,
+      13606656
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13606656,
+      13607040
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      13607040,
+      13901952
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13901952,
+      13902336
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13902336,
+      13902720
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13902720,
+      13903104
+    ]
+  },
+  "encoder.timm_model.model.blocks.4.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13903104,
+      13903488
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      13903488,
+      13903872
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      13903872,
+      13977600
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      13977600,
+      13978752
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      13978752,
+      14199936
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      14199936,
+      14201472
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      14201472,
+      14496384
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14496384,
+      14496768
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      14496768,
+      14791680
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14791680,
+      14792064
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14792064,
+      14792448
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14792448,
+      14792832
+    ]
+  },
+  "encoder.timm_model.model.blocks.5.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14792832,
+      14793216
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      14793216,
+      14793600
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      14793600,
+      14867328
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      14867328,
+      14868480
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      14868480,
+      15089664
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      15089664,
+      15091200
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      15091200,
+      15386112
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15386112,
+      15386496
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      15386496,
+      15681408
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15681408,
+      15681792
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15681792,
+      15682176
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15682176,
+      15682560
+    ]
+  },
+  "encoder.timm_model.model.blocks.6.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15682560,
+      15682944
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      15682944,
+      15683328
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      15683328,
+      15757056
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      15757056,
+      15758208
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      15758208,
+      15979392
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      15979392,
+      15980928
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      15980928,
+      16275840
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16275840,
+      16276224
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      16276224,
+      16571136
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16571136,
+      16571520
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16571520,
+      16571904
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16571904,
+      16572288
+    ]
+  },
+  "encoder.timm_model.model.blocks.7.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16572288,
+      16572672
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      16572672,
+      16573056
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      16573056,
+      16646784
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      16646784,
+      16647936
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      16647936,
+      16869120
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      16869120,
+      16870656
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      16870656,
+      17165568
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17165568,
+      17165952
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      17165952,
+      17460864
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17460864,
+      17461248
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17461248,
+      17461632
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17461632,
+      17462016
+    ]
+  },
+  "encoder.timm_model.model.blocks.8.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17462016,
+      17462400
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.attn.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      17462400,
+      17462784
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.attn.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      192
+    ],
+    "data_offsets": [
+      17462784,
+      17536512
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.attn.qkv.bias": {
+    "dtype": "F16",
+    "shape": [
+      576
+    ],
+    "data_offsets": [
+      17536512,
+      17537664
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.attn.qkv.weight": {
+    "dtype": "F16",
+    "shape": [
+      576,
+      192
+    ],
+    "data_offsets": [
+      17537664,
+      17758848
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.mlp.fc1.bias": {
+    "dtype": "F16",
+    "shape": [
+      768
+    ],
+    "data_offsets": [
+      17758848,
+      17760384
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.mlp.fc1.weight": {
+    "dtype": "F16",
+    "shape": [
+      768,
+      192
+    ],
+    "data_offsets": [
+      17760384,
+      18055296
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.mlp.fc2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18055296,
+      18055680
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.mlp.fc2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      768
+    ],
+    "data_offsets": [
+      18055680,
+      18350592
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.norm1.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18350592,
+      18350976
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.norm1.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18350976,
+      18351360
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.norm2.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18351360,
+      18351744
+    ]
+  },
+  "encoder.timm_model.model.blocks.9.norm2.weight": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18351744,
+      18352128
+    ]
+  },
+  "encoder.timm_model.model.cls_token": {
+    "dtype": "F16",
+    "shape": [
+      1,
+      1,
+      192
+    ],
+    "data_offsets": [
+      18352128,
+      18352512
+    ]
+  },
+  "encoder.timm_model.model.patch_embed.backbone.conv.weight": {
+    "dtype": "F16",
+    "shape": [
+      64,
+      3,
+      7,
+      7
+    ],
+    "data_offsets": [
+      18352512,
+      18371328
+    ]
+  },
+  "encoder.timm_model.model.patch_embed.backbone.norm.bias": {
+    "dtype": "F16",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      18371328,
+      18371456
+    ]
+  },
+  "encoder.timm_model.model.patch_embed.backbone.norm.weight": {
+    "dtype": "F16",
+    "shape": [
+      64
+    ],
+    "data_offsets": [
+      18371456,
+      18371584
+    ]
+  },
+  "encoder.timm_model.model.patch_embed.proj.bias": {
+    "dtype": "F16",
+    "shape": [
+      192
+    ],
+    "data_offsets": [
+      18371584,
+      18371968
+    ]
+  },
+  "encoder.timm_model.model.patch_embed.proj.weight": {
+    "dtype": "F16",
+    "shape": [
+      192,
+      64,
+      8,
+      8
+    ],
+    "data_offsets": [
+      18371968,
+      19944832
+    ]
+  },
+  "encoder.timm_model.model.pos_embed": {
+    "dtype": "F16",
+    "shape": [
+      1,
+      145,
+      192
+    ],
+    "data_offsets": [
+      19944832,
+      20000512
+    ]
+  }
+}

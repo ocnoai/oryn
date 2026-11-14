@@ -1,0 +1,40 @@
+{
+  "activation_dropout": 0.0,
+  "activation_function": "swish",
+  "architectures": [
+    "MarianMTModel"
+  ],
+  "attention_dropout": 0.0,
+  "bad_words_ids": [
+    [
+      31
+    ]
+  ],
+  "bos_token_id": 0,
+  "d_model": 32,
+  "decoder_attention_heads": 4,
+  "decoder_ffn_dim": 64,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 2,
+  "decoder_start_token_id": 31,
+  "decoder_vocab_size": 32,
+  "dropout": 0.0,
+  "encoder_attention_heads": 4,
+  "encoder_ffn_dim": 64,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 2,
+  "eos_token_id": 0,
+  "forced_eos_token_id": 0,
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "max_position_embeddings": 64,
+  "model_type": "marian",
+  "num_beams": 2,
+  "num_hidden_layers": 2,
+  "pad_token_id": 31,
+  "scale_embedding": true,
+  "share_encoder_decoder_embeddings": true,
+  "transformers_version": "4.46.3",
+  "use_cache": true,
+  "vocab_size": 32
+}

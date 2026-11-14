@@ -1,0 +1,630 @@
+{
+  "repository": "https://github.com/birla-ai-labs/yug",
+  "revision": "2ad7da7133d5cb5b27be3ac1cc5e7963e2ba4e79",
+  "seed": 61272,
+  "config": {
+    "model_type": "yug",
+    "architectures": [
+      "Yug_Model"
+    ],
+    "library_name": "yug",
+    "patch_len": 4,
+    "output_dim": 16,
+    "hidden_dim": 32,
+    "d_model": 16,
+    "freq_num": 9,
+    "num_attn_heads": 2,
+    "dropout": 0.1,
+    "eps": 1e-06,
+    "kernel_size": 3,
+    "num_decoder_layers": 2,
+    "expansion": 1.25,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "stateSha256": {
+    "input_layer.input_layer.weight": "ed8151b663aefaacce20a19aa8064a052cb5ccbae8991b1e61a95bf27b0503d0",
+    "input_layer.input_layer.bias": "3d1a94b64f0eae3b1b4f33451114997165d7bb1b88114c67d4d2f6708054e337",
+    "input_layer.output_layer.weight": "01608c1595cba6e434eb5d40b28aa39d33387160dbd69dec40f15eaaade8c643",
+    "input_layer.output_layer.bias": "d451e31af6b72a9e1862711113f76dc7d25bee69268d188285ae890c7cb4c407",
+    "input_layer.residual_layer.weight": "1f35a12fd38bd9d59ba7751b252545e7e25e9c7204e485af4853a0b62e034fbc",
+    "input_layer.residual_layer.bias": "62f0bbb5505dbd12cfc659dc1785ff4c273710a2cab2b182ada8db400b1f3bee",
+    "freq_embedding.freq_embedding.weight": "3bdaf79d5e6c9e2fe501e2b81d3aae9d4a60aba53a1215a5101dc729e4786885",
+    "decoder_layers.0.self_attn_tar.query.weight": "a5f8baf3e79b1ce4375242b2257de094edcd298563fe35d2b7e1dbd231ef262d",
+    "decoder_layers.0.self_attn_tar.key.weight": "7f72c3874f0136c6bd62ef650e7305d5a27326279b372e3cd17a8a0b90ad44ef",
+    "decoder_layers.0.self_attn_tar.value.weight": "96282ee3eff90e30ccfa912406bf7be4e53d59ca9e3fcdde55ff3832eccc96cb",
+    "decoder_layers.0.self_attn_tar.out.weight": "cea8b7ff1873dbc733ea9f2026eaa5a7e0a0d2b8cc1d6c31382babdca0c50ba9",
+    "decoder_layers.0.self_attn_tar.rope.inv_freq": "47d9d469d9542448dfc243a68cae17ace015ae732f96bd482e886c1a969cf97c",
+    "decoder_layers.0.self_attn_tar.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.self_attn_var.query.weight": "3bc76e9e1b34120717b132fc0402ec326e41fd09180d422d620dfa11b361100b",
+    "decoder_layers.0.self_attn_var.key.weight": "6236f715740b663e2081050a7edd03f79653d6749f70a26925c780beb544effa",
+    "decoder_layers.0.self_attn_var.value.weight": "6e02997f3c80776879666b2c679bdfe5ce04b6e27e5834b8efce48e242240d08",
+    "decoder_layers.0.self_attn_var.out.weight": "ea1788013c3c78f577854e76c9ad1ef81ce03dd2486724b242632cfb03a9a55a",
+    "decoder_layers.0.self_attn_var.rope.inv_freq": "47d9d469d9542448dfc243a68cae17ace015ae732f96bd482e886c1a969cf97c",
+    "decoder_layers.0.self_attn_var.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.cross_attn_1.query.weight": "beada653250fd65b9dab8dbdd65836f38681d664534f04c1a4a385beea4caa28",
+    "decoder_layers.0.cross_attn_1.key.weight": "6cb8ac06de371237d578f1042889fe7f28a089cbfb7b260c572b0a8eed5cdd2b",
+    "decoder_layers.0.cross_attn_1.value.weight": "067f98b6a24b7f9098433e94f6df0bce5867f710317559f90676bb46c67af2ca",
+    "decoder_layers.0.cross_attn_1.out.weight": "dd062db650bdef9c5e0095ad7bf6c4064ec1bd6e2745ce4bee1c8f9dc8b3fd88",
+    "decoder_layers.0.cross_attn_1.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.cross_attn_1.layer_norm2.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.cross_attn_1.q_norm.weight": "4f05df05f8da9356bd66425351f166a5f7305b7c805e6900d9ec0f50790c9886",
+    "decoder_layers.0.cross_attn_1.k_norm.weight": "4f05df05f8da9356bd66425351f166a5f7305b7c805e6900d9ec0f50790c9886",
+    "decoder_layers.0.cross_variate_attention.q_proj.weight": "cf5363e8caf56c4701265d942cc4f47021bba8b24a660260cfef129121e9b400",
+    "decoder_layers.0.cross_variate_attention.k_proj.weight": "6811d6316e744acb2d0fd872afb93271eaff3e5616bf9c5f5f77d4dfdadcb23d",
+    "decoder_layers.0.cross_variate_attention.v_proj.weight": "14a5e9eae2adf0855448f0007d1f122afda3f4392c925da02d972eab8da78cb8",
+    "decoder_layers.0.cross_variate_attention.o_proj.weight": "a54093de38b3bfcb930dd509c9fe265d5aac3d16d031f808c9799fe090cb4e96",
+    "decoder_layers.0.cross_variate_attention.norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.variate_mlp.latent_q": "67ec759414a91ce4ce2f6105800342a5f3d690b87ab2adf38a08c6ad5329051b",
+    "decoder_layers.0.variate_mlp.out_gate": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "decoder_layers.0.variate_mlp.k_proj.weight": "02556519adc425b4a9cbc67691f5d908af5bdb5b415ae970cede2cc90e7c2b13",
+    "decoder_layers.0.variate_mlp.v_proj.weight": "66e3836dd9a0eae8f4594261abe07cd671b6253d1f5ec1c4d6d754bff8224bf9",
+    "decoder_layers.0.variate_mlp.out_proj.weight": "dd87bf536dc4ce925b7f5bea3f435dc5421fbe9461bd383df46fcc70b643173b",
+    "decoder_layers.0.mlp.gate_proj.weight": "89b633f0a00e26ee046eeee17d67036bb9b3c644ebbec11d2d2c29569cf9c34d",
+    "decoder_layers.0.mlp.up_proj.weight": "216439db6d9883ffa74d78740b3ea7dd287487d02fca273a4beb508889bb1d32",
+    "decoder_layers.0.mlp.down_proj.weight": "7618347def7a4f48a1f44f077cac614624edb09fd1525afe7457f31a826d35bd",
+    "decoder_layers.0.variate_ffn_norm.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.0.variate_ffn.gate_proj.weight": "1838b7b8ed4e6f7504f21d111948462201dc37682c346c18c015d75eeec88ae1",
+    "decoder_layers.0.variate_ffn.up_proj.weight": "390c4470b0d31807887018138db6bcc7836d97ddfefe6caa0c17e9e48b3fffc4",
+    "decoder_layers.0.variate_ffn.down_proj.weight": "6c25f1050bfcba3fbb320fbea6684f5ce0abe0127404f2ae7c2c7bce1d178c3b",
+    "decoder_layers.1.self_attn_tar.query.weight": "6f7fd4f115b230fd343d421434b73ed50ce038f5ee660987651a4d382e2ac863",
+    "decoder_layers.1.self_attn_tar.key.weight": "e91f2ff608a87e02118b8c66007f184bdd77b93ecb422883acf7d4d5dd84ffb0",
+    "decoder_layers.1.self_attn_tar.value.weight": "b300f2e346cf21fadeda60055af5652644537954a655940c3d7490edf90961b6",
+    "decoder_layers.1.self_attn_tar.out.weight": "7b03ad2d978e582680e1ad4827e8b19b9e087b9c2ede301da1fdce022f7a0827",
+    "decoder_layers.1.self_attn_tar.rope.inv_freq": "47d9d469d9542448dfc243a68cae17ace015ae732f96bd482e886c1a969cf97c",
+    "decoder_layers.1.self_attn_tar.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.self_attn_var.query.weight": "929429fcf89af1235889aa9fdf9ef1d5d146896831f9beaf43c04ca8dc4a1165",
+    "decoder_layers.1.self_attn_var.key.weight": "3743a14209abfbe429c29e883e5c166c98d73258b1c8492928cdb94854ef7688",
+    "decoder_layers.1.self_attn_var.value.weight": "6c9f093ddbbf53155588089410f784ee121fe78396b6347a3013b4cf38251098",
+    "decoder_layers.1.self_attn_var.out.weight": "2eb7648ee50ebfa4aabf75ab47de4726e5e6746c01d72940315c8be8221a171d",
+    "decoder_layers.1.self_attn_var.rope.inv_freq": "47d9d469d9542448dfc243a68cae17ace015ae732f96bd482e886c1a969cf97c",
+    "decoder_layers.1.self_attn_var.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.cross_attn_1.query.weight": "379871327b07a55e84ae60aef23fad1a39b58521fa21441b683de7c976e7b9d1",
+    "decoder_layers.1.cross_attn_1.key.weight": "c6ea0853b2d879b2b888c94500b8ee46b18d73d247a57b46f2c9763d4c51a818",
+    "decoder_layers.1.cross_attn_1.value.weight": "409ed56cd138e0e95e338cc6cf1d8d08927f364c4ef2248830fd77c61821d1d0",
+    "decoder_layers.1.cross_attn_1.out.weight": "9800080f11269bf9fd00d5dae3dfb0d9658b620a889bf081f35cd12364d6c186",
+    "decoder_layers.1.cross_attn_1.layer_norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.cross_attn_1.layer_norm2.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.cross_attn_1.q_norm.weight": "4f05df05f8da9356bd66425351f166a5f7305b7c805e6900d9ec0f50790c9886",
+    "decoder_layers.1.cross_attn_1.k_norm.weight": "4f05df05f8da9356bd66425351f166a5f7305b7c805e6900d9ec0f50790c9886",
+    "decoder_layers.1.cross_variate_attention.q_proj.weight": "802f000629ed0870a895f15af8bd12f96303cdf4f2012ba0bd259d10d1f6898f",
+    "decoder_layers.1.cross_variate_attention.k_proj.weight": "070be744745fa439a3c0f5dc0d6f5f7287475189cedf86a5cdea2e67e7bb165c",
+    "decoder_layers.1.cross_variate_attention.v_proj.weight": "b539d03c597d6fa90b0707dc7f6f07cd42a9b5621d71549cf3ab916959120c7f",
+    "decoder_layers.1.cross_variate_attention.o_proj.weight": "28f91204a16a34c1ec173dd57f8bbf655954fed0cc9721b204e00481b292676c",
+    "decoder_layers.1.cross_variate_attention.norm1.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.variate_mlp.latent_q": "dcca51188039a2d7edf7d34c0f42a63b14631bc9ba2a5a166294f2427246f58d",
+    "decoder_layers.1.variate_mlp.out_gate": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "decoder_layers.1.variate_mlp.k_proj.weight": "86efe5f32f09a1fcbe055dbe0a8c92c9424b0a9818d4fe3c3ab37575e5404919",
+    "decoder_layers.1.variate_mlp.v_proj.weight": "2df79464d1d28622362de800018f995e3e84ce4288d749db4472a68cf7ea6659",
+    "decoder_layers.1.variate_mlp.out_proj.weight": "78d996c9cb7035e9385a744dac1757325e4cc6526cc042c81124d62295d676a8",
+    "decoder_layers.1.mlp.gate_proj.weight": "976ea25fb488cd812e24681a5302d1f68a3bb51ce838bd643e32e795bbce53eb",
+    "decoder_layers.1.mlp.up_proj.weight": "020ac88c2bce48590c62383bc363e93b9b32d964357abe9702723027c124528a",
+    "decoder_layers.1.mlp.down_proj.weight": "ab0e9e8c1ea1322e2e6aefd551ea0c9192743f675ab195ebab3b038c5d970d52",
+    "decoder_layers.1.variate_ffn_norm.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "decoder_layers.1.variate_ffn.gate_proj.weight": "ab87db138de7144217ea049e78494e2fa931f28443705a5cdb11cbdfcf8d6e28",
+    "decoder_layers.1.variate_ffn.up_proj.weight": "5e882f64ad5caa49eafb2d4332871929c3347be8819b19b1302c43646cf953b5",
+    "decoder_layers.1.variate_ffn.down_proj.weight": "3294b0cd50db94e0fefb8822838c026043c05119c93a84989ccd8102a273a2af",
+    "output_layer.input_layer.weight": "c36b48187d8cf368ef2d751ec3bb5579706517eb8a438179ebfd46ab4933817e",
+    "output_layer.input_layer.bias": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+    "output_layer.output_layer.weight": "8f913290c6b869dcb0f2eca1ea8a05d32916c861250f72ab0e00eca5d344d067",
+    "output_layer.output_layer.bias": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+    "output_layer.residual_layer.weight": "1b31bd8cc99795f2b0680b548f64a08b0b5f9082c37013bdd5f4d9570dd43b6c",
+    "output_layer.residual_layer.bias": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+    "input_norm_tar.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "input_norm_var.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "output_norm.weight": "9628e545ed3ac074e5a6cbf542a642b62482fbfca9b4cb3ea4743a1874256e37",
+    "output_patch_norm.weight": "f6bb1294da2f78cd935b01c7656280df5eaa0439e9d97bc03775825a41a508e4",
+    "output_patch_norm.bias": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+  },
+  "cases": [
+    {
+      "context": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "horizon": 1,
+      "frequencyMilliseconds": null,
+      "nativeFrequency": [
+        8,
+        1
+      ],
+      "quantiles": [
+        [
+          8.663542394060642e-05
+        ],
+        [
+          -8.907082519726828e-05
+        ],
+        [
+          -7.844180072424933e-05
+        ]
+      ]
+    },
+    {
+      "context": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "horizon": 5,
+      "frequencyMilliseconds": 86400000,
+      "nativeFrequency": [
+        3,
+        1
+      ],
+      "quantiles": [
+        [
+          2.9999868869781494,
+          2.999917984008789,
+          2.9999899864196777,
+          2.999931812286377,
+          2.9998703002929688
+        ],
+        [
+          3.000113010406494,
+          3.000061511993408,
+          2.999933958053589,
+          3.0000970363616943,
+          3.000067949295044
+        ],
+        [
+          3.000103235244751,
+          3.000091552734375,
+          3.0000786781311035,
+          3.0000038146972656,
+          3.000260353088379
+        ]
+      ]
+    },
+    {
+      "context": [
+        -4.0,
+        -3.3,
+        -2.6,
+        -1.9000000000000004,
+        -1.2000000000000002,
+        -0.5,
+        0.1999999999999993,
+        0.8999999999999995,
+        1.5999999999999996,
+        2.3,
+        3.0,
+        3.6999999999999993,
+        4.399999999999999,
+        5.1,
+        5.799999999999999,
+        6.5,
+        7.199999999999999,
+        7.899999999999999,
+        8.6,
+        9.299999999999999,
+        10.0,
+        10.7,
+        11.399999999999999,
+        12.099999999999998,
+        12.799999999999997,
+        13.5,
+        14.2,
+        14.899999999999999,
+        15.599999999999998,
+        16.299999999999997,
+        17.0,
+        17.7,
+        18.4
+      ],
+      "horizon": 16,
+      "frequencyMilliseconds": 3600000,
+      "nativeFrequency": [
+        2,
+        1
+      ],
+      "quantiles": [
+        [
+          7.416851997375488,
+          7.009145736694336,
+          7.846644878387451,
+          6.3133344650268555,
+          7.436420440673828,
+          7.502633571624756,
+          6.944671630859375,
+          6.883913040161133,
+          6.7074785232543945,
+          7.372334003448486,
+          7.086271286010742,
+          6.287430763244629,
+          7.250645637512207,
+          7.217107772827148,
+          7.94749641418457,
+          7.039778232574463
+        ],
+        [
+          6.449369430541992,
+          6.65748405456543,
+          7.094573497772217,
+          7.343034744262695,
+          6.5864458084106445,
+          7.018637657165527,
+          7.366542339324951,
+          6.80934476852417,
+          7.839756011962891,
+          6.414895534515381,
+          8.332499504089355,
+          7.009260654449463,
+          7.752809524536133,
+          7.627295017242432,
+          6.932461738586426,
+          7.76803731918335
+        ],
+        [
+          6.529668807983398,
+          6.795257568359375,
+          7.253067493438721,
+          6.419837951660156,
+          7.690736770629883,
+          7.2899885177612305,
+          7.434442520141602,
+          7.208954334259033,
+          7.86929178237915,
+          6.844517230987549,
+          7.253983497619629,
+          7.5926032066345215,
+          7.558035373687744,
+          6.615545272827148,
+          6.911098003387451,
+          6.10124397277832
+        ]
+      ]
+    },
+    {
+      "context": [
+        0.0,
+        0.0,
+        5.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        8.0,
+        0.0,
+        0.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        7.0
+      ],
+      "horizon": 9,
+      "frequencyMilliseconds": 900000,
+      "nativeFrequency": [
+        1,
+        15
+      ],
+      "quantiles": [
+        [
+          1.5088084936141968,
+          1.6942501068115234,
+          2.004927158355713,
+          1.154789924621582,
+          1.3599154949188232,
+          1.5369750261306763,
+          1.8060040473937988,
+          1.6785354614257812,
+          1.935555100440979
+        ],
+        [
+          1.655635118484497,
+          1.4093290567398071,
+          1.8740767240524292,
+          1.6609203815460205,
+          1.533801794052124,
+          1.6164343357086182,
+          1.7761379480361938,
+          1.574896216392517,
+          1.5646108388900757
+        ],
+        [
+          1.934309482574463,
+          1.8530831336975098,
+          1.434147834777832,
+          1.2772271633148193,
+          2.0322723388671875,
+          1.7953331470489502,
+          1.7148385047912598,
+          1.2252334356307983,
+          2.1079676151275635
+        ]
+      ]
+    },
+    {
+      "context": [
+        1.0,
+        -2.0,
+        3.0,
+        -4.0,
+        5.0,
+        -6.0,
+        7.0,
+        -8.0
+      ],
+      "horizon": 3,
+      "frequencyMilliseconds": 1209600000,
+      "nativeFrequency": [
+        4,
+        2
+      ],
+      "quantiles": [
+        [
+          -1.102205753326416,
+          -0.390787273645401,
+          -1.0173100233078003
+        ],
+        [
+          -0.1541157066822052,
+          -0.21467077732086182,
+          -0.9645434021949768
+        ],
+        [
+          0.00888371467590332,
+          -0.5590861439704895,
+          0.10389214754104614
+        ]
+      ]
+    },
+    {
+      "context": [
+        3.0,
+        -1.0,
+        4.0
+      ],
+      "horizon": 7,
+      "frequencyMilliseconds": 30000,
+      "nativeFrequency": [
+        0,
+        30
+      ],
+      "quantiles": [
+        [
+          2.320707082748413,
+          1.8180431127548218,
+          2.3225290775299072,
+          2.0889623165130615,
+          2.1439945697784424,
+          2.020531177520752,
+          2.066455841064453
+        ],
+        [
+          2.085545539855957,
+          2.1143033504486084,
+          2.256195545196533,
+          2.375673770904541,
+          2.0330207347869873,
+          1.9078718423843384,
+          1.9996875524520874
+        ],
+        [
+          1.6868841648101807,
+          2.118973731994629,
+          2.100647449493408,
+          1.9971171617507935,
+          2.1142985820770264,
+          1.9893845319747925,
+          2.0799965858459473
+        ]
+      ]
+    },
+    {
+      "context": [
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        -2.0
+      ],
+      "horizon": 16,
+      "frequencyMilliseconds": 250,
+      "nativeFrequency": [
+        8,
+        1
+      ],
+      "quantiles": [
+        [
+          0.01612311229109764,
+          0.03404679149389267,
+          0.0613512322306633,
+          -0.11164841055870056,
+          0.2600356936454773,
+          -0.0044463202357292175,
+          0.11203691363334656,
+          -0.04418492317199707,
+          -0.0937662348151207,
+          -0.2924697697162628,
+          0.14129756391048431,
+          -0.2684292793273926,
+          -0.044482387602329254,
+          0.241249680519104,
+          0.19167479872703552,
+          0.05888395756483078
+        ],
+        [
+          -0.20185819268226624,
+          -0.20279935002326965,
+          0.14198359847068787,
+          -0.03400826081633568,
+          -0.0251326747238636,
+          -0.15611939132213593,
+          -0.026582684367895126,
+          -0.12422262132167816,
+          -0.011684246361255646,
+          -0.15054599940776825,
+          0.04282055050134659,
+          -0.11578686535358429,
+          0.11916586756706238,
+          -0.1859084665775299,
+          -0.11143163591623306,
+          -0.05167226120829582
+        ],
+        [
+          -0.1774320900440216,
+          -0.06108921021223068,
+          0.09755003452301025,
+          -0.008279338479042053,
+          -0.31008946895599365,
+          0.0403013601899147,
+          -0.06039739400148392,
+          0.11962565779685974,
+          0.06210344284772873,
+          0.009426932781934738,
+          0.0038012899458408356,
+          0.10235735774040222,
+          0.17594633996486664,
+          -0.015214614570140839,
+          -0.10099737346172333,
+          -0.1292313039302826
+        ]
+      ]
+    },
+    {
+      "context": [
+        0.0,
+        1e-06,
+        2e-06,
+        3e-06,
+        4e-06,
+        4.9999999999999996e-06,
+        6e-06,
+        7e-06,
+        8e-06,
+        9e-06,
+        9.999999999999999e-06,
+        1.1e-05,
+        1.2e-05,
+        1.3e-05,
+        1.4e-05,
+        1.4999999999999999e-05,
+        1.6e-05
+      ],
+      "horizon": 4,
+      "frequencyMilliseconds": 172800000,
+      "nativeFrequency": [
+        3,
+        2
+      ],
+      "quantiles": [
+        [
+          -9.512544238532428e-06,
+          -6.597346509806812e-05,
+          -4.354794327809941e-06,
+          -5.1441391406115144e-05
+        ],
+        [
+          0.00013031261914875358,
+          6.502790347440168e-05,
+          -6.350808689603582e-05,
+          9.77938252617605e-05
+        ],
+        [
+          0.00013008664245717227,
+          9.339415555587038e-05,
+          7.49764294596389e-05,
+          1.580153730174061e-05
+        ]
+      ]
+    }
+  ],
+  "originalWeightsDownloaded": false
+}

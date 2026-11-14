@@ -1,0 +1,239 @@
+{
+  "frontend": {
+    "externalFiles": [],
+    "operators": [
+      "Add",
+      "Cast",
+      "Concat",
+      "Div",
+      "Less",
+      "Log",
+      "MatMul",
+      "Mul",
+      "Pad",
+      "Range",
+      "ReduceSum",
+      "ReduceSumSquare",
+      "STFT",
+      "Shape",
+      "Slice",
+      "Sqrt",
+      "Sub",
+      "Transpose",
+      "Unsqueeze",
+      "Where"
+    ],
+    "opset": 17,
+    "inputs": [
+      {
+        "name": "waveforms",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          "N"
+        ]
+      },
+      {
+        "name": "waveforms_lens",
+        "dtype": 7,
+        "shape": [
+          "batch_size"
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "features",
+        "dtype": 1,
+        "shape": [
+          "batch_size",
+          128,
+          "T"
+        ]
+      },
+      {
+        "name": "features_lens",
+        "dtype": 7,
+        "shape": [
+          "batch_size"
+        ]
+      }
+    ]
+  },
+  "encoder": {
+    "externalFiles": [
+      "encoder-model.onnx.data"
+    ],
+    "operators": [
+      "Add",
+      "And",
+      "Cast",
+      "Concat",
+      "Constant",
+      "ConstantOfShape",
+      "Conv",
+      "Div",
+      "Equal",
+      "Expand",
+      "Floor",
+      "Gather",
+      "LayerNormalization",
+      "Less",
+      "MatMul",
+      "Mul",
+      "Not",
+      "Pad",
+      "Range",
+      "Relu",
+      "Reshape",
+      "Shape",
+      "Sigmoid",
+      "Slice",
+      "Softmax",
+      "Split",
+      "Squeeze",
+      "Sub",
+      "Tile",
+      "Transpose",
+      "Unsqueeze",
+      "Where"
+    ],
+    "opset": 17,
+    "inputs": [
+      {
+        "name": "audio_signal",
+        "dtype": 1,
+        "shape": [
+          "audio_signal_dynamic_axes_1",
+          128,
+          "audio_signal_dynamic_axes_2"
+        ]
+      },
+      {
+        "name": "length",
+        "dtype": 7,
+        "shape": [
+          "length_dynamic_axes_1"
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "outputs",
+        "dtype": 1,
+        "shape": [
+          "Transposeoutputs_dim_0",
+          1024,
+          "Transposeoutputs_dim_2"
+        ]
+      },
+      {
+        "name": "encoded_lengths",
+        "dtype": 7,
+        "shape": [
+          "length_dynamic_axes_1"
+        ]
+      }
+    ]
+  },
+  "decoder": {
+    "externalFiles": [],
+    "operators": [
+      "Add",
+      "Cast",
+      "Concat",
+      "Constant",
+      "Gather",
+      "Identity",
+      "LSTM",
+      "MatMul",
+      "Relu",
+      "Slice",
+      "Squeeze",
+      "Transpose",
+      "Unsqueeze"
+    ],
+    "opset": 17,
+    "inputs": [
+      {
+        "name": "encoder_outputs",
+        "dtype": 1,
+        "shape": [
+          "encoder_outputs_dynamic_axes_1",
+          1024,
+          "encoder_outputs_dynamic_axes_2"
+        ]
+      },
+      {
+        "name": "targets",
+        "dtype": 6,
+        "shape": [
+          "targets_dynamic_axes_1",
+          "targets_dynamic_axes_2"
+        ]
+      },
+      {
+        "name": "target_length",
+        "dtype": 6,
+        "shape": [
+          "target_length_dynamic_axes_1"
+        ]
+      },
+      {
+        "name": "input_states_1",
+        "dtype": 1,
+        "shape": [
+          2,
+          "input_states_1_dynamic_axes_1",
+          640
+        ]
+      },
+      {
+        "name": "input_states_2",
+        "dtype": 1,
+        "shape": [
+          2,
+          "input_states_2_dynamic_axes_1",
+          640
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "outputs",
+        "dtype": 1,
+        "shape": [
+          "Addoutputs_dim_0",
+          "Addoutputs_dim_1",
+          "Addoutputs_dim_2",
+          8198
+        ]
+      },
+      {
+        "name": "prednet_lengths",
+        "dtype": 6,
+        "shape": [
+          "target_length_dynamic_axes_1"
+        ]
+      },
+      {
+        "name": "output_states_1",
+        "dtype": 1,
+        "shape": [
+          2,
+          "Concatoutput_states_1_dim_1",
+          640
+        ]
+      },
+      {
+        "name": "output_states_2",
+        "dtype": 1,
+        "shape": [
+          2,
+          "Concatoutput_states_2_dim_1",
+          640
+        ]
+      }
+    ]
+  }
+}

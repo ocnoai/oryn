@@ -1,0 +1,124 @@
+{
+  "kind": "task-profile",
+  "schemaVersion": 1,
+  "profileId": "time-series-forecasting-v1.0497e2e856429449f8ee12cb",
+  "contract": {
+    "id": "time-series-forecasting-v1",
+    "revision": 1
+  },
+  "task": "time-series-forecasting",
+  "inputModalities": [
+    "document"
+  ],
+  "outputModalities": [
+    "structured"
+  ],
+  "inputSchemaRef": "taskInput.time-series-forecasting-v1",
+  "resultSchemaRef": "taskResult.time-series-forecasting-v1",
+  "features": {
+    "quantiles": "unknown",
+    "covariates": "unknown"
+  },
+  "parameters": {
+    "horizon": {
+      "inputPointer": "/horizon",
+      "valueSchema": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 512
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ],
+      "default": 8
+    },
+    "quantiles": {
+      "inputPointer": "/quantiles",
+      "valueSchema": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 0.99
+        },
+        "minItems": 1,
+        "maxItems": 19,
+        "uniqueItems": true
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ]
+    },
+    "frequencyMilliseconds": {
+      "inputPointer": "/frequencyMilliseconds",
+      "valueSchema": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 31536000000
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ]
+    },
+    "pastCovariates": {
+      "inputPointer": "/pastCovariates",
+      "valueSchema": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1000000000000.0,
+            "maximum": 1000000000000.0
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "minItems": 2,
+        "maxItems": 2048
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ]
+    },
+    "futureCovariates": {
+      "inputPointer": "/futureCovariates",
+      "valueSchema": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1000000000000.0,
+            "maximum": 1000000000000.0
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "minItems": 1,
+        "maxItems": 512
+      },
+      "handling": "honored",
+      "editable": true,
+      "affects": [
+        "result"
+      ]
+    }
+  },
+  "limits": {
+    "contextLength": 16,
+    "forecastHorizon": 8,
+    "covariateColumns": 2
+  },
+  "streamingChannels": [],
+  "extensions": {},
+  "provenance": "adapter-derived"
+}

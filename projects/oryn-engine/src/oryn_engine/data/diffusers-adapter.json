@@ -1,0 +1,76 @@
+{
+  "payload": {
+    "kind": "runtime-adapter",
+    "schemaVersion": 1,
+    "adapterId": "oryn.adapter.diffusers",
+    "version": "1.7.0",
+    "publisher": "oryn.first-party",
+    "foundation": {
+      "id": "oryn.runtime.pytorch",
+      "abi": "1",
+      "minimumVersion": "1.0.0"
+    },
+    "architectures": [
+      "DiffusionPipeline",
+      "StableDiffusionXLPipeline",
+      "WanPipeline"
+    ],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer",
+      "diffusers"
+    ],
+    "taskContracts": [
+      "text-to-image-v1",
+      "image-to-image-v1",
+      "text-to-video-v1",
+      "image-to-video-v1",
+      "image-editing-v1",
+      "image-layers-v1",
+      "unconditional-image-generation-v1",
+      "image-text-to-video-v1",
+      "text-to-music-v1"
+    ],
+    "backends": [
+      "mps",
+      "cuda",
+      "cpu"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [
+      "bitsandbytes-nf4"
+    ],
+    "requiredFiles": [
+      "model_index.json",
+      "*/*.json",
+      "*.safetensors"
+    ],
+    "forbiddenSuffixes": [
+      ".py",
+      ".pyc",
+      ".pkl",
+      ".pickle",
+      ".dylib",
+      ".so",
+      ".dll",
+      ".exe",
+      ".sh"
+    ],
+    "resourceEstimator": "diffusers-v1",
+    "equivalenceClass": "exact-model",
+    "legacyPackIds": [
+      "oryn.diffusers-pytorch"
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "943e09054168db386dce5bcdaa97b07a0d70bcbfb9b86f31f6ea8dd72e844d5a",
+    "signature": "GtoCz15ffHpoRsEj4vdghxmDmSRnPLvlyowdBZ0zwK3FFth9vXmYREKWH6pOgdgfLIQCrNoo9LLS1rySLIcqxKtOx7yCfPGeYw+/xxI4QoJ1Y+Fk3mjT2MxiOR0ulPs2GOKWVhxUIgSXIjhpKn5ZkgGAe9cIA/7v1TxKbBALuTSyDpLEOYAU/fzQHRWtULSJuWGc3hdIM9reL8I1BffSRbT6qIpifdfQyDrGzCwb4Pfg5N2gW7jzTaV1HnZsE4ZxMgqcZz9MlriXwQk9LQVgo1zrNSv6xEItr+zu9W0qWGsNlRUcP3jS2PDoeekG6RHQ2TniJ6B2Dqi+mhfFIVaLWo7c7u1svNm9SNwnhj/ZuE+uHBQuzKT9sIWFEV7IqKyTy1Fbh2isrHsKFfl+HRl++99bTrDk/DacmW9c+SBYY44c9HtGFrfIZs5W2VA3digE1mrDUNJpky/kRdVNV/TI21jqgUDWWAc10MiQhQzbpyGe1UcV5zsuPa1Nn0D2Pj19"
+  }
+}

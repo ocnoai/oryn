@@ -1,0 +1,63 @@
+{
+  "model_type": "exaone-demand",
+  "architectures": [
+    "EXAONEDemand"
+  ],
+  "dim_model": 1024,
+  "dim_embed": 2048,
+  "num_heads": 16,
+  "num_layers": 24,
+  "multiplier": 2.667,
+  "dropout": 0.05,
+  "ssmax": true,
+  "context_length": 8192,
+  "input_patch_size": 16,
+  "input_patch_stride": 16,
+  "output_patch_size": 16,
+  "max_output_patches": 4,
+  "num_reg_tokens": 1,
+  "quantiles": [
+    0.01,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "adapter_enabled": true,
+  "adapter_ranks": [
+    16,
+    4,
+    4,
+    4,
+    4
+  ],
+  "adapter_alpha": 8,
+  "adapter_dropout": 0.05,
+  "adapter_shared_weight": 0.5,
+  "adapter_temperature": 1.0,
+  "adapter_targets": [
+    "to_q",
+    "to_k",
+    "to_v",
+    "to_out",
+    "w12",
+    "w3"
+  ],
+  "torch_dtype": "float32"
+}

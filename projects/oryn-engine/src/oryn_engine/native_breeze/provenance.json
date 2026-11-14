@@ -1,0 +1,105 @@
+{
+  "breeze": {
+    "repository": "breezeblue-ai/breeze-tts",
+    "revision": "6eba901d1845353802652c708a4740fdfc5baa75",
+    "files": [
+      {
+        "file": "LICENSE",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/LICENSE",
+        "bytes": 10141,
+        "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b"
+      },
+      {
+        "file": "requirements.txt",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/requirements.txt",
+        "bytes": 194,
+        "sha256": "1274174e9e53afd4db15c4728fb981c6e8071f9fa867605b6426222c31fc4f3e"
+      },
+      {
+        "file": "infer.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/infer.py",
+        "bytes": 4740,
+        "sha256": "14d39834056bec63dcb73918c96ca8f5d01f534fc7b0d5eda2f5fecc7d13a4b3"
+      },
+      {
+        "file": "breeze_infer/api.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/breeze_infer/api.py",
+        "bytes": 23961,
+        "sha256": "acee4503bcdddfef20ab1078d98d2079e15b8c2dd1e5cde65fcc0b7245460910"
+      },
+      {
+        "file": "breeze_infer/templates.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/breeze_infer/templates.py",
+        "bytes": 12634,
+        "sha256": "52057796b74b95e34adf7238cb07ed1484941a5f6c168760632ac54a0bd0ca06"
+      },
+      {
+        "file": "breeze_infer/runtime.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/breeze_infer/runtime.py",
+        "bytes": 3273,
+        "sha256": "a257d868b867009edddd8ba53b22d3b66394057801c62f198879b1c992637ab9"
+      },
+      {
+        "file": "models/breeze.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/breeze.py",
+        "bytes": 82022,
+        "sha256": "9c408b2323f1fb57f7ddc4217cc72e4d9fce82cbf287a0d2ae4578e63f204cc2"
+      },
+      {
+        "file": "models/breeze_backbone_factory.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/breeze_backbone_factory.py",
+        "bytes": 11388,
+        "sha256": "8d8519dccb82f5363d4e4ff64f182906a0f93dd5853619547b54c89ff22f17ef"
+      },
+      {
+        "file": "models/breeze_base_config.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/breeze_base_config.py",
+        "bytes": 24119,
+        "sha256": "6b8aab8979fef27108176d654077e7f1d797a0ca2ed18e6e1460fdf8ab93b7a9"
+      },
+      {
+        "file": "models/breeze_config.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/breeze_config.py",
+        "bytes": 2043,
+        "sha256": "f37fc58792ea936d24925254dfbd75eafb47c2ca85db46b0c371b94550a3fb25"
+      },
+      {
+        "file": "models/generation_breeze.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/generation_breeze.py",
+        "bytes": 64287,
+        "sha256": "ebc55c27b896423f7a3464cb6dcf1df0918c78bda6b0236235f0f0f4c4d04e84"
+      },
+      {
+        "file": "models/logits_process.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/logits_process.py",
+        "bytes": 2877,
+        "sha256": "43bbcc1c85da535aefc757e44716b0e69701c90db660cf14d77da73d31485b9f"
+      },
+      {
+        "file": "models/t5gemma2_compat.py",
+        "url": "https://raw.githubusercontent.com/breezeblue-ai/breeze-tts/6eba901d1845353802652c708a4740fdfc5baa75/models/t5gemma2_compat.py",
+        "bytes": 30369,
+        "sha256": "5902c67fdd3ca28bb13508cb139d0ea96594f118763bc5cd4d940e78d1cf92bf"
+      }
+    ],
+    "installed": false,
+    "imported": false
+  },
+  "qwen": {
+    "version": "0.1.1",
+    "wheel": "qwen_tts-0.1.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/31/01/95f3ae26f5b7eb2105f69ad2c15af5a28b9ebdd1258a0b27541f5ebd6225/qwen_tts-0.1.1-py3-none-any.whl",
+    "sha256": "11a290d8dabc7ef91a90c54478c8ab19b3edb1d85c0882313721892bdc4af15d",
+    "purpose": "Read-only bundled-library source inspection; not installed or executed"
+  },
+  "codecSourceHashes": {
+    "configuration_qwen3_tts_tokenizer_v2.py": "9e30c24394b00cb0366d7da3482b7436468acc1cd3da1a6fe614a1d34653a5e3",
+    "modeling_qwen3_tts_tokenizer_v2.py": "844e8dd8c0182ef9c6463c874631c22ef3c5a4fd1899dd657016164cc5379628"
+  },
+  "changes": [
+    "Complete native Qwen 0.1.1 codec graph retained, including Mimi encoder, all 16 codebooks and causal decoder. Explicit same default RoPE formula; update HF mask argument name and omit removed cache-position argument. Remove optional hub-kernel and documentation/deprecation decorators. No new dependency environment.",
+    "Breeze main graph uses pinned native Qwen3, Llama depth decoder, T5Gemma2 text encoder and retained full Mimi codec. One shared audio embedding is restored exactly. Only the reviewed merged-LoRA/merged-special-token export is admitted.",
+    "One unpadded automatic-voice text segment with native S0 prefix and tokenizer roundtrip; cached two-level autoregression, all 16 codebooks, reserved-token masking, native top-50/0.9 sampling, generated-token repetition penalty 1.1, mandatory backbone EOS and native Qwen chunked waveform decoding. No reference cloning or voice-design instruction surface."
+  ],
+  "originalWeightsIncluded": false
+}

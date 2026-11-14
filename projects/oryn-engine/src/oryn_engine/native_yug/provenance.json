@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/birla-ai-labs/yug",
+  "revision": "2ad7da7133d5cb5b27be3ac1cc5e7963e2ba4e79",
+  "files": [
+    {
+      "source": "src/yug/model.py",
+      "file": "model.py",
+      "sha256": "57644e01fa39b1a297de9a03cc987fa7fb23c643b61f14c1b9a40a5e8009a25a"
+    },
+    {
+      "source": "LICENSE",
+      "file": "LICENSE",
+      "sha256": "08c8883a97e8fefc02e780e19271b41904e6c49c352493dd53a6adaa9cef5b81"
+    },
+    {
+      "source": "NOTICE",
+      "file": "NOTICE",
+      "sha256": "17d2fd80e7688f23cd93338a029185c5bcfd5e5e0b02f6d311326406a7b5c2f3"
+    }
+  ],
+  "modifications": "Numerical model source unchanged. Package initializer is engine-owned; no hub, pipeline or checkpoint loading code included."
+}

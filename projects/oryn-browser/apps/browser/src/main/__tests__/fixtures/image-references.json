@@ -1,0 +1,330 @@
+{
+  "legacy": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "image-editing-v1.cec12e65f1ad0756a0540c40",
+    "contract": {
+      "id": "image-editing-v1",
+      "revision": 1
+    },
+    "task": "image-to-image",
+    "inputModalities": ["image", "text"],
+    "outputModalities": ["image"],
+    "inputSchemaRef": "taskInput.image-editing-v1",
+    "resultSchemaRef": "taskResult.image-editing-v1",
+    "features": {
+      "imageEditing": "unknown",
+      "deterministicSeed": "unknown",
+      "multipleReferenceImages": "unknown"
+    },
+    "parameters": {
+      "negativePrompt": {
+        "inputPointer": "/negativePrompt",
+        "valueSchema": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "width": {
+        "inputPointer": "/width",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "height": {
+        "inputPointer": "/height",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "steps": {
+        "inputPointer": "/steps",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "guidanceScale": {
+        "inputPointer": "/guidanceScale",
+        "valueSchema": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "seed": {
+        "inputPointer": "/seed",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  },
+  "optional": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "image-editing-v1.0df83f81d193ae00c32849aa",
+    "contract": {
+      "id": "image-editing-v1",
+      "revision": 1
+    },
+    "task": "image-to-image",
+    "inputModalities": ["image", "text"],
+    "outputModalities": ["image"],
+    "inputSchemaRef": "taskInput.image-editing-v1",
+    "resultSchemaRef": "taskResult.image-editing-v1",
+    "features": {
+      "imageEditing": "unknown",
+      "deterministicSeed": "unknown",
+      "multipleReferenceImages": "supported"
+    },
+    "parameters": {
+      "negativePrompt": {
+        "inputPointer": "/negativePrompt",
+        "valueSchema": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "width": {
+        "inputPointer": "/width",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "height": {
+        "inputPointer": "/height",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "steps": {
+        "inputPointer": "/steps",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "guidanceScale": {
+        "inputPointer": "/guidanceScale",
+        "valueSchema": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "seed": {
+        "inputPointer": "/seed",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "referenceImageArtifactIds": {
+        "inputPointer": "/referenceImageArtifactIds",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "array",
+              "maxItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^artifact_[A-Za-z0-9_-]{20,80}$"
+              }
+            },
+            {
+              "minItems": 0,
+              "maxItems": 2
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      }
+    },
+    "limits": {
+      "minReferenceImages": 1,
+      "maxReferenceImages": 3
+    },
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  },
+  "pair": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "image-editing-v1.492101efb2d0d7e181a0c195",
+    "contract": {
+      "id": "image-editing-v1",
+      "revision": 1
+    },
+    "task": "image-to-image",
+    "inputModalities": ["image", "text"],
+    "outputModalities": ["image"],
+    "inputSchemaRef": "taskInput.image-editing-v1",
+    "resultSchemaRef": "taskResult.image-editing-v1",
+    "features": {
+      "imageEditing": "unknown",
+      "deterministicSeed": "unknown",
+      "multipleReferenceImages": "supported"
+    },
+    "parameters": {
+      "negativePrompt": {
+        "inputPointer": "/negativePrompt",
+        "valueSchema": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "width": {
+        "inputPointer": "/width",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "height": {
+        "inputPointer": "/height",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 64,
+          "maximum": 1024,
+          "multipleOf": 16
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "steps": {
+        "inputPointer": "/steps",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "guidanceScale": {
+        "inputPointer": "/guidanceScale",
+        "valueSchema": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "seed": {
+        "inputPointer": "/seed",
+        "valueSchema": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      },
+      "referenceImageArtifactIds": {
+        "inputPointer": "/referenceImageArtifactIds",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "array",
+              "maxItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^artifact_[A-Za-z0-9_-]{20,80}$"
+              }
+            },
+            {
+              "minItems": 1,
+              "maxItems": 1
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": ["result"]
+      }
+    },
+    "limits": {
+      "minReferenceImages": 2,
+      "maxReferenceImages": 2
+    },
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  }
+}

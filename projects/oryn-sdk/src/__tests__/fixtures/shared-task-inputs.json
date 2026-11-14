@@ -1,0 +1,215 @@
+{
+  "zero-shot-classification-v1": {
+    "text": "A lovely sunny day",
+    "labels": [
+      "weather",
+      "finance"
+    ]
+  },
+  "image-embeddings-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "image-segmentation-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "mask-generation-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "points": [
+      {
+        "x": 0.5,
+        "y": 0.5,
+        "label": 1
+      }
+    ]
+  },
+  "zero-shot-object-detection-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "labels": [
+      "cat",
+      "dog"
+    ]
+  },
+  "image-to-text-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "visual-question-answering-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "question": "What is in the image?"
+  },
+  "image-editing-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "prompt": "Make the sky blue",
+    "width": 256,
+    "height": 256
+  },
+  "image-layers-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "prompt": "Separate the foreground and background",
+    "resolution": 640,
+    "layers": 2
+  },
+  "table-question-answering-v1": {
+    "question": "Which city is in France?",
+    "columns": [
+      "City",
+      "Country"
+    ],
+    "rows": [
+      [
+        "Paris",
+        "France"
+      ],
+      [
+        "Rome",
+        "Italy"
+      ]
+    ]
+  },
+  "document-question-answering-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "question": "What is the total?",
+    "words": [
+      "Total",
+      "42.00"
+    ],
+    "boxes": [
+      [
+        0.1,
+        0.1,
+        0.4,
+        0.2
+      ],
+      [
+        0.5,
+        0.1,
+        0.7,
+        0.2
+      ]
+    ]
+  },
+  "keypoint-detection-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "video-classification-v1": {
+    "videoArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "video-question-answering-v1": {
+    "videoArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "question": "What happens first?"
+  },
+  "voice-activity-detection-v1": {
+    "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "visual-document-retrieval-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "queries": [
+      "Invoice total"
+    ]
+  },
+  "unconditional-image-generation-v1": {
+    "width": 256,
+    "height": 256,
+    "steps": 10,
+    "seed": 3
+  },
+  "audio-question-answering-v1": {
+    "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "instruction": "Describe the sound."
+  },
+  "audio-transformation-v1": {
+    "operation": "enhance",
+    "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "multimodal-generation-v1": {
+    "instruction": "Describe the image.",
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "outputMode": "text",
+    "inputMode": "image"
+  },
+  "image-text-to-video-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "prompt": "The object rotates."
+  },
+  "video-editing-v1": {
+    "videoArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "operation": "restore"
+  },
+  "tabular-classification-v1": {
+    "columns": [
+      {
+        "name": "temperature",
+        "type": "numeric"
+      }
+    ],
+    "trainingRows": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "targets": [
+      "cold",
+      "warm"
+    ],
+    "queryRows": [
+      [
+        1.5
+      ]
+    ]
+  },
+  "tabular-regression-v1": {
+    "columns": [
+      {
+        "name": "temperature",
+        "type": "numeric"
+      }
+    ],
+    "trainingRows": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "targets": [
+      2,
+      4
+    ],
+    "queryRows": [
+      [
+        1.5
+      ]
+    ]
+  },
+  "time-series-forecasting-v1": {
+    "context": [
+      1,
+      2,
+      3
+    ],
+    "horizon": 2
+  },
+  "transcription-v1": {
+    "audioArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "language": "auto",
+    "timestamps": false
+  },
+  "image-classification-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "topK": 3
+  },
+  "pose-estimation-v1": {
+    "imageArtifactId": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa",
+    "boxes": [
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ]
+  }
+}

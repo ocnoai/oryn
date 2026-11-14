@@ -1,0 +1,412 @@
+[
+  {
+    "name": "/compute_column_logits/column_output/column_output_bias:0",
+    "shape": [],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/compute_column_logits/column_output/column_output_weights:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/compute_token_logits/output/output_bias:0",
+    "shape": [],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/compute_token_logits/output/output_weights:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/LayerNorm/beta:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/LayerNorm/gamma:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/position_embeddings/embeddings:0",
+    "shape": [
+      512,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_0/embeddings:0",
+    "shape": [
+      3,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_1/embeddings:0",
+    "shape": [
+      256,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_2/embeddings:0",
+    "shape": [
+      256,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_3/embeddings:0",
+    "shape": [
+      2,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_4/embeddings:0",
+    "shape": [
+      256,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_5/embeddings:0",
+    "shape": [
+      256,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/token_type_embeddings_6/embeddings:0",
+    "shape": [
+      10,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/embeddings/word_embeddings/weight:0",
+    "shape": [
+      30522,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/output/LayerNorm/beta:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/output/dense/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/output/dense/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/key/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/key/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/query/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/query/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/value/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/attention/self/value/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/intermediate/dense/bias:0",
+    "shape": [
+      512
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/intermediate/dense/kernel:0",
+    "shape": [
+      128,
+      512
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/output/LayerNorm/beta:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/output/LayerNorm/gamma:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/output/dense/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._0/output/dense/kernel:0",
+    "shape": [
+      512,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/output/LayerNorm/beta:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/output/LayerNorm/gamma:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/output/dense/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/output/dense/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/key/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/key/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/query/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/query/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/value/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/attention/self/value/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/intermediate/dense/bias:0",
+    "shape": [
+      512
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/intermediate/dense/kernel:0",
+    "shape": [
+      128,
+      512
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/output/LayerNorm/beta:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/output/LayerNorm/gamma:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/output/dense/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/encoder/layer_._1/output/dense/kernel:0",
+    "shape": [
+      512,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/pooler/dense/bias:0",
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  },
+  {
+    "name": "/tapas/tf_tapas_for_question_answering_6/tapas/pooler/dense/kernel:0",
+    "shape": [
+      128,
+      128
+    ],
+    "dtype": "float32",
+    "filters": []
+  }
+]

@@ -1,0 +1,135 @@
+<!doctype html><html><body><script type="module">
+const check = (value, message) => { if (!value) throw new Error(message); };
+const wait = async predicate => { for(let i=0;i<200;i++){if(predicate())return;await new Promise(resolve=>setTimeout(resolve,50));}throw new Error('UI timeout: '+document.querySelector('#render-status')?.textContent); };
+try {
+  localStorage.removeItem('oryn-caption-design-v1');
+  const built = new URL(location.href).searchParams.has('built');
+  const html = await fetch(built ? '/dist/index.html' : '/index.html').then(response=>response.text());
+  const parsed = new DOMParser().parseFromString(html,'text/html');
+  const modulePath = built ? '/dist' + parsed.querySelector('script[src^="/assets/"]').getAttribute('src') : '../src/main.ts';
+  if (built) for (const original of parsed.querySelectorAll('link[rel=stylesheet]')) {
+    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = '/dist' + original.getAttribute('href'); document.head.append(link);
+  }
+  parsed.querySelectorAll('script').forEach(script=>script.remove());
+  document.body.innerHTML = parsed.body.innerHTML;
+  let metadata, saved, released = false, bytes = 0;
+  const ok = value=>({ok:true,value});
+  window.localAI = {
+    getCapabilities:async()=>({runtimeAvailable:true}),
+    requestModel:()=>{throw new Error('Import/render must not request a model');},
+    invokeJob:()=>{throw new Error('Import/render must not invoke a model');},
+    beginArtifactCreate:async value=>{metadata=value;bytes=0;return ok({uploadId:'test-upload'});},
+    appendArtifactChunk:async(id,chunk)=>{bytes+=chunk.byteLength;return ok();},
+    finishArtifactCreate:async()=>ok({id:'test-artifact'}),
+    saveArtifactAs:async(id,options)=>{saved=options.suggestedFilename;return ok();},
+    releaseArtifact:async()=>{released=true;return ok();},
+  };
+  await import(modulePath);
+  const fixture = await fetch('/tests/fixture.mp4').then(response=>response.blob());
+  function select(id,file){const transfer=new DataTransfer();transfer.items.add(file);const input=document.querySelector(id);input.files=transfer.files;input.dispatchEvent(new Event('change'));}
+  select('#video-file',new File([fixture],'fixture.mp4',{type:'video/mp4'}));
+  select('#subtitle-file',new File(['1\n00:00:00,100 --> 00:00:01,500\nHello world\n'],'fixture.srt'));
+  await wait(()=>!document.querySelector('#editor').hidden);
+  check(document.querySelector('#summary').textContent.includes('imported'),'Import not displayed');
+  check(document.querySelector('#render-video').disabled,'SRT incorrectly offered word highlighting');
+  document.querySelector('#caption-style').value='plain';
+  document.querySelector('#caption-style').dispatchEvent(new Event('change'));
+  document.querySelector('#render-video').click();
+  await wait(()=>!document.querySelector('#save-video').disabled);
+  check(!document.querySelector('#rendered-preview').hidden,'Rendered preview missing');
+  document.querySelector('#save-video').click();
+  await wait(()=>released);
+  check(saved==='fixture-captioned.mp4','Unexpected output filename: '+saved);
+  check(bytes===metadata.sizeBytes && bytes>1000,'Artifact upload incomplete');
+  document.querySelector('#cues textarea').value='Edited text';
+  document.querySelector('#cues textarea').dispatchEvent(new Event('input',{bubbles:true}));
+  check(document.querySelector('#save-video').disabled,'Stale rendered output still saveable after editing');
+  check(document.querySelector('#rendered-preview').hidden,'Stale preview not cleared');
+  const videoBytes=bytes;
+  const timed={schema:'oryn-caption-timing/1',cues:[{text:'Hello world',startMs:100,endMs:1500,spans:[
+    {text:'Hello',startMs:100,endMs:700},{text:'world',startMs:700,endMs:1500},
+  ]}]};
+  select('#subtitle-file',new File([JSON.stringify(timed)],'fixture.oryn-captions.json'));
+  await wait(()=>document.querySelector('#summary').textContent.includes('restored'));
+  document.querySelector('#caption-style').value='highlight';
+  document.querySelector('#caption-style').dispatchEvent(new Event('change'));
+  document.querySelector('#cues textarea').value='Hello world!';
+  document.querySelector('#cues textarea').dispatchEvent(new Event('input',{bubbles:true}));
+  check(!document.querySelector('#render-video').disabled,'Punctuation edit lost word timing');
+  document.querySelector('#render-video').click();
+  await wait(()=>!document.querySelector('#save-video').disabled);
+  released=false;
+  document.querySelector('#save-timing').click();
+  await wait(()=>released);
+  check(saved==='fixture.oryn-captions.json','Timing companion filename wrong');
+  select('#subtitle-file',new File(['1\n00:00:00,100 --> 00:00:01,500\nHello world!\n'],'correction.srt'));
+  await wait(()=>document.querySelector('#summary').textContent.includes('reused'));
+  check(!document.querySelector('#render-video').disabled,'Corrected SRT lost existing word timings');
+  check(document.querySelectorAll('[data-preset]').length===6,'Expected six presets, got '+document.querySelectorAll('[data-preset]').length);
+  document.querySelector('[data-preset="card"]').click();
+  check(document.querySelector('#design-background').value==='#fff6e8','Preset did not populate controls');
+  const change=(selector,value)=>{const input=document.querySelector(selector);input.value=value;input.dispatchEvent(new Event('input',{bubbles:true}));};
+  document.querySelector('#caption-style').value='plain';
+  document.querySelector('#caption-style').dispatchEvent(new Event('change'));
+  change('#design-size','9'); change('#design-y','20'); change('#design-color','#ff3333');
+  document.querySelector('#design-first').click();
+  const canvas=document.querySelector('#design-preview');
+  const redPosition=canvas=>{
+    const data=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data;
+    let count=0,y=0;
+    for(let i=0;i<data.length;i+=4)if(data[i]>160&&data[i+1]<115&&data[i+2]<115){count++;y+=Math.floor(i/4/canvas.width);}
+    return {count,y:y/count};
+  };
+  await wait(()=>redPosition(canvas).count>10);
+  const previewPosition=redPosition(canvas);
+  check(previewPosition.y<canvas.height*.4,'Position control did not move preview text');
+  canvas.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));
+  check(Number(document.querySelector('#design-x').value)===51,'Keyboard positioning failed');
+  canvas.scrollIntoView({block:'center'});
+  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  const rectangle=canvas.getBoundingClientRect();
+  window.smokeDrag={x:Math.round(rectangle.left+rectangle.width/2),y:Math.round(rectangle.top+rectangle.height/2)};
+  await wait(()=>Number(document.querySelector('#design-x').value)>52);
+
+  document.querySelector('#render-video').click();
+  await wait(()=>!document.querySelector('#save-video').disabled);
+  const rendered=document.querySelector('#rendered-preview');
+  await wait(()=>rendered.readyState>=2);
+  rendered.currentTime=.4;
+  await new Promise(resolve=>rendered.onseeked=resolve);
+  const capture=document.createElement('canvas');capture.width=canvas.width;capture.height=canvas.height;
+  capture.getContext('2d').drawImage(rendered,0,0,capture.width,capture.height);
+  const exportedPosition=redPosition(capture);
+  check(exportedPosition.count>10,'Custom color missing in encoded output');
+  check(Math.abs(previewPosition.y-exportedPosition.y)<4,'Preview and exported caption position differ');
+  window.smokeFrame=capture.toDataURL('image/png');
+  change('#ending-kind','animation');
+  check(!document.querySelector('#ending-options').hidden&&!document.querySelector('#ending-animation-fields').hidden,'Ending controls missing');
+  check(document.querySelector('#save-video').disabled&&rendered.hidden,'Ending edit did not invalidate old export');
+  change('#ending-duration','1');
+  change('#ending-text','See you soon');
+  document.querySelector('#ending-play').click();
+  await wait(()=>document.querySelector('#ending-status').textContent.includes('Preview complete'));
+  document.querySelector('#render-video').click();
+  await wait(()=>!document.querySelector('#save-video').disabled);
+  check(document.querySelector('#render-status').textContent.includes('ending included'),'Ending not passed to renderer');
+  await wait(()=>rendered.readyState>=2);
+  check(rendered.duration>2.8&&rendered.duration<3.5,'Animated ending duration wrong: '+rendered.duration);
+  change('#ending-kind','video');
+  check(document.querySelector('#render-video').disabled,'Missing ending file allowed render');
+  const endingFixture=await fetch('/tests/ending-fixture.mp4').then(response=>response.blob());
+  select('#ending-file',new File([endingFixture],'ending-fixture.mp4',{type:'video/mp4'}));
+  check(!document.querySelector('#render-video').disabled,'Ending file did not enable render');
+  change('#ending-transition','fade-black');
+  document.querySelector('#ending-audio').checked=false;
+  document.querySelector('#ending-audio').dispatchEvent(new Event('input',{bubbles:true}));
+  document.querySelector('#render-video').click();
+  await wait(()=>!document.querySelector('#save-video').disabled);
+  await wait(()=>rendered.readyState>=2);
+  check(rendered.duration>3.2&&rendered.duration<3.9,'Uploaded ending duration wrong: '+rendered.duration);
+  change('#ending-kind','none');
+  check(document.querySelector('#ending-options').hidden&&!document.querySelector('#render-video').disabled&&document.querySelector('#save-video').disabled,'Removing ending did not reset export');
+  change('#ending-kind','animation');
+  window.smokeResult={ok:true,built,import:true,render:true,artifactBytes:videoBytes,saveFilename:'fixture-captioned.mp4',artifactReleased:true,editInvalidation:true,srtHighlightBlocked:true,timingImport:true,correctedWordRender:true,timingExport:true,srtCorrectionReuse:true,presets:6,customColor:true,keyboardPosition:true,dragPosition:true,previewTextY:previewPosition.y,exportTextY:exportedPosition.y,endingPreview:true,animatedEnding:true,uploadedEnding:true,endingInvalidation:true,endingRemoval:true,bridge:'test stub; no native save dialog exercised'};
+}catch(error){window.smokeResult={ok:false,error:String(error),stack:error.stack};}
+</script></body></html>

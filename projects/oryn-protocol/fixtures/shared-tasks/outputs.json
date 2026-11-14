@@ -1,0 +1,521 @@
+{
+  "zero-shot-classification-v1": {
+    "predictions": [
+      {
+        "label": "cat",
+        "score": 0.8
+      },
+      {
+        "label": "dog",
+        "score": 0.2
+      }
+    ],
+    "multiLabel": false
+  },
+  "image-embeddings-v1": {
+    "vector": [
+      0.6,
+      0.8
+    ],
+    "dimensions": 2,
+    "normalized": true,
+    "pooling": "cls"
+  },
+  "zero-shot-object-detection-v1": {
+    "detections": [
+      {
+        "label": "cat",
+        "score": 0.9,
+        "box": [
+          1,
+          2,
+          50,
+          50
+        ]
+      }
+    ],
+    "width": 64,
+    "height": 64
+  },
+  "image-to-text-v1": {
+    "text": "A cat"
+  },
+  "visual-question-answering-v1": {
+    "text": "cat"
+  },
+  "image-segmentation-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "image/png",
+      "sizeBytes": 128
+    }
+  },
+  "mask-generation-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "image/png",
+      "sizeBytes": 128
+    }
+  },
+  "image-editing-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "image/png",
+      "sizeBytes": 128
+    }
+  },
+  "image-layers-v1": {
+    "kind": "multi",
+    "outputs": [
+      {
+        "kind": "artifact",
+        "artifact": {
+          "outputId": "output_fixture",
+          "internalPath": "/controlled/output/result.png",
+          "mimeType": "image/png",
+          "sizeBytes": 128
+        }
+      }
+    ]
+  },
+  "table-question-answering-v1": {
+    "answer": "Paris",
+    "cells": [
+      {
+        "row": 0,
+        "column": 0,
+        "text": "Paris"
+      }
+    ],
+    "aggregation": "none"
+  },
+  "document-question-answering-v1": {
+    "answer": "42.00",
+    "score": 0.9,
+    "wordStart": 1,
+    "wordEnd": 1,
+    "box": [
+      0.5,
+      0.1,
+      0.7,
+      0.2
+    ]
+  },
+  "keypoint-detection-v1": {
+    "width": 640,
+    "height": 480,
+    "keypoints": [
+      {
+        "x": 100,
+        "y": 20,
+        "score": 0.9
+      }
+    ]
+  },
+  "video-classification-v1": {
+    "predictions": [
+      {
+        "label": "running",
+        "score": 0.9
+      }
+    ],
+    "sampledTimestamps": [
+      0,
+      1
+    ],
+    "durationSeconds": 2
+  },
+  "video-question-answering-v1": {
+    "text": "The person opens the door.",
+    "sampledTimestamps": [
+      0,
+      1
+    ],
+    "durationSeconds": 2
+  },
+  "voice-activity-detection-v1": {
+    "segments": [
+      {
+        "start": 0.5,
+        "end": 1.0
+      }
+    ],
+    "durationSeconds": 2
+  },
+  "visual-document-retrieval-v1": {
+    "dimensions": 128,
+    "normalized": true,
+    "scoring": "sum-max-cosine",
+    "documentVectors": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "queries": [
+      {
+        "vectors": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "score": 1.0
+      }
+    ]
+  },
+  "unconditional-image-generation-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "image/png",
+      "sizeBytes": 128
+    }
+  },
+  "audio-question-answering-v1": {
+    "text": "A bell rings."
+  },
+  "audio-transformation-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "audio/wav",
+      "sizeBytes": 128
+    }
+  },
+  "multimodal-generation-v1": {
+    "kind": "structured",
+    "value": {
+      "text": "A red cube."
+    }
+  },
+  "image-text-to-video-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "video/mp4",
+      "sizeBytes": 128
+    }
+  },
+  "video-editing-v1": {
+    "kind": "artifact",
+    "artifact": {
+      "outputId": "output_fixture",
+      "internalPath": "/controlled/output/result.png",
+      "mimeType": "video/mp4",
+      "sizeBytes": 128
+    }
+  },
+  "tabular-classification-v1": {
+    "classes": [
+      "cold",
+      "warm"
+    ],
+    "predictions": [
+      {
+        "label": "warm",
+        "probabilities": [
+          0.4,
+          0.6
+        ]
+      }
+    ]
+  },
+  "tabular-regression-v1": {
+    "predictions": [
+      3
+    ]
+  },
+  "time-series-forecasting-v1": {
+    "predictions": [
+      4,
+      5
+    ],
+    "quantiles": []
+  },
+  "pose-estimation-v1": {
+    "width": 32,
+    "height": 32,
+    "poses": [
+      {
+        "box": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "keypoints": [
+          {
+            "id": 0,
+            "label": "nose",
+            "x": 16,
+            "y": 16,
+            "confidence": 0.75,
+            "visible": true
+          }
+        ]
+      }
+    ]
+  }
+}

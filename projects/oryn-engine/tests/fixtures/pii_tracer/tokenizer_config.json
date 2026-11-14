@@ -1,0 +1,15 @@
+{
+  "add_prefix_space": false,
+  "backend": "tokenizers",
+  "bos_token": null,
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "<|endoftext|>",
+  "errors": "replace",
+  "mask_token": "â½Ĺ",
+  "model_max_length": 131072,
+  "pad_token": "<|endoftext|>",
+  "sep_token": "<|endoftext|>",
+  "split_special_tokens": false,
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "unk_token": null
+}

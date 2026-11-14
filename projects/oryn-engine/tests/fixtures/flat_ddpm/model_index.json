@@ -1,0 +1,11 @@
+{
+  "_class_name": ["modeling_ddpm", "CustomPipeline"],
+  "scheduler": [
+    "diffusers",
+    "DDPMScheduler"
+  ],
+  "unet": [
+    "diffusers",
+    "UNet2DModel"
+  ]
+}

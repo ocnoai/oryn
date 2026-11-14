@@ -1,0 +1,566 @@
+[
+  {
+    "name": "model.shared/model.shared/embeddings:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/embed_positions/embeddings:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/self_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/final_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.0/final_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/self_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/final_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/encoder/layers.1/final_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/embed_positions/embeddings:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/self_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/encoder_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/final_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.0/final_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/self_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/k_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/k_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/q_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/q_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/v_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/v_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/out_proj/kernel:0",
+    "shape": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn/out_proj/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/encoder_attn_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/fc1/kernel:0",
+    "shape": [
+      32,
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/fc1/bias:0",
+    "shape": [
+      64
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/fc2/kernel:0",
+    "shape": [
+      64,
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/fc2/bias:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/final_layer_norm/gamma:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "tf_marian_mt_model/model/decoder/layers.1/final_layer_norm/beta:0",
+    "shape": [
+      32
+    ]
+  },
+  {
+    "name": "final_logits_bias:0",
+    "shape": [
+      1,
+      32
+    ]
+  }
+]

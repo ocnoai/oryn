@@ -1,0 +1,10 @@
+{
+  "repository": "tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa",
+  "revision": "99771655242e7adea26691ceeff2a11d06d3d087",
+  "files": {
+    "config.json": "Original publisher configuration, unchanged.",
+    "header.json": "Tensor names and shapes read from pytorch_model.bin by the closed numeric archive reader over HTTP range requests; no weights were downloaded for this fixture."
+  },
+  "pytorchModelBinSha256": "7ab66c73b95e387e7944097f0d0cb067980e4544e2d795a0d011e49001f5f12c",
+  "representativeOriginal": "A representative upstream model was executed once to validate the native Detectron2 backbone implementation."
+}

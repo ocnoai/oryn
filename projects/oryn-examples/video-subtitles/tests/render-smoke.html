@@ -1,0 +1,50 @@
+<!doctype html><html><body><canvas id="output"></canvas><script type="module">
+import { renderCaptionedVideo } from '../src/video-renderer.ts';
+const check = (value, message) => { if (!value) throw new Error(message); };
+try {
+  const fixture = await fetch('/tests/fixture.mp4').then(response => response.blob());
+  const source = new File([fixture], 'fixture.mp4', { type: 'video/mp4' });
+  const cues = [{ text: 'Hello world', startMs: 100, endMs: 1400, spans: [
+    {text:'Hello', startMs:100, endMs:700}, {text:'world', startMs:700, endMs:1400},
+  ] }];
+  const output = document.querySelector('#output');
+  const options = { file: source, cues, canvas: output, style: new URLSearchParams(location.search).get('effect') || 'highlight', design: {size:8}, signal: new AbortController().signal, onProgress() {} };
+  const blob = await renderCaptionedVideo(options);
+  check(blob.size > 1000, 'Output empty');
+  const decode = new AudioContext();
+  const samples = await decode.decodeAudioData(await blob.arrayBuffer());
+  const values = samples.getChannelData(0);
+  const rms = Math.sqrt(values.reduce((sum, value) => sum + value * value, 0) / values.length);
+  await decode.close();
+  check(rms > 0.01, 'Original audio missing');
+  check(samples.duration > 1.4 && samples.duration < 2.6, 'Audio duration changed');
+  const video = document.createElement('video');
+  video.src = URL.createObjectURL(blob); video.muted = true;
+  await new Promise((resolve, reject) => { video.onloadeddata = resolve; video.onerror = reject; });
+  video.currentTime = 0.4;
+  await new Promise(resolve => video.onseeked = resolve);
+  const capture = document.createElement('canvas'); capture.width = 320; capture.height = 180;
+  const captureContext = capture.getContext('2d'); captureContext.drawImage(video, 0, 0, 320, 180);
+  const pixels = captureContext.getImageData(0, 0, 320, 180).data;
+  let yellow = 0;
+  for (let i = 0; i < pixels.length; i += 4) if(pixels[i]>170 && pixels[i+1]>140 && pixels[i+2]<110) yellow++;
+  window.smokeFrame = capture.toDataURL('image/png');
+  check(yellow > 10, 'Highlighted caption not present in encoded video');
+  window.smokeFrame = capture.toDataURL('image/png');
+  const centroid = data => {let sum=0,count=0;for(let i=0;i<data.length;i+=4){if(data[i]>170&&data[i+1]>140&&data[i+2]<110){sum+=(i/4)%320;count++;}}return sum/count;};
+  const firstWordX=centroid(pixels);
+  video.currentTime=0.95;
+  await new Promise(resolve=>video.onseeked=resolve);
+  captureContext.drawImage(video,0,0,320,180);
+  const secondWordX=centroid(captureContext.getImageData(0,0,320,180).data);
+  check(secondWordX-firstWordX>15,'Highlight did not advance to the second word');
+  URL.revokeObjectURL(video.src);
+  const abort = new AbortController();
+  let cancelled = false;
+  try { await renderCaptionedVideo({...options, signal: abort.signal, onProgress: value => {if(value > 0.2) abort.abort();}}); } catch (error) { cancelled = error.name === 'AbortError'; }
+  check(cancelled, 'Cancellation did not reject partial output');
+  const retry = await renderCaptionedVideo(options);
+  check(retry.size > 1000, 'Retry after cancellation failed');
+  window.smokeResult = {ok:true, mimeType:blob.type, bytes:blob.size, audioRms:rms, audioDuration:samples.duration, yellowPixels:yellow,highlightMovedPixels:secondWordX-firstWordX, cancellation:true, retry:true};
+} catch(error) { window.smokeResult = {ok:false,error:String(error),stack:error.stack}; }
+</script></body></html>

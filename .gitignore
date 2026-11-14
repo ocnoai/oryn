@@ -1,0 +1,15 @@
+.workspace-artifacts/
+.pnpm-store/
+node_modules/
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+.cache/
+.env
+.env.*
+!.env.example
+!.env.*.example

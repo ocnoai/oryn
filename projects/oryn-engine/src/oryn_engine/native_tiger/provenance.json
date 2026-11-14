@@ -1,0 +1,278 @@
+{
+  "repository": "JusperLee/TIGER-DnR",
+  "revision": "b7a59560bbca10febbcd46fb01600f868e587f57",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://huggingface.co/JusperLee/TIGER-DnR/resolve/b7a59560bbca10febbcd46fb01600f868e587f57/README.md",
+      "bytes": 3583,
+      "sha256": "8900edc8ca824eac3fd1caba1f246d4972656c8a746bb1585014bf2874c504f4"
+    },
+    {
+      "file": "config.json",
+      "url": "https://huggingface.co/JusperLee/TIGER-DnR/resolve/b7a59560bbca10febbcd46fb01600f868e587f57/config.json",
+      "bytes": 250,
+      "sha256": "ba9d2f833bf2f3a5855a35d0ccd11c786f6b92f1a482d84404bc4673edb29b54"
+    }
+  ],
+  "headerBytes": 243176,
+  "tensors": 2304,
+  "originalLearnedPayloadBytes": 0,
+  "source": {
+    "repository": "JusperLee/TIGER",
+    "revision": "9f18d4a10a7137e1ce8052cfb62215179f1287b6",
+    "files": [
+      {
+        "file": "DataPreProcess/preprocess_lrs2_audio.py",
+        "bytes": 2277,
+        "sha256": "065dcb375ac8e66590a70c129bce5d6723d766d20f4b3ca5687d35d93b24dafe"
+      },
+      {
+        "file": "DataPreProcess/process_echoset.py",
+        "bytes": 2477,
+        "sha256": "2c331985afe139fa17c48dac1c247adfee652381cc07a6fdab280206de9631fd"
+      },
+      {
+        "file": "DataPreProcess/process_librimix.py",
+        "bytes": 1793,
+        "sha256": "0791211ba34e29b7d7ef5cb4534fb5f60136b5ab966da86960cd45c407a36ad2"
+      },
+      {
+        "file": "LICENSE",
+        "bytes": 1072,
+        "sha256": "edc64d62aa021be7612337d2ced140375f52e4fd064b2f9cf6e656913d01bfa6"
+      },
+      {
+        "file": "audio_test.py",
+        "bytes": 4324,
+        "sha256": "2fddd66df7314fcca19e856e46872996e25fd37313160a0bd91dda90889c5f33"
+      },
+      {
+        "file": "audio_train.py",
+        "bytes": 7167,
+        "sha256": "0459c2cbebcade3d01a4153d85ae3a780b094e044679aa9d70c941c5dd7af0f5"
+      },
+      {
+        "file": "evaluated_mac_params.py",
+        "bytes": 1648,
+        "sha256": "922cc7c675c35f49b37a3198cc6410842968a0fa7acba285102921646104c2ab"
+      },
+      {
+        "file": "inference_dnr.py",
+        "bytes": 943,
+        "sha256": "9a522dbee449070f4b6b0952421c0b955cbe8610b9d3a361cf0464f6f9de3219"
+      },
+      {
+        "file": "inference_speech.py",
+        "bytes": 3850,
+        "sha256": "e92c0a09a737a2a359835801a4c5500a2314add524110fb40159d1dfa118799a"
+      },
+      {
+        "file": "look2hear/datas/Libri2Mix16.py",
+        "bytes": 10444,
+        "sha256": "5b16f9677def6702ac13bbc4831dd3959043ff52c1d760a0b7375aaa5f94e023"
+      },
+      {
+        "file": "look2hear/datas/__init__.py",
+        "bytes": 228,
+        "sha256": "0923ef87f1cbcc845bf0daecc7a0e22516c838868d24a43fdc20384b17c1b2f2"
+      },
+      {
+        "file": "look2hear/datas/echosetdatamodule.py",
+        "bytes": 9930,
+        "sha256": "f11d5fde0547d5d27be3f6154583c1cf853604e67c75a0aa6f1bfe9e3e3de6a9"
+      },
+      {
+        "file": "look2hear/datas/lrs2datamodule.py",
+        "bytes": 12811,
+        "sha256": "ee283c8d65846cf9a9c91d4481036418bfc39da9dc3cd76b3ba2b27b461e4e1e"
+      },
+      {
+        "file": "look2hear/layers/__init__.py",
+        "bytes": 989,
+        "sha256": "292d1beda52b95332e7dcb45503769b7f0e0609be443c301838497628d6ffc91"
+      },
+      {
+        "file": "look2hear/layers/activations.py",
+        "bytes": 1283,
+        "sha256": "bc3707fd81e8783007b1dfe7fd23f9cdde5fc5c087028a62e7c1415e70d3cfc1"
+      },
+      {
+        "file": "look2hear/layers/cnnlayers.py",
+        "bytes": 28812,
+        "sha256": "22ab116321185b9854cd9574336fed2143ad0b61a4655c94b3604bbaad9c1500"
+      },
+      {
+        "file": "look2hear/layers/enc_dec.py",
+        "bytes": 17568,
+        "sha256": "4ddab789ed083f544ca59b0718d54278e613d0160b18ef41ef7c9b9783993e84"
+      },
+      {
+        "file": "look2hear/layers/normalizations.py",
+        "bytes": 6228,
+        "sha256": "5d8305d3b45afde0ff635fd7ebd3fa31a92ff6047ed610a19b9090896cba73b9"
+      },
+      {
+        "file": "look2hear/layers/rnnlayers.py",
+        "bytes": 32503,
+        "sha256": "24b5502137156d3576139a760568123417325c962e3e5a585fafe1d4fde77ff0"
+      },
+      {
+        "file": "look2hear/layers/stft.py",
+        "bytes": 24998,
+        "sha256": "40536944c32c500c32d06fc90ff9e04aec32948293c6cfbc38a0e4629c01e3a4"
+      },
+      {
+        "file": "look2hear/layers/stft_tfgn.py",
+        "bytes": 8810,
+        "sha256": "88d4d7388fbf44866ac376d660d3883bf06acf6b2b6e479401ec1f268b8e2c44"
+      },
+      {
+        "file": "look2hear/losses/__init__.py",
+        "bytes": 1107,
+        "sha256": "38717213fdaa1f53a2ea1a69374525e5996803106d1644a0331cf5324d21c489"
+      },
+      {
+        "file": "look2hear/losses/matrix.py",
+        "bytes": 8371,
+        "sha256": "7bc37d929d4b6c19310bd623d0c37798f0a14611b9415da1c29f072844ce3afa"
+      },
+      {
+        "file": "look2hear/losses/mixit.py",
+        "bytes": 13568,
+        "sha256": "660fe877fcb9b102309f324a07afbbc8ac2862b66dd3cef0104cb995d14e90f5"
+      },
+      {
+        "file": "look2hear/losses/pit_wrapper.py",
+        "bytes": 8362,
+        "sha256": "cb227a09cf657f20fef739cc24525308a9bc4485d7ae7118f6bccbe9929f0cf3"
+      },
+      {
+        "file": "look2hear/losses/sisnri.py",
+        "bytes": 1705,
+        "sha256": "be57bf86e446fc9b1e212f5363323e000ecd0ca0bf59acc92025a457bb4f7296"
+      },
+      {
+        "file": "look2hear/metrics/__init__.py",
+        "bytes": 135,
+        "sha256": "1f3527e6343e173f5c4b0eca79ea4a3e4e7f34233c143f1332b84a2ac43b90cd"
+      },
+      {
+        "file": "look2hear/metrics/splitwrapper.py",
+        "bytes": 4366,
+        "sha256": "6a7bf16f25b6dc47a210e945f00aa3ae2ab57c905ec2289c47a9fa221d592fcb"
+      },
+      {
+        "file": "look2hear/metrics/wrapper.py",
+        "bytes": 2796,
+        "sha256": "bb7347652ded17565f530fffba806f9f8aca689d4586361b92a563c977a0263e"
+      },
+      {
+        "file": "look2hear/models/__init__.py",
+        "bytes": 1129,
+        "sha256": "937b18b0b30f8a39f0977e5469f401852ea09c94704adabf46c6c1aa2e6e1abb"
+      },
+      {
+        "file": "look2hear/models/base_model.py",
+        "bytes": 2905,
+        "sha256": "bbdcdb2ba7c398f9bbbd17caffd7b9f5c3b5f2c6443ddb350b3e3162722a9945"
+      },
+      {
+        "file": "look2hear/models/tiger.py",
+        "bytes": 23531,
+        "sha256": "a90ec403c5c024a1c6722a5143e0bd37bb642edec0e1506787ea212a65b287fe"
+      },
+      {
+        "file": "look2hear/models/tiger_dnr.py",
+        "bytes": 30378,
+        "sha256": "89605593bdfc05669e70f2b8647514077197f9870d32b5dd745913f6e03b50e0"
+      },
+      {
+        "file": "look2hear/system/__init__.py",
+        "bytes": 332,
+        "sha256": "bbe82b33a72c3fcdb5b3333508f8a0b867ea8d5ea9ace31877c6ea9b6619febf"
+      },
+      {
+        "file": "look2hear/system/audio_litmodule.py",
+        "bytes": 8541,
+        "sha256": "fa4a92995bcfb276014d25dde4e1575f751d0251f101189e12261749abe03033"
+      },
+      {
+        "file": "look2hear/system/audio_litmodule_multidecoder.py",
+        "bytes": 9154,
+        "sha256": "8033d4a21ab91de255c75acf72a23da7046053418d1634c125938eca7d48c454"
+      },
+      {
+        "file": "look2hear/system/optimizers.py",
+        "bytes": 2532,
+        "sha256": "28a159b417b89550100d8a792d6b169deef3b06cabc066c5ba72f0571c4ab88e"
+      },
+      {
+        "file": "look2hear/system/schedulers.py",
+        "bytes": 3602,
+        "sha256": "b8ee55e5ba99afd4f7d4f4175081f82ebd690f3d9a331444f5a08b4327bc5e14"
+      },
+      {
+        "file": "look2hear/utils/__init__.py",
+        "bytes": 1108,
+        "sha256": "10e44a8a94db31c4f9096bb8b5ba23938644e4f11e960c39369368fc9fa2ed4a"
+      },
+      {
+        "file": "look2hear/utils/complex_utils.py",
+        "bytes": 6750,
+        "sha256": "9f460704dc5c72cc918ae962d8a8a9505497d8cb9fef9694228a90c5d7fc63f6"
+      },
+      {
+        "file": "look2hear/utils/get_layer_from_string.py",
+        "bytes": 1410,
+        "sha256": "31acd3c607f6eba7c5423fd97295ebdfd3f588f8e978b3415a4b0f9f3613eb5c"
+      },
+      {
+        "file": "look2hear/utils/inversible_interface.py",
+        "bytes": 333,
+        "sha256": "2c0f87270c6bab775b11f36072598cf2ebbea3a0a40d181e55684fba6f0230cb"
+      },
+      {
+        "file": "look2hear/utils/lightning_utils.py",
+        "bytes": 3822,
+        "sha256": "daf6b28062990ee03a3c815d7b88547b60ad140e9df4562d99ea6f677e85e55d"
+      },
+      {
+        "file": "look2hear/utils/nets_utils.py",
+        "bytes": 16550,
+        "sha256": "1eb7ad669212ce7f71a3f6cfa31ae4e5a9197926d031f7884e1a2b3dce181667"
+      },
+      {
+        "file": "look2hear/utils/parser_utils.py",
+        "bytes": 4657,
+        "sha256": "e6340fbd617e95c5c403d6a5544c551077b40f76a4b63dc199e383f5debe4e1a"
+      },
+      {
+        "file": "look2hear/utils/separator.py",
+        "bytes": 2201,
+        "sha256": "2085152fedeafa7a6190814f313ee1a620f1e4de9adffa06ae14217aec978c5c"
+      },
+      {
+        "file": "look2hear/utils/stft.py",
+        "bytes": 24998,
+        "sha256": "40536944c32c500c32d06fc90ff9e04aec32948293c6cfbc38a0e4629c01e3a4"
+      },
+      {
+        "file": "look2hear/utils/torch_utils.py",
+        "bytes": 1318,
+        "sha256": "c9b9ec5095ad747492b9727ce25f6f509ab45be97a3b132984eab523b4b9ee4c"
+      },
+      {
+        "file": "requirements.txt",
+        "bytes": 2013,
+        "sha256": "d204741d451b3a1d15af07ab768d250e6c9008b66b579e96c5979569425675f5"
+      }
+    ]
+  },
+  "adaptations": [
+    "Only numerical graph classes are retained; BaseModel loaders, registries, logging and introspection removed.",
+    "Native closed PReLU and 4D layer normalization bindings.",
+    "CPU FFT/complex reconstruction and exact CPU adaptive pooling for nondivisible MPS bin geometry. Real graph and every branch remain on selected device.",
+    "Preserved original 12-second chunks, 4-second hop, zero padding, overlap-add divisor and per-branch selected stem."
+  ]
+}

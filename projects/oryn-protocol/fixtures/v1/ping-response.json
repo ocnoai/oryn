@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_ping_fixture",
+  "ok": true,
+  "result": {
+    "engineInstanceId": "engine_fixture_01",
+    "state": "ready"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "group": "broad",
+    "task": "text-classification",
+    "repository": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "revision": "714eb0fa89d2f80546fda750413ed43d93601a13"
+  },
+  {
+    "group": "broad",
+    "task": "question-answering",
+    "repository": "distilbert/distilbert-base-cased-distilled-squad",
+    "revision": "564e9b582944a57a3e586bbb98fd6f0a4118db7f"
+  },
+  {
+    "group": "broad",
+    "task": "question-answering",
+    "repository": "deepset/roberta-base-squad2",
+    "revision": "adc3b06f79f797d1c575d5479d6f5efe54a9e3b4"
+  },
+  {
+    "group": "broad",
+    "task": "image-classification",
+    "repository": "google/vit-base-patch16-224",
+    "revision": "3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3"
+  },
+  {
+    "group": "broad",
+    "task": "image-classification",
+    "repository": "WinKawaks/vit-small-patch16-224",
+    "revision": "0c08c1829024fa177bd69b6dd09b05ad980854e1"
+  },
+  {
+    "group": "broad",
+    "task": "object-detection",
+    "repository": "hustvl/yolos-tiny",
+    "revision": "95a90f3c189fbfca3bcfc6d7315b9e84d95dc2de"
+  },
+  {
+    "group": "broad",
+    "task": "object-detection",
+    "repository": "facebook/detr-resnet-50",
+    "revision": "1d5f47bd3bdd2c4bbfa585418ffe6da5028b4c0b"
+  },
+  {
+    "group": "broad",
+    "task": "summarization",
+    "repository": "facebook/bart-large-cnn",
+    "revision": "37f520fa929c961707657b28798b30c003dd100b"
+  },
+  {
+    "group": "broad",
+    "task": "summarization",
+    "repository": "Falconsai/text_summarization",
+    "revision": "6e505f907968c4a9360773ff57885cdc6dca4bfd"
+  },
+  {
+    "group": "broad",
+    "task": "text-classification",
+    "repository": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+    "revision": "cf991100d706c13c0a080c097134c05b7f436c45"
+  }
+]

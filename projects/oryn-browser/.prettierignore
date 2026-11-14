@@ -1,0 +1,11 @@
+node_modules
+out
+dist
+vendor
+release
+packaging/.stage
+
+**/release-*/**
+
+**/test-results/**
+**/playwright-report/**

@@ -1,0 +1,45 @@
+{
+  "_class_name": "UNet2DModel",
+  "_diffusers_version": "0.0.4",
+  "act_fn": "silu",
+  "attention_head_dim": null,
+  "block_out_channels": [
+    128,
+    128,
+    256,
+    256,
+    256,
+    256,
+    256
+  ],
+  "center_input_sample": true,
+  "down_block_types": [
+    "SkipDownBlock2D",
+    "SkipDownBlock2D",
+    "SkipDownBlock2D",
+    "SkipDownBlock2D",
+    "AttnSkipDownBlock2D",
+    "SkipDownBlock2D",
+    "SkipDownBlock2D"
+  ],
+  "downsample_padding": 1,
+  "flip_sin_to_cos": true,
+  "freq_shift": 0,
+  "in_channels": 3,
+  "layers_per_block": 2,
+  "mid_block_scale_factor": 1.41421356237,
+  "norm_eps": 1e-06,
+  "norm_num_groups": null,
+  "out_channels": 3,
+  "sample_size": 256,
+  "time_embedding_type": "fourier",
+  "up_block_types": [
+    "SkipUpBlock2D",
+    "SkipUpBlock2D",
+    "AttnSkipUpBlock2D",
+    "SkipUpBlock2D",
+    "SkipUpBlock2D",
+    "SkipUpBlock2D",
+    "SkipUpBlock2D"
+  ]
+}

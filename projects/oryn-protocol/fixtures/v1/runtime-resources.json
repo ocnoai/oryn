@@ -1,0 +1,31 @@
+{
+  "v": 1,
+  "type": "response",
+  "id": "req_resources_1",
+  "ok": true,
+  "result": {
+    "snapshotId": "resource_fixture_1",
+    "timestamp": 1787000000100,
+    "memoryPressure": "high",
+    "systemMemory": {
+      "totalBytes": 34359738368,
+      "availableBytes": 4294967296
+    },
+    "processMemory": {
+      "residentBytes": 1073741824
+    },
+    "localAI": {
+      "memoryBudgetBytes": 17179869184,
+      "estimatedResidentModelBytes": 8589934592
+    },
+    "accelerator": {
+      "backend": "mps",
+      "allocatedBytes": 2147483648
+    },
+    "generationLane": {
+      "capacity": 1,
+      "running": 0,
+      "queued": 0
+    }
+  }
+}

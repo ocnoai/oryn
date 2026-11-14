@@ -1,0 +1,49 @@
+{
+  "backbone_arch": "P5",
+  "backbone_channel_attention": true,
+  "backbone_deepen_factor": 1.0,
+  "backbone_expand_ratio": 0.5,
+  "backbone_widen_factor": 0.0625,
+  "decoder_normalize": false,
+  "decoder_sigma": [
+    4.9,
+    5.66
+  ],
+  "decoder_use_dark": false,
+  "gau_act_fn": "SiLU",
+  "gau_drop_path": 0.0,
+  "gau_dropout_rate": 0.0,
+  "gau_expansion_factor": 2,
+  "gau_hidden_dims": 32,
+  "gau_pos_enc": false,
+  "gau_s": 8,
+  "gau_use_rel_bias": false,
+  "head_final_layer_kernel_size": 7,
+  "head_in_channels": 64,
+  "head_in_featuremap_size": [
+    2,
+    3
+  ],
+  "input_size": [
+    64,
+    96
+  ],
+  "model_type": "rtmw",
+  "neck_expand_ratio": 0.5,
+  "neck_in_channels": [
+    16,
+    32,
+    64
+  ],
+  "neck_num_csp_blocks": 2,
+  "neck_out_channels": null,
+  "num_keypoints": 133,
+  "score_max": 1.0,
+  "score_min": 0.0,
+  "simcc_split_ratio": 2.0,
+  "transformers_version": "5.2.0",
+  "auto_map": {
+    "AutoConfig": "configuration_rtmw.RTMWConfig",
+    "AutoModel": "modeling_rtmw.RTMWModel"
+  }
+}

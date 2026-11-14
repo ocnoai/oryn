@@ -1,0 +1,76 @@
+{
+  "act_layer": "GELU",
+  "architectures": [
+    "ViTDetCls"
+  ],
+  "auto_map": {
+    "AutoConfig": "tagger_pipeline.ViTDetClsConfig",
+    "AutoModel": "tagger_pipeline.ViTDetCls"
+  },
+  "bias_patch_embed": false,
+  "custom_pipelines": {
+    "tagger": {
+      "impl": "tagger_pipeline.TaggerPipeline",
+      "pt": [
+        "AutoModel"
+      ],
+      "tf": [],
+      "type": "image"
+    }
+  },
+  "depth": 4,
+  "drop_path_rate": 0.0,
+  "dropout": 0.0,
+  "dtype": "float32",
+  "embed_dim": 32,
+  "global_att_blocks": [
+    1,
+    3
+  ],
+  "img_size": 20,
+  "in_chans": 3,
+  "init_values": null,
+  "ln_post": false,
+  "ln_pre": true,
+  "mlp_ratio": 4.625,
+  "model_type": "cls_vitdet",
+  "norm_layer": "LayerNorm",
+  "num_classes": 8,
+  "num_heads": 4,
+  "patch_size": 2,
+  "pretrain_img_size": 8,
+  "pretrain_use_cls_token": true,
+  "qkv_bias": true,
+  "rel_pos_blocks": [],
+  "rel_pos_zero_init": true,
+  "retain_cls_token": false,
+  "return_interm_layers": false,
+  "rope_pt_size": null,
+  "tags": [
+    "1girl",
+    "solo",
+    "long_hair",
+    "breasts",
+    "looking_at_viewer",
+    "smile",
+    "blush",
+    "open_mouth"
+  ],
+  "category_best_threshold": {
+    "general": 0.17
+  },
+  "tags_best_threshold": null,
+  "tags_split": [
+    [
+      "general",
+      8
+    ]
+  ],
+  "tile_abs_pos": true,
+  "transformers_version": "4.57.6",
+  "use_abs_pos": true,
+  "use_act_checkpoint": false,
+  "use_interp_rope": true,
+  "use_rope": true,
+  "window_size": 4
+}

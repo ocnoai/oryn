@@ -1,0 +1,40 @@
+{
+  "repository": "mlx-community/gpt-oss-20b-MXFP4-Q8",
+  "revision": "773a7da77e569019bb0fd17a554b263738d669a3",
+  "templateSha256": "a4c9919cbbd4acdd51ccffe22da049264b1b73e59055fa58811a99efbd7c8146",
+  "reference": "Reviewed literal no-tool branch of original tokenizer template, rendered only in the offline reference generator.",
+  "cases": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hello € 日本語 {{ literal }}"
+        }
+      ],
+      "date": "2026-10-15",
+      "expected": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-15\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hello € 日本語 {{ literal }}<|end|><|start|>assistant"
+    },
+    {
+      "messages": [
+        {
+          "role": "system",
+          "content": "Be concise."
+        },
+        {
+          "role": "user",
+          "content": "one"
+        },
+        {
+          "role": "assistant",
+          "content": "First answer."
+        },
+        {
+          "role": "user",
+          "content": "two 🙂"
+        }
+      ],
+      "date": "2026-10-15",
+      "expected": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-15\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|># Instructions\n\nBe concise.\n\n<|end|><|start|>user<|message|>one<|end|><|start|>assistant<|channel|>final<|message|>First answer.<|end|><|start|>user<|message|>two 🙂<|end|><|start|>assistant"
+    }
+  ]
+}

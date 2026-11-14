@@ -1,0 +1,108 @@
+{
+  "legacy": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "embeddings-v1.b0cfc56e434699d02761977a",
+    "contract": {
+      "id": "embeddings-v1",
+      "revision": 1
+    },
+    "task": "feature-extraction",
+    "inputModalities": [
+      "text"
+    ],
+    "outputModalities": [
+      "embedding"
+    ],
+    "inputSchemaRef": "taskInput.embeddings-v1",
+    "resultSchemaRef": "taskResult.embeddings-v1",
+    "features": {
+      "embeddings": "unknown"
+    },
+    "parameters": {
+      "normalize": {
+        "inputPointer": "/normalize",
+        "valueSchema": {
+          "type": "boolean"
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": true
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  },
+  "contextual": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "embeddings-v1.a65227feccfffc0d71089b2e",
+    "contract": {
+      "id": "embeddings-v1",
+      "revision": 1
+    },
+    "task": "feature-extraction",
+    "inputModalities": [
+      "text"
+    ],
+    "outputModalities": [
+      "embedding"
+    ],
+    "inputSchemaRef": "taskInput.embeddings-v1",
+    "resultSchemaRef": "taskResult.embeddings-v1",
+    "features": {
+      "embeddings": "unknown"
+    },
+    "parameters": {
+      "normalize": {
+        "inputPointer": "/normalize",
+        "valueSchema": {
+          "type": "boolean"
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": true
+      },
+      "inputType": {
+        "inputPointer": "/inputType",
+        "valueSchema": {
+          "type": "string",
+          "enum": [
+            "query",
+            "document"
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": "document"
+      },
+      "contextual": {
+        "inputPointer": "/contextual",
+        "valueSchema": {
+          "type": "boolean"
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": false
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  }
+}

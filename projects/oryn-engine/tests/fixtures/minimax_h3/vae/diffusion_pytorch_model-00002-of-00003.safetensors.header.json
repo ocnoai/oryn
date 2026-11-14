@@ -1,0 +1,2460 @@
+{
+  "metadata": {
+    "format": "pt"
+  },
+  "dtypes": [
+    "F32"
+  ],
+  "tensors": {
+    "decoder.proj_in.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.proj_in.weight": {
+      "shape": [
+        2048,
+        24
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.25.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.26.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.27.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.28.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.29.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.3.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.30.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.31.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.32.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.33.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.34.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.35.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.4.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.5.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.6.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.7.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.8.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_k.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_k.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_out.0.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_out.0.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_q.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_q.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_v.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.attn.to_v.weight": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.ff.net.0.proj.bias": {
+      "shape": [
+        16384
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.ff.net.0.proj.weight": {
+      "shape": [
+        16384,
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.ff.net.2.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.ff.net.2.weight": {
+      "shape": [
+        2048,
+        8192
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.norm1.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.norm2.weight": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.scale1": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "decoder.transformer_blocks.9.scale2": {
+      "shape": [
+        2048
+      ],
+      "dtype": "F32"
+    },
+    "encoder.conv_in.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.conv_in.weight": {
+      "shape": [
+        128,
+        3,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.conv_out.bias": {
+      "shape": [
+        48
+      ],
+      "dtype": "F32"
+    },
+    "encoder.conv_out.weight": {
+      "shape": [
+        48,
+        1024,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.downsamplers.0.conv.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.0.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.conv1.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.conv2.weight": {
+      "shape": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.0.resnets.1.norm2.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.downsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        128,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        256,
+        128,
+        1,
+        1,
+        1
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.norm1.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.1.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.downsamplers.0.conv.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.conv1.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.conv2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.2.resnets.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.downsamplers.0.conv.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.downsamplers.0.conv.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        256,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        512,
+        256,
+        1,
+        1,
+        1
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.3.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.0.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.conv1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.conv1.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.conv2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.conv2.weight": {
+      "shape": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    }
+  },
+  "headerBytes": 43936,
+  "dataBytes": 4955942592
+}

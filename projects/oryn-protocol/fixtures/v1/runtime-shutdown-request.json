@@ -1,0 +1,9 @@
+{
+  "v": 1,
+  "type": "request",
+  "id": "req_shutdown_1",
+  "method": "runtime.shutdown",
+  "params": {
+    "reason": "browser-exit"
+  }
+}

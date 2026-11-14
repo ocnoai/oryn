@@ -1,0 +1,60 @@
+<!doctype html><html><body><script type="module">
+const check=(value,message)=>{if(!value)throw new Error(message);};
+const wait=async predicate=>{for(let n=0;n<240;n++){if(predicate())return;await new Promise(r=>setTimeout(r,30));}throw new Error('Timeout: '+document.querySelector('.caption-repair p')?.textContent);};
+try {
+  const html=await fetch('/dist/index.html').then(r=>r.text()),parsed=new DOMParser().parseFromString(html,'text/html');
+  const modulePath='/dist'+parsed.querySelector('script[src^="/assets/"]').getAttribute('src');
+  for(const original of parsed.querySelectorAll('link[rel=stylesheet]')){const link=document.createElement('link');link.rel='stylesheet';link.href='/dist'+original.getAttribute('href');document.head.append(link);}
+  parsed.querySelectorAll('script').forEach(s=>s.remove());document.body.innerHTML=parsed.body.innerHTML;
+  let listener,mode='corrected',invocations=0,attempt=0,lastInput,releases=0,sessionReleases=0,modelRequest;
+  let chunks=[],savedTiming;
+  const sizes=[],ok=value=>({ok:true,value});
+  const relative=(words,start,end)=>words.map((text,i)=>({text,start:start+(end-start)*i/words.length,end:start+(end-start)*(i+1)/words.length})); // synthetic measured fixture only
+  window.localAI={getCapabilities:async()=>({runtimeAvailable:true,features:{}}),onModelRequestProgress:()=>()=>{},cancelModelRequest:async()=>ok(),
+    requestModel:async(id,request)=>{modelRequest=request;attempt=0;return ok({sessionId:'repair-session',capabilities:{task:'automatic-speech-recognition'}});},releaseModelSession:async()=>{sessionReleases++;return ok();},
+    onJobEvent:fn=>{listener=fn;return()=>{listener=undefined;};},
+    invokeJob:async request=>{
+      lastInput=request.input;invocations++;attempt++;
+      if(mode!=='cancel')setTimeout(()=>{
+        let words=['Hello','knew','world'],start=attempt===1?0:.1,end=attempt===1?.7:.8;
+        if(mode==='retry'&&attempt===2)words=['Hello','bright','new','world'];
+        const segments=relative(words,start,end);
+        listener?.({sessionId:'repair-session',jobId:'repair-job',event:mode==='failure'?'job.failed':'job.completed',data:mode==='failure'?{error:{code:'MODEL_GENERATION_FAILED',message:'Synthetic failure'}}:{result:{kind:'structured',value:{segments}}}});
+      },30);
+      return ok({jobId:'repair-job'});
+    },cancelJob:async()=>{listener?.({sessionId:'repair-session',jobId:'repair-job',event:'job.cancelled',data:{}});return ok();},
+    beginArtifactCreate:async value=>{sizes.push(value.sizeBytes);chunks=[];return ok({uploadId:'upload'});},appendArtifactChunk:async(id,chunk)=>{chunks.push(chunk);return ok();},saveArtifactAs:async()=>{savedTiming=await new Blob(chunks).text();return ok();},finishArtifactCreate:async()=>ok({id:'audio'}),releaseArtifact:async()=>{releases++;return ok();},
+  };
+  await import(modulePath);
+  const select=(id,file)=>{const d=new DataTransfer();d.items.add(file);const el=document.querySelector(id);el.files=d.files;el.dispatchEvent(new Event('change'));};
+  const fixture=await fetch('/tests/fixture.mp4').then(r=>r.blob());select('#video-file',new File([fixture],'fixture.mp4',{type:'video/mp4'}));
+  const timed={schema:'oryn-caption-timing/1',cues:[{text:'Hello world',startMs:100,endMs:800,spans:[{text:'Hello',startMs:100,endMs:400},{text:'world',startMs:400,endMs:800}]},{text:'Keep this',startMs:900,endMs:1500,spans:[{text:'Keep',startMs:900,endMs:1200},{text:'this',startMs:1200,endMs:1500}]}]};
+  select('#subtitle-file',new File([JSON.stringify(timed)],'timing.json'));await wait(()=>!document.querySelector('#editor').hidden);document.querySelector('.caption-transcript').open=true;
+  let rows=[...document.querySelectorAll('.cue')];const untouched=rows[1].innerHTML;
+  const edit=text=>{rows[0].querySelector('textarea').value=text;rows[0].querySelector('textarea').dispatchEvent(new Event('input',{bubbles:true}));};
+  const button=text=>[...rows[0].querySelectorAll('button')].find(b=>b.textContent===text);
+  const open=()=>{rows[0].querySelector('.repair-caption').click();rows[0].querySelector('.caption-repair select').value='en';check(rows[0].querySelectorAll('.caption-repair select').length===1,'Model/method selector should not be present');};
+  const idle=()=>!document.querySelector('#video-file').disabled;
+  const values=()=>[...rows[0].querySelectorAll('.word-timing-row input')].map(e=>e.value);
+  check(rows.every(row=>row.querySelector('.repair-caption').hidden),'Valid captions offer repair');
+  edit('Hello new world');open();check(JSON.stringify(values())===JSON.stringify(['100','400','','','400','800']),'Known original words not prefilled');
+  button('Repair this caption locally').click();await wait(()=>!rows[0].querySelector('.caption-repair'));await wait(idle);
+  check(rows[0].querySelector('textarea').value==='Hello new world','Correction overwritten');check(lastInput.timestamps===true&&!('transcript' in lastInput),'Wrong ASR input');check(modelRequest.role==='video-subtitle-native-timing-fallback','Existing Oryn model-selection role not reused');check(sizes[0]===22444,'First audio crop wrong');check(!document.querySelector('#render-video').disabled,'Correction failed to recover');
+  // A missing word needs a second pass with context, not an exact-string error.
+  edit('Hello bright new world');open();mode='retry';const beforeRetry=invocations;button('Repair this caption locally').click();await wait(()=>!rows[0].querySelector('.caption-repair'));await wait(idle);check(invocations-beforeRetry===2,'Context retry did not run');check(sizes[2]===49644,'Context crop is not 1550ms');
+  // Keep partials after both attempts; only genuinely unresolved words stay blank.
+  edit('Hello very bright new world');open();mode='partial';button('Repair this caption locally').click();await wait(()=>rows[0].querySelector('.caption-repair p').textContent.includes('after two attempts'));await wait(idle);
+  check(values().filter(Boolean).length===8,'Known timings were discarded on partial recovery');check(rows[0].querySelector('details').open,'Partial manual review not opened');
+  document.querySelector('#save-timing').click();await wait(()=>savedTiming&& !document.querySelector('#save-timing').disabled);
+  check(JSON.parse(savedTiming).cues[0].wordTimingHints.length===4,'Partial timings absent from saved JSON');
+  const previousRow=rows[0];select('#subtitle-file',new File([savedTiming],'partial.json'));await wait(()=>!previousRow.isConnected);rows=[...document.querySelectorAll('.cue')];
+  open();check(values().filter(Boolean).length===8,'Partial JSON import did not prefill');
+  edit('Hello very bright new world!');open();check(values().filter(Boolean).length===8,'Partial timings lost after punctuation edit/reopen');
+  mode='failure';button('Repair this caption locally').click();await wait(()=>rows[0].querySelector('.caption-repair p').textContent.includes('MODEL_GENERATION_FAILED'));await wait(idle);check(values().filter(Boolean).length===8,'Failure cleared known timing');
+  mode='cancel';const beforeCancel=invocations;button('Repair this caption locally').click();await wait(()=>invocations>beforeCancel);button('Cancel repair').click();await wait(()=>rows[0].querySelector('.caption-repair p').textContent.includes('cancelled'));await wait(idle);
+  button('Apply word timings').click();check(rows[0].querySelector('.caption-repair p').textContent.includes('whole milliseconds'),'Missing manual fields accepted');
+  const fields=[...rows[0].querySelectorAll('.word-timing-row input')];[100,240,240,380,380,520,520,660,660,800].forEach((v,i)=>fields[i].value=v);button('Apply word timings').click();check(!rows[0].querySelector('.caption-repair'),'Manual apply failed');check(rows[1].innerHTML===untouched,'Other caption changed');check(releases===8&&sessionReleases===5,'Artifact/session cleanup failed');
+  edit('Hello very bright new big world!');open();rows[0].querySelector('details').open=true;
+  window.smokeResult={ok:true,modelSelectorRemoved:true,originalTimingsPrefilled:true,correctionMismatchRecovered:true,contextRetry:true,partialRecoveryRetained:true,partialSurvivesEdit:true,partialJsonSaveImport:true,otherCueUnchanged:true,manualApply:true,failurePreservesTimings:true,cancellation:true,artifactReleases:releases,sessionReleases,bridge:'stub model output; real ASR regression is separate'};
+}catch(error){window.smokeResult={ok:false,error:String(error),stack:error.stack};}
+</script></body></html>

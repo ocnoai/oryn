@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "format": "pt"
+  },
+  "dtypes": [
+    "F32"
+  ],
+  "tensors": {
+    "encoder.down_blocks.4.resnets.1.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.norm2.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.4.resnets.1.norm2.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv1.weight": {
+      "shape": [
+        1024,
+        512,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv2.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv2.weight": {
+      "shape": [
+        1024,
+        1024,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv_shortcut.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.conv_shortcut.weight": {
+      "shape": [
+        1024,
+        512,
+        1,
+        1,
+        1
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.norm1.bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.norm1.weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.norm2.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.0.norm2.weight": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.conv1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.conv1.weight": {
+      "shape": [
+        1024,
+        1024,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.conv2.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.conv2.weight": {
+      "shape": [
+        1024,
+        1024,
+        3,
+        3,
+        3
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.norm1.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.norm1.weight": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.norm2.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.down_blocks.5.resnets.1.norm2.weight": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.norm_out.bias": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "encoder.norm_out.weight": {
+      "shape": [
+        1024
+      ],
+      "dtype": "F32"
+    },
+    "post_quant_conv.bias": {
+      "shape": [
+        24
+      ],
+      "dtype": "F32"
+    },
+    "post_quant_conv.weight": {
+      "shape": [
+        24,
+        24,
+        1,
+        1,
+        1
+      ],
+      "dtype": "F32"
+    },
+    "quant_conv.bias": {
+      "shape": [
+        48
+      ],
+      "dtype": "F32"
+    },
+    "quant_conv.weight": {
+      "shape": [
+        48,
+        48,
+        1,
+        1,
+        1
+      ],
+      "dtype": "F32"
+    }
+  },
+  "headerBytes": 3112,
+  "dataBytes": 398536224
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" data-model-profile="%ORYN_IMAGE_MODEL_PROFILE%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="oryn-model-profile" content="%ORYN_IMAGE_MODEL_PROFILE%" />
+    <title>Oryn Image Generation Example</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div class="brand-row">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M5.5 7.5 12 3l6.5 4.5v9L12 21l-6.5-4.5v-9Z" />
+              <circle cx="12" cy="12" r="3.25" />
+            </svg>
+          </span>
+          <div>
+            <p class="eyebrow">Oryn SDK reference workload</p>
+            <p class="mode-label" id="mode-label">Production model request</p>
+          </div>
+        </div>
+        <h1>Create an image, entirely on your computer.</h1>
+        <p class="intro">
+          This ordinary website asks Oryn for text-to-image generation. The
+          browser chooses what can run, asks your permission, schedules the
+          work, and publishes the result as a private artifact.
+        </p>
+        <div class="local-disclosure">
+          <i data-oryn-icon="local-privacy"></i>
+          <p>
+            <strong>Local by default.</strong> Your prompt and generated image
+            stay on this device unless you explicitly save or upload the result.
+          </p>
+        </div>
+      </header>
+
+      <section class="workspace" aria-label="Image generation workspace">
+        <form id="image-form" class="control-panel">
+          <div class="section-heading">
+            <span>01</span>
+            <div>
+              <h2>Describe the image</h2>
+              <p>
+                Use a concrete subject, setting, lighting, and visual style.
+              </p>
+            </div>
+          </div>
+
+          <label for="prompt">Prompt</label>
+          <textarea id="prompt" rows="5" maxlength="2000" required>
+A quiet glass observatory above a pine forest at blue hour, warm interior lights, cinematic architectural photography</textarea>
+          <div class="field-meta">
+            <span id="prompt-count">117 / 2000</span
+            ><span>Processed locally</span>
+          </div>
+
+          <fieldset>
+            <legend>Canvas</legend>
+            <div class="segmented" id="size-options">
+              <label
+                ><input type="radio" name="size" value="512x512" checked /><span
+                  >Square<small>512 × 512</small></span
+                ></label
+              >
+              <label
+                ><input type="radio" name="size" value="768x512" /><span
+                  >Landscape<small>768 × 512</small></span
+                ></label
+              >
+              <label
+                ><input type="radio" name="size" value="512x768" /><span
+                  >Portrait<small>512 × 768</small></span
+                ></label
+              >
+              <label
+                ><input type="radio" name="size" value="256x256" /><span
+                  >Quick<small>256 × 256</small></span
+                ></label
+              >
+            </div>
+          </fieldset>
+
+          <div class="settings-grid">
+            <div>
+              <label for="steps">Inference steps</label>
+              <select id="steps">
+                <option value="1">1 · fastest</option>
+                <option value="4">4 · quick</option>
+                <option value="12">12 · balanced</option>
+                <option value="20" selected>20 · detailed</option>
+              </select>
+            </div>
+            <div>
+              <label class="toggle-label" for="use-seed">
+                <span>Deterministic seed</span>
+                <input id="use-seed" type="checkbox" role="switch" />
+              </label>
+              <input id="seed" type="number" min="0" max="4294967295" step="1" value="42" disabled aria-label="Seed" />
+            </div>
+          </div>
+
+          <div class="actions primary-actions">
+            <button id="generate" class="primary" type="submit">
+              <i data-oryn-icon="generate"></i>
+              Generate locally
+            </button>
+            <button id="cancel" class="secondary" type="button" hidden>
+              Cancel
+            </button>
+          </div>
+          <p class="background-note">
+            You may switch tabs while this runs. Oryn keeps active local work
+            visible and cancellable.
+          </p>
+        </form>
+
+        <aside class="output-panel" aria-label="Generated image">
+          <div id="empty-state" class="empty-state">
+            <div class="empty-art" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <svg viewBox="0 0 24 24">
+                <path d="m4 17 4.5-5 3.2 3.2 2.1-2.4L20 19H4v-2Z" />
+                <circle cx="16" cy="8" r="2" />
+              </svg>
+            </div>
+            <h2>Your local canvas</h2>
+            <p>
+              The generated PNG appears here through an origin-scoped Oryn
+              artifact URL.
+            </p>
+          </div>
+          <figure id="preview-frame" hidden>
+            <img id="image-preview" alt="Generated result" />
+            <figcaption id="preview-caption">Generated locally</figcaption>
+          </figure>
+          <div id="result-actions" class="result-actions" hidden>
+            <button id="save" class="primary compact" type="button">
+              Save As…
+            </button>
+            <button id="read" class="secondary compact" type="button">
+              Read as Blob
+            </button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="status-card" aria-labelledby="status-heading">
+        <div class="status-topline">
+          <span id="status-dot" class="status-dot" aria-hidden="true"></span>
+          <div>
+            <h2 id="status-heading">Local AI status</h2>
+            <p id="status" role="status" aria-live="polite">
+              Checking Oryn runtime…
+            </p>
+          </div>
+        </div>
+        <progress
+          id="progress"
+          max="1"
+          value="0"
+          hidden
+          aria-label="Generation progress"
+        ></progress>
+        <p id="details" class="status-details"></p>
+      </section>
+
+      <section id="error-card" class="error-card" hidden role="alert">
+        <div>
+          <p class="eyebrow">Could not prepare this generation</p>
+          <h2 id="error-title">Local generation unavailable</h2>
+          <p id="error-message"></p>
+          <p id="error-recovery" class="recovery"></p>
+          <code id="error-code"></code>
+        </div>
+        <button id="retry" class="secondary" type="button">Retry</button>
+      </section>
+
+      <section class="truth-card" aria-labelledby="model-heading">
+        <div class="section-heading">
+          <span>02</span>
+          <div>
+            <h2 id="model-heading">What Oryn is running</h2>
+            <p>
+              The requested model and actual runtime result are always shown
+              separately.
+            </p>
+          </div>
+        </div>
+        <dl class="truth-grid">
+          <div>
+            <dt>Requested model</dt>
+            <dd id="requested-model"></dd>
+          </div>
+          <div>
+            <dt>Exact requested revision</dt>
+            <dd id="requested-revision" class="mono"></dd>
+          </div>
+          <div>
+            <dt>Resolved model</dt>
+            <dd id="resolved-model">Not resolved yet</dd>
+          </div>
+          <div>
+            <dt>Substitution</dt>
+            <dd id="substitution">Pending</dd>
+          </div>
+          <div>
+            <dt>Runtime</dt>
+            <dd id="runtime">Pending</dd>
+          </div>
+          <div>
+            <dt>Backend</dt>
+            <dd id="backend">Pending</dd>
+          </div>
+        </dl>
+        <p id="model-access-note" class="model-access-note">
+          FLUX.1-dev is gated by its publisher. Oryn may use a compatible model
+          or report that access is required; this website never handles your
+          Hugging Face credentials.
+          <a
+            href="https://huggingface.co/black-forest-labs/FLUX.1-dev"
+            target="_blank"
+            rel="noreferrer"
+            >Open the authoritative model page</a
+          >
+        </p>
+      </section>
+
+      <details class="transfer-card">
+        <summary>Explicit website read and upload demo</summary>
+        <div class="transfer-body">
+          <p>
+            Nothing is uploaded automatically. After generation, “Read as Blob”
+            copies the authorized artifact into this page. Entering an HTTPS
+            destination and pressing upload is a separate, explicit website
+            network action.
+          </p>
+          <label for="upload-url">HTTPS upload destination</label>
+          <div class="upload-row">
+            <input
+              id="upload-url"
+              type="url"
+              inputmode="url"
+              placeholder="https://example.test/api/upload"
+            />
+            <button id="upload" class="secondary" type="button" disabled>
+              Upload explicitly
+            </button>
+          </div>
+          <p id="transfer-status" class="status-details" aria-live="polite"></p>
+        </div>
+      </details>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

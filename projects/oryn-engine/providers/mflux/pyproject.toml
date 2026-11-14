@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling==1.29.0"]
+build-backend = "hatchling.build"
+
+[project]
+license = "MIT"
+name = "oryn-mflux-provider"
+version = "0.6.0"
+description = "Oryn backend provider for the packaged MFLUX runtime"
+requires-python = ">=3.12"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oryn_mflux_provider"]

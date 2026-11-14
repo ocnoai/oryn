@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+  - packages/*
+
+overrides:
+  '@ocno/oryn-registry@0.1.0': file:vendor/ocno-oryn-registry-0.1.0.tgz
+  '@ocno/oryn-protocol@0.1.0': file:vendor/ocno-oryn-protocol-0.1.0.tgz
+
+onlyBuiltDependencies:
+  - electron
+  - esbuild

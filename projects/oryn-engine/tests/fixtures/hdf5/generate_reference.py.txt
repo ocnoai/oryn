@@ -1,0 +1,36 @@
+"""Independent pinned TensorFlow 4.46.3 TAPAS reference; synthetic weights only."""
+import json
+from pathlib import Path
+import numpy as np
+import tensorflow as tf
+from transformers import TapasConfig, TFTapasForQuestionAnswering
+
+OUT = Path(__file__).resolve().parent
+for aggregations in [0, 4]:
+    path = OUT / f'tiny-tapas-{aggregations}'
+    path.mkdir(exist_ok=True)
+    config = TapasConfig(hidden_size=32, intermediate_size=64, num_hidden_layers=2,
+        num_attention_heads=4, vocab_size=32, max_position_embeddings=128,
+        max_num_rows=16, max_num_columns=16, type_vocab_sizes=[3,16,16,2,16,16,10],
+        hidden_dropout_prob=0.0, attention_probs_dropout_prob=0.0,
+        num_aggregation_labels=aggregations,
+        aggregation_labels={0:'NONE',1:'SUM',2:'AVERAGE',3:'COUNT'} if aggregations else None,
+        select_one_column=True, reset_position_index_per_cell=True,
+        init_cell_selection_weights_to_zero=False, temperature=0.7)
+    model = TFTapasForQuestionAnswering(config)
+    ids = np.array([[2,6,7,3,8,9,10,11,3]],dtype=np.int32)
+    types = np.zeros((1,9,7),dtype=np.int32)
+    types[0,4:8,0]=1;types[0,4:8,1]=[1,2,1,2];types[0,4:8,2]=[1,1,2,2]
+    inputs={'input_ids':ids,'attention_mask':np.ones_like(ids),'token_type_ids':types}
+    model(**{k:tf.constant(v) for k,v in inputs.items()}, training=False)
+    rng=np.random.default_rng(6104+aggregations)
+    for variable in model.weights:
+        values=rng.normal(0,0.02,variable.shape).astype(np.float32)
+        if variable.name.endswith('gamma:0'):values+=1
+        variable.assign(values)
+    result=model(**{k:tf.constant(v) for k,v in inputs.items()},training=False)
+    model.save_pretrained(path,safe_serialization=False)
+    np.savez(OUT/f'reference-{aggregations}.npz',**inputs,logits=result.logits.numpy(),
+        **({'logits_aggregation':result.logits_aggregation.numpy()} if aggregations else {}))
+    (OUT/f'weights-{aggregations}.json').write_text(json.dumps([{'name':w.name,'shape':list(w.shape)} for w in model.weights],indent=2)+'\n')
+    print(aggregations, len(model.weights), result.logits.shape)

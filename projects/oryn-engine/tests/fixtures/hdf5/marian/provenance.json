@@ -1,0 +1,55 @@
+{
+  "referenceEnvironment": {
+    "tensorflow": "2.20.0",
+    "transformers": "4.46.3",
+    "tf-keras": "2.20.0"
+  },
+  "tokenizerFixture": {
+    "modelType": "word",
+    "vocabSize": 31,
+    "extraPadId": 31,
+    "trainingWords": [
+      "hello",
+      "world",
+      "cat",
+      "dog",
+      "word0",
+      "word1",
+      "word2",
+      "word3",
+      "word4",
+      "word5",
+      "word6",
+      "word7",
+      "word8",
+      "word9",
+      "word10",
+      "word11",
+      "word12",
+      "word13",
+      "word14",
+      "word15",
+      "word16",
+      "word17",
+      "word18",
+      "word19",
+      "word20",
+      "word21",
+      "word22",
+      "word23",
+      "word24"
+    ]
+  },
+  "originalWeightsDownloaded": 0,
+  "sha256": {
+    "target.spm": "ae7e97b2e4fe6fb8138a177ad15110a3e3aa200590236b1c3ec2cb192b377c50",
+    "generate_reference.py.txt": "f692758daf9156b08575370fd91e77c93fd81131e2c96eba03b5096b7195e2d4",
+    "tokenizer_config.json": "9fe286ae0147c5c5bd8679d7d6c36fd31e0d4b08014d2af675b3684abbe233fa",
+    "config.json": "4c4953adfc6687e93d4a789ca118ffeb81b7173514e0c46435c7ca8d6addeef5",
+    "reference.npz": "295d879ad98d29524b224a0f83177fedd66e76c1bbe54f4b28fe144ed50312f3",
+    "weights.json": "707f1bccc2f9e607fe993e6e18cd10c1690abde30069e7b102cfa2a11c0d2a27",
+    "source.spm": "ae7e97b2e4fe6fb8138a177ad15110a3e3aa200590236b1c3ec2cb192b377c50",
+    "vocab.json": "1754e3b04e94fda7bac551f1e2defaf16e4d1ddd20496b5f33b87da68548915f",
+    "tf_model.h5": "2b86985a19efd06d18fb7c2dac9c5268221b60a96e045aef7cefe2f35bc8e2c2"
+  }
+}
