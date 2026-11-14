@@ -321,8 +321,8 @@
     },
     {
       "path": "projects/oryn-browser/apps/browser/src/main/__tests__/download-safety-native.test.ts",
-      "bytes": 5854,
-      "sha256": "4eb5212032285c72ca9cbc3d00f87dbcba250b508f98e78cc84458bd5b67d395"
+      "bytes": 5937,
+      "sha256": "1423aa19cf26fe82e56317d14d8fd7660a8ea7f68b34017a330beb808b748176"
     },
     {
       "path": "projects/oryn-browser/apps/browser/src/main/__tests__/download-safety.test.ts",

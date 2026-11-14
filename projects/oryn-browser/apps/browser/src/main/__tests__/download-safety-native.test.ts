@@ -23,6 +23,7 @@ let native: DownloadSafetyNative;
 let reader: string;
 // The product target is macOS; other platforms must qualify a separate quarantine implementation.
 describe.runIf(process.platform === 'darwin')('native macOS download safety', () => {
+  // Allow both bounded native compilations to finish on a cold macOS SDK.
   beforeAll(() => {
     root = mkdtempSync(join(tmpdir(), 'oryn-download-native-'));
     const include = join(dirname(require.resolve('node-api-headers/package.json')), 'include');
@@ -64,7 +65,7 @@ describe.runIf(process.platform === 'darwin')('native macOS download safety', ()
       timeout: 30_000,
       stdio: 'pipe',
     });
-  });
+  }, 75_000);
   afterAll(() => {
     if (root) rmSync(root, { recursive: true, force: true });
   });
