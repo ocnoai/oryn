@@ -243,6 +243,8 @@ def reference_decode(model, inputs, config):
 def test_whole_native_graph_matches_independent_decode(tmp_path, backend, mode):
     from safetensors.torch import save_file
 
+    if backend == "mps" and not torch.backends.mps.is_available():
+        pytest.skip("MPS device unavailable")
     reference, config, packed = native_fixture(tmp_path)
     if mode != "seeded":
         with torch.no_grad():
@@ -306,7 +308,8 @@ def test_incomplete_graphs_rejected(tmp_path, damage):
 
 
 @pytest.mark.parametrize("damage", [None, "missing", "metadata", "unbound"])
-def test_metadata_discovery_without_original_weights(tmp_path, damage):
+@pytest.mark.parametrize("available_bytes", [1, 64 * 1024**3], ids=["low-memory", "ample-memory"])
+def test_metadata_discovery_without_original_weights(tmp_path, damage, available_bytes):
     from test_models import FakeHub, model
 
     from oryn_engine.models import ModelStore
@@ -330,15 +333,22 @@ def test_metadata_discovery_without_original_weights(tmp_path, damage):
         pipeline_tag="automatic-speech-recognition",
         files=[(n, 100, "a" * 64) for n in names],
     )
-    store = ModelStore(tmp_path, hub=hub, runtime_available=True)
+    store = ModelStore(
+        tmp_path,
+        hub=hub,
+        runtime_available=True,
+        runtime_planning_state_provider=lambda: ("balanced", available_bytes),
+    )
     store._pack_runtime_locator = SimpleNamespace(
         resolve=lambda p: object() if p.pack_id == "oryn.transformers-pytorch" else None
     )
     result = store.inspect(model("independent/ternary-transducer"))
-    assert result["executable"] is (damage is None), result
+    assert result["executable"] is (damage is None and available_bytes > 1), result
     if damage is None:
         assert result["estimatedMemoryBytes"] > 6 * 1024**3
         assert result["taskProfile"]["features"]["wordTimestamps"] == "unsupported"
+        if available_bytes == 1:
+            assert "MODEL_MEMORY_INSUFFICIENT" in result["blockingReasons"]
     assert not hub.downloaded
 
 
@@ -362,7 +372,8 @@ def test_standardized_features_match_independent_numpy(tmp_path, length):
     np.testing.assert_array_equal(actual["attention_mask"][0], np.arange(len(mels)) < valid)
 
 
-def test_worker_uses_original_export_and_ignores_repository_generation(tmp_path):
+@pytest.mark.parametrize("backend", ["cpu", "mps"])
+def test_worker_uses_original_export_and_ignores_repository_generation(tmp_path, backend):
     import os
     import subprocess
     import sys
@@ -373,6 +384,8 @@ def test_worker_uses_original_export_and_ignores_repository_generation(tmp_path)
     from oryn_engine.runtime_packs import transformers_worker
     from oryn_engine.runtime_packs.builtin_catalog import builtin_registry
 
+    if backend == "mps" and not torch.backends.mps.is_available():
+        pytest.skip("MPS device unavailable")
     model, c, packed = native_fixture(tmp_path)
     with torch.no_grad():
         model.joint.head.weight.zero_()
@@ -392,7 +405,7 @@ def test_worker_uses_original_export_and_ignores_repository_generation(tmp_path)
     payload = {
         "modelRoot": str(tmp_path),
         "task": "automatic-speech-recognition",
-        "backend": "mps",
+        "backend": backend,
         "input": {
             "audioArtifactId": "artifact_" + "b" * 24,
             "language": "auto",

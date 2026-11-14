@@ -43,13 +43,86 @@ jobs:
             projects/oryn-examples/pnpm-lock.yaml
       - uses: astral-sh/setup-uv@v6
         with:
+          python-version: '3.12.16'
           enable-cache: true
           cache-dependency-glob: |
             projects/oryn-protocol/python/uv.lock
             projects/oryn-engine/uv.lock
       - name: Bootstrap from the public checkout
         run: ./scripts/bootstrap
+      - name: Verify the reviewed CPython parser
+        run: >-
+          projects/oryn-engine/.venv/bin/python -I -S -c
+          'import sys; assert sys.implementation.name == "cpython" and sys.version_info[:3] == (3, 12, 16), sys.version'
       - name: Verify public sources and bundled dependencies
         run: pnpm vendor:verify && pnpm docs:check
-      - name: Build and test all public components
-        run: pnpm test
+      - name: Build and test Protocol and SDK
+        run: |
+          pnpm --dir projects/oryn-protocol validate
+          pnpm --dir projects/oryn-sdk typecheck
+          pnpm --dir projects/oryn-sdk test
+          pnpm --dir projects/oryn-sdk build
+      - name: Build and test Browser
+        run: |
+          pnpm --dir projects/oryn-browser security:verify
+          pnpm --dir projects/oryn-browser typecheck
+          pnpm --dir projects/oryn-browser test
+          pnpm --dir projects/oryn-browser build
+      - name: Build and test Examples and public documentation
+        run: |
+          pnpm --dir projects/oryn-examples test
+          node scripts/check-public-docs.mjs --all
+
+  engine:
+    name: Engine tests (shard ${{ matrix.shard }})
+    runs-on: macos-26
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require Apple Silicon
+        run: test "$(uname -m)" = arm64
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: |
+            projects/oryn-protocol/pnpm-lock.yaml
+            projects/oryn-sdk/pnpm-lock.yaml
+            projects/oryn-browser/pnpm-lock.yaml
+            projects/oryn-examples/pnpm-lock.yaml
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12.16'
+          enable-cache: true
+          cache-dependency-glob: |
+            projects/oryn-protocol/python/uv.lock
+            projects/oryn-engine/uv.lock
+      - name: Bootstrap from the public checkout
+        run: ./scripts/bootstrap
+      - name: Verify the reviewed CPython parser
+        run: >-
+          projects/oryn-engine/.venv/bin/python -I -S -c
+          'import sys; assert sys.implementation.name == "cpython" and sys.version_info[:3] == (3, 12, 16), sys.version'
+      - name: Test Engine file shard
+        run: >-
+          uv run --project projects/oryn-engine --python 3.12.16 --frozen
+          python scripts/test-engine-shard.py --index ${{ matrix.shard }} --count 3
+          --report .workspace-artifacts/engine-shard-${{ matrix.shard }}.json
+      - name: Build Engine wheel
+        run: uv build --project projects/oryn-engine --python 3.12.16
+      - name: Retain Engine shard inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: engine-shard-${{ matrix.shard }}
+          path: .workspace-artifacts/engine-shard-${{ matrix.shard }}.json
+          if-no-files-found: warn

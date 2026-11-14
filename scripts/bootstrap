@@ -3,6 +3,8 @@ set -euo pipefail
 
 WORKSPACE_DIR=${0:A:h:h}
 ARTIFACT_DIR="$WORKSPACE_DIR/.workspace-artifacts"
+# Source recognition is qualified against this exact CPython parser patch.
+PYTHON_VERSION=3.12.16
 PNPM_FETCH_FLAGS=()
 UV_FETCH_FLAGS=()
 if [[ "${ORYN_OFFLINE:-0}" == "1" ]]; then
@@ -36,9 +38,9 @@ print "Building Oryn Protocol from source…"
 pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol" install --frozen-lockfile "${PNPM_FETCH_FLAGS[@]}"
 node "$WORKSPACE_DIR/projects/oryn-protocol/scripts/sync-chat-formats.mjs" "$WORKSPACE_DIR/projects/oryn-engine/build-inputs/chat-formats.json"
 pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol" sync:schema
-uv sync --project "$WORKSPACE_DIR/projects/oryn-protocol/python" --python 3.12 --extra dev --frozen "${UV_FETCH_FLAGS[@]}"
+uv sync --project "$WORKSPACE_DIR/projects/oryn-protocol/python" --python "$PYTHON_VERSION" --extra dev --frozen "${UV_FETCH_FLAGS[@]}"
 pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol/typescript" build
-uv build --project "$WORKSPACE_DIR/projects/oryn-protocol/python" "${UV_FETCH_FLAGS[@]}"
+uv build --project "$WORKSPACE_DIR/projects/oryn-protocol/python" --python "$PYTHON_VERSION" "${UV_FETCH_FLAGS[@]}"
 /usr/bin/install -m 0644 "$WORKSPACE_DIR/projects/oryn-protocol/LICENSE" "$WORKSPACE_DIR/projects/oryn-protocol/typescript/LICENSE"
 pnpm --dir "$WORKSPACE_DIR/projects/oryn-protocol/typescript" pack --pack-destination "$ARTIFACT_DIR"
 PROTOCOL_VERSION="$(node -p 'require(process.argv[1]).version' "$WORKSPACE_DIR/projects/oryn-protocol/typescript/package.json")"
@@ -62,7 +64,7 @@ pnpm --dir "$WORKSPACE_DIR/projects/oryn-browser" install --no-frozen-lockfile "
 node "$WORKSPACE_DIR/scripts/prepare-electron.mjs"
 # A cache refresh alone retains the old hash for same-version source candidates.
 # Re-resolve only this exact, local-path dependency to record the rebuilt bytes.
-uv lock --project "$WORKSPACE_DIR/projects/oryn-engine" --python 3.12 --upgrade-package oryn-protocol "${UV_FETCH_FLAGS[@]}"
-uv sync --project "$WORKSPACE_DIR/projects/oryn-engine" --python 3.12 --extra dev --frozen "${UV_FETCH_FLAGS[@]}"
+uv lock --project "$WORKSPACE_DIR/projects/oryn-engine" --python "$PYTHON_VERSION" --upgrade-package oryn-protocol "${UV_FETCH_FLAGS[@]}"
+uv sync --project "$WORKSPACE_DIR/projects/oryn-engine" --python "$PYTHON_VERSION" --extra dev --frozen "${UV_FETCH_FLAGS[@]}"
 pnpm --dir "$WORKSPACE_DIR/projects/oryn-examples" install --no-frozen-lockfile "${PNPM_FETCH_FLAGS[@]}"
 print "Oryn public source bootstrap complete."

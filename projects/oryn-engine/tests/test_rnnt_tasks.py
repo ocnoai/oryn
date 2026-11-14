@@ -193,6 +193,8 @@ def manual_rnnt(model, inputs, config):
 def test_full_graph_native_decode_matches_independent_frame_loop(tmp_path, backend, mode, terminal):
     from safetensors.torch import save_file
 
+    if backend == "mps" and not torch.backends.mps.is_available():
+        pytest.skip("MPS device unavailable")
     reference, config, weights = native_fixture(tmp_path, terminal=terminal)
     if mode != "seeded":
         with torch.no_grad():
@@ -333,7 +335,8 @@ def test_duration_reconciliation_does_not_accept_partial_decoding(tmp_path, dama
         adapter.decode_output(output, tokenizer, config, 2, backend)
 
 
-def test_original_style_tokenizer_repeated_worker_requests_and_owned_generation(tmp_path):
+@pytest.mark.parametrize("backend", ["cpu", "mps"])
+def test_original_style_tokenizer_repeated_worker_requests_and_owned_generation(tmp_path, backend):
     import os
     import subprocess
     import sys
@@ -343,6 +346,8 @@ def test_original_style_tokenizer_repeated_worker_requests_and_owned_generation(
 
     from oryn_engine.runtime_packs import transformers_worker
 
+    if backend == "mps" and not torch.backends.mps.is_available():
+        pytest.skip("MPS device unavailable")
     model, config, _ = native_fixture(tmp_path, terminal=True)
     with torch.no_grad():
         model.joint.head.weight.zero_()
@@ -361,7 +366,7 @@ def test_original_style_tokenizer_repeated_worker_requests_and_owned_generation(
     payload = {
         "modelRoot": str(tmp_path),
         "task": "automatic-speech-recognition",
-        "backend": "mps",
+        "backend": backend,
         "input": {
             "audioArtifactId": "artifact_" + "a" * 24,
             "language": "auto",

@@ -11,8 +11,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 1467,
-      "sha256": "8b3ef00cf44eaad543282a5304c92af4da455c56a0a0dda39e6b7944a27fd026"
+      "bytes": 4358,
+      "sha256": "2608831c3fb0339a49e9286aa8c6344e249cb210c85bbe6721bc4d2b5eda94ac"
     },
     {
       "path": ".gitignore",
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5086,
-      "sha256": "efe14d5a000feffc8d936d62a8d1d76a8d834dcde20aef43c603808cc83a6bfe"
+      "bytes": 5316,
+      "sha256": "4bb4982d1bb83fe757628af92fcd581139b54c102e6fcd4a76ea652914f1e025"
     },
     {
       "path": "SECURITY.md",
@@ -6261,8 +6261,8 @@
     },
     {
       "path": "projects/oryn-engine/tests/test_chat_formats.py",
-      "bytes": 10566,
-      "sha256": "a286171d84c0ae0400ed024e9d22cd123c17a78d2b8fe81114f620e5ac9a8e33"
+      "bytes": 10560,
+      "sha256": "cadf5fe73e9e7dca30022d8dea840fb1b0fdec626b697cacf76aec06ec5c7c23"
     },
     {
       "path": "projects/oryn-engine/tests/test_chronos_tasks.py",
@@ -6306,8 +6306,8 @@
     },
     {
       "path": "projects/oryn-engine/tests/test_ct2_tasks.py",
-      "bytes": 16935,
-      "sha256": "9585deea1f6f7543b8d0bc856e118bea6ad7799fefef1d0f6be48cd1e7795248"
+      "bytes": 17347,
+      "sha256": "01fa4c687f5364c1df86a0a551d89cb4cf8236533d846944e0176d46461738ba"
     },
     {
       "path": "projects/oryn-engine/tests/test_decision_tasks.py",
@@ -6736,8 +6736,8 @@
     },
     {
       "path": "projects/oryn-engine/tests/test_parakeet_tasks.py",
-      "bytes": 17960,
-      "sha256": "9b1147344f13f2b16735abc624891c2984b9a2f86c31e83237acb209ec2fbc7b"
+      "bytes": 18608,
+      "sha256": "6a79feacdb9a23d5fc8d6e5d8a3bacf18e62fbbe0c34fea45f0be5072cdc0f5c"
     },
     {
       "path": "projects/oryn-engine/tests/test_pii_tasks.py",
@@ -6826,8 +6826,8 @@
     },
     {
       "path": "projects/oryn-engine/tests/test_rnnt_tasks.py",
-      "bytes": 17006,
-      "sha256": "be3928d4d695fef440a89878e85edfabbb5147be240e5c528d25acd96bdf8dc2"
+      "bytes": 17295,
+      "sha256": "470aaf42803db9d2e3943d04c5440ba0d0cd66a3355ad86e154a9abfbcb1df8c"
     },
     {
       "path": "projects/oryn-engine/tests/test_rtmw_tasks.py",
@@ -8086,8 +8086,8 @@
     },
     {
       "path": "scripts/bootstrap",
-      "bytes": 4490,
-      "sha256": "1146441f9557cd9e65011b95187b7cbe303ff9773f81178a8d63b53ed6a16c8a"
+      "bytes": 4654,
+      "sha256": "9957b5e110a9d3337cd1b6087f0073c10273b8f0c41e1febc888211bc004a2ee"
     },
     {
       "path": "scripts/build-all",
@@ -8113,6 +8113,11 @@
       "path": "scripts/test-all",
       "bytes": 793,
       "sha256": "528b62039bf426e7930d218469ecdf8a2984a52ee4c4fe51ab6298a4eb1cef3b"
+    },
+    {
+      "path": "scripts/test-engine-shard.py",
+      "bytes": 3982,
+      "sha256": "1623e98d3c54ea1b45d849151881bb13d40a6dca3907f3bd177d18b8a98cbac4"
     },
     {
       "path": "scripts/verify-vendor-artifacts.mjs",

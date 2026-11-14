@@ -206,7 +206,10 @@ def test_unbound_vocabularies_and_controls_rejected(tmp_path, damage):
 
 
 @pytest.mark.parametrize("damage", [None, "missing", "control", "extra", "override", "alignment"])
-def test_metadata_discovery_uses_numeric_directory_and_cpu_without_weights(tmp_path, damage):
+@pytest.mark.parametrize("available_bytes", [1, 64 * 1024**3], ids=["low-memory", "ample-memory"])
+def test_metadata_discovery_uses_numeric_directory_and_cpu_without_weights(
+    tmp_path, damage, available_bytes
+):
     from test_models import FakeHub, model
 
     from oryn_engine.models import ModelStore
@@ -235,18 +238,27 @@ def test_metadata_discovery_uses_numeric_directory_and_cpu_without_weights(tmp_p
         pipeline_tag="automatic-speech-recognition",
         files=[(n, 483546902 if n == "model.bin" else 100, "a" * 64) for n in names],
     )
-    store = ModelStore(tmp_path, hub=hub, runtime_available=True)
+    store = ModelStore(
+        tmp_path,
+        hub=hub,
+        runtime_available=True,
+        runtime_planning_state_provider=lambda: ("balanced", available_bytes),
+    )
     store._pack_runtime_locator = SimpleNamespace(
         resolve=lambda p: object() if p.pack_id == "oryn.transformers-pytorch" else None
     )
     result = store.inspect(model("independent/numeric-whisper"))
-    assert result["executable"] is (damage is None), json.dumps(result, indent=2)
+    assert result["executable"] is (damage is None and available_bytes > 1), json.dumps(
+        result, indent=2
+    )
     if damage is None:
-        assert result["executableBackends"] == ["cpu"]
+        assert result["executableBackends"] == (["cpu"] if available_bytes > 1 else [])
         assert result["runtimePack"]["runnerId"] == "transformers.shared-tasks"
         assert result["taskProfile"]["features"]["wordTimestamps"] == "unsupported"
         assert result["taskProfile"]["features"]["languageDetection"] == "supported"
         assert {v["name"] for v in result["selectedFiles"]} == adapter.FILES
+        if available_bytes == 1:
+            assert "MODEL_MEMORY_INSUFFICIENT" in result["blockingReasons"]
     assert not hub.downloaded
 
 

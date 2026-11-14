@@ -37,7 +37,7 @@ separately with the user's approval and are not included in this distribution.
 ## Develop from source
 
 Use Apple Silicon macOS with a compatible native toolchain, Node.js 22.12 or newer,
-pnpm 10.6.5, Python 3.12, `uv` and Git. From the checkout root:
+pnpm 10.6.5, CPython 3.12.16, `uv` and Git. From the checkout root:
 
 ```sh
 ./scripts/bootstrap
@@ -45,8 +45,11 @@ pnpm dev
 ```
 
 Bootstrap builds the included Protocol and SDK dependency artifacts and installs
-the public components. It uses the bundled Registry package directly. Downloads
-of ordinary development dependencies require network access.
+the public components. It pins CPython 3.12.16 because source recognition is
+qualified against that exact parser version; `uv` downloads it if needed. With
+`ORYN_OFFLINE=1`, that interpreter and cached dependencies must already be available.
+Bootstrap uses the bundled Registry package directly. Downloads of ordinary
+development dependencies require network access.
 
 | Command | Purpose |
 | --- | --- |

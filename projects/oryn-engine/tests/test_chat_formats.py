@@ -62,7 +62,7 @@ def test_image_generation_text_encoder_framing_is_unchanged():
 
 
 def test_llama_cpp_vision_template_is_generated_from_reviewed_markers():
-    from tests.test_llama_cpp_worker import GEMMA4_VISION_TEMPLATE
+    from test_llama_cpp_worker import GEMMA4_VISION_TEMPLATE
 
     assert chat_formats.llama_cpp_vision_arguments("gemma4") == (
         "--jinja",
