@@ -1,0 +1,371 @@
+[
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-random-sdxl-safetensors",
+      "runtime": {
+        "packId": "oryn.diffusers-pytorch",
+        "packVersion": "0.11.0",
+        "runnerId": "diffusers.pipeline"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "dg845/tiny-random-stable-diffusion-xl",
+        "revision": "7ae769dd7f63b06308f2f23881d329a0cb1c89d2"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-image"
+        ]
+      },
+      "taskContract": "text-to-image-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "model_index.json",
+        "scheduler/scheduler_config.json",
+        "text_encoder/config.json",
+        "text_encoder/model.safetensors",
+        "text_encoder_2/config.json",
+        "text_encoder_2/model.safetensors",
+        "tokenizer/*",
+        "tokenizer_2/*",
+        "unet/config.json",
+        "unet/diffusion_pytorch_model.safetensors",
+        "vae/config.json",
+        "vae/diffusion_pytorch_model.safetensors"
+      ],
+      "capabilities": {
+        "task": "text-to-image",
+        "architectures": [
+          "StableDiffusionXLPipeline"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "image"
+        ],
+        "capabilities": {
+          "deterministicSeed": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 268435456,
+        "workingMemoryBytes": 536870912
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "conformance": {
+          "status": "fixture-only",
+          "platforms": [
+            "macos-arm64-mps",
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "8bcd4ad59b82cf6a4d1b7c8b1c79bde4a228490f1bd72689260818733df5ccf4",
+      "signature": "HB78tn6Qduj4IR+Hld3zkeYc0cgfH8aOfxy+3qF/9QtPsqFsG1jO7vMSuyWjMcMxLcU/S0vrQ/2/AsvIXQqWGsUH6rxmQLTeVDclAUPTZyuBlaB9P/vWyJKKsvr/FTYFGLdo7hpGAOKdnuUNdjPe8ra+FdRHepXCcAGNb9v7HvMCYvv6Wko36hdWyzDRqIU1qSqcf/ZH8smFKAvzv6VsB79+JoZVozpiDrwx0BI0rxYFYwu3CbWqcuunKOPfEjpGMiALxkUgAuWMEVcAnK5KnGz2TOE9LCv+EOb/dDplpr9f/usiP7sfAJgZ1bgbo/zg9ixJdh/vHIn8Ml4qXAhTywbctfQV2NRQUaZZozwCodQWHe8aXitr1V4Xg3j26J+HcinsfErVED4dDmBm7TlwWRkRTg0ui5j+v6Sv47xPYUL1ghPEJzhE9keR/Ac2b9uDpJgAf1t1FEku8uhABUwg8LhDfAPt9W7ph1jrPXuUS+qp+7Pfh/VvagevV+VSGhFJ"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.generic-safe-diffusers-image",
+      "runtime": {
+        "packId": "oryn.diffusers-pytorch",
+        "packVersion": "0.11.0",
+        "runnerId": "diffusers.pipeline"
+      },
+      "model": null,
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-image"
+        ]
+      },
+      "taskContract": "text-to-image-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "model_index.json",
+        "*/*.json",
+        "*.safetensors",
+        "tokenizer*/*"
+      ],
+      "capabilities": {
+        "task": "text-to-image",
+        "architectures": [],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "image"
+        ],
+        "capabilities": {
+          "deterministicSeed": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 0,
+        "workingMemoryBytes": 0
+      },
+      "metadata": {
+        "license": "Repository-defined",
+        "conformance": {
+          "status": "fixture-only",
+          "platforms": [
+            "macos-arm64-mps",
+            "cuda",
+            "cpu"
+          ]
+        },
+        "generationProfiles": [
+          {
+            "match": {
+              "_class_name": "Krea2Pipeline",
+              "is_distilled": true
+            },
+            "profile": {
+              "profileId": "diffusers.krea2.distilled",
+              "recommended": true,
+              "parameters": {
+                "width": {
+                  "default": 512,
+                  "minimum": 64,
+                  "maximum": 2048,
+                  "step": 8,
+                  "supported": true,
+                  "editable": true
+                },
+                "height": {
+                  "default": 512,
+                  "minimum": 64,
+                  "maximum": 2048,
+                  "step": 8,
+                  "supported": true,
+                  "editable": true
+                },
+                "steps": {
+                  "default": 8,
+                  "minimum": 1,
+                  "maximum": 100,
+                  "step": 1,
+                  "supported": true,
+                  "editable": true
+                },
+                "guidanceScale": {
+                  "default": 0.0,
+                  "minimum": 0.0,
+                  "maximum": 30.0,
+                  "step": 0.1,
+                  "supported": true,
+                  "editable": true
+                }
+              }
+            }
+          },
+          {
+            "match": {
+              "_class_name": "Krea2Pipeline",
+              "is_distilled": false
+            },
+            "profile": {
+              "profileId": "diffusers.krea2.base",
+              "recommended": true,
+              "parameters": {
+                "width": {
+                  "default": 512,
+                  "minimum": 64,
+                  "maximum": 2048,
+                  "step": 8,
+                  "supported": true,
+                  "editable": true
+                },
+                "height": {
+                  "default": 512,
+                  "minimum": 64,
+                  "maximum": 2048,
+                  "step": 8,
+                  "supported": true,
+                  "editable": true
+                },
+                "steps": {
+                  "default": 28,
+                  "minimum": 1,
+                  "maximum": 100,
+                  "step": 1,
+                  "supported": true,
+                  "editable": true
+                },
+                "guidanceScale": {
+                  "default": 4.5,
+                  "minimum": 0.0,
+                  "maximum": 30.0,
+                  "step": 0.1,
+                  "supported": true,
+                  "editable": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "c17d200792680d236253205b37f78fa34f60eeae3cc7878b269352412e0f4b00",
+      "signature": "DuBHPGuptWEy+2vu+e/CZ13WNTknXUaAygixvHD+7ydpHq+BBJEjYEvsq4K1KHh9r+6F2Q6TuBnUXk8IfaUgu6sR3eLs09gAecomamPwHUJJQWwMXNaBYSZ8gYnddAYFv7JKtRCBNEQlSJTmfl+hMVEOJEqt7uPfn1uEj6QF0+E2ARQt5L+1bjAyZyWyeSJLc7P+Ll8YpwF35oIkZgnsoFCyBHmIFU0wwFTACeXI8Ryjbnwe5FQjkl73amltELnb9Qo4gbWJumA8s+qki8uPu+iJubd6nlL76EED2N/HmZvBm4wK5vBWVZSetbqmiJXr0w8qqIdCCmB7299dG1asegaeL7gGrCJP2c9xpxVyw9JM3fksUTqo1gICVk4/AdQ19WiAykqpp18AAxN51cg/yVvWaomc18Vv/LbADGwChyLd3mKV8BdmbVkGuCKgSdEY25SgxcPDlTLEGp8Z07XVV6ucDkww4nhRZPMP4Rb19uVrXTcGX1oV/yIQpEefCFOs"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-random-wan2.1-t2v",
+      "runtime": {
+        "packId": "oryn.diffusers-pytorch",
+        "packVersion": "0.11.0",
+        "runnerId": "diffusers.pipeline"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "Erland/tiny-wan2.1-t2v-debug",
+        "revision": "f7f0c2439a5728ad0ef1a009053128ee6eeb1889"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-video"
+        ]
+      },
+      "taskContract": "text-to-video-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "model_index.json",
+        "scheduler/scheduler_config.json",
+        "text_encoder/config.json",
+        "text_encoder/model.safetensors",
+        "tokenizer/*",
+        "transformer/config.json",
+        "transformer/diffusion_pytorch_model.safetensors",
+        "vae/config.json",
+        "vae/diffusion_pytorch_model.safetensors"
+      ],
+      "capabilities": {
+        "task": "text-to-video",
+        "architectures": [
+          "WanPipeline"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "video"
+        ],
+        "capabilities": {
+          "deterministicSeed": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 1073741824,
+        "workingMemoryBytes": 2147483648
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "conformance": {
+          "status": "fixture-only",
+          "platforms": [
+            "macos-arm64-mps",
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "f6258a2b89b847a29522f046a0ab7e097dc66c61a08f8f80f3402712d6501357",
+      "signature": "v8wWLp3JSMprVae72ETWg8O4/+aXNKST+RmxWpRB0FMI/TBaWOZdEhFKmDu5cORSFKPZQy46iPGJiFDF29WepiqyPTmj43xaSm2/Eg1wqAmrO9xKb71o6mD/uoqiKv+pHhKQA6wC+ZrKiMOn69wyJeceOfnOK2p3Zgky8WSbP39fqQqRvnGyvYhNEOIdL3n9ZnbNeMK5lkCZK/ROX4Od7VcojkBK9JAAFst9rnuBdRfUt7fWVEgHpnBEtX9Vy8qGVyCPAzuVRSCYKHTML1AiDMy5ZeEfa6YQsTnAANL6vw89Fe6+L5mi/+SM6HiJqka2JfN0myxuv+tqT16LDesTVCoiz10VtJR3G1ZNWwE/J2OuMq6cKmgjooONsUF5Lec/9XKfKDdl9P/RhVaa3m9oNCq96n4WQqKtHqsNk8s/1+xh89EMAFg51SQfNigId9KVrKJA1DwqH2BdylwUA5IFUhLgPmK5mECPYLD/NwCJ7M5MULAjQXh+LXImnx91B62z"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.segmind-vega-fp16",
+      "runtime": {
+        "packId": "oryn.diffusers-pytorch",
+        "packVersion": "0.11.0",
+        "runnerId": "diffusers.pipeline"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "segmind/Segmind-Vega",
+        "revision": "7714c4363e5856ff974a4f4b068e8691f26d0b40"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-image"
+        ]
+      },
+      "taskContract": "text-to-image-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "model_index.json",
+        "scheduler/scheduler_config.json",
+        "text_encoder/config.json",
+        "text_encoder/model.fp16.safetensors",
+        "text_encoder_2/config.json",
+        "text_encoder_2/model.fp16.safetensors",
+        "tokenizer/*",
+        "tokenizer_2/*",
+        "unet/config.json",
+        "unet/diffusion_pytorch_model.fp16.safetensors",
+        "vae/config.json",
+        "vae/diffusion_pytorch_model.fp16.safetensors"
+      ],
+      "capabilities": {
+        "task": "text-to-image",
+        "architectures": [
+          "StableDiffusionXLPipeline"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "image"
+        ],
+        "capabilities": {
+          "deterministicSeed": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 7516192768,
+        "workingMemoryBytes": 4294967296
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "conformance": {
+          "status": "passed",
+          "platforms": [
+            "macos-arm64-mps"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "3bf49f372a48e3709b5852e24a3faf5f6c204edea12d9fb5a199794c6c8b798d",
+      "signature": "v+/98+n4PjiQi/jXHhrdTOzL3MnCpjeDWgd9K8u+OONxLSLQLPa3kZjzG2UhJRfHzdbGrgUorbw2AoHVsLsWALxKd2Pk5JParSLtOSd0uGwfopHKYwiMpO/sUCmVAlLorpViWygOWNJbND5mE4fa6GaiIcIzCoIpLfMpNq4EaI4+KkiBQB28Y/Q9AUds/Odyst3M6Dr1iDboloyJ74S/yok5VptZbgOCkK1fMLJBBNp9WR+BJ/sBRNtAYC01mZAtEsd38sFQEUwmZlBr2CXbVNsm+UEm1TIAEA5Kc/5AypIjuc6BpYyYodxZL62Jwrq4Yd8CY6f6uv2EqXo0lKur1i0ld+0OkPn6gfFglQxTfOYSM/YEQ/xPfFQ1gP37qmQnIw4eTRHTOP0SPc9u0365kYHNyrSTjMJrNrYdKlBLhj/hoo38ql3lDNl//lMy2SRok5tQdX4VVBJW1rDlCZn46JlkF7cx8/lMEw2CgHP/SrKjPdIK2xNnJOd4eyIMOVPU"
+    }
+  }
+]

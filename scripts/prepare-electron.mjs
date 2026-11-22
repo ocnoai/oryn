@@ -6,7 +6,7 @@ import { dirname, isAbsolute, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const appRequire = createRequire(join(root, 'projects/oryn-browser/apps/browser/package.json'));
+const appRequire = createRequire(join(root, 'components/browser/apps/browser/package.json'));
 let executable;
 if (process.env.ORYN_OFFLINE === '1') {
   const packageRoot = dirname(appRequire.resolve('electron/package.json'));

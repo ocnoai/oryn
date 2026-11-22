@@ -1,0 +1,153 @@
+name: Signed macOS release candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        type: choice
+        options: [beta, stable]
+        required: true
+      engine_sha:
+        description: Reviewed Engine commit (40 hex characters)
+        required: true
+      protocol_sha:
+        description: Reviewed Protocol commit (40 hex characters)
+        required: true
+      examples_sha:
+        description: Reviewed Examples commit (40 hex characters)
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oryn-signed-candidate
+  cancel-in-progress: false
+
+jobs:
+  candidate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: [self-hosted, macOS, ARM64, oryn-release]
+    environment: oryn-release
+    timeout-minutes: 180
+    env:
+      ORYN_UPDATE_CHANNEL: ${{ inputs.channel }}
+      ORYN_UPDATE_BASE_URL: ${{ vars.ORYN_UPDATE_BASE_URL }}
+      ORYN_APPLE_TEAM_ID: ${{ vars.ORYN_APPLE_TEAM_ID }}
+      ORYN_RELEASE_OUTPUT: ${{ github.workspace }}/candidate-${{ github.run_id }}-${{ github.run_attempt }}
+      ENGINE_SHA: ${{ inputs.engine_sha }}
+      PROTOCOL_SHA: ${{ inputs.protocol_sha }}
+      EXAMPLES_SHA: ${{ inputs.examples_sha }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Require pinned inputs and configured repositories
+        env:
+          ENGINE_REPOSITORY: ${{ vars.ORYN_ENGINE_REPOSITORY }}
+          PROTOCOL_REPOSITORY: ${{ vars.ORYN_PROTOCOL_REPOSITORY }}
+          EXAMPLES_REPOSITORY: ${{ vars.ORYN_EXAMPLES_REPOSITORY }}
+        run: |
+          node - <<'NODE'
+          for (const name of ['ENGINE', 'PROTOCOL', 'EXAMPLES']) {
+            if (!/^[a-f0-9]{40}$/.test(process.env[name + '_SHA'] || '')) throw new Error(name + ' needs an immutable SHA');
+            if (!/^[\w.-]+\/[\w.-]+$/.test(process.env[name + '_REPOSITORY'] || '')) throw new Error(name + ' repository is not configured');
+          }
+          NODE
+      - uses: actions/checkout@v4
+        with:
+          path: components/browser
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.ORYN_ENGINE_REPOSITORY }}
+          ref: ${{ inputs.engine_sha }}
+          path: components/engine
+          token: ${{ secrets.ORYN_SOURCE_READ_TOKEN }}
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.ORYN_PROTOCOL_REPOSITORY }}
+          ref: ${{ inputs.protocol_sha }}
+          path: components/protocol
+          token: ${{ secrets.ORYN_SOURCE_READ_TOKEN }}
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.ORYN_EXAMPLES_REPOSITORY }}
+          ref: ${{ inputs.examples_sha }}
+          path: components/examples
+          token: ${{ secrets.ORYN_SOURCE_READ_TOKEN }}
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.5
+      - uses: astral-sh/setup-uv@v6
+      - name: Browser validation
+        working-directory: components/browser
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm typecheck
+          pnpm lint
+          pnpm test
+          pnpm security:verify
+      - name: Engine validation and wheel
+        working-directory: components/engine
+        run: |
+          uv sync --frozen --extra dev
+          uv run ruff check .
+          uv run pytest
+          uv build
+      - name: Build Protocol and reference applications
+        run: |
+          uv build --project components/protocol/python
+          pnpm --dir components/examples install --frozen-lockfile
+          pnpm --dir components/examples test
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.GITHUB_WORKSPACE;
+          const spec = JSON.parse(fs.readFileSync('components/browser/packaging/runtime-spec.json'));
+          const values = {
+            ORYN_ENGINE_WHEEL: path.join(root, 'components/engine/dist', `oryn_engine-${spec.engine}-py3-none-any.whl`),
+            ORYN_PROTOCOL_WHEEL: path.join(root, 'components/protocol/python/dist', `oryn_protocol-${spec.protocol}-py3-none-any.whl`),
+            ORYN_ENGINE_REVISION: process.env.ENGINE_SHA,
+          };
+          fs.appendFileSync(process.env.GITHUB_ENV, Object.entries(values).map(([k,v]) => `${k}=${v}\n`).join(''));
+          NODE
+      - name: Assemble reviewed runtime closure
+        working-directory: components/browser
+        run: pnpm runtime:assemble
+      - name: Sign, notarize and verify final ZIP
+        working-directory: components/browser
+        env:
+          CSC_LINK: ${{ secrets.CSC_LINK }}
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
+          APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
+          APPLE_KEYCHAIN_PROFILE: ${{ vars.APPLE_KEYCHAIN_PROFILE }}
+        run: pnpm package:mac:release
+      - name: Packaged runtime and source provenance
+        working-directory: components/browser
+        run: |
+          node scripts/verify-packaged-runtime.mjs "$ORYN_RELEASE_OUTPUT/mac-arm64/Oryn Browser.app"
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          fs.writeFileSync(path.join(process.env.ORYN_RELEASE_OUTPUT, 'source-revisions.json'), JSON.stringify({
+            browser: process.env.GITHUB_SHA, engine: process.env.ENGINE_SHA,
+            protocol: process.env.PROTOCOL_SHA, examples: process.env.EXAMPLES_SHA,
+          }, null, 2));
+          NODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-candidate
+          if-no-files-found: error
+          compression-level: 0
+          path: |
+            ${{ env.ORYN_RELEASE_OUTPUT }}/*.zip
+            ${{ env.ORYN_RELEASE_OUTPUT }}/*.dmg
+            ${{ env.ORYN_RELEASE_OUTPUT }}/*-mac.yml
+            ${{ env.ORYN_RELEASE_OUTPUT }}/release-manifest.json
+            ${{ env.ORYN_RELEASE_OUTPUT }}/source-revisions.json

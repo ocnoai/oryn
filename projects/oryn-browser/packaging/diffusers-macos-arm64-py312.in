@@ -1,9 +1,0 @@
-diffusers==0.42.1
-accelerate==1.15.0
-bitsandbytes==0.50.1
-imageio==2.37.2
-imageio-ffmpeg==0.6.0
-requests==2.34.2
-urllib3==2.8.0
-charset-normalizer==3.5.1
-sentencepiece==0.2.2

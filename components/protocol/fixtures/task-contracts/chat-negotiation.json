@@ -1,0 +1,6 @@
+{
+  "legacyRequest": {"v": 1, "type": "request", "id": "legacy-chat-negotiation", "method": "task.contracts.negotiate", "params": {"contracts": ["image-to-text-v1"]}},
+  "currentRequest": {"v": 1, "type": "request", "id": "current-chat-negotiation", "method": "task.contracts.negotiate", "params": {"contracts": ["image-to-text-v1", "chat-v2"]}},
+  "legacyResult": {"contracts": ["image-to-text-v1"]},
+  "currentResult": {"contracts": ["image-to-text-v1", "chat-v2"]}
+}

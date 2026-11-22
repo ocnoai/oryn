@@ -1,0 +1,59 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.mlx-lm",
+    "version": "0.11.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.mlx_lm_worker"
+    },
+    "dependencyClosure": "mlx-lm0.32.2-vlm0.7.12-gemma4mm1-prism1-boldingmtp1-kolibri1-shared-mlx0.32.4-py312",
+    "runners": [
+      {
+        "runnerId": "mlx.chat",
+        "taskContracts": [
+          "chat-v1"
+        ],
+        "backends": [
+          "mlx"
+        ]
+      },
+      {
+        "runnerId": "mlx.multimodal",
+        "taskContracts": [
+          "multimodal-generation-v1"
+        ],
+        "backends": [
+          "mlx"
+        ]
+      },
+      {
+        "runnerId": "mlx.vad",
+        "taskContracts": [
+          "voice-activity-detection-v1"
+        ],
+        "backends": [
+          "mlx"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "e9c04916aa1f305b89456c15c2f17f42726d8b3e6a0dc269e2754e172b0f9f7a",
+    "signature": "o1B54zeN5ZS38DwNAG1QzqWFVCpurpXpoqS2/IZoupok3/BC6jhCDiBPxY1Nbm7IdOUdGCSkTnSwBqW1JYq6XO6M9I64sK9jiZbJKM6vDLPc61xMBk0aKVRoqFnvKg8y/y5hhtEF0Cm+UkTb5JZTqwU+ye0VK5b7gcvGGJDgH6wxM92Nv1KsacnrtOSu4WZcMGctlcMaKadZ+QbUoWodr6e3Zo0DPwJf0hPStq7ZDenL71Aq4pZ1Cq/b2GpZQFZ+1EN6+2f8s6MxtaWCvcbnGZAy6TirXr4Y0kfQUnXTQ1Iiov8jZOw+AO/7C6ZHfSrK8pMtsCkdAco4FhjZzNjBnu0n40ZgQ1PzzmKtrrLpfSGHNN1Wkvyj8vDehkIMfTQmEcHsIJCbzUG3DtDddqfqhzQshDg46bL9PC04wIrqjioqqvKnkaH8BrTLfdGDNG091semYlRqiQZi2NmcuaMg2nZU8t3IMYP5FNeix3FoHGApuHbU/JEtpyeUVQPL2p0J"
+  }
+}

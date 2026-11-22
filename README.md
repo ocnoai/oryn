@@ -10,6 +10,12 @@ Oryn lets websites use AI running on your computer. You control model choice,
 permissions and activity in the browser. Developers use a small TypeScript SDK
 for text, structured results and media.
 
+![Oryn architecture: a website uses the SDK to reach trusted Browser services; the Browser supervises the Engine through a shared Protocol, and local workers execute models. Downloads and browser-managed artifacts use separate paths.](docs/images/architecture.png)
+
+Browser supervises Engine as a separate local process. Protocol defines their shared contract, while runtime workers execute model tasks on your computer.
+
+[View the full-size architecture diagram](docs/images/architecture.svg).
+
 **Developer alpha · Apple Silicon macOS**
 
 This source distribution is prepared for [ocnoai/oryn](https://github.com/ocnoai/oryn).
@@ -17,17 +23,21 @@ Source builds and local test results do not establish a signed, qualified public
 installer. Native dependencies in the current runtime require macOS 26.2; support
 for older macOS versions and other operating systems remains unqualified.
 
-[SDK quickstart](projects/oryn-sdk/README.md) · [Architecture](docs/architecture.md) · [API reference](projects/oryn-sdk/docs/api-reference.md) · [Recipes](projects/oryn-sdk/docs/recipes.md)
+[SDK quickstart](components/sdk/README.md) · [Architecture](docs/architecture.md) · [API reference](components/sdk/docs/api-reference.md) · [Recipes](components/sdk/docs/recipes.md)
 
 ## What is included
 
 | Component | Responsibility |
 | --- | --- |
-| [Browser](projects/oryn-browser/README.md) | Browser application, trusted UI, website bridge, permissions, artifacts and Engine supervision |
-| [Engine](projects/oryn-engine/README.md) | Model inspection, downloads, resources, residency, scheduling and execution |
-| [Protocol](projects/oryn-protocol/README.md) | Versioned Browser–Engine messages, validation and shared task types |
-| [SDK](projects/oryn-sdk/README.md) | Framework-independent website client and typed helpers |
-| [Examples](projects/oryn-examples/README.md) | Ordinary websites consuming the packaged SDK |
+| [Browser](components/browser/README.md) | Browser application, trusted UI, website bridge, permissions, artifacts and Engine supervision |
+| [Engine](components/engine/README.md) | Model inspection, downloads, resources, residency, scheduling and execution |
+| [Protocol](components/protocol/README.md) | Versioned Browser–Engine messages, validation and shared task types |
+| [SDK](components/sdk/README.md) | Framework-independent website client and typed helpers |
+| [Examples](components/examples/README.md) | Ordinary websites consuming the packaged SDK |
+
+These components form one Oryn product. Browser packages and supervises Engine as
+a separate Python process. Protocol defines the shared Browser–Engine contract
+and supplies SDK task types, so its source sits alongside its consumers.
 
 Browser includes a versioned compiled Registry library and baseline model catalog.
 Registry source and hosting are maintained separately. No live Registry server is
@@ -61,7 +71,7 @@ development dependencies require network access.
 | `pnpm docs:check` | Check public documentation links and SDK examples |
 | `pnpm vendor:verify` | Verify the checked-in dependency artifacts |
 
-The [Browser guide](projects/oryn-browser/README.md) covers packaging and the
+The [Browser guide](components/browser/README.md) covers packaging and the
 limits of development builds. Source checkout tests do not qualify a distributed
 installer or a production update feed.
 
@@ -85,14 +95,14 @@ if (!capabilities.runtimeAvailable) {
 }
 ```
 
-Follow the [SDK quickstart](projects/oryn-sdk/README.md) for model selection,
+Follow the [SDK quickstart](components/sdk/README.md) for model selection,
 streaming, cancellation and cleanup. Model availability depends on the exact
 checkpoint, supported runtime, available resources and user approval.
 
 ## Run the examples
 
 After bootstrap, start an example's development server with its own `pnpm dev`
-command, or serve the five static websites together:
+command, or serve the six static websites together:
 
 ```sh
 docker compose up --build -d
@@ -100,7 +110,8 @@ docker compose up --build -d
 
 Open them in Oryn: transcription on `http://127.0.0.1:5184`, chat on
 `http://127.0.0.1:5185`, song generation on `http://127.0.0.1:5186`, image generation
-on `http://127.0.0.1:5187` and video subtitles on `http://127.0.0.1:5189`.
+on `http://127.0.0.1:5187` video subtitles on `http://127.0.0.1:5189`, and the
+[Editor](components/examples/editor/README.md) on `http://127.0.0.1:5192`.
 AI runs in Oryn on the visitor's computer. These loopback ports are for local
 development; production website integrations require HTTPS.
 

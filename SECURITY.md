@@ -21,6 +21,6 @@ verified signed artifacts. Windows process confinement and other unqualified
 platform paths must not be treated as equivalent protection.
 
 See the public [architecture](docs/architecture.md), [artifact boundary](docs/artifact-publication.md),
-[Browser security notes](projects/oryn-browser/SECURITY.md) and
-[Engine security notes](projects/oryn-engine/SECURITY.md). Release signing keys,
+[Browser security notes](components/browser/SECURITY.md) and
+[Engine security notes](components/engine/SECURITY.md). Release signing keys,
 credentials and live hosting configuration are supplied separately.

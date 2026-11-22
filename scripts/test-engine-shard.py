@@ -73,7 +73,7 @@ def main() -> int:
     parser.add_argument(
         "--engine-root",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "projects/oryn-engine",
+        default=Path(__file__).resolve().parents[1] / "components/engine",
         help="Engine project root; defaults to this checkout's Engine.",
     )
     args = parser.parse_args()

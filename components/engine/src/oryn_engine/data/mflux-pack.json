@@ -1,0 +1,55 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.mflux-mlx",
+    "version": "0.8.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_mflux_provider.worker"
+    },
+    "dependencyClosure": "mflux0.24-8a7fd0a4-provider7-mlx0.32-tf5.23-py312",
+    "runners": [
+      {
+        "runnerId": "mflux.image",
+        "taskContracts": [
+          "text-to-image-v1",
+          "image-editing-v1"
+        ],
+        "backends": [
+          "mlx"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    },
+    "provider": {
+      "abi": "1",
+      "catalog": "oryn_mflux_provider/catalog.json",
+      "catalogSha256": "e0ffb2129ab644e05a649da75575986c3b7792829b4785120912f7eb63fc91d4",
+      "tasks": [
+        "text-to-image",
+        "image-to-image"
+      ],
+      "libraries": [
+        "mflux",
+        "mlx"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "fd30ee193d1fe22aa0b3c70cf930bf363ab71b1b5a7c73a8bc2193ae49856004",
+    "signature": "pw2k9o5BGJPPHfZLyc05LVLNy5ouF5ALHfvtlvppkotI3MCtgmqHlZ9MrQ28V3T3X1j8oo23cgOZTZDqTRtSaBjHAlF5ZMkL3s+blY+7prM4NGBowcrIv7lv5K2gB/JzIAw424yOrI8yCTKVoidarcS4JWaGiEltF1OWEk9lrZ75DPXNpVX4YbJN2308ykQ4Vd2yLm9i6Qxum9wBciTR/BSfD7TOgZ9YqH0MccRl9aq5pKic9/iapLfo6P1SzIiMiY6y4GyoJXQN3jlWG/RsZT7WHU03rDhdbOGgXg3Q2aAKKCJShYJhMhe8ChyoDRQJuqmOOkX9eOI51tJBI3ebn3LoYOkzUko7pQMNM0UrRbr5nRKSvqZ4UxcCqLJ562Qa4Pcav6mvz7ewItHN74Htgi9sqVIoi8yrCXn8zkpzqSJUlMgZVIG7/b7EeaZIL5Gb6m4NFxuSPfGYqJVYpWVtpob56woYfr36mHU79U0W5dmhP/Kfur5I0tdd7ljzMu5R"
+  }
+}

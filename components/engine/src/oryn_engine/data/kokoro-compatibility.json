@@ -1,0 +1,139 @@
+[
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.kokoro-82m-v1-onnx-q8",
+      "runtime": {
+        "packId": "oryn.kokoro-onnx",
+        "packVersion": "0.4.0",
+        "runnerId": "kokoro.speech-synthesis"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-to-speech"
+        ]
+      },
+      "taskContract": "speech-synthesis-v1",
+      "level": "converted-artifact",
+      "requiredFiles": [
+        "config.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "onnx/model_quantized.onnx",
+        "voices/af_heart.bin",
+        "voices/af_bella.bin",
+        "voices/af_nicole.bin",
+        "voices/af_sarah.bin",
+        "voices/am_adam.bin",
+        "voices/am_michael.bin",
+        "voices/bf_emma.bin",
+        "voices/bf_isabella.bin",
+        "voices/bm_george.bin",
+        "voices/bm_lewis.bin"
+      ],
+      "capabilities": {
+        "task": "text-to-speech",
+        "architectures": [
+          "Kokoro82MOnnx"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "audio"
+        ],
+        "capabilities": {
+          "speechSynthesis": true,
+          "audioOutput": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 256000000,
+        "workingMemoryBytes": 256000000
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "source": {
+          "provider": "huggingface",
+          "repository": "hexgrad/Kokoro-82M",
+          "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+        },
+        "languages": [
+          "en-us",
+          "en-gb"
+        ],
+        "voices": [
+          {
+            "id": "af_heart",
+            "language": "en-us",
+            "name": "Heart"
+          },
+          {
+            "id": "af_bella",
+            "language": "en-us",
+            "name": "Bella"
+          },
+          {
+            "id": "af_nicole",
+            "language": "en-us",
+            "name": "Nicole"
+          },
+          {
+            "id": "af_sarah",
+            "language": "en-us",
+            "name": "Sarah"
+          },
+          {
+            "id": "am_adam",
+            "language": "en-us",
+            "name": "Adam"
+          },
+          {
+            "id": "am_michael",
+            "language": "en-us",
+            "name": "Michael"
+          },
+          {
+            "id": "bf_emma",
+            "language": "en-gb",
+            "name": "Emma"
+          },
+          {
+            "id": "bf_isabella",
+            "language": "en-gb",
+            "name": "Isabella"
+          },
+          {
+            "id": "bm_george",
+            "language": "en-gb",
+            "name": "George"
+          },
+          {
+            "id": "bm_lewis",
+            "language": "en-gb",
+            "name": "Lewis"
+          }
+        ],
+        "conformance": {
+          "status": "fixture-only",
+          "platforms": [
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "b837c222173736bae7ee5e3790514fb924cc52464b958acd74d888281bd1dc44",
+      "signature": "GLeHE38E/GUkcCWwQS2qQTTF8LLyoftYO3EKPDaig680m0eKTkwYEhUBpFujoGpu1wXfXNmwnMMcVZKHYnU7QQGjE3AAmbkfqoG6oQbu9+QXNvHjtkIO15bWBaHq1o4xiO3Vvm5L12mJmR/37dgwy6keFqw87Vc4JmqFtftyJfkPpfyccX4H1UQ4tZ4VVVsqVUujfTsPvFqA1uLJq9LKOL9k+kWc1zVpdPeb2DCSIa/9SsEAA9nBPQWcT4qeRGBkYzPMMqwSaptcWojRUrex2kdNkBwNU+xXQlPkXfOB612xS4e3BBYdXm5D7tY2GRew8FzKeMMy4M+pObrv2XXeMXSGCIwY4O/14H4HNt4EC8EZKJvao/Ly3eLJEz7nk9VraD8Bt93ik0PUqoCljaJICpb++bvz6kQsYvFNwOSFz1kc6XAG4S5A+FMV3PINHNxZhjYd6H7JGTHgHG+/SfS+91fQDSGMbirIPY6FMTkwprJ5OLTk+bs6H5w5jA0RR9x1"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "payload": {
+    "kind": "runtime-foundation",
+    "schemaVersion": 1,
+    "foundationId": "oryn.runtime.pytorch-speech",
+    "version": "1.0.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "minimumSafeVersion": "1.0.0",
+    "dependencyClosure": "qwen-tts0.1.1-transformers4.57.3-torch2.11-py312",
+    "platforms": [
+      "macos-arm64"
+    ],
+    "backends": [
+      "mps",
+      "cpu"
+    ],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer"
+    ],
+    "dtypes": [
+      "fp32"
+    ],
+    "quantizations": [],
+    "workerAbi": "1",
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    },
+    "license": {
+      "summary": "Apache-2.0 Qwen TTS and BSD-3-Clause PyTorch with composite dependencies",
+      "notice": "Review packaged upstream license notices before distribution."
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "77db6f66aaa6441877798565bf42b12378aae62f8e78445926f2d491792e3754",
+    "signature": "UViFPS2ZVeGjVYHr+kFaHhivvfD/XARRmB2JVvVCSd91uHLCwjWqI7lwC0io89ZDps+hUtAAl2hWr2t/4k86xf34QgbzPAFQVbvvcAgInX21UVhs+2N9oR5AQkxn7lcmfw3jrrY3djoQEeiC+tE3Md8HJNR1xmPm7QDKOtFg75L2iAWlcKjI45p/yfcb1PF9JUPJXN6xqryHJb9JcIgdUjBFPrhrraZTIsMxa+Vspqra9W7pH/KmhT7PCjPCR+h5RXXH5rYHJZuczH/lNqyArkyljzW1uSw4PcDD7zTkBIjtZeI1p968r6nbl7Gef19euKuB2Ye0vPW4SPHIgQSRmSKxYDi9o5hq9s/XuQVf8fEPQ0C/t+zX+nrYyNAjmyDeoh45NBaU0pN55SZaen/o7U0kqUstIFtZ29/a2+YlrL82RHFVvRppLHKgAazfX/w6gKeuoFuopZl4yttpCpISCj+wElzvBFb3pYm3i4zO+jb39TLAEvrnWg4nrmczgOBJ"
+  }
+}

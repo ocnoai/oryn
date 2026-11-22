@@ -1,0 +1,42 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.mlx-audio",
+    "version": "0.1.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.mlx_audio_worker"
+    },
+    "dependencyClosure": "mlx-audio0.6.6-lm0.32.2-shared-mlx0.32.4-tf5.23-py312",
+    "runners": [
+      {
+        "runnerId": "mlx-audio.shared-tasks",
+        "taskContracts": [
+          "speech-synthesis-v1",
+          "transcription-v1"
+        ],
+        "backends": [
+          "mlx"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "2000407ece18b9d30626372bc45a054b24b3a94face7ea542f89db9a41cef04d",
+    "signature": "hrzYp1LNv5DkBwcEHNNf2UEznPB4NelEa3RJpYu9P58bR6rzNjFDTZfsyQKRD0PJhdbmasEMkz5qGPAgoI6yz7CsZBJeKjaJk9LflS0AbJf75M8omF2n9y8W2tsawlUZYa6tiz3K67BSACPhVo/bHP3WtOgMqmyLjcuhGsRupL2BQay76cxBkewRscwIacoZ9zxsRYDlh0kKjYLHZxrR4BXd2q3w/abZtzRm7RPqV/xXniTrYkyE6tpjvJaT6tLvIh3lgqdY9GRxhxsaoKIk7rOZxlhyCIlraARLAdc6rLG816S9AZ3GSIvcmTGysbZ1N8QbIQ0zByZaY2Eh6et0019BbqL9zp4zJoipuki1jQ7DCkwqfz8lCb39llLnMwuCB3TCk2IVFjY5vMweekUrN+dZbLMk6ams1BipjlEN89J3QBeM9P+e3jLgangDCscZkvuYVL2LA4J4Xmmy0HvZFZOryW3JtYalEtBm7tx7a25wMSTiev1lf2GSu4pn+Xj7"
+  }
+}

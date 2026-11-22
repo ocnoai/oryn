@@ -1,6 +1,0 @@
-*
-!.gitignore
-!README.md
-!depth-native-source.json
-!diffusers-0.42.1-py3-none-any.whl
-!oryn_depth_native-0.1.0-py3-none-any.whl

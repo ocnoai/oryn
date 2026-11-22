@@ -1,0 +1,76 @@
+{
+  "payload": {
+    "kind": "runtime-adapter",
+    "schemaVersion": 1,
+    "adapterId": "oryn.adapter.diffusers",
+    "version": "1.7.0",
+    "publisher": "oryn.first-party",
+    "foundation": {
+      "id": "oryn.runtime.pytorch",
+      "abi": "1",
+      "minimumVersion": "1.0.0"
+    },
+    "architectures": [
+      "DiffusionPipeline",
+      "StableDiffusionXLPipeline",
+      "WanPipeline"
+    ],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer",
+      "diffusers"
+    ],
+    "taskContracts": [
+      "text-to-image-v1",
+      "image-to-image-v1",
+      "text-to-video-v1",
+      "image-to-video-v1",
+      "image-editing-v1",
+      "image-layers-v1",
+      "unconditional-image-generation-v1",
+      "image-text-to-video-v1",
+      "text-to-music-v1"
+    ],
+    "backends": [
+      "mps",
+      "cuda",
+      "cpu"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [
+      "bitsandbytes-nf4"
+    ],
+    "requiredFiles": [
+      "model_index.json",
+      "*/*.json",
+      "*.safetensors"
+    ],
+    "forbiddenSuffixes": [
+      ".py",
+      ".pyc",
+      ".pkl",
+      ".pickle",
+      ".dylib",
+      ".so",
+      ".dll",
+      ".exe",
+      ".sh"
+    ],
+    "resourceEstimator": "diffusers-v1",
+    "equivalenceClass": "exact-model",
+    "legacyPackIds": [
+      "oryn.diffusers-pytorch"
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "943e09054168db386dce5bcdaa97b07a0d70bcbfb9b86f31f6ea8dd72e844d5a",
+    "signature": "LQTv9NfA5qeKVWm6Bvnf/tGbUHVlCvidjZOibZA5beuB9KC2M086KaQG9lb7av/lBqu100YZEa0Zrg03OO7v1UfMCO7JmFxasaKxY2Fx9e9R6XcqoWMAgXLJO9roHolJ/Oesad+TVYhiolL5kQT8NnhY3xTlR+qMDwgRxHe/hdn6fUF+w0uagkjgFcGY7AhM9Jh1cA0h0kFmyXFDm+88oHQ9Gzypr5Lu6No/VMZX+c/fTCDpK46C9YSSZmywbbJeNKST4ssCFWa9M6YUd2d8CREHo+bI+yVGBsGhUed6ZkmP+i9ZnW60sCuqimAZuKZqnCRBa+tbT10gDIPw1VUnXsXQ5GmSJwynOhgMiSk8ARvHL3u9vCcg/6dBcp22xkgzmSjOyx++9cAVKL2LTaXTiihsifOcvTNwojpCOdmWyBKRKteqKMX8MFNiZyPidWUitNiRTjpmdWlEoCnlo+u13xQI6J/Rf7IZgPmVY1FY2dP4pyHLiCzFBRlvwH9Siimt"
+  }
+}

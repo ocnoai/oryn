@@ -4,10 +4,10 @@ set -euo pipefail
 
 WORKSPACE_DIR=${0:A:h:h}
 MODE=${1:-local}
-PROTOCOL_DIR="$WORKSPACE_DIR/projects/oryn-protocol"
-ENGINE_DIR="$WORKSPACE_DIR/projects/oryn-engine"
-BROWSER_DIR="$WORKSPACE_DIR/projects/oryn-browser"
-EXAMPLES_DIR="$WORKSPACE_DIR/projects/oryn-examples"
+PROTOCOL_DIR="$WORKSPACE_DIR/components/protocol"
+ENGINE_DIR="$WORKSPACE_DIR/components/engine"
+BROWSER_DIR="$WORKSPACE_DIR/components/browser"
+EXAMPLES_DIR="$WORKSPACE_DIR/components/examples"
 
 if [[ "$MODE" != "local" && "$MODE" != "release" ]]; then
   print -u2 "Usage: $0 [local|release]"

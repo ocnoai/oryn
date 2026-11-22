@@ -7,11 +7,11 @@ separate from these source checks.
 
 Use the component guide for the area you change:
 
-- [Browser](projects/oryn-browser/CONTRIBUTING.md)
-- [Engine](projects/oryn-engine/CONTRIBUTING.md)
-- [Protocol](projects/oryn-protocol/CONTRIBUTING.md)
-- [SDK](projects/oryn-sdk/CONTRIBUTING.md)
-- [Examples](projects/oryn-examples/CONTRIBUTING.md)
+- [Browser](components/browser/CONTRIBUTING.md)
+- [Engine](components/engine/CONTRIBUTING.md)
+- [Protocol](components/protocol/CONTRIBUTING.md)
+- [SDK](components/sdk/CONTRIBUTING.md)
+- [Examples](components/examples/CONTRIBUTING.md)
 
 Preserve the boundaries between websites, trusted Browser services and Engine
 execution. Protocol changes require coordinated schemas, fixtures and both

@@ -1,0 +1,40 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.kokoro-onnx",
+    "version": "0.4.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.kokoro_onnx_worker"
+    },
+    "dependencyClosure": "kokoro-onnx-ort1.32.0-espeak3.3.2-cpu3-py312",
+    "runners": [
+      {
+        "runnerId": "kokoro.speech-synthesis",
+        "taskContracts": [
+          "speech-synthesis-v1"
+        ],
+        "backends": [
+          "cpu"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-output",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "a258ed7fc6098a579c38f819959907123653cb26797fad2a32f88b5a0c66ecc9",
+    "signature": "OueF95HFol8vtomeJlDoTLQV7sfftHT68QQcAxlGshFCBVomQIv4g2IPT4H1QuAqeZWqtRPzrIBQfQpDej3GGa0V4qqi1HIzU81oCueHbbbCLboTe8Xj8qPP2D4+4mGirvCssQRc2q5b+IwvfTCu4PGX/3qVeGzhnguTLh8MEdWaN7lpmWoaEb9XPDGbqO8rpYns3WWgLtVnRcclXp2tHWOqCjkozjOm3/0EnBJxcCBOiR5dKrgUZSr+rlEKOcAhnRqRHAIttKGM2i1eXAvAlMAZERcIEz1GZNERB3Znf0wVmCKPh8JcVdEFJckzOi6HyEF01OKkhBibKV2lPOq+LfXSCh8ReXpyZlZ1ANoIGvf7W3F+Eu1xpw57JZcKqyGw/8/ble+h13yPCd5i0Ain08tlPDnLZNvOx6aom4mjwftodC1mIIMYOAQWrB0aFw0WWVFMBKisg8vHIEEJ+X8i3DZqCzIdhJXyZzzIdgkEnvHIYlYtFjAY1lIzipisNwgI"
+  }
+}

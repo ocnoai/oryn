@@ -1,0 +1,13 @@
+{
+  "payload": {
+    "kind": "oryn-capability-build",
+    "schemaVersion": 1,
+    "sha256": "7a763127effee60a117698bf1e841c8d86009f7b3a48dfcdee3de77322e64283"
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "26e63be4f290ca5363a2496483f0c9108229d92a92709ec75b97bd396bcc22af",
+    "signature": "V2iro3Ox1yIjiJ55pm4reQ1in/Umxgcfp6fY9ZX+aFij5i0ZXcgN0rf/AGOjKPJ0sGblnXeaMuQQoH3uWbE5NIUIb+u9vtU2HJcg0IGYb82p7P5haUjDKKaWClwcBi6D4BOSSA9ohbYb7LmAlI2E6yXoCN6hfjNNPst64o1jtN5nmfG7ZxeEOPeQ4TRPWzUIhlsplMo69FRfkqq/Q8oUi9i6E9AncurXVyRLKiaU+VH56fz2H1vPvM1f+UZ/G8BLRL3rUPK/zrTx7migHrp2wp+vocC1t4+ClWp0dUpjmK6LxBHHdUd9zX0t1/N3OeKAFOudCqSRfhsBaKOB6PuCe3abXL4a+UbaWgMg7lgCgr9UX8Fk3+WqOL47GTmf2m5GvOImY+URFUjrtCdBd+abhJiIEGvhIqNb8zJhecQd6WfjzEBsQAegynhTfQAdu0TZyezt9f+TWs9g61uGjdncRbk+PRWfa+XgAQabB5ZstvfXHg+tDMrPPdV8Q8UqAOH3"
+  }
+}

@@ -1,0 +1,13 @@
+packages:
+  - transcription
+  - chat
+  - song-generation
+  - image-generation
+  - video-subtitles
+  - editor
+
+overrides:
+  '@ocno/oryn-sdk@0.1.0': file:vendor/ocno-oryn-sdk-0.1.0.tgz
+
+onlyBuiltDependencies:
+  - esbuild

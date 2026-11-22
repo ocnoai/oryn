@@ -1,0 +1,10 @@
+{
+  "revision": "423ab90580b2847998591669b8326f47b6d14d8b",
+  "archiveSha256": "4746321c13661ea2bc57cd26d529bf0090fb0d19dff384e83b29fd5e5876c14d",
+  "sourceDateEpoch": 315532800,
+  "version": "0.43.0",
+  "wheel": {
+    "file": "diffusers-0.43.0-py3-none-any.whl",
+    "sha256": "6fc3996cd65955232b584dbd6265d3b17d398979fcc0b71be8e74bbc9c69b0f1"
+  }
+}

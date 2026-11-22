@@ -1,0 +1,57 @@
+{
+  "payload": {
+    "kind": "runtime-foundation",
+    "schemaVersion": 1,
+    "foundationId": "oryn.runtime.mlx",
+    "version": "1.3.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "minimumSafeVersion": "1.3.0",
+    "dependencyClosure": "oryn-mlx0.32.4-py312",
+    "platforms": [
+      "macos-arm64"
+    ],
+    "backends": [
+      "mlx"
+    ],
+    "formats": [
+      "safetensors",
+      "json",
+      "tokenizer",
+      "mflux"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [
+      "int3",
+      "int4",
+      "int5",
+      "int6",
+      "int8",
+      "q4"
+    ],
+    "workerAbi": "1",
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    },
+    "license": {
+      "summary": "MIT MLX with composite dependencies",
+      "notice": "Review packaged upstream license notices before distribution."
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "f2a2395ba7de5af90cc2d109c488bc9085b88abf732d9c01fd6b673bab2ad26d",
+    "signature": "FjuGHhrtSwl1IzUJgYHQeroMBhi1ooBu9yn+sWmBk0g7yPnQOaNq4h9YrDlbFuMsypQ0/kvEghWwAZcsef7uphwdlsH0N/DbaNMdXJRedUnPkL9+gzb0AHxTc9Qscwi9g+wk+HBRKrE56GkM/FR0R1au0zyv3e1OqyGRdZEIae9abdCQSfRSYrrt7Nz/ySw7vnypYvpspk+ONe4bvKAc9JUqk8Exk2F/iyWWaLyAeWMyltp3riQvGbEX1qQ3+GZddF1StGxcA1W+DYjtCM4/f0sqmGyZUkbLWvrC7AKeOrLRBqidY+GWoF0hmeXJvdzwnJ4B4lUQgzE8F6QbLolJ8GtwlELktiBNd45bOx3Qg8cy0J0ypF0/COb3Tze3Bcaql4+b4JEDzOvs3Fo6GLXxwgEpdB3Tr0K/BsXGWCCPluzEu4vGWIPbgBjXpEYBx/PCxsTpwlI6ORvAdkSJyHao0pvAvGeAFD8dZgCMm2BHHnovuYhUpRu4nhV7LLREgyOw"
+  }
+}

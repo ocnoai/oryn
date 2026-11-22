@@ -37,40 +37,40 @@ jobs:
           node-version: 22
           cache: pnpm
           cache-dependency-path: |
-            projects/oryn-protocol/pnpm-lock.yaml
-            projects/oryn-sdk/pnpm-lock.yaml
-            projects/oryn-browser/pnpm-lock.yaml
-            projects/oryn-examples/pnpm-lock.yaml
+            components/protocol/pnpm-lock.yaml
+            components/sdk/pnpm-lock.yaml
+            components/browser/pnpm-lock.yaml
+            components/examples/pnpm-lock.yaml
       - uses: astral-sh/setup-uv@v6
         with:
           python-version: '3.12.16'
           enable-cache: true
           cache-dependency-glob: |
-            projects/oryn-protocol/python/uv.lock
-            projects/oryn-engine/uv.lock
+            components/protocol/python/uv.lock
+            components/engine/uv.lock
       - name: Bootstrap from the public checkout
         run: ./scripts/bootstrap
       - name: Verify the reviewed CPython parser
         run: >-
-          projects/oryn-engine/.venv/bin/python -I -S -c
+          components/engine/.venv/bin/python -I -S -c
           'import sys; assert sys.implementation.name == "cpython" and sys.version_info[:3] == (3, 12, 16), sys.version'
       - name: Verify public sources and bundled dependencies
         run: pnpm vendor:verify && pnpm docs:check
       - name: Build and test Protocol and SDK
         run: |
-          pnpm --dir projects/oryn-protocol validate
-          pnpm --dir projects/oryn-sdk typecheck
-          pnpm --dir projects/oryn-sdk test
-          pnpm --dir projects/oryn-sdk build
+          pnpm --dir components/protocol validate
+          pnpm --dir components/sdk typecheck
+          pnpm --dir components/sdk test
+          pnpm --dir components/sdk build
       - name: Build and test Browser
         run: |
-          pnpm --dir projects/oryn-browser security:verify
-          pnpm --dir projects/oryn-browser typecheck
-          pnpm --dir projects/oryn-browser test
-          pnpm --dir projects/oryn-browser build
+          pnpm --dir components/browser security:verify
+          pnpm --dir components/browser typecheck
+          pnpm --dir components/browser test
+          pnpm --dir components/browser build
       - name: Build and test Examples and public documentation
         run: |
-          pnpm --dir projects/oryn-examples test
+          pnpm --dir components/examples test
           node scripts/check-public-docs.mjs --all
 
   engine:
@@ -95,30 +95,30 @@ jobs:
           node-version: 22
           cache: pnpm
           cache-dependency-path: |
-            projects/oryn-protocol/pnpm-lock.yaml
-            projects/oryn-sdk/pnpm-lock.yaml
-            projects/oryn-browser/pnpm-lock.yaml
-            projects/oryn-examples/pnpm-lock.yaml
+            components/protocol/pnpm-lock.yaml
+            components/sdk/pnpm-lock.yaml
+            components/browser/pnpm-lock.yaml
+            components/examples/pnpm-lock.yaml
       - uses: astral-sh/setup-uv@v6
         with:
           python-version: '3.12.16'
           enable-cache: true
           cache-dependency-glob: |
-            projects/oryn-protocol/python/uv.lock
-            projects/oryn-engine/uv.lock
+            components/protocol/python/uv.lock
+            components/engine/uv.lock
       - name: Bootstrap from the public checkout
         run: ./scripts/bootstrap
       - name: Verify the reviewed CPython parser
         run: >-
-          projects/oryn-engine/.venv/bin/python -I -S -c
+          components/engine/.venv/bin/python -I -S -c
           'import sys; assert sys.implementation.name == "cpython" and sys.version_info[:3] == (3, 12, 16), sys.version'
       - name: Test Engine file shard
         run: >-
-          uv run --project projects/oryn-engine --python 3.12.16 --frozen
+          uv run --project components/engine --python 3.12.16 --frozen
           python scripts/test-engine-shard.py --index ${{ matrix.shard }} --count 3
           --report .workspace-artifacts/engine-shard-${{ matrix.shard }}.json
       - name: Build Engine wheel
-        run: uv build --project projects/oryn-engine --python 3.12.16
+        run: uv build --project components/engine --python 3.12.16
       - name: Retain Engine shard inventory
         if: always()
         uses: actions/upload-artifact@v4

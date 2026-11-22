@@ -1,0 +1,123 @@
+{
+  "reference": {
+    "kind": "task-profile",
+    "schemaVersion": 1,
+    "profileId": "speech-synthesis-v1.96535a9f23f148c1f5b715ea",
+    "contract": {
+      "id": "speech-synthesis-v1",
+      "revision": 1
+    },
+    "task": "text-to-speech",
+    "inputModalities": [
+      "text",
+      "audio"
+    ],
+    "outputModalities": [
+      "audio"
+    ],
+    "inputSchemaRef": "taskInput.speech-synthesis-v1",
+    "resultSchemaRef": "taskResult.speech-synthesis-v1",
+    "features": {
+      "speechSynthesis": "unknown",
+      "audioOutput": "unknown",
+      "referenceAudio": "supported"
+    },
+    "parameters": {
+      "voice": {
+        "inputPointer": "/voice",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            {
+              "enum": [
+                "default",
+                "reference"
+              ]
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": "default"
+      },
+      "language": {
+        "inputPointer": "/language",
+        "valueSchema": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": "en-us"
+      },
+      "speed": {
+        "inputPointer": "/speed",
+        "valueSchema": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 2
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ],
+        "default": 1
+      },
+      "audioArtifactId": {
+        "inputPointer": "/audioArtifactId",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "string",
+              "pattern": "^artifact_[A-Za-z0-9_-]{20,80}$"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ]
+      },
+      "referenceText": {
+        "inputPointer": "/referenceText",
+        "valueSchema": {
+          "allOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "handling": "honored",
+        "editable": true,
+        "affects": [
+          "result"
+        ]
+      }
+    },
+    "limits": {},
+    "streamingChannels": [],
+    "extensions": {},
+    "provenance": "adapter-derived"
+  }
+}

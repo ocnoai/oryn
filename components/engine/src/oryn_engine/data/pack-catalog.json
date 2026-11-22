@@ -1,0 +1,227 @@
+{
+  "payload": {
+    "kind": "runtime-pack-catalog",
+    "schemaVersion": 1,
+    "catalogVersion": 8,
+    "publisher": "oryn.first-party",
+    "generatedAt": 1776643200000,
+    "packs": [
+      {
+        "packId": "oryn.ace-step-mlx",
+        "version": "0.1.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "6d360179ac5c9f04b65613ab06c65ca6f6c334cb92dedb64c6a7570c3907f7fd",
+        "abi": "1",
+        "dependencyClosure": "ace-step-v1.5.0-dce621408bee-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.1.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT core with composite runtime dependencies",
+          "notice": "Review the application and packaged upstream license notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.diffusers-pytorch",
+        "version": "0.11.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "e21a07666a335c7adbf1f638d91e6ae442989d67356b2f2552b6b0fdb2b439f0",
+        "abi": "1",
+        "dependencyClosure": "diffusers0.43.0-423ab905-multiref1-music31-h31-transformers5.23-torch2.15-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.11.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "Apache-2.0 core with composite runtime dependencies",
+          "notice": "Review the application and packaged upstream license notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.kokoro-onnx",
+        "version": "0.4.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "a258ed7fc6098a579c38f819959907123653cb26797fad2a32f88b5a0c66ecc9",
+        "abi": "1",
+        "dependencyClosure": "kokoro-onnx-ort1.32.0-espeak3.3.2-cpu3-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.4.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "Composite open-source speech runtime",
+          "notice": "Review ONNX Runtime, phonemizer, and eSpeak NG notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.llama-cpp",
+        "version": "0.5.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "3c5a93826fbe3b466cf73a9718e7c44f3b0cb3a4458274f73ee0743080538653",
+        "abi": "1",
+        "dependencyClosure": "llama.cpp-v1.0.0-b12359-b1b770d9-mtmd3-translation1-pillow12.3-abi1",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.5.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT native runtime",
+          "notice": "llama.cpp LICENSE is packaged beside the native executable closure.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.mflux-mlx",
+        "version": "0.8.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "fd30ee193d1fe22aa0b3c70cf930bf363ab71b1b5a7c73a8bc2193ae49856004",
+        "abi": "1",
+        "dependencyClosure": "mflux0.24-8a7fd0a4-provider7-mlx0.32-tf5.23-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.8.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT MFlux adapter with composite runtime dependencies",
+          "notice": "MFlux is packaged as Oryn adapter code; review upstream dependency notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.mlx-audio",
+        "version": "0.1.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "2000407ece18b9d30626372bc45a054b24b3a94face7ea542f89db9a41cef04d",
+        "abi": "1",
+        "dependencyClosure": "mlx-audio0.6.6-lm0.32.2-shared-mlx0.32.4-tf5.23-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.1.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT MLX-Audio with composite audio runtime dependencies",
+          "notice": "Review packaged MLX-Audio, Mistral Common and dependency notices.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.mlx-lm",
+        "version": "0.11.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "e9c04916aa1f305b89456c15c2f17f42726d8b3e6a0dc269e2754e172b0f9f7a",
+        "abi": "1",
+        "dependencyClosure": "mlx-lm0.32.2-vlm0.7.12-gemma4mm1-prism1-boldingmtp1-kolibri1-shared-mlx0.32.4-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.11.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT MLX-LM with composite dependencies",
+          "notice": "Review packaged MLX-LM and tokenizer dependency notices.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.onnx-runtime",
+        "version": "0.6.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "dce1639809685ed05abd7ac5cc255c34f6216acbfb321ba438ebd26926135856",
+        "abi": "1",
+        "dependencyClosure": "oryn-onnxruntime1.32.0-encoders2-q4-tdt1-classifier1-opencv4.13-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.6.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "MIT core with composite runtime dependencies",
+          "notice": "Review the application and packaged upstream license notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.qwen-tts-pytorch",
+        "version": "0.1.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "560d3d5a899cb030e747627138afae182971f2e867796cf689db2e6c91aabf55",
+        "abi": "1",
+        "dependencyClosure": "qwen-tts0.1.1-transformers4.57.3-torch2.11-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.1.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "Apache-2.0 Qwen TTS with composite speech dependencies",
+          "notice": "Review packaged upstream dependency notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      },
+      {
+        "packId": "oryn.transformers-pytorch",
+        "version": "0.33.0",
+        "publisher": "oryn.first-party",
+        "manifestDigest": "b92e00352ab8b4927ac7fe6899d69a0bcbd65dd49ea24012d6ab83321eca6a0c",
+        "abi": "1",
+        "dependencyClosure": "oryn-engine-tf5.23.0-torch2.15-native32-numericarchive5-wide-retrieval-librosa0.11-ct2-4.9.0-py312",
+        "platforms": [
+          "macos-arm64"
+        ],
+        "distribution": "bundled",
+        "artifact": null,
+        "minimumSafeVersion": "0.33.0",
+        "revokedVersions": [],
+        "license": {
+          "summary": "Apache-2.0 core with composite runtime dependencies",
+          "notice": "Review the application and packaged upstream license notices before distribution.",
+          "access": "public",
+          "acceptanceRequired": false
+        }
+      }
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "02246fb8cfb6e086226cb07e4758b009d235e81313446129df8bfec350d2add8",
+    "signature": "x5/K0OEmkszzd+a6bGGnHimDStWl3fnzn69xObPOvJw2MsY6f6s72NRgXtt3aLFti5ynENFSHTUGKx7G4iWTWlI7/ckZhTV0fvlP/uGw18y6vY4MzeOtFJ9M5i6+SNKkmP+nvadZdcOhWyiTNLoZaKLiJiWwwb3XeCTO0bObg3ulx+ZxZ/fsHJ5aUulTLXSLz/p7Zjl4p632gYekArRY8WsLDHAA83HV5i9pgMNWDmME5gGzMkFgNtNIvB5Xg9LVfGiCqzUbti2RUPBllBAZoGDGa2sz58rGdwLnKEm4wpevRq1tR7+pC4KnTT9iKj4zjrNp4gwW+6HxQM2dhPQ5hNp7dybkV7nah7wXkzetfcSXwu6FI/YJhZwO0cUmy3Do/mMdtTKwRfm1lhtQazf51sP3WuF4RnmJsmaRu8GspRap6tpZGUDJ8GfHV3CSXjCj0bTYjDADEbseKsQe1vYyeZDMpN5x8BD/pAWtKJOyVz9hu0Uocmuk9BgRbuUz3uQs"
+  }
+}

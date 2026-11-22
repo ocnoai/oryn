@@ -1,0 +1,111 @@
+{
+  "payload": {
+    "kind": "runtime-adapter",
+    "schemaVersion": 1,
+    "adapterId": "oryn.adapter.transformers",
+    "version": "1.24.0",
+    "publisher": "oryn.first-party",
+    "foundation": {
+      "id": "oryn.runtime.pytorch",
+      "abi": "1",
+      "minimumVersion": "1.2.0"
+    },
+    "architectures": [
+      "AutoModelForCausalLM",
+      "AutoModelForSpeechSeq2Seq",
+      "WhisperForConditionalGeneration",
+      "MusicgenForConditionalGeneration",
+      "Gemma2ForCausalLM",
+      "Gemma3ForCausalLM",
+      "LlamaForCausalLM",
+      "MistralForCausalLM",
+      "Qwen2ForCausalLM",
+      "Qwen3ForCausalLM",
+      "Qwen3_5ForCausalLM",
+      "Qwen3_5ForConditionalGeneration"
+    ],
+    "formats": [
+      "ctranslate2",
+      "json",
+      "safetensors",
+      "tokenizer",
+      "torch-numeric-zip"
+    ],
+    "taskContracts": [
+      "audio-classification-v1",
+      "audio-question-answering-v1",
+      "audio-transformation-v1",
+      "chat-v1",
+      "depth-estimation-v1",
+      "document-question-answering-v1",
+      "embeddings-v1",
+      "fill-mask-v1",
+      "image-classification-v1",
+      "image-embeddings-v1",
+      "image-segmentation-v1",
+      "image-to-text-v1",
+      "keypoint-detection-v1",
+      "mask-generation-v1",
+      "multimodal-generation-v1",
+      "pose-estimation-v1",
+      "question-answering-v1",
+      "reranking-v1",
+      "speech-synthesis-v1",
+      "summarization-v1",
+      "table-question-answering-v1",
+      "tabular-classification-v1",
+      "tabular-regression-v1",
+      "text-classification-v1",
+      "text-to-music-v1",
+      "time-series-forecasting-v1",
+      "token-classification-v1",
+      "transcription-v1",
+      "translation-v1",
+      "video-classification-v1",
+      "video-question-answering-v1",
+      "visual-document-retrieval-v1",
+      "visual-question-answering-v1",
+      "zero-shot-classification-v1",
+      "zero-shot-image-classification-v1",
+      "zero-shot-object-detection-v1"
+    ],
+    "backends": [
+      "mps",
+      "cuda",
+      "cpu"
+    ],
+    "dtypes": [
+      "fp32",
+      "fp16",
+      "bf16"
+    ],
+    "quantizations": [],
+    "requiredFiles": [
+      "config.json",
+      "*.safetensors",
+      "tokenizer*"
+    ],
+    "forbiddenSuffixes": [
+      ".py",
+      ".pyc",
+      ".pkl",
+      ".pickle",
+      ".dylib",
+      ".so",
+      ".dll",
+      ".exe",
+      ".sh"
+    ],
+    "resourceEstimator": "transformers-v1",
+    "equivalenceClass": "exact-model",
+    "legacyPackIds": [
+      "oryn.transformers-pytorch"
+    ]
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "91783d042ef8e6c402b10897c44aa628ac61a187cd93edb6e2bdc4cfd8cf7241",
+    "signature": "WlewNtzJMh/rMRMyshziK+dT3D+2Bx7VFWMfPniQ8EomizJdwpPxwc5b66ETwmYdpfJPPtGyXPrZA4u/KtTcfdvzkSKs+aNV0ribBEkxwfCM6/anuSr+oucXAeWnwhlT+vngsPqIeyWk2Z5e2a1z5y0wGYsmOPLSgCkkGteCfsJa68uZIAlf1qm8z5WZ8dPfPjS0s7QN0CCiXKpG5sg8xLCQWcvYo+PbOJoD2z0PvTKSZpGXcYfmiIwhJsz5otNtO8DARiPbxgSDvVGvRDaGFjLeMuNQG8jltqmMj9IfFvtLM+8WaBUl58oa9g68wFHzFYBDfwczzB6Sngvj7RrB4maDmacyFi4vUYyadXqj+stz5cUhuBHouafFxVnj1LCp2qhJTQ+KZwBhKavvCfQKLqVQJCuFS1krKj83Bifl/o1RGRgkPLIFsH6HbRZkxK/HsscWn47RLrqz8UNRorOISTN8ORM4WxEIb5tcZP1PBTdo3g8sZOllXMzoUAfJJUPY"
+  }
+}

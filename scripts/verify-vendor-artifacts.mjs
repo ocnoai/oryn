@@ -14,7 +14,7 @@ const seen = new Set();
 for (const artifact of manifest.artifacts) {
   if (
     !artifact || typeof artifact.path !== 'string' || isAbsolute(artifact.path) ||
-    !/^projects\/oryn-(?:browser|engine)\/vendor\/[A-Za-z0-9._-]+\.(?:tgz|whl|json)$/.test(artifact.path) ||
+    !/^components\/(?:browser|engine)\/vendor\/[A-Za-z0-9._-]+\.(?:tgz|whl|json)$/.test(artifact.path) ||
     artifact.path.includes('..') || seen.has(artifact.path) ||
     !/^[a-f0-9]{64}$/.test(artifact.sha256) ||
     !Number.isSafeInteger(artifact.bytes) || artifact.bytes <= 0 || artifact.bytes > 100 * 1024 ** 2

@@ -1,6 +1,6 @@
 # Oryn architecture
 
-[Overview](../README.md) · [SDK guide](../projects/oryn-sdk/README.md) · [API reference](../projects/oryn-sdk/docs/api-reference.md)
+[Overview](../README.md) · [SDK guide](../components/sdk/README.md) · [API reference](../components/sdk/docs/api-reference.md)
 
 Oryn connects ordinary websites to local model execution through a browser-owned capability boundary. The website describes what it needs; trusted Browser services mediate access; the Engine determines how the work can execute.
 
@@ -22,7 +22,7 @@ Runtime selection is implementation detail. The SDK never asks a website to choo
 
 ## From a user action to a result
 
-![Request lifecycle showing capability detection, model resolution with consent, session creation, a queued job, incremental events, a terminal result, and cleanup.](../projects/oryn-sdk/docs/images/request-lifecycle.png)
+![Request lifecycle showing capability detection, model resolution with consent, session creation, a queued job, incremental events, a terminal result, and cleanup.](../components/sdk/docs/images/request-lifecycle.png)
 
 1. **Detect.** `getCapabilities()` reports runtime availability and feature flags. Importing the SDK and creating a client do not ask for permission or start inference.
 2. **Resolve.** `models.request()` declares a role, model intent, and task requirements. Browser can ask for permission or model choice; Engine checks compatibility and resource feasibility. A download or model load may be necessary.
@@ -101,12 +101,12 @@ The website bridge does not expose Electron APIs, Python execution, shell comman
 
 These entry points are product source, not additional services the website calls:
 
-- [SDK client and helpers](../projects/oryn-sdk/src/client.ts)
-- [Website API types](../projects/oryn-sdk/src/types.ts)
-- [Shared task inputs and outputs](../projects/oryn-sdk/src/shared-tasks.ts)
-- [Browser implementation](../projects/oryn-browser/apps/browser/src/main/)
-- [Engine implementation](../projects/oryn-engine/src/oryn_engine/)
-- [Protocol implementation](../projects/oryn-protocol/)
+- [SDK client and helpers](../components/sdk/src/client.ts)
+- [Website API types](../components/sdk/src/types.ts)
+- [Shared task inputs and outputs](../components/sdk/src/shared-tasks.ts)
+- [Browser implementation](../components/browser/apps/browser/src/main/)
+- [Engine implementation](../components/engine/src/oryn_engine/)
+- [Protocol implementation](../components/protocol/)
 
 The diagram SVGs are editable source assets. They illustrate the current website API and runtime boundaries, not a public service deployment or a guarantee of model availability.
 

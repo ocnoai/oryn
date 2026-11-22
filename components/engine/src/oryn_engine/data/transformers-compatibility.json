@@ -1,0 +1,323 @@
+[
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-qwen2",
+      "runtime": {
+        "packId": "oryn.transformers-pytorch",
+        "packVersion": "0.33.0",
+        "runnerId": "transformers.chat"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+        "revision": "f56c2fbf7fabc03ffff3494d3c2f8d06c774493d"
+      },
+      "match": {
+        "architectures": [
+          "Qwen2ForCausalLM"
+        ],
+        "tasks": [
+          "text-generation"
+        ]
+      },
+      "taskContract": "chat-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "config.json",
+        "*.safetensors",
+        "tokenizer*"
+      ],
+      "capabilities": {
+        "task": "text-generation",
+        "architectures": [
+          "Qwen2ForCausalLM"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "text"
+        ],
+        "capabilities": {
+          "chat": true,
+          "streaming": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 32000000,
+        "workingMemoryBytes": 8000000
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "8756f6ce01f118c4ac82b873f28ddcf1fce726a5c99926b9b3c099c40c73e6f0",
+      "signature": "NF2ts2TflWXYRUJIGB9JHIdWsVS++9TifSxuqllsBWMvG4wVkk4Cma4odJSTxUfFy1u1Jd1ix6n0MrlVvMA28JRJovuWfljT2Zf1lGbZhlMG8TvRqw5kyMMzZmPmtKEzIl+TbyQ5tsxsQRdYnAW3ph4XiI8LokcbdGhhzUZrkmGE1UE+kt6RswWcXiy1IkpzNuoI69Q2I1rLsTK9RJ0UEkwoemHtf82vsl1G53AywzuZAoFLAJWaC9h57z7qciMLE80ThhfPCBe9CxLJs2ioZ43xe3Jq5Rgu2oEtWiNNclpLDP4jgEUrQjyf0xK++G1MSVgftJhlcPZnDS5NNbBkrGA0LUVTKaa+FeWz+cXUsml3yYAa0NWEZyrsk0c1cZRBEmYaINnnPtQaqBt5kXgcfKW33kaNU1YNm+euyZjv2JQ8la1oncoey3oG/FQLE55yzKuhe+UjXXHa6XKD8Kd0vIvG4MMPFxCsKQS84dOc0GY9zHgF6ItTrABvd3N3DH6x"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-whisper",
+      "runtime": {
+        "packId": "oryn.transformers-pytorch",
+        "packVersion": "0.33.0",
+        "runnerId": "transformers.transcription"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "Xenova/tiny-random-WhisperForConditionalGeneration",
+        "revision": "e1a9e01a339a6c8ba2aadb92a271624e46f86d05"
+      },
+      "match": {
+        "architectures": [
+          "WhisperForConditionalGeneration"
+        ],
+        "tasks": [
+          "automatic-speech-recognition"
+        ]
+      },
+      "taskContract": "transcription-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "config.json",
+        "*.safetensors",
+        "tokenizer*",
+        "preprocessor_config.json"
+      ],
+      "capabilities": {
+        "task": "automatic-speech-recognition",
+        "architectures": [
+          "WhisperForConditionalGeneration"
+        ],
+        "inputModalities": [
+          "audio"
+        ],
+        "outputModalities": [
+          "text"
+        ],
+        "capabilities": {
+          "speechRecognition": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 32000000,
+        "workingMemoryBytes": 8000000
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "53cf3c933c920b96cfeb778b08f262e2eeeffb6dd37866983050709e6d0f8abe",
+      "signature": "mtTjgbAN+eOZqQyhqTjf8wFxP0bgcBxxQM5VQj/z38rlPhUk9grci2vpZ8MSq/bJwDPb1bDex9QWVuJTF6vvlxPaitqwaSGzv4WU8RGqOovy9FQW3GxurfDamLaJEoqDsJPKo/8cL0JKllsLepqssGfse8sUfKxphvRPyPj4O+a8bmGF+M+UgGAvnVBkBL0Klg1sZlq56C8BwParWekD328hN21COWSGgayA8Vva28ss4fz7jN/Sei8Y+Gg/niAEHlstvi2vmd/1zzoeqLDwHSPnDS+TUASamvwHMnpTL18npv5o5C5fKIV8p5zaRgF1uC2Wf6VbxlkKWxh6QGRtZ/pXZ7ptOV70Hzpy+sEJEF16rPmh9DBaA5tXZ0BQGrC7PuJ1dkJJ98XO9QsqhmD1nu9IVlCR7fzB8w7tToL+ZIICghVhG5qGEooVWWpecsWA5kKznpc48hQGzEo4z1bpJLB6IQp0GATqrczg16UauU//a1VfcPaAFOiZazG+eZLD"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-musicgen",
+      "runtime": {
+        "packId": "oryn.transformers-pytorch",
+        "packVersion": "0.33.0",
+        "runnerId": "transformers.musicgen"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "hf-tiny-v2/tiny-random-MusicgenForConditionalGeneration",
+        "revision": "4606e560821ed4c10d76d6a6513c893ec3cf2ae0"
+      },
+      "match": {
+        "architectures": [
+          "MusicgenForConditionalGeneration"
+        ],
+        "tasks": [
+          "text-to-audio"
+        ]
+      },
+      "taskContract": "text-to-music-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "config.json",
+        "*.safetensors",
+        "tokenizer*",
+        "preprocessor_config.json"
+      ],
+      "capabilities": {
+        "task": "text-to-audio",
+        "architectures": [
+          "MusicgenForConditionalGeneration"
+        ],
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "audio"
+        ],
+        "capabilities": {
+          "audioOutput": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 64000000,
+        "workingMemoryBytes": 16000000
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "941e302b1295acbb86a3436608a488fda079c3e131ee9c8c033f25bf52ab2a92",
+      "signature": "qzX4KzkeDdgcEyBegTTyyUqLe8giI0c8vNpcHm19IOWQCweQBJGbUY2TH9GaCLeGEFyP0zDlHIOZPEn/pt95iFh2jJf2lrRGzaCMKLqNxe1l6ePHZeS5hTuPT27JqgisRjYM2EYhqFhag7j3I/z46tEqqAwTdqqLNHkoUuUXHRcioMDgTU52jHs2NJuC2cWoArcvXAMPWCp4uH2bqM0Y8Et/RUMCJ0RP+UvXJtc6vpqnXM2gGiP1xkbhUonpL5la68eQhk4xVmP+AOR9feHGRdFqjZc28SEJ7CjK/Q7MMyGTzFUdwOwm0LgtpCPO8vtMzwsJAFND79VWpSFltAapSeHZh2bDkkh9QtCjdvTrL3/O5ao/SOEkBhy/nJFYvlBKpZ+FK6gBFjhf96qWqUkzubSEjoCevisPkrAd/qhU726ZsE2u0Y1zBYhakKh0sRtnnA70ULDjZMGJ2yU4WOWlFPoJrSChVYgo5+Uwh8HEbK5rfZPZnH5wHYdAlEqgXNMl"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.qwen3-embedding-0.6b",
+      "runtime": {
+        "packId": "oryn.transformers-pytorch",
+        "packVersion": "0.33.0",
+        "runnerId": "transformers.embeddings"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "Qwen/Qwen3-Embedding-0.6B",
+        "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+      },
+      "match": {
+        "architectures": [
+          "Qwen3ForCausalLM"
+        ],
+        "tasks": [
+          "feature-extraction"
+        ]
+      },
+      "taskContract": "embeddings-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "config.json",
+        "model.safetensors",
+        "tokenizer*",
+        "merges.txt",
+        "vocab.json"
+      ],
+      "capabilities": {
+        "task": "feature-extraction",
+        "architectures": [
+          "Qwen3ForCausalLM"
+        ],
+        "contextLength": 32768,
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "embedding"
+        ],
+        "capabilities": {
+          "structuredOutput": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 2400000000,
+        "workingMemoryBytes": 800000000
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "languages": [
+          "multilingual-100-plus"
+        ],
+        "conformance": {
+          "status": "passed",
+          "platforms": [
+            "macos-arm64-mps",
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "2e3122f92405c13cfb81b974b9c19efbd985fc21b2d3ee4424dcd7f3c53035a4",
+      "signature": "qZVVYrSxxQqmpMtsAgReFv2MXhjvcLi9v8ZkKduTjS3QvyJreTToze6l2Odke1uS11Toix/cu2GDCroybPsveg6psj35vdr3dVuqdlx3Rpl9x4xmgH3UYckR4SGVjvTTzatVAo6Sr54rXEw46ONe3kab7vXhXAofN3yuy2FvDYut2ddr663iNKD8TD7D40W3aXGy+FnpAD/FPYJ2uVNFdNgJgbKLyVBIuu4zLzxbLL8J7wNNi5l3yeUAF5b6ToTTEbYYS9k23/EG8E3yYZoBsGgzaj+euwNeLnFUMYVC5D3UrAPUFRfuJW7WnumEcZkzuFwg2Z1PRHTeh8BlmMy0JZdySwCCzDof0Hy0g1XVP2SWllEb32wuVKyT/7/P1f3a9q/jdd92yC8Km/dSP+IyDn3M3b/qKJESLT2IZtsQrUbDU+KdUbjuvi0JdIoGdekhchsdbVt963ojg5uwgXcx7RLJyoof63V2SPfxwTHqqtFeFYlUPWUG7ymfWLHWm0fN"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.qwen3-reranker-0.6b",
+      "runtime": {
+        "packId": "oryn.transformers-pytorch",
+        "packVersion": "0.33.0",
+        "runnerId": "transformers.reranking"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "Qwen/Qwen3-Reranker-0.6B",
+        "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473"
+      },
+      "match": {
+        "architectures": [
+          "Qwen3ForCausalLM"
+        ],
+        "tasks": [
+          "text-ranking"
+        ]
+      },
+      "taskContract": "reranking-v1",
+      "level": "native-declarative",
+      "requiredFiles": [
+        "config.json",
+        "model.safetensors",
+        "tokenizer*",
+        "merges.txt",
+        "vocab.json",
+        "chat_template.jinja"
+      ],
+      "capabilities": {
+        "task": "text-ranking",
+        "architectures": [
+          "Qwen3ForCausalLM"
+        ],
+        "contextLength": 32768,
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "structured"
+        ],
+        "capabilities": {
+          "structuredOutput": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 2400000000,
+        "workingMemoryBytes": 800000000
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "languages": [
+          "multilingual-100-plus"
+        ],
+        "conformance": {
+          "status": "passed",
+          "platforms": [
+            "macos-arm64-mps",
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "b62e0bbc614c248e3b4e5fd56887cce351ba1e20a7e20fc619543f0d99db9038",
+      "signature": "X0RaSDwCHFAQniO3eN/IOR8UOLNhGuCARzHbiBku2xOqmDvUTEjNB7243/hEeUdcErjE69fu03epMhcxtx1jLBzUkARoDBpo160XSLkCAYLKODdEmhJBWdma7XskqpvK165ial8wbHCcjC+rr234zIFQvYbP4KjgeO92KRz37cJFn9IfXFgkqCKAphVLVw6pnurNECpzQqmcEIj0PY+MGmPHOg9Iq48QZTH2FoFOrIys463a7jPoPbAJTy02Uu1auki/pMpyhPb+Aky58Z2LwR9fXoOW2yL4lP3utmZK74osHNZSFAuCHnDfZq12gqocAd4QNtlGZ79aA8VC1UjfRXXxFiZKbgmkTGqyQ4TDcJj1obgE92jPS5wHNOZAqfrixYwjTq0qmWY5LZXpkOkUP1OL/FcxZASk1akf93ueqqXxEZMmAQ+pgRAy8aZwZT+QRLhRwN+lbQ8I4nixf5zX/gMkmRotkoCbF/qPsGA3VQsep8c4GfVqb2SPEBFQ8VGR"
+    }
+  }
+]

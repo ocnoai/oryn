@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const sdk = path.join(root, 'projects/oryn-sdk');
+const sdk = path.join(root, 'components/sdk');
 const require = createRequire(path.join(sdk, 'package.json'));
 const linksOnly = process.argv.includes('--links-only');
 const allPublicDocs = process.argv.includes('--all');
@@ -15,9 +15,9 @@ const ts = linksOnly ? undefined : require('typescript');
 const exampleFiles = [
   'README.md',
   'docs/architecture.md',
-  'projects/oryn-sdk/README.md',
-  'projects/oryn-sdk/docs/api-reference.md',
-  'projects/oryn-sdk/docs/recipes.md',
+  'components/sdk/README.md',
+  'components/sdk/docs/api-reference.md',
+  'components/sdk/docs/recipes.md',
 ];
 const files = [...exampleFiles];
 if (allPublicDocs) {
@@ -32,7 +32,7 @@ if (allPublicDocs) {
     }
     return result;
   }
-  for (const directory of ['docs', 'projects/oryn-browser', 'projects/oryn-engine', 'projects/oryn-protocol', 'projects/oryn-sdk', 'projects/oryn-examples']) {
+  for (const directory of ['docs', 'components/browser', 'components/engine', 'components/protocol', 'components/sdk', 'components/examples']) {
     files.push(...await markdown(directory));
   }
   files.push('CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md');
@@ -62,7 +62,7 @@ for (const [file, content] of contents) {
     const [rawFile, fragment] = target.split('#');
     const destination = rawFile ? path.resolve(root, path.dirname(file), decodeURIComponent(rawFile)) : path.join(root, file);
     const relative = path.relative(root, destination).replaceAll(path.sep, '/');
-    if (relative.startsWith('../') || /^(planning|reports|\.git)\//.test(relative) || relative.startsWith('projects/oryn-specs/') || (allPublicDocs && /^projects\/oryn-(private-examples|registry|web)\//.test(relative))) {
+    if (relative.startsWith('../') || /^(examples-definiton|planning|reports|\.git)(?:\/|$)/.test(relative) || relative.startsWith('components/specs/') || (allPublicDocs && /^components\/(private-examples|registry|web)\//.test(relative))) {
       failures.push(`${file}: private or outside-workspace link: ${target}`);
       continue;
     }
@@ -105,7 +105,7 @@ try {
     types: [],
     lib: ['lib.es2022.d.ts', 'lib.dom.d.ts', 'lib.dom.iterable.d.ts'],
     baseUrl: root,
-    paths: { '@ocno/oryn-sdk': ['projects/oryn-sdk/src/index.ts'] },
+    paths: { '@ocno/oryn-sdk': ['components/sdk/src/index.ts'] },
   } : undefined;
   const program = ts?.createProgram(sources, options);
   for (const diagnostic of program ? ts.getPreEmitDiagnostics(program) : []) {

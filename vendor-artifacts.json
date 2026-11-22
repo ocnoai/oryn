@@ -2,42 +2,42 @@
   "schemaVersion": 1,
   "artifacts": [
     {
-      "path": "projects/oryn-browser/vendor/diffusers-0.42.1-py3-none-any.whl",
-      "bytes": 6355913,
-      "sha256": "7dc37b15eece402a10f4e60de3723f09c33709ab0d4f0a436a0e99c6c6696e1d"
+      "path": "components/browser/vendor/diffusers-0.43.0-py3-none-any.whl",
+      "bytes": 6518643,
+      "sha256": "6fc3996cd65955232b584dbd6265d3b17d398979fcc0b71be8e74bbc9c69b0f1"
     },
     {
-      "path": "projects/oryn-browser/vendor/mflux-0.24.0-py3-none-any.whl",
+      "path": "components/browser/vendor/mflux-0.24.0-py3-none-any.whl",
       "bytes": 1735010,
       "sha256": "05d5bb59b9294ed23500ba94bf7dd7e2cc5659de700736444d5bd01a2d3a42ff"
     },
     {
-      "path": "projects/oryn-browser/vendor/ocno-oryn-registry-0.1.0.tgz",
+      "path": "components/browser/vendor/ocno-oryn-registry-0.1.0.tgz",
       "bytes": 22677,
       "sha256": "84ff8f5764dc5290bcd113f24ceed8185ed9ff406c0a01a73e67285a6a6a3f73"
     },
     {
-      "path": "projects/oryn-browser/vendor/oryn_depth_native-0.1.0-py3-none-any.whl",
+      "path": "components/browser/vendor/oryn_depth_native-0.1.0-py3-none-any.whl",
       "bytes": 71864,
       "sha256": "3ce7a1db1ebcb8cb83b0b1812054f512b53f4aaf4711766a344c81b6ce0a7ed4"
     },
     {
-      "path": "projects/oryn-browser/vendor/oryn_mflux_provider-0.6.0-py3-none-any.whl",
+      "path": "components/browser/vendor/oryn_mflux_provider-0.6.0-py3-none-any.whl",
       "bytes": 93378,
       "sha256": "00221b654afb8b3b2b2ccf953dd63b27668207e95fd83d8c29586fd9c1ef348d"
     },
     {
-      "path": "projects/oryn-engine/vendor/depth-native-source.json",
+      "path": "components/engine/vendor/depth-native-source.json",
       "bytes": 3954,
       "sha256": "98060dd87079f23fad6970ae2071a75417e0c4156744b950403b7d73421ac222"
     },
     {
-      "path": "projects/oryn-engine/vendor/diffusers-0.42.1-py3-none-any.whl",
-      "bytes": 6355913,
-      "sha256": "7dc37b15eece402a10f4e60de3723f09c33709ab0d4f0a436a0e99c6c6696e1d"
+      "path": "components/engine/vendor/diffusers-0.43.0-py3-none-any.whl",
+      "bytes": 6518643,
+      "sha256": "6fc3996cd65955232b584dbd6265d3b17d398979fcc0b71be8e74bbc9c69b0f1"
     },
     {
-      "path": "projects/oryn-engine/vendor/oryn_depth_native-0.1.0-py3-none-any.whl",
+      "path": "components/engine/vendor/oryn_depth_native-0.1.0-py3-none-any.whl",
       "bytes": 71864,
       "sha256": "3ce7a1db1ebcb8cb83b0b1812054f512b53f4aaf4711766a344c81b6ce0a7ed4"
     }

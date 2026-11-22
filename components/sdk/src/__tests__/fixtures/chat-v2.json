@@ -1,0 +1,657 @@
+{
+  "profiles": {
+    "switchable": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v2.switchable",
+      "contract": {
+        "id": "chat-v2",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v2",
+      "resultSchemaRef": "taskResult.chat-v2",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8192
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 4096
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {
+        "contextTokens": 32768,
+        "maxMessages": 128
+      },
+      "streamingChannels": [
+        "text",
+        "reasoning"
+      ],
+      "extensions": {},
+      "provenance": "adapter-derived",
+      "thinking": {
+        "support": "switchable",
+        "default": false
+      }
+    },
+    "fixedOff": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v2.fixed",
+      "contract": {
+        "id": "chat-v2",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v2",
+      "resultSchemaRef": "taskResult.chat-v2",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8192
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 4096
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {
+        "contextTokens": 32768,
+        "maxMessages": 128
+      },
+      "streamingChannels": [
+        "text",
+        "reasoning"
+      ],
+      "extensions": {},
+      "provenance": "adapter-derived",
+      "thinking": {
+        "support": "fixed",
+        "default": false
+      }
+    },
+    "fixedOn": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v2.fixed",
+      "contract": {
+        "id": "chat-v2",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v2",
+      "resultSchemaRef": "taskResult.chat-v2",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8192
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 4096
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {
+        "contextTokens": 32768,
+        "maxMessages": 128
+      },
+      "streamingChannels": [
+        "text",
+        "reasoning"
+      ],
+      "extensions": {},
+      "provenance": "adapter-derived",
+      "thinking": {
+        "support": "fixed",
+        "default": true
+      }
+    },
+    "unsupported": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v2.unsupported",
+      "contract": {
+        "id": "chat-v2",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v2",
+      "resultSchemaRef": "taskResult.chat-v2",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8192
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 4096
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {
+        "contextTokens": 32768,
+        "maxMessages": 128
+      },
+      "streamingChannels": [
+        "text",
+        "reasoning"
+      ],
+      "extensions": {},
+      "provenance": "adapter-derived",
+      "thinking": {
+        "support": "unsupported",
+        "default": null
+      }
+    },
+    "unknown": {
+      "kind": "task-profile",
+      "schemaVersion": 1,
+      "profileId": "chat-v2.unknown",
+      "contract": {
+        "id": "chat-v2",
+        "revision": 1
+      },
+      "task": "text-generation",
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "inputSchemaRef": "taskInput.chat-v2",
+      "resultSchemaRef": "taskResult.chat-v2",
+      "features": {
+        "chat": "supported",
+        "streaming": "supported"
+      },
+      "parameters": {
+        "maxTokens": {
+          "inputPointer": "/maxTokens",
+          "valueSchema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8192
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 4096
+        },
+        "temperature": {
+          "inputPointer": "/temperature",
+          "valueSchema": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.7
+        },
+        "topP": {
+          "inputPointer": "/topP",
+          "valueSchema": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "handling": "honored",
+          "editable": true,
+          "affects": [
+            "result"
+          ],
+          "default": 0.9
+        }
+      },
+      "limits": {
+        "contextTokens": 32768,
+        "maxMessages": 128
+      },
+      "streamingChannels": [
+        "text",
+        "reasoning"
+      ],
+      "extensions": {},
+      "provenance": "adapter-derived",
+      "thinking": {
+        "support": "unknown",
+        "default": null
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "off",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": false
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": false,
+              "applied": true,
+              "effective": false,
+              "reason": "applied",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "on",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": true
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": true,
+              "applied": true,
+              "effective": true,
+              "reason": "applied",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "default",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": null,
+              "applied": false,
+              "effective": null,
+              "reason": "model_default",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fixedMatches",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": false
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": false,
+              "applied": true,
+              "effective": false,
+              "reason": "already_fixed",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fixedConflicts",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": false
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": false,
+              "applied": false,
+              "effective": true,
+              "reason": "fixed_mode",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "unsupported",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": false
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": false,
+              "applied": false,
+              "effective": null,
+              "reason": "unsupported_model",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "unknown",
+      "input": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Synthetic request"
+          }
+        ],
+        "maxTokens": 4096,
+        "thinking": true
+      },
+      "result": {
+        "kind": "structured",
+        "value": {
+          "text": "A final synthetic answer.",
+          "reasoning": "Synthetic reasoning.",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 10,
+            "outputTokens": 6,
+            "reasoningTokens": 2,
+            "answerTokens": 4
+          },
+          "metadata": {
+            "thinking": {
+              "requested": true,
+              "applied": false,
+              "effective": null,
+              "reason": "unknown_support",
+              "source": "engine"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

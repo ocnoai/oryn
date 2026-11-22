@@ -1,35 +1,42 @@
 services:
   transcription:
     build:
-      context: ./projects/oryn-examples
+      context: ./components/examples
       args:
         EXAMPLE: transcription
     ports:
       - "127.0.0.1:${TRANSCRIPTION_PORT:-5184}:80"
   chat:
     build:
-      context: ./projects/oryn-examples
+      context: ./components/examples
       args:
         EXAMPLE: chat
     ports:
       - "127.0.0.1:${CHAT_PORT:-5185}:80"
   song-generation:
     build:
-      context: ./projects/oryn-examples
+      context: ./components/examples
       args:
         EXAMPLE: song-generation
     ports:
       - "127.0.0.1:${SONG_GENERATION_PORT:-5186}:80"
   image-generation:
     build:
-      context: ./projects/oryn-examples
+      context: ./components/examples
       args:
         EXAMPLE: image-generation
     ports:
       - "127.0.0.1:${IMAGE_GENERATION_PORT:-5187}:80"
+  editor:
+    build:
+      context: ./components/examples
+      dockerfile: editor/Dockerfile
+    ports:
+      - "127.0.0.1:${EDITOR_PORT:-5192}:80"
+
   video-subtitles:
     build:
-      context: ./projects/oryn-examples
+      context: ./components/examples
       args:
         EXAMPLE: video-subtitles
     ports:

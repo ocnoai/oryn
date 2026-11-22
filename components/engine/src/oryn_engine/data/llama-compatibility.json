@@ -1,0 +1,139 @@
+[
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.tiny-gemma3-gguf-q8-0",
+      "runtime": {
+        "packId": "oryn.llama-cpp",
+        "packVersion": "0.5.0",
+        "runnerId": "llama.cpp.chat"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "ggml-org/tinygemma3-GGUF",
+        "revision": "c287502cd9e278dac8eed805c112cce5d0081e0b"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-generation"
+        ]
+      },
+      "taskContract": "chat-v1",
+      "level": "converted-artifact",
+      "requiredFiles": [
+        "tinygemma3-Q8_0.gguf"
+      ],
+      "capabilities": {
+        "task": "text-generation",
+        "architectures": [
+          "gemma3"
+        ],
+        "contextLength": 131072,
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "text"
+        ],
+        "capabilities": {
+          "chat": true,
+          "streaming": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 134217728,
+        "workingMemoryBytes": 268435456
+      },
+      "metadata": {
+        "license": "WTFPL",
+        "quantization": "Q8_0",
+        "contextLength": 131072,
+        "chatTemplate": "gemma3",
+        "modelFile": "tinygemma3-Q8_0.gguf",
+        "conformance": {
+          "status": "fixture-only",
+          "platforms": [
+            "macos-arm64-metal",
+            "cpu"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "9a019f408c8457e56f1340a0db291e51cb3971b8cf83153575489484c0a3ec36",
+      "signature": "gWOS/WEBhZrt5m3wtkDNcA/6n5DLA5XVvG0EkQ2qCi3XKio4QZvwrjbmESIqjc5xLtNOvMe6BhT430RT7LvmBuw62qLJUQjYQg2l3o+Wqek7zVjHIZ93VnIYqCq/JONX5s9Id60EEOpozazzB54TiROrJTjRVpH0N8htUyAQvmUiyKqdZcDUr5s8m0YMEdrXtwbEHMzt2TET+3ouXxnIqi5u472O8+hZCByp5t4lpIYs8dC9uZIaebZ7mFenbnDNMB4eKGzeaALCSJwBWhflP1bBxA9r+c6qwAaSgDg6Da99x5NxfzDvjjQ1CbaQfrQnrDlPJ2iqzk1rr/ZQsZs7MFebACPlES2cwR4l9pwNDhshNKLqpeEONw6Z38sLJCnYC4K0RgFMLCVXsUh5BZx6Y8DhDKuqxj4GJupvLzRg5DBpHTWIA0/llVSaHwrWS+U1yK3FLU7MNpxtwIWLjfh+c5ESQkYUGhzBe2+QeqgSBvukWUUyFZOvR+Pq81Hh06Kd"
+    }
+  },
+  {
+    "payload": {
+      "kind": "model-compatibility",
+      "schemaVersion": 1,
+      "manifestId": "oryn.compat.qwen2.5-0.5b-instruct-gguf-q4-k-m",
+      "runtime": {
+        "packId": "oryn.llama-cpp",
+        "packVersion": "0.5.0",
+        "runnerId": "llama.cpp.chat"
+      },
+      "model": {
+        "provider": "huggingface",
+        "repository": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "revision": "9217f5db79a29953eb74d5343926648285ec7e67"
+      },
+      "match": {
+        "architectures": [],
+        "tasks": [
+          "text-generation"
+        ]
+      },
+      "taskContract": "chat-v1",
+      "level": "converted-artifact",
+      "requiredFiles": [
+        "qwen2.5-0.5b-instruct-q4_k_m.gguf"
+      ],
+      "capabilities": {
+        "task": "text-generation",
+        "architectures": [
+          "qwen2"
+        ],
+        "contextLength": 32768,
+        "inputModalities": [
+          "text"
+        ],
+        "outputModalities": [
+          "text"
+        ],
+        "capabilities": {
+          "chat": true,
+          "streaming": true
+        }
+      },
+      "resources": {
+        "estimatedResidentBytes": 805306368,
+        "workingMemoryBytes": 1073741824
+      },
+      "metadata": {
+        "license": "Apache-2.0",
+        "quantization": "Q4_K_M",
+        "contextLength": 32768,
+        "chatTemplate": "chatml",
+        "modelFile": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "conformance": {
+          "status": "passed",
+          "platforms": [
+            "macos-arm64-metal"
+          ]
+        }
+      }
+    },
+    "integrity": {
+      "algorithm": "rsa-sha256",
+      "keyId": "oryn-sprint47-development-2026",
+      "digest": "208101617f86bd58d86e0de62dcd18dfb53f14f33d503bac2696d2fae404f93a",
+      "signature": "BN2a9NWZZl+Vzrx+9Vi9WFrUMdNiWEWbVf1a7Vdi6ipkr4p1Wd5di17TPfBYUMBDo5jkBZ0cLDVKorsW+PkdaYKEfrPzxpdthvvIobmRtyHzfA3fxzVw1RAPduNqIUENL92vO82Wdul2DcLMrUbv40eABUddQH8TkE/blytSZ85iJWMRYIXiXGfdH2gLJP55pbO7tX8Hl2DFgHUUJsy3A3tHbzc+9J54NmEYjPuCs2omXGmJS0fR7+Fv8z+D9GJkwe0UA22OH4yFxXQNywke0JSIiS9jfRVPDLVjkTOjjIvUvdpE6ungIS4StsAtA/HGQOrC4AciJhBeKAdBRC7uG6QG9zH5U27UdDO3EhITs73Uffg9xdPNY3b8HUqaXS01C1mx91zx4wGHv3/g2M26uUIv+8exJ/cucT+vMTgxXvLFfSIPUgKAfeMZSeM9yp49O81zG9gXqaNWtP8783vZjL/CfN3f1PJ4ncijieyw8zXt+GuqYSg9+GMvafZfkqpk"
+    }
+  }
+]

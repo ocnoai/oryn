@@ -1,0 +1,51 @@
+{
+  "payload": {
+    "kind": "runtime-pack",
+    "schemaVersion": 1,
+    "packId": "oryn.diffusers-pytorch",
+    "version": "0.11.0",
+    "publisher": "oryn.first-party",
+    "abi": "1",
+    "runtime": {
+      "kind": "python",
+      "entrypoint": "oryn_engine.runtime_packs.diffusers_worker"
+    },
+    "dependencyClosure": "diffusers0.43.0-423ab905-multiref1-music31-h31-transformers5.23-torch2.15-py312",
+    "runners": [
+      {
+        "runnerId": "diffusers.pipeline",
+        "taskContracts": [
+          "text-to-image-v1",
+          "image-to-image-v1",
+          "text-to-video-v1",
+          "image-to-video-v1",
+          "image-editing-v1",
+          "image-layers-v1",
+          "unconditional-image-generation-v1",
+          "image-text-to-video-v1",
+          "text-to-music-v1"
+        ],
+        "backends": [
+          "mps",
+          "cuda",
+          "cpu"
+        ]
+      }
+    ],
+    "policy": {
+      "network": "deny",
+      "filesystemRoots": [
+        "model",
+        "artifact-input",
+        "artifact-output",
+        "scratch"
+      ]
+    }
+  },
+  "integrity": {
+    "algorithm": "rsa-sha256",
+    "keyId": "oryn-sprint47-development-2026",
+    "digest": "e21a07666a335c7adbf1f638d91e6ae442989d67356b2f2552b6b0fdb2b439f0",
+    "signature": "mltW2aSExdxHI7nUkHeEQuAlRqK10PgntyxcleetiNPsSHJS5rlgqNy/GALn5OTLisiGmRYwNpEG5bj4eY7kcTxQtYouwKuT7MWUMOv3xynVcyfhrSIzmQxqVK/x8imVqzxmjoo+RL7gn9XE8QyRlpVpt7gr76nb+DU8mNnz4YvF66WglHtNTbh3OjXaG2SwYyFRCcSMwr3JXmwDBMbifoNSR4DJE5f3tPOrl3iA8GaEPP/SGkKBRrp38pW/vv9UA4/KfxFndHhSoNOCZAvsSJhrB2IBZjFWBfy5ltDHLBkH6qdtD4v265Z9nOgrlCnNxKy2yJD2fIqTb1sRFtBhHVQ/tR6/pj7GIgsqErkN5OV7rW+eLKD3pcSNnP6A71w6Y6BpeEqchRiJKuW6qg+wGOPrQzmgFSvPkfoTJ33W7PstD9tkUI/jKKJxR19HHRyg4POXdFfYdAUhq0uUG9QsKx5/BF/yCxhHktyciRWM5tltnE+MKkXzoX29Hs0SZRtw"
+  }
+}

@@ -1,0 +1,16 @@
+# Reusable MLX-Audio task adapter. MLX is supplied by the shared foundation;
+# matching base-runtime packages are omitted from the packaged lock after resolution.
+mlx-audio[tts,stt]==0.6.6
+mlx==0.32.4
+mlx-lm==0.32.2
+transformers==5.23.0
+numpy==2.5.2
+scipy==1.18.1
+huggingface-hub==1.33.0
+sentencepiece==0.2.2
+requests==2.34.2
+urllib3==2.8.0
+jinja2==3.1.6
+anyio==4.14.2
+fsspec==2026.7.0
+pillow==13.0.0

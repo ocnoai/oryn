@@ -141,14 +141,14 @@ cleanup removed every root.
 
 ## Source and verification
 
-- [Browser helper](../projects/oryn-browser/apps/browser/build/helpers/artifact_io.py)
-- [Windows helper](../projects/oryn-browser/apps/browser/build/helpers/artifact_io_windows.py)
-- [Portable and native Windows helper tests](../projects/oryn-browser/apps/browser/build/helpers/test_artifact_io_windows.py)
-- [Helper process and retained root handles](../projects/oryn-browser/apps/browser/src/main/artifact-manager/artifact-file-service.ts)
-- [Storage and rollback](../projects/oryn-browser/apps/browser/src/main/artifact-manager/artifact-storage.ts)
-- [Publication authority and lifetime](../projects/oryn-browser/apps/browser/src/main/artifact-manager/artifact-manager.ts)
-- [Async event delivery and cancellation](../projects/oryn-browser/apps/browser/src/main/jobs/browser-job-registry.ts)
-- [Publication regressions](../projects/oryn-browser/apps/browser/src/main/__tests__/artifact-publication.test.ts)
+- [Browser helper](../components/browser/apps/browser/build/helpers/artifact_io.py)
+- [Windows helper](../components/browser/apps/browser/build/helpers/artifact_io_windows.py)
+- [Portable and native Windows helper tests](../components/browser/apps/browser/build/helpers/test_artifact_io_windows.py)
+- [Helper process and retained root handles](../components/browser/apps/browser/src/main/artifact-manager/artifact-file-service.ts)
+- [Storage and rollback](../components/browser/apps/browser/src/main/artifact-manager/artifact-storage.ts)
+- [Publication authority and lifetime](../components/browser/apps/browser/src/main/artifact-manager/artifact-manager.ts)
+- [Async event delivery and cancellation](../components/browser/apps/browser/src/main/jobs/browser-job-registry.ts)
+- [Publication regressions](../components/browser/apps/browser/src/main/__tests__/artifact-publication.test.ts)
 
 The regression suite uses small disposable fixtures, including a multi-chunk
 copy, retained source writer, invalid links/file types, disk reservations,
