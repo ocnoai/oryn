@@ -2097,7 +2097,7 @@ dependencies = [
     { name = "jsonschema" },
 ]
 wheels = [
-    { filename = "oryn_protocol-0.1.0-py3-none-any.whl", hash = "sha256:38128f949fcd58a762927a4bc7d8244e987069ba43e6ba6d4ff56f27a0c8505d" },
+    { filename = "oryn_protocol-0.1.0-py3-none-any.whl", hash = "sha256:dac30b6e9c2671fbdf9bdb20b167819082708e2924d74c82b22150964a72d6ca" },
 ]
 
 [package.metadata]

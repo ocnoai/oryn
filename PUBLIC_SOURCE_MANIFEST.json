@@ -162,7 +162,7 @@
     {
       "path": "components/browser/apps/browser/package.json",
       "bytes": 2817,
-      "sha256": "ad4c11051800233aea466aabd4e7a46eabf36e4f88011a21f30530a5c2b12ddc"
+      "sha256": "3076c29ab04260b0bda981b55731bba9f2c3c1491dac2b716385631950986476"
     },
     {
       "path": "components/browser/apps/browser/playwright.config.ts",
@@ -1211,8 +1211,8 @@
     },
     {
       "path": "components/browser/apps/browser/src/renderer/src/BrowserChrome.tsx",
-      "bytes": 215799,
-      "sha256": "3fd24c71fa9fb760b5bc7413df77249773ef0f7032032535b0473af0021c9abb"
+      "bytes": 217420,
+      "sha256": "1abe174fe082b4cd7b8b52e4474e92a84320fff193e6f93687d06fb5de348499"
     },
     {
       "path": "components/browser/apps/browser/src/renderer/src/BrowserSidebar.tsx",
@@ -1258,6 +1258,11 @@
       "path": "components/browser/apps/browser/src/renderer/src/components/RegistrySettings.tsx",
       "bytes": 1674,
       "sha256": "239b5682473b5544262f077d355c36d1dd8a806c4306c73dab7ab6318b61797a"
+    },
+    {
+      "path": "components/browser/apps/browser/src/renderer/src/components/TabStrip.tsx",
+      "bytes": 5053,
+      "sha256": "76381e704c48576bf62e8582c30a9a6361aee105648066444630527273fe6b62"
     },
     {
       "path": "components/browser/apps/browser/src/renderer/src/components/__tests__/address-bar.test.tsx",
@@ -1371,8 +1376,8 @@
     },
     {
       "path": "components/browser/apps/browser/src/renderer/src/styles.css",
-      "bytes": 66029,
-      "sha256": "46c7d1e433b9d8634c7af2c6edca6ec9edd5ee7a3f8c28e661ac87af84c05b10"
+      "bytes": 68267,
+      "sha256": "707a9a185c9bf80c632d83a2b3d188c8a5056d1ab8e5d6cb2e44ab765581745a"
     },
     {
       "path": "components/browser/apps/browser/src/shared/browser-urls.ts",
@@ -1411,8 +1416,8 @@
     },
     {
       "path": "components/browser/apps/browser/tests/electron/browser.spec.ts",
-      "bytes": 77531,
-      "sha256": "683d1ed7017b51ac654dc1918fdc89b3640c7d2fa0789ff01e9f8d0c91f37748"
+      "bytes": 81290,
+      "sha256": "817085ba997a15d47bba527c70b8da651c0bb2c7d458283e628eb3e504a4b6dc"
     },
     {
       "path": "components/browser/apps/browser/tests/electron/navigation-suggestions.spec.ts",
@@ -1587,7 +1592,7 @@
     {
       "path": "components/browser/pnpm-lock.yaml",
       "bytes": 197401,
-      "sha256": "29914d433ff920e7bf76025a6fd14c7de229945f1bdc1ea4e533e958494c148f"
+      "sha256": "6968dbb89b713cf6e5d51bdf697b6c8749543d94d1b8a7c50e7000d394627e1d"
     },
     {
       "path": "components/browser/pnpm-workspace.yaml",
@@ -6581,8 +6586,8 @@
     },
     {
       "path": "components/engine/tests/test_mlx_audio_inspection.py",
-      "bytes": 9019,
-      "sha256": "cca1be6041258c58544fb5d421285603a279b5c9b005d9b7a8f176eb9252104e"
+      "bytes": 9218,
+      "sha256": "67478c946234502d757413919edf549a945c9f67811aef9ec96d8613f6ef1ba7"
     },
     {
       "path": "components/engine/tests/test_mlx_audio_runner.py",
@@ -7082,7 +7087,7 @@
     {
       "path": "components/engine/uv.lock",
       "bytes": 540514,
-      "sha256": "7beafbd1809090b4cfb164d331fa73fbfe5cd099e93b9b7199006d6b36dfc839"
+      "sha256": "51c5f3f93b84a65497095f9833d6f36aed9b03323970591cd45eddbde433b633"
     },
     {
       "path": "components/engine/vendor/.gitignore",
@@ -8056,8 +8061,8 @@
     },
     {
       "path": "components/protocol/schemas/v1/protocol-v1.schema.json",
-      "bytes": 270976,
-      "sha256": "aa785e8b25af367f7aad167f8018d381ac4fb3bcae2ec1b840c1ce52d056ff8e"
+      "bytes": 271067,
+      "sha256": "69293ecf170925b4399236b678d22bf6f215a320083dc9f1c53cc8098b145419"
     },
     {
       "path": "components/protocol/scripts/export-sdk-task-types.mjs",
@@ -8151,8 +8156,8 @@
     },
     {
       "path": "components/protocol/typescript/src/__tests__/validation.test.ts",
-      "bytes": 17180,
-      "sha256": "b8e6c129506646b753215243c5d9ba325b60d8f89726ec33d34a32dba709bd94"
+      "bytes": 18386,
+      "sha256": "af9caaf82b22116e4cc9c0efcd2524f35afa9e151943c66894580fcd603c8e4a"
     },
     {
       "path": "components/protocol/typescript/src/chat-contracts.ts",

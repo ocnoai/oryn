@@ -918,7 +918,7 @@ packages:
     deprecated: This functionality has been moved to @npmcli/fs
 
   '@ocno/oryn-protocol@file:vendor/ocno-oryn-protocol-0.1.0.tgz':
-    resolution: {integrity: sha512-nhD/QRGvSnIGAuIsbDBnxsv8NsAgNcSKst+kmBD1jzjz7AxKXXJw9oznoPv7SYDuBrkm1fHWHTDBheW/7jtt9A==, tarball: file:vendor/ocno-oryn-protocol-0.1.0.tgz}
+    resolution: {integrity: sha512-ihzm2cKEbHJGOEvYK3lz9yV0MNAbNhIBiN81l+bpvEt1qGdMO5lG/sskHtct0vZaQYawfdS0aLkfe+kKCVDYew==, tarball: file:vendor/ocno-oryn-protocol-0.1.0.tgz}
     version: 0.1.0
 
   '@ocno/oryn-registry@file:vendor/ocno-oryn-registry-0.1.0.tgz':

@@ -217,7 +217,10 @@ body {
 
   height: var(--browser-tab-height);
   min-width: min-content;
-  max-width: calc(30px + var(--island-tab-count) * 222px);
+  max-width: calc(
+    var(--tab-island-extra-width) + var(--island-tab-count) *
+      (var(--tab-max-width) + var(--space-0-5))
+  );
   flex: var(--island-tab-count) 1 0;
   display: flex;
   align-items: center;
@@ -330,14 +333,9 @@ body {
 .tab-island .tab {
   height: calc(var(--browser-tab-height) - var(--space-1));
   min-width: 36px;
-  max-width: 220px;
+  max-width: var(--tab-max-width);
   flex: 1 1 160px;
-  container-type: inline-size;
   border-radius: var(--radius-md);
-}
-
-.tab-island .tab:is(:hover, :focus-within) {
-  z-index: 1;
 }
 
 .tab-island .tab.active {
@@ -451,8 +449,8 @@ body {
   color: var(--color-brand-primary);
 }
 .tab.pinned {
-  flex: 0 0 44px;
-  min-width: 44px;
+  flex: 0 0 var(--pinned-tab-width);
+  min-width: var(--pinned-tab-width);
 }
 .tab.pinned .tab-title {
   display: none;
@@ -1028,15 +1026,99 @@ button {
   font-size: var(--font-size-sm);
 }
 
-.tab-strip {
+.tab-row {
+  --tab-max-width: 220px;
+  --pinned-tab-width: 44px;
+  --tab-island-extra-width: 30px;
   height: calc(var(--browser-tab-height) + var(--space-2));
   display: flex;
   align-items: center;
   gap: var(--space-0-5);
-  padding: var(--space-2) var(--space-2) var(--space-1);
+  padding-inline: var(--space-2);
+}
+
+.tab-scroll-frame {
+  --unpinned-tab-count: 0;
+  --pinned-tab-count: 0;
+  --tab-island-count: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  max-width: calc(
+    var(--unpinned-tab-count) * (var(--tab-max-width) + var(--space-0-5)) +
+      var(--pinned-tab-count) * (var(--pinned-tab-width) + var(--space-0-5)) +
+      var(--tab-island-count) * (var(--tab-island-extra-width) + var(--space-0-5)) + var(--space-2)
+  );
+  height: 100%;
+}
+
+.tab-scroll-viewport {
+  --tab-fade-left: 0px;
+  --tab-fade-right: 0px;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: var(--space-2);
   scrollbar-width: none;
+}
+
+.tab-scroll-viewport[data-scroll-left] {
+  --tab-fade-left: var(--space-2);
+}
+
+.tab-scroll-viewport[data-scroll-right] {
+  --tab-fade-right: var(--space-2);
+}
+
+.tab-scroll-viewport:is([data-scroll-left], [data-scroll-right]) {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--tab-fade-left),
+    black calc(100% - var(--tab-fade-right)),
+    transparent
+  );
+}
+
+.tab-scroll-buttons,
+.tab-row-actions {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-0-5);
+  padding-top: var(--space-1);
+}
+
+.tab-scroll-buttons {
+  margin-inline-start: var(--space-0-5);
+}
+
+.tab-scroll-button {
+  width: var(--control-height-xs);
+  height: var(--control-height-xs);
+}
+
+.tab-scroll-button .ui-icon {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}
+
+.tab-scroll-left .ui-icon {
+  transform: scaleX(-1);
+}
+
+.tab-strip {
+  width: 100%;
+  min-width: min-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-0-5);
+  padding: var(--space-2) var(--space-1) var(--space-1);
   transition:
     background var(--motion-duration-fast) var(--motion-ease-standard),
     box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
@@ -1051,7 +1133,7 @@ button {
   position: relative;
   height: calc(var(--browser-tab-height) - var(--space-1));
   min-width: 72px;
-  max-width: 220px;
+  max-width: var(--tab-max-width);
   flex: 1 1 180px;
   display: flex;
   align-items: center;
@@ -1064,6 +1146,19 @@ button {
   transition:
     background var(--motion-duration-fast) var(--motion-ease-standard),
     color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.tab.standalone {
+  min-width: 36px;
+}
+
+.tab.standalone,
+.tab-island .tab {
+  container: browser-tab / inline-size;
+}
+
+.tab:is(:hover, :focus-within) {
+  z-index: 1;
 }
 
 .tab.dragging {
@@ -1195,19 +1290,19 @@ button {
 }
 
 /*
- * Island tabs keep Close at the trailing edge while a title fits. Icon-only
+ * Tabs keep Close at the trailing edge while a title fits. Icon-only
  * tabs use an overhanging close badge, leaving the favicon available for activation.
  */
-@container (max-width: 70px) {
-  .tab-island .tab .tab-title {
+@container browser-tab (max-width: 70px) {
+  .tab .tab-title {
     display: none;
   }
-  .tab-island .tab .tab-activate {
+  .tab .tab-activate {
     justify-content: center;
     padding-inline: 4px;
     gap: 0;
   }
-  .tab-island .tab .tab-close {
+  .tab:not(.pinned) .tab-close {
     position: absolute;
     top: calc(-1 * var(--space-1));
     right: calc(-1 * var(--space-1));
@@ -1225,15 +1320,21 @@ button {
       opacity var(--motion-duration-fast) var(--motion-ease-standard),
       visibility 0s linear var(--motion-duration-fast);
   }
-  .tab-island .tab:hover .tab-close {
+  .tab:hover .tab-close {
     transition-delay: 150ms;
   }
-  .tab-island .tab .tab-close:hover {
+  .tab .tab-close:hover {
     background: var(--color-background-subtle);
   }
-  .tab-island .tab .tab-close .ui-icon {
-    width: var(--icon-size-xs);
-    height: var(--icon-size-xs);
+  .tab .capture-access-indicator {
+    position: absolute;
+    top: var(--space-1);
+    left: var(--space-1);
+    width: var(--space-1-5);
+    height: var(--space-1-5);
+    padding: 0;
+    background: currentColor;
+    font-size: 0;
   }
 }
 
@@ -1255,8 +1356,10 @@ button {
 }
 
 .engine-status {
-  margin-left: auto;
   min-height: var(--control-height-sm);
+  max-width: min(31vw, 240px);
+  margin-block-start: var(--space-1);
+  margin-inline-start: auto;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -1269,6 +1372,12 @@ button {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   white-space: nowrap;
+}
+
+.engine-status-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .engine-status:hover {

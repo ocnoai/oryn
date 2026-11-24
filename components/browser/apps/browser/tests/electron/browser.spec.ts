@@ -1784,6 +1784,83 @@ test('Find in page keeps its bounded surface and website input', async () => {
   await expect(input).toHaveCount(0);
 });
 
+test('overflowing tabs scroll independently and keep browser actions reachable', async () => {
+  const viewport = chrome.locator('.tab-scroll-viewport');
+  const tabs = viewport.getByRole('tablist', { name: 'Open tabs' });
+  const firstTab = tabs.getByRole('tab', { name: 'Reliability fixture', exact: true });
+  const activeTab = tabs.getByRole('tab', { selected: true });
+  const scrollLeft = chrome.getByRole('button', { name: 'Scroll tabs left', exact: true });
+  const scrollRight = chrome.getByRole('button', { name: 'Scroll tabs right', exact: true });
+  const newTab = chrome.getByRole('button', { name: 'New tab', exact: true });
+  const searchTabs = chrome.getByRole('button', { name: 'Search tabs', exact: true });
+  const localAI = chrome.getByRole('button', { name: 'Local AI activity', exact: true });
+  const scrollPosition = () => viewport.evaluate((element) => element.scrollLeft);
+  const expectFixedActions = async () => {
+    for (const action of [newTab, searchTabs, localAI]) await expect(action).toBeInViewport();
+  };
+
+  await application.evaluate(({ BrowserWindow }) =>
+    BrowserWindow.getAllWindows()[0]!.setSize(1400, 800),
+  );
+  await expect(firstTab.locator('.tab-title')).toBeVisible();
+  await expect(scrollLeft).toBeHidden();
+  await expect(scrollRight).toBeHidden();
+  const firstTabBounds = (await firstTab.locator('..').boundingBox())!;
+  const newTabBounds = (await newTab.boundingBox())!;
+  const newTabGap = newTabBounds.x - (firstTabBounds.x + firstTabBounds.width);
+  expect(newTabGap).toBeGreaterThanOrEqual(0);
+  expect(newTabGap).toBeLessThan(16);
+
+  await application.evaluate(({ BrowserWindow }) =>
+    BrowserWindow.getAllWindows()[0]!.setSize(760, 600),
+  );
+  await chrome.evaluate(async (url) => {
+    for (let index = 0; index < 24; index += 1) await window.browser.newTab(url);
+  }, `${base}/linked`);
+  await expect(tabs.getByRole('tab')).toHaveCount(25);
+  await expect(activeTab).toHaveAccessibleName('Linked fixture');
+  await expect(activeTab.locator('.tab-title')).toBeHidden();
+  await expect(activeTab.locator('.tab-favicon-image, .tab-favicon-fallback')).toBeVisible();
+  await expect(activeTab).toBeInViewport({ ratio: 0.9 });
+  await expect(firstTab).not.toBeInViewport();
+  await expect(scrollLeft).toBeVisible();
+  await expect(scrollRight).toBeVisible();
+  await expectFixedActions();
+
+  await viewport.hover();
+  await chrome.mouse.wheel(-2500, 0);
+  await expect.poll(scrollPosition).toBeLessThanOrEqual(1);
+  await expect(scrollLeft).toBeDisabled();
+  await expect(firstTab).toBeInViewport({ ratio: 0.9 });
+  await expectFixedActions();
+
+  await scrollRight.click();
+  await expect.poll(scrollPosition).toBeGreaterThan(1);
+  await scrollLeft.click();
+  await expect.poll(scrollPosition).toBeLessThanOrEqual(1);
+
+  await viewport.hover();
+  await chrome.mouse.wheel(0, 2500);
+  await expect(firstTab).not.toBeInViewport();
+  await searchTabs.click();
+  const search = chrome.getByRole('dialog', { name: 'Search tabs', exact: true });
+  await search.getByRole('textbox', { name: 'Search tabs' }).fill('Reliability fixture');
+  await search.getByRole('button', { name: /Reliability fixture/ }).click();
+  await expect(firstTab).toHaveAttribute('aria-selected', 'true');
+  await expect(firstTab).toBeInViewport({ ratio: 0.9 });
+
+  await newTab.click();
+  await expect(tabs.getByRole('tab')).toHaveCount(26);
+  await expect(activeTab).toBeInViewport({ ratio: 0.9 });
+  await application.evaluate(({ BrowserWindow }) =>
+    BrowserWindow.getAllWindows()[0]!.setSize(1400, 800),
+  );
+  await expect(scrollLeft).toBeHidden();
+  await expect(scrollRight).toBeHidden();
+  await localAI.click();
+  await expect(chrome.getByRole('dialog', { name: 'Oryn Local AI', exact: true })).toBeVisible();
+});
+
 test('narrow island tabs activate on the first click and never close by accident', async () => {
   const ids: string[] = await chrome.evaluate(async (url) => {
     const opened: string[] = [];

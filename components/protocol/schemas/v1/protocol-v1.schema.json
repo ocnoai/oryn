@@ -1273,6 +1273,9 @@
         "audioOutput": {
           "$ref": "#/$defs/behaviorCapabilityValue"
         },
+        "referenceAudio": {
+          "$ref": "#/$defs/behaviorCapabilityValue"
+        },
         "lyrics": {
           "$ref": "#/$defs/behaviorCapabilityValue"
         },

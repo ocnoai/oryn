@@ -33,6 +33,33 @@ async function fixture(name: string): Promise<unknown> {
 }
 
 describe("shared protocol schema", () => {
+  it("accepts reference audio capability in model inspection and inventory", async () => {
+    const inspection = await fixture("model-inspect-response.json");
+    const inventory = await fixture("model-inventory-response.json");
+    assertProtocolResponse(inspection);
+    assertProtocolResponse(inventory);
+    if (!inspection.ok || !inventory.ok) throw new Error("Expected successful model responses");
+    assertCandidateExecutionProfile(inspection.result);
+    assertModelInventoryResult(inventory.result);
+
+    inspection.result.technicalCapabilities.capabilities = { referenceAudio: true };
+    inventory.result.models[0]!.technicalCapabilities = {
+      ...inspection.result.technicalCapabilities,
+      capabilities: { referenceAudio: false },
+    };
+    expect(() => assertCandidateExecutionProfile(inspection.result)).not.toThrow();
+    expect(() => assertModelInventoryResult(inventory.result)).not.toThrow();
+
+    const malformed = {
+      ...inspection.result,
+      technicalCapabilities: {
+        ...inspection.result.technicalCapabilities,
+        capabilities: { referenceAudio: "enabled" },
+      },
+    };
+    expect(() => assertCandidateExecutionProfile(malformed)).toThrow();
+  });
+
   it("accepts paired GGUF projector inventory and rejects path escapes", async () => {
     const response = await fixture("model-inventory-response.json");
     assertProtocolResponse(response);

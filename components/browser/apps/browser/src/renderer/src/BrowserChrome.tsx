@@ -11,6 +11,7 @@ import { EngineVersions } from './components/EngineVersions';
 import { AddressBar } from './components/AddressBar';
 import { BrowserImportSettings } from './components/BrowserImportSettings';
 import { ModelAlternatives } from './components/ModelAlternatives';
+import { TabStrip } from './components/TabStrip';
 import {
   useEffect,
   useLayoutEffect,
@@ -255,10 +256,37 @@ export function BrowserChrome(): React.JSX.Element {
     () =>
       state.experience.islands
         .filter((island) => island.workspaceId === state.experience.activeWorkspaceId)
-        .sort((left, right) => left.order - right.order),
-    [state.experience],
+        .sort((left, right) => left.order - right.order)
+        .map((island) => ({
+          ...island,
+          tabs: visibleTabs.filter((tab) => !tab.pinned && tab.islandId === island.islandId),
+        }))
+        .filter((island) => island.tabs.length > 0),
+    [state.experience, visibleTabs],
+  );
+  const pinnedTabs = visibleTabs.filter((tab) => tab.pinned);
+  const standaloneTabs = visibleTabs.filter((tab) => !tab.pinned && !tab.islandId);
+  const expandedTabCount = visibleIslands.reduce(
+    (count, island) => count + (island.collapsed ? 0 : island.tabs.length),
+    standaloneTabs.length,
   );
   const visibleModelOperations = modelOperations.filter(isVisibleModelOperation);
+  const activeCollapsedIslandId = visibleIslands.find(
+    (island) => island.collapsed && island.islandId === activeTab?.islandId,
+  )?.islandId;
+  const engineStatusLabel = state.privateMode
+    ? 'Private'
+    : [
+        jobActivity.running > 0 || jobActivity.queued > 0
+          ? `Oryn ● ${jobActivity.running} running · ${jobActivity.queued} queued`
+          : visibleModelOperations.length > 0
+            ? `Local AI · ${visibleModelOperations.length} model ${visibleModelOperations.length === 1 ? 'operation' : 'operations'}`
+            : 'Local AI',
+        state.engineState === 'ready' ? '' : state.engineState,
+        state.memoryPressure === 'normal' ? '' : `${state.memoryPressure} memory pressure`,
+      ]
+        .filter(Boolean)
+        .join(' · ');
   const openTabMenu = (tabId: string, event: MouseEvent<HTMLElement>) => {
     event.preventDefault();
     setTabMenu({ tabId, x: event.clientX, y: event.clientY });
@@ -599,11 +627,7 @@ export function BrowserChrome(): React.JSX.Element {
         </p>
       ) : null}
       <div ref={persistentChromeRef} className="persistent-chrome">
-        <div
-          className={`tab-strip ${ungroupDropActive ? 'ungroup-drop-active' : ''}`}
-          role="tablist"
-          aria-label="Open tabs"
-        >
+        <div className="tab-row">
           <button
             type="button"
             className="workspace-chip"
@@ -632,9 +656,15 @@ export function BrowserChrome(): React.JSX.Element {
               <WorkspaceMenu state={state} close={() => setWorkspaceMenuOpen(false)} />
             </>
           )}
-          {visibleTabs
-            .filter((tab) => tab.pinned)
-            .map((tab) => (
+          <TabStrip
+            activeTabId={state.activeTabId}
+            activeCollapsedIslandId={activeCollapsedIslandId}
+            ungroupDropActive={ungroupDropActive}
+            unpinnedTabCount={expandedTabCount}
+            pinnedTabCount={pinnedTabs.length}
+            islandCount={visibleIslands.length}
+          >
+            {pinnedTabs.map((tab) => (
               <div
                 key={tab.tabId}
                 className={`tab pinned ${tab.tabId === state.activeTabId ? 'active' : ''}`}
@@ -643,6 +673,7 @@ export function BrowserChrome(): React.JSX.Element {
                 <button
                   className="tab-activate"
                   role="tab"
+                  aria-label={tabAccessibleName(tab)}
                   aria-selected={tab.tabId === state.activeTabId}
                   title={tab.title || tab.url}
                   onPointerDown={(event) => startTabDrag(tab.tabId, event)}
@@ -666,145 +697,141 @@ export function BrowserChrome(): React.JSX.Element {
                 />
               </div>
             ))}
-          {visibleIslands.map((island) => {
-            const islandTabs = visibleTabs.filter(
-              (tab) => !tab.pinned && tab.islandId === island.islandId,
-            );
-            if (islandTabs.length === 0) return null;
-            return (
-              <div
-                className={`tab-island ${island.collapsed ? 'collapsed' : ''} ${dragOverIslandId === island.islandId ? 'drag-over' : ''}`}
-                key={island.islandId}
-                data-island-id={island.islandId}
-                style={
-                  {
-                    '--island-accent': island.accent,
-                    '--island-tab-count': islandTabs.length,
-                  } as CSSProperties
-                }
-              >
-                <button
-                  type="button"
-                  className="tab-island-label"
-                  aria-expanded={!island.collapsed}
-                  aria-haspopup="dialog"
-                  title={`${island.collapsed ? 'Expand' : 'Collapse'} ${island.name} · Right-click to change color`}
-                  onContextMenu={(event) => {
-                    event.preventDefault();
-                    setTabMenu(null);
-                    setIslandColorPickerId(island.islandId);
-                  }}
-                  onClick={() =>
-                    void window.browser.updateBrowserExperience({
-                      type: 'island-update',
-                      islandId: island.islandId,
-                      collapsed: !island.collapsed,
-                    })
+            {visibleIslands.map((island) => {
+              const islandTabs = island.tabs;
+              return (
+                <div
+                  className={`tab-island ${island.collapsed ? 'collapsed' : ''} ${dragOverIslandId === island.islandId ? 'drag-over' : ''}`}
+                  key={island.islandId}
+                  data-island-id={island.islandId}
+                  data-active-island={activeCollapsedIslandId === island.islandId || undefined}
+                  style={
+                    {
+                      '--island-accent': island.accent,
+                      '--island-tab-count': islandTabs.length,
+                    } as CSSProperties
                   }
                 >
-                  <span>{island.name}</span>
-                  <small>{islandTabs.length}</small>
-                </button>
-                <button
-                  type="button"
-                  className="tab-island-more"
-                  aria-label={`Manage ${island.name} island`}
-                  title="Rename, move, or dissolve island"
-                  onClick={async () => {
-                    const action = await requestChoice(
-                      'Manage island',
-                      [
-                        {
-                          label: 'Rename',
-                          value: 'rename',
-                          description: 'Give this group of tabs a new name.',
-                          icon: 'edit',
-                        },
-                        {
-                          label: 'Move',
-                          value: 'move',
-                          description: state.experience.workspaces.some(
-                            (workspace) => workspace.workspaceId !== island.workspaceId,
-                          )
-                            ? 'Take this island to another workspace.'
-                            : 'Create another workspace to move this island.',
-                          icon: 'arrow-right',
-                          disabled: !state.experience.workspaces.some(
-                            (workspace) => workspace.workspaceId !== island.workspaceId,
-                          ),
-                        },
-                        {
-                          label: 'Dissolve',
-                          value: 'dissolve',
-                          description: 'Ungroup the tabs. All tabs stay open.',
-                          icon: 'ungroup',
-                          tone: 'danger',
-                        },
-                      ],
-                      {
-                        description: `${island.name} · ${islandTabs.length} ${islandTabs.length === 1 ? 'tab' : 'tabs'}`,
-                        icon: 'models',
-                      },
-                    );
-                    if (action === 'rename') {
-                      const name = await requestText('Island name', island.name);
-                      if (name)
-                        void window.browser.updateBrowserExperience({
-                          type: 'island-update',
-                          islandId: island.islandId,
-                          name,
-                        });
-                    }
-                    if (action === 'move') {
-                      const destination = await requestChoice(
-                        'Move island to workspace',
-                        state.experience.workspaces
-                          .filter((workspace) => workspace.workspaceId !== island.workspaceId)
-                          .map((workspace) => ({
-                            label: workspace.name,
-                            value: workspace.workspaceId,
-                          })),
-                      );
-                      const workspace = state.experience.workspaces.find(
-                        (item) => item.workspaceId === destination,
-                      );
-                      if (workspace)
-                        void window.browser.updateBrowserExperience({
-                          type: 'island-move-workspace',
-                          islandId: island.islandId,
-                          workspaceId: workspace.workspaceId,
-                        });
-                    }
-                    if (action === 'dissolve')
+                  <button
+                    type="button"
+                    className="tab-island-label"
+                    aria-expanded={!island.collapsed}
+                    aria-haspopup="dialog"
+                    title={`${island.collapsed ? 'Expand' : 'Collapse'} ${island.name} · Right-click to change color`}
+                    onContextMenu={(event) => {
+                      event.preventDefault();
+                      setTabMenu(null);
+                      setIslandColorPickerId(island.islandId);
+                    }}
+                    onClick={() =>
                       void window.browser.updateBrowserExperience({
-                        type: 'island-delete',
+                        type: 'island-update',
                         islandId: island.islandId,
-                      });
-                  }}
-                >
-                  •••
-                </button>
-                {!island.collapsed &&
-                  islandTabs.map((tab) => (
-                    <TabButton
-                      key={tab.tabId}
-                      tab={tab}
-                      active={tab.tabId === state.activeTabId}
-                      dragging={draggedTabId === tab.tabId}
-                      openMenu={(event) => openTabMenu(tab.tabId, event)}
-                      startDrag={(event) => startTabDrag(tab.tabId, event)}
-                      moveDrag={moveTabDrag}
-                      finishDrag={finishTabDrag}
-                      cancelDrag={cancelTabDrag}
-                      activate={() => activateTab(tab.tabId)}
-                    />
-                  ))}
-              </div>
-            );
-          })}
-          {visibleTabs
-            .filter((tab) => !tab.pinned && !tab.islandId)
-            .map((tab) => (
+                        collapsed: !island.collapsed,
+                      })
+                    }
+                  >
+                    <span>{island.name}</span>
+                    <small>{islandTabs.length}</small>
+                  </button>
+                  <button
+                    type="button"
+                    className="tab-island-more"
+                    aria-label={`Manage ${island.name} island`}
+                    title="Rename, move, or dissolve island"
+                    onClick={async () => {
+                      const action = await requestChoice(
+                        'Manage island',
+                        [
+                          {
+                            label: 'Rename',
+                            value: 'rename',
+                            description: 'Give this group of tabs a new name.',
+                            icon: 'edit',
+                          },
+                          {
+                            label: 'Move',
+                            value: 'move',
+                            description: state.experience.workspaces.some(
+                              (workspace) => workspace.workspaceId !== island.workspaceId,
+                            )
+                              ? 'Take this island to another workspace.'
+                              : 'Create another workspace to move this island.',
+                            icon: 'arrow-right',
+                            disabled: !state.experience.workspaces.some(
+                              (workspace) => workspace.workspaceId !== island.workspaceId,
+                            ),
+                          },
+                          {
+                            label: 'Dissolve',
+                            value: 'dissolve',
+                            description: 'Ungroup the tabs. All tabs stay open.',
+                            icon: 'ungroup',
+                            tone: 'danger',
+                          },
+                        ],
+                        {
+                          description: `${island.name} · ${islandTabs.length} ${islandTabs.length === 1 ? 'tab' : 'tabs'}`,
+                          icon: 'models',
+                        },
+                      );
+                      if (action === 'rename') {
+                        const name = await requestText('Island name', island.name);
+                        if (name)
+                          void window.browser.updateBrowserExperience({
+                            type: 'island-update',
+                            islandId: island.islandId,
+                            name,
+                          });
+                      }
+                      if (action === 'move') {
+                        const destination = await requestChoice(
+                          'Move island to workspace',
+                          state.experience.workspaces
+                            .filter((workspace) => workspace.workspaceId !== island.workspaceId)
+                            .map((workspace) => ({
+                              label: workspace.name,
+                              value: workspace.workspaceId,
+                            })),
+                        );
+                        const workspace = state.experience.workspaces.find(
+                          (item) => item.workspaceId === destination,
+                        );
+                        if (workspace)
+                          void window.browser.updateBrowserExperience({
+                            type: 'island-move-workspace',
+                            islandId: island.islandId,
+                            workspaceId: workspace.workspaceId,
+                          });
+                      }
+                      if (action === 'dissolve')
+                        void window.browser.updateBrowserExperience({
+                          type: 'island-delete',
+                          islandId: island.islandId,
+                        });
+                    }}
+                  >
+                    •••
+                  </button>
+                  {!island.collapsed &&
+                    islandTabs.map((tab) => (
+                      <TabButton
+                        key={tab.tabId}
+                        tab={tab}
+                        active={tab.tabId === state.activeTabId}
+                        dragging={draggedTabId === tab.tabId}
+                        openMenu={(event) => openTabMenu(tab.tabId, event)}
+                        startDrag={(event) => startTabDrag(tab.tabId, event)}
+                        moveDrag={moveTabDrag}
+                        finishDrag={finishTabDrag}
+                        cancelDrag={cancelTabDrag}
+                        activate={() => activateTab(tab.tabId)}
+                      />
+                    ))}
+                </div>
+              );
+            })}
+            {standaloneTabs.map((tab) => (
               <TabButton
                 key={tab.tabId}
                 tab={tab}
@@ -818,41 +845,35 @@ export function BrowserChrome(): React.JSX.Element {
                 activate={() => activateTab(tab.tabId)}
               />
             ))}
-          <IconButton
-            className="new-tab-button"
-            icon="plus"
-            label="New tab"
-            onClick={() => void window.browser.newTab()}
-          />
-          <IconButton
-            className="tab-search-button"
-            icon="search"
-            label="Search tabs"
-            onClick={() => setTabSearchOpen(true)}
-          />
+          </TabStrip>
+          <div className="tab-row-actions">
+            <IconButton
+              className="new-tab-button"
+              icon="plus"
+              label="New tab"
+              onClick={() => void window.browser.newTab()}
+            />
+            <IconButton
+              className="tab-search-button"
+              icon="search"
+              label="Search tabs"
+              onClick={() => setTabSearchOpen(true)}
+            />
+          </div>
           <button
             type="button"
             className={`engine-status ${state.privateMode ? 'private' : `${state.engineState} pressure-${state.memoryPressure}`}`}
             aria-live="polite"
             aria-label={state.privateMode ? 'Private browsing' : 'Local AI activity'}
             aria-expanded={panel === 'local-ai'}
+            title={engineStatusLabel}
             onClick={() => {
               if (!state.privateMode) selectPanel('local-ai');
             }}
           >
             {!state.privateMode && <span className="status-dot" aria-hidden="true" />}
             <Icon name="sparkles" />
-            {state.privateMode
-              ? 'Private'
-              : jobActivity.running > 0 || jobActivity.queued > 0
-                ? `Oryn ● ${jobActivity.running} running · ${jobActivity.queued} queued`
-                : visibleModelOperations.length > 0
-                  ? `Local AI · ${visibleModelOperations.length} model ${visibleModelOperations.length === 1 ? 'operation' : 'operations'}`
-                  : 'Local AI'}
-            {state.privateMode || state.engineState === 'ready' ? '' : ` · ${state.engineState}`}
-            {state.privateMode || state.memoryPressure === 'normal'
-              ? ''
-              : ` · ${state.memoryPressure} memory pressure`}
+            <span className="engine-status-label">{engineStatusLabel}</span>
           </button>
         </div>
 
@@ -3499,6 +3520,17 @@ function ResourceValue({
   );
 }
 
+function tabAccessibleName(tab: BrowserWindowState['tabs'][number]) {
+  return [
+    tab.title || 'New tab',
+    tab.audible ? 'Audio' : '',
+    tab.muted ? 'Muted' : '',
+    tab.captureAccess?.length ? `Capture access: ${tab.captureAccess.join(', ')}` : '',
+  ]
+    .filter(Boolean)
+    .join(' · ');
+}
+
 function TabButton({
   tab,
   active,
@@ -3522,13 +3554,14 @@ function TabButton({
 }) {
   return (
     <div
-      className={`tab ${active ? 'active' : ''} ${dragging ? 'dragging' : ''}`}
+      className={`tab ${tab.islandId ? '' : 'standalone'} ${active ? 'active' : ''} ${dragging ? 'dragging' : ''}`}
       data-tab-id={tab.tabId}
       onContextMenu={openMenu}
     >
       <button
         className="tab-activate"
         role="tab"
+        aria-label={tabAccessibleName(tab)}
         aria-selected={active}
         title={tab.title || tab.url}
         onPointerDown={startDrag}

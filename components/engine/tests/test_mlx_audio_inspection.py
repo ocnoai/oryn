@@ -6,6 +6,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
+from oryn_protocol.schema import ProtocolSchemaStore
 from oryn_protocol.task_contracts import effective_input, validate_invocation
 from test_models import FakeHub
 
@@ -90,6 +91,7 @@ def test_live_discovery_routes_multiple_declared_families_without_repository_ali
     assert generated_pack_id(result["runtimePlan"]["selected"]["variantId"]) == "oryn.mlx-audio"
     assert result["taskProfile"]["contract"]["id"] == contract
     assert result["exactRevision"] == SHA
+    ProtocolSchemaStore().validator("candidateExecutionProfile").validate(result)
 
 
 def test_live_discovery_infers_audio_task_from_declared_family_without_hub_label(
@@ -128,6 +130,7 @@ def test_speech_reference_transcript_is_negotiated_and_legacy_controls_stay_fixe
     tmp_path, monkeypatch
 ):
     profile = inspect(tmp_path, monkeypatch)["taskProfile"]
+    assert profile["features"]["referenceAudio"] == "supported"
     value = effective_input(profile, {"text": "Hello."})
     assert value == {"text": "Hello.", "voice": "default", "language": "auto", "speed": 1}
     validate_invocation(profile, value)
